@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  5 APR 2017 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  5 APR 2017 23:52
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -583,24 +583,16 @@ G,.JBIG2,.JB2,.eps]
 )
 \AtBeginShipoutBox=\box29
 
+<IMMAGINI/Frontespizio.png, id=1, 516.42938pt x 804.00375pt>
+File: IMMAGINI/Frontespizio.png Graphic file (type png)
 
-! LaTeX Error: File `Immagini/Frontespizio' not found.
+<use IMMAGINI/Frontespizio.png>
+Package pdftex.def Info: IMMAGINI/Frontespizio.png used on input line 31.
+(pdftex.def)             Requested size: 537.75343pt x 837.28513pt.
+ [1
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 		\newpage
-               
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[1
-
-] [2{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [3]
-("TESI NON CANCELLARE.toc"
+ <./IMMAGINI/Frontespizio.png>] [2{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdft
+ex.map}] [3] ("TESI NON CANCELLARE.toc"
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
@@ -622,118 +614,50 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Capitolo 1.
 [6
 
-] [7]
-
-! Package inputenc Error: Unicode char ﬀ (U+FB00)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 ... tempo, ci si è resi conto che esse diﬀ
-                                                  eriscono sotto diversi asp...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Unicode char ﬁ (U+FB01)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 ...venute a rappresentare un modello signiﬁ
-                                                  cativo di algoritmi di ott...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Unicode char ﬀ (U+FB00)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 ...di calcolo, in cui la computazione è eﬀ
-                                                  ettuata per mezzo dell’i...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Unicode char ﬀ (U+FB00)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 ...tra unità elementari (i neuroni) che eﬀ
-                                                  ettuano, singolarmente, op...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Unicode char  (U+F0F0)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95 ...datta alle situazioni nuove imparando; 
-                                                  permette una computazione ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[8]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 99.
+] [7] [8]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 99.
- [9] [10]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+
+<IMMAGINI/GRAFOSISTNERV.png, id=33, 398.23781pt x 81.30376pt>
+File: IMMAGINI/GRAFOSISTNERV.png Graphic file (type png)
+
+<use IMMAGINI/GRAFOSISTNERV.png>
+Package pdftex.def Info: IMMAGINI/GRAFOSISTNERV.png used on input line 106.
+(pdftex.def)             Requested size: 272.99881pt x 55.73738pt.
+ [9 <./IMMAGINI/GRAFOSISTNERV.png>] [10]
+[11]
 Capitolo 2.
-[11
+[12
 
 ]
 Capitolo 3.
-[12
+[13
 
-] [13
+] [14
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
- 4311 strings out of 493333
- 53591 string characters out of 3139198
- 138142 words of memory out of 3000000
- 7742 multiletter control sequences out of 15000+200000
+ 4310 strings out of 493333
+ 53833 string characters out of 3139198
+ 137143 words of memory out of 3000000
+ 7752 multiletter control sequences out of 15000+200000
  10503 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,43p,2157b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,43p,1865b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl1
 2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (13 pages, 93593 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (14 pages, 682166 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
