@@ -4,9 +4,10 @@
 \contentsline {chapter}{\numberline {1}Rete neurale artificiale}{6}
 \contentsline {section}{\numberline {1.1}Cenni storici ed origini}{6}
 \contentsline {section}{\numberline {1.2}Analogie tra rete neurale umana e rete neurale artificiale}{9}
-\contentsline {section}{\numberline {1.3}Struttura e modello matematico}{10}
-\contentsline {section}{\numberline {1.4}Architettura}{10}
-\contentsline {section}{\numberline {1.5}Funzioni di attivazione}{10}
-\contentsline {chapter}{\numberline {2}Feed Forward}{11}
-\contentsline {chapter}{\numberline {3}Ricorrenti}{12}
-\contentsline {chapter}{Riferimenti bibliografici}{13}
+\contentsline {section}{\numberline {1.3}Il neurone biologico}{10}
+\contentsline {section}{\numberline {1.4}Struttura e modello matematico}{12}
+\contentsline {section}{\numberline {1.5}Architettura}{13}
+\contentsline {section}{\numberline {1.6}Funzioni di attivazione}{13}
+\contentsline {chapter}{\numberline {2}Feed Forward}{14}
+\contentsline {chapter}{\numberline {3}Ricorrenti}{15}
+\contentsline {chapter}{Riferimenti bibliografici}{16}
