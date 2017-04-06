@@ -35,7 +35,7 @@
 		\newpage
 		\null\vspace{\stretch{1}}
 		\thispagestyle{empty}
-		\textit{Puzzo}
+		\textit{CENTODIGIOTTOOOOO}
 		\vspace{\stretch{2}}\null
 	\end{flushright} 
    	%FINE DEDICA
@@ -64,7 +64,15 @@
 	\chapter{Rete neurale artificiale}
 		\section{Cenni storici ed origini}
 		
-		Le reti neurali, e la conseguente computazione neurale, sono state introdotte ispirandosi ai sistemi neurali biologici, con l'obiettivo di modellarne il comportamento e la struttura e di simularne le funzioni basilari e fondamentali.
+		Le reti neurali artificiali, dall'inglese \textit{Artificial Neural Network (ANN)}, e la conseguente computazione neurale, sono state costruite ispirandosi ai sistemi neurali biologici, con l'obiettivo di modellarne il comportamento e la struttura e di simularne le funzioni basilari e fondamentali.
+		 
+		Una definizione semplice e formale di tali strutture è fornita dall'inventore del primo neurocomputer, il Dr. Robert Hecht-Nielsen che le definì come: \\
+		
+		\textit{«...a computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs»}\\
+		\textit{(da Neural Network Primer: Parte uno, Maureen Caudill, 1989)}\\
+		
+		Tradotto in italiano \\
+		\textit{«... un sistema di calcolo costituito da una serie di semplici, altamente interconnessi elementi di elaborazione, che elaborano le informazioni attraverso il loro stato dinamico rispondendo agli input esterni.»}\\
 		
 	    Le basi per lo studio di tali reti furono poste dallo psichiatra Warren McCulloch e del matematico Walter Pitts, i quali riuscirono a riprodurre una rete neurale utilizzando semplici circuiti elettrici collegati tra loro. Questa collaborazione portò alla luce l'analogia che sussiste tra le reti neurali e la macchina di Turing ed in tal modo si capì che qualsiasi operazione eseguita da una rete neurale poteva essere eseguita anche da un computer; infatti le reti che furono prodotte risultavano essere automi a stati finiti in grado di realizzare la logica delle proposizioni e di formulare ipotesi sulla natura dei meccanismi cerebrali, il tutto equivalentemente ad un programma per computer.
 	    Il frutto di tale lavoro fu reso noto nel 1943 con la pubblicazione del libro ``\emph{A logical calculus of the ideas immanent in nervous activity}'', nel quale fu schematizzato un combinatore lineare a soglia con dati binari multipli in entrata e un singolo dato binario in uscita.
@@ -89,14 +97,14 @@
 		
 		\section{Analogie tra rete neurale umana e rete neurale artificiale}
 	
-		Una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali, il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, come la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme ecc\dots 
-		In altre parole, lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale, in particolar modo di quello umano, il quale presenta numerose caratteristiche che risultano essere ottime per la riproduzione di un sistema computazionale che lo imiti: è flessibile in quanto si adatta ad ogni tipologia di situazione imparando, è robusto in quanto le cellule nervose muoiono ogni giorno senza avere effetti significativi sulla performance del sistema, è resistente, piccolo e dissipa poca energia. 
+		Come accennato nel paragrafo precedente, una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali, il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, ad esempio la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme ecc\dots \\
+		In altre parole, lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale, in particolar modo di quello umano, il quale presenta numerose caratteristiche che risultano essere ottime per la riproduzione di un sistema computazionale che lo imiti: è flessibile in quanto si adatta ad ogni tipologia di situazione imparando, è robusto in quanto le cellule nervose muoiono ogni giorno senza avere effetti significativi sulla performance del sistema, è resistente, piccolo e dissipa poca energia. \\
 		Tale riproduzione non deve essere intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano. 
 	
 		Il sistema nervoso umano può essere pensato, quindi, come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo e che riesce a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione, basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari.
 		
 		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve illustrazione e descrizione del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.
-     	\clearpage
+     	
   		Il sistema nervoso è diviso in tre stadi:
 		\begin{itemize}
 			\item Recettori
@@ -116,41 +124,7 @@
 	
 	
 	
-		Sono sistemi computazionali ispirati a processi biologici con le seguenti caratteristiche:  • formati da milioni di unità computazionali (neuroni) capaci di eseguire una somma pesata;  • elevato numero di connessioni pesate (sinapsi) tra le unità;  • altamente paralleli e non lineari;  • adattivi e addestrabili e l'apprendimento avviene attraverso la modifica dei pesi delle connessioni;  • tolleranti agli errori in quanto la memorizzazione avviene in modo diffuso;  • non c'è distinzione tra memoria e area di calcolo;  • capacità di generalizzazione: producono output ragionevoli con input mai incontrati prima durante l'apprendimento. 
 		
-		L'attivitàdella singola unitàèsemplice (funzione di trasferimento) e la potenza dei modello risiede nella configurazione delle connessioni (topologia e intensità).
-		Partendo dalle unitàdi input, a cui vengono forniti i dati dei problema da risolvere, la computazione si propaga in parallelo nella rete fino alle unitàdi output, che forniscono il risultato.
-		Una RN non viene programmata per eseguire una certa attività, ma addestrata (utilizzando un algoritmo di apprendimento automatico) mediante una serie di esempi della realtàda modellare
-		
-		
-		
-	Nel sistema nervoso esistono miliardi di neuroni (cellule nervose). Un neurone è formato da un corpo cellulare e da molti prolungamenti ramificati, detti dendriti, attraverso i quali il neurone riceve segnali elettrici da altri neuroni. Ogni neurone ha anche un prolungamento filamentoso chiamato assone, la cui lunghezza può variare da circa 1 cm a qualche metro. All’estremità l’assone si ramifica formando terminali attraverso i quali i segnali elettrici vengono trasmessi ad altre cellule (ad esempio ai dendriti di altri neuroni). Tra un terminale di un assone e la cellula ricevente esiste uno spazio. I segnali superano questo spazio per mezzo di sostanze chimiche dette neurotrasmettitori. Il punto di connessione tra terminale e dendrite è detto sinapsi. Un neurone si “attiva”, cioè trasmette un impulso elettrico lungo il suo assone quando si verifica una differenza di potenziale elettrico tra l’interno e l’esterno della cellula. L’impulso elettrico provoca la liberazione di un neurotrasmettitore dai terminali dell’assone, che a loro volta possono, ad esempio, influenzare altri neuroni. I neuroni biologici sono da 5 a 6 ordini di grandezza più lenti dei componenti elettronici convenzionali: un evento in un chip si verifica in alcuni nanosecondi (10-9 s) mentre un evento neurale in alcuni millisecondi (10-3 s). Il cervello umano è un calcolatore complesso, non lineare e parallelo. Pur essendo costituito da elementi di elaborazione molto semplici (i neuroni), è in grado di eseguire computazioni complesse, come il riconoscimento, la percezione e il controllo del movimento, molte volte più velocemente del più veloce degli attuali calcolatori. Il cervello è in grado di modificare le connessioni tra i neuroni in base all’esperienza acquisita, cioè è in grado di imparare. 
-		
-		
-	 
-		La corteccia celebrale è formata da circa 10 bilioni di neuroni e 60 trilioni di sinapsi. 
-		ogni neurone ha velocità dell'ordine dei millisecondi, contro i nanosecondi dei chip in silicio; 
-		l'efficienza energetica è di circa 10-16 J per operazione per secondo contro i 10-6 del migliore
-		computer in uso oggi. 
-		
-		Un neurone è caratterizzato da:
-		corpo cellulare: l'unità di calcolo (soma); 
-		assone: linea di trasmissione in uscita; 
-		dendriti: le zone recettive. 
-		
-		Il neurone ha il compito di fare una somma pesata degli ingressi e se il risultato supera un certo valore soglia produce un potenziale d'azione che viene inviato all'assone, altrimenti non fa nulla. 
-		
-		Il potenziale d'azione consiste in una scarica di impulsi elettrici e il motivo di ciò è che l'assone è molto lungo e fine, caratterizzato da alta resistenza elettrica e un voltaggio applicato ad un estremità decade in modo esponenziale con la distanza; inviando diversi impulsi elettrici questo problema di trasmissione viene evitato. 
-		
-		Le sinapsi sono unità funzionali dalla struttura elementare che gestisce le iterazioni tra neuroni. La sinapsi più comune è la sinapsi chimica che svolge le seguenti operazioni: 
-		4
-		• un processo presinaptico libera una sostanza trasmettitrice che si diffonde lungo la giunzione sinaptica tra 2 neuroni; • un processo postsinaptico azionato dalla sostanza trasmettitrice rigenera un segnale elettrico. 
-		
-		Quindi una sinapsi converte un segnale elettrico in chimico della presinapsi e poi da chimico a elettrico nella postsinapsi. 
-		
-		Ci sono 2 tipi di sinapsi: 1. eccitatorie: favoriscono la generazione di elettricità nel neurone postsinaptico; 2. inibitorie: inibiscono la generazione di elettricità nel neurone postsinaptico. 
-		
-		Pare che l'apprendimento avvenga attraverso variazioni nell'efficacia sinaptica di ogni sianpsi. 
 		
 		
 		
