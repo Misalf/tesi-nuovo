@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  6 APR 2017 20:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  6 APR 2017 21:46
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -616,12 +616,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
@@ -630,46 +625,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
+
+ []
+
 [6
 
 ] [7] [8] [9]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 112.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 117.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 112.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
 
-<IMMAGINI/GRAFOSISTNERV.png, id=36, 398.23781pt x 81.30376pt>
-File: IMMAGINI/GRAFOSISTNERV.png Graphic file (type png)
+<IMMAGINI/Sistemanervoso.png, id=36, 703.87968pt x 145.29282pt>
+File: IMMAGINI/Sistemanervoso.png Graphic file (type png)
 
-<use IMMAGINI/GRAFOSISTNERV.png>
-Package pdftex.def Info: IMMAGINI/GRAFOSISTNERV.png used on input line 119.
-(pdftex.def)             Requested size: 390.0pt x 79.62502pt.
- [10 <./IMMAGINI/GRAFOSISTNERV.png>]
-<IMMAGINI/neuron.png, id=42, 571.38469pt x 295.1025pt>
+<use IMMAGINI/Sistemanervoso.png>
+Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 124.
+(pdftex.def)             Requested size: 390.0pt x 80.501pt.
+ [10 <./IMMAGINI/Sistemanervoso.png>]
+<IMMAGINI/neuron.png, id=44, 571.38469pt x 295.1025pt>
 File: IMMAGINI/neuron.png Graphic file (type png)
 
 <use IMMAGINI/neuron.png>
-Package pdftex.def Info: IMMAGINI/neuron.png used on input line 135.
+Package pdftex.def Info: IMMAGINI/neuron.png used on input line 140.
 (pdftex.def)             Requested size: 390.0pt x 201.42351pt.
- [11 <./IMMAGINI/neuron.png>] [12] [13]
+ [11 <./IMMAGINI/neuron.png>] [12]
 Capitolo 2.
-[14
+[13
 
 ]
 Capitolo 3.
-[15
+[14
 
-] [16
+] [15
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
  4351 strings out of 493333
- 54560 string characters out of 3139198
- 134447 words of memory out of 3000000
+ 54565 string characters out of 3139198
+ 135447 words of memory out of 3000000
  7788 multiletter control sequences out of 15000+200000
  10503 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -681,9 +681,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (16 pages, 726662 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (15 pages, 731095 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

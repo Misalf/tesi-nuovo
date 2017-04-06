@@ -62,6 +62,9 @@
 		
 	%INIZIO DEL PRIMO CAPITOLO
 	\chapter{Rete neurale artificiale}
+		
+		
+		
 		\section{Cenni storici ed origini}
 		
 		Le reti neurali artificiali, dall'inglese \textit{Artificial Neural Network (ANN)}, e la conseguente computazione neurale, sono state costruite ispirandosi ai sistemi neurali biologici, con l'obiettivo di modellarne il comportamento e la struttura e di simularne le funzioni basilari e fondamentali.
@@ -95,13 +98,15 @@
 		Tale algoritmo, proposto nel 1986 da David E.Rumelhart, G. Hinton e R. J. Williams consentì di superare le problematiche legate al percettrone di Rosenblatt e permise di risolvere il problema della separabilità non lineare delle soluzioni, rendendo quindi possibile calcolare la funzione XOR e segnando il definitivo rilancio delle reti neurali.
 		
 		
-		\section{Analogie tra rete neurale umana e rete neurale artificiale}
+		
+		\section{Il sistema nervoso e le reti neurali artificiali}
 	
 		Come accennato nel paragrafo precedente, una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali, il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, ad esempio la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme ecc\dots \\
 		In altre parole, lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale, in particolar modo di quello umano, il quale presenta numerose caratteristiche che risultano essere ottime per la riproduzione di un sistema computazionale che lo imiti: è flessibile in quanto si adatta ad ogni tipologia di situazione imparando, è robusto in quanto le cellule nervose muoiono ogni giorno senza avere effetti significativi sulla performance del sistema, è resistente, piccolo e dissipa poca energia. \\
-		Tale riproduzione non deve essere intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano. 
-	
+		Tale riproduzione non deve essere intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano.\\
 		Il sistema nervoso umano può essere pensato, quindi, come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo e che riesce a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione, basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari.
+		
+		
 		
 		\section{Il neurone biologico}
 		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve illustrazione e descrizione del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.
@@ -116,7 +121,7 @@
 		
 		\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\linewidth]{IMMAGINI/GRAFOSISTNERV}
+		\includegraphics[width=1\linewidth]{IMMAGINI/Sistemanervoso}
 		\caption{Stadi del sistema nervoso}
 		\label{fig: stadi sistema nervoso}
 		\end{figure}
@@ -133,42 +138,22 @@
 		 \begin{figure}[h]
 		 	\centering
 		 	\includegraphics[width=1\linewidth]{IMMAGINI/neuron}
-		 	\caption{}
+		 	\caption{Neurone biologico}
 		 	\label{fig:neuron}
 		 \end{figure}
 	 
 	 	Tra un terminale di un assone e la cellula ricevente, esiste uno spazio che viene superato dagli impulsi elettrici per mezzo dei \emph{neurotrasmettitori}, sostanze chimiche che guidano le informazioni tra le cellule e che si suddividono in \emph{eccitatori} se favoriscono la creazione dell'impulso e \emph{soppressori} se inibiscono l'impulso.\\ Il punto di connessione tra il terminale di un neurone ed il dendrite di un altro costituisce una struttura altamente specializzata che prende il nome di \emph{sinapsi} e che risulta quindi essere la responsabile delle interazioni. La sinapsi svolge due processi: un processo \emph{presinaptico} in cui viene liberato il neurotramettitore ed un processo \emph{postsinaptico}, azionato dal neurotrasmettitore, che rigenera il segnale elettrico.Quindi una sinapsi converte un segnale elettrico in chimico durante il processo postsinaptico per poi riconvertirlo in elettrico durante la postsinapsi.\\ 
 	 	Un neurone trasmette un impulso elettrico lungo il suo assone nel momento in cui si verifica una differenza di potenziale elettrico tra l’interno e l’esterno della cellula, provocando la liberazione di un neurotrasmettitore di cui sopra.
+		
+		
 		 
-		
-		
-		
-		
-		
-		
-		
 		\section{Struttura e modello matematico}
-		1 I neuroni biologici sono da 5 a 6 ordini di grandezza più lenti dei componenti elettronici convenzionali: un evento in un chip si verifica in alcuni nanosecondi (10-9 s) mentre un evento neurale in alcuni millisecondi (10-3 s). Il cervello umano è un calcolatore complesso, non lineare e parallelo. Pur essendo costituito da elementi di elaborazione molto semplici (i neuroni), è in grado di eseguire computazioni complesse, come il riconoscimento, la percezione e il controllo del movimento, molte volte più velocemente del più veloce degli attuali calcolatori. Il cervello è in grado di modificare le connessioni tra i neuroni in base all’esperienza acquisita, cioè è in grado di imparare. 
 		
-		2 Sono sistemi computazionali ispirati a processi biologici con le seguenti caratteristiche:  • formati da milioni di unità computazionali (neuroni) capaci di eseguire una somma pesata;  • elevato numero di connessioni pesate (sinapsi) tra le unità;  • altamente paralleli e non lineari;  • adattivi e addestrabili e l'apprendimento avviene attraverso la modifica dei pesi delle connessioni;  • tolleranti agli errori in quanto la memorizzazione avviene in modo diffuso;  • non c'è distinzione tra memoria e area di calcolo;  • capacità di generalizzazione: producono output ragionevoli con input mai incontrati prima durante l'apprendimento. 
-		
-		2 L'attività della singola unità è semplice (funzione di trasferimento) e la potenza dei modello risiede nella configurazione delle connessioni (topologia e intensità).
+		Basandoci sulla rete neurale umana allora una rete neurale artificiale non è null'altro che un sistema computazionale formato da milioni unità computazionali, che corrispondono ai neuroni umani e che sono capaci di eseguire una somma pesata. Queste unità sono collegate tra loro attraverso un elevato numero di connessioni pesate, così come le sinapsi collegano i neuroni nella rete umana. Abbiamo a che fare quindi con sistemi altamente paralleli ed addestrabili il cui apprendimento avviene attraverso la modifica dei pesi delle connessioni. Sono inoltre sistemi tolleranti agli errori con la capacità di produrre output ragionevoli con input mai incontrati prima durante l'apprendimento. L'attività della singola unità è semplice e la potenza dipende dalla configurazione delle connessioni.
 		Partendo dalle unità di input, a cui vengono forniti i dati dei problema da risolvere, la computazione si propaga in parallelo nella rete fino alle unità di output, che forniscono il risultato.
-		Una RN non viene programmata per eseguire una certa attività, ma addestrata (utilizzando un algoritmo di apprendimento automatico) mediante una serie di esempi della realtà da modellare
+		Il tratto peculiare delle reti neurali è che queste vengono addestrate utilizzando algoritmi di apprendimento mediante una serie di esempi della realtà da modellare.
 		
-		
-		4 Il neurone ha il compito di fare una somma pesata degli ingressi e se il risultato supera un certo valore soglia produce un potenziale d'azione che viene inviato all'assone, altrimenti non fa nulla. 
-		
-		Il potenziale d'azione consiste in una scarica di impulsi elettrici e il motivo di ciò è che l'assone è molto lungo e fine, caratterizzato da alta resistenza elettrica e un voltaggio applicato ad un estremità decade in modo esponenziale con la distanza; inviando diversi impulsi elettrici questo problema di trasmissione viene evitato. 
-		
-		Le sinapsi sono unità funzionali dalla struttura elementare che gestisce le iterazioni tra neuroni. La sinapsi più comune è la sinapsi chimica che svolge le seguenti operazioni: 
-		4
-		• un processo presinaptico libera una sostanza trasmettitrice che si diffonde lungo la giunzione sinaptica tra 2 neuroni; • un processo postsinaptico azionato dalla sostanza trasmettitrice rigenera un segnale elettrico. 
-		
-		Quindi una sinapsi converte un segnale elettrico in chimico della presinapsi e poi da chimico a elettrico nella postsinapsi. 
-		
-		
-		Pare che l'apprendimento avvenga attraverso variazioni nell'efficacia sinaptica di ogni sianpsi. 
+		 
 		\section{Architettura}
 		\section{Funzioni di attivazione}
 	%FINE DEL PRIMO CAPITOLO
