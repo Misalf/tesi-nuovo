@@ -35,7 +35,7 @@
 		\newpage
 		\null\vspace{\stretch{1}}
 		\thispagestyle{empty}
-		\textit{PUTTANE E FROCI}
+		\textit{Dedica}
 		\vspace{\stretch{2}}\null
 	\end{flushright} 
    	%FINE DEDICA
@@ -108,9 +108,8 @@
 		
 		
 		\section{Il neurone biologico}
+		
 		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve illustrazione e descrizione del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.
-     	
-  		Sebbene sotto molti punti di vista la conoscenza del cervello sia ancora limitata, si conoscono molte informazioni circa l’anatomia e la fisiologia delle reti neurali biologiche.
   		Il sistema nervoso è diviso in tre stadi:
 		\begin{itemize}
 			\item I \emph{recettori}, che convertono gli stimoli esterni in impulsi elettrici che vengono inviati alla rete neurale;
@@ -146,9 +145,29 @@
 		
 		
 		 
-		\section{Struttura e modello matematico}
+		\section{Modello del neurone artificiale}
 		
-		Basandoci sulla rete neurale umana allora una rete neurale artificiale non è null'altro che un sistema computazionale formato da milioni di unità computazionali, che corrispondono ai neuroni umani, e che sono capaci di eseguire una somma pesata. Queste unità sono collegate tra loro attraverso un elevato numero di connessioni pesate, così come le sinapsi collegano i neuroni nella rete umana. Abbiamo a che fare quindi con sistemi altamente paralleli ed addestrabili il cui apprendimento avviene attraverso la modifica dei pesi delle connessioni. Sono inoltre sistemi tolleranti agli errori con la capacità di produrre output ragionevoli con input mai incontrati prima durante l'apprendimento. \textbf{Perchè addestrabili?} L'attività della singola unità è semplice e la potenza dipende dalla configurazione delle connessioni.
+		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, e che sono capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni pesate, così come le sinapsi collegano i neuroni nella rete umana. \\
+		Il neurone artificiale è l'unità di calcolo fondamentale della rete neurale. Gli elementi base che lo rappresentano sono:
+		\begin{itemize}
+			\item Un insieme di connessioni ciascuna delle quali è caratterizzata da un \emph{peso} che può essere sia positivo che negativo e che rappresenta l'\emph{efficacia sinaptica}, ovvero la forza della connessione;
+			\item Una funzione di attivazione;
+			\item Un valore di soglia;
+			\item Un sommatore.
+		\end{itemize}
+		
+		L'insieme di connessione è formato da $n$ canali di ingresso $x_{1}, x_{2}, ... ,x_{n}$ all'interno dei quali  $y$ \theta
+		
+		
+		 2. un sommatore che somma i segnali in input pesati dalle rispettive sinapsi, producendo in output una combinazione lineare degli input; 3. una funzione di attivazione per limitare l'ampiezza dell'output di un neurone. Tipicamente per comodità l'ampiezza degli output appartengono all'intervallo [0,1] oppure [-1,1]. Il modello neuronale include anche un valore soglia che ha l'effetto, a seconda della sua positività o negatività, di aumentare o diminuire l'input netto alla funzione di attivazione.
+		
+		2)  Un neurone artificiale è rappresentato da:
+	
+		na soglia
+		na funzione di attivazione
+		L'effetto di un segnale x sul neurone postsinaptico è semplicemente uguale al prodotto w · x, dove w è il peso attribuito alla sinapsi corrispondente. Il potenziale di attivazione è dato dalla somma algebrica dei prodotti di tutti i segnali di ingresso xj e i valori dei pesi corrispondenti wij 
+		
+		io) Abbiamo a che fare quindi con sistemi altamente paralleli ed addestrabili il cui apprendimento avviene attraverso la modifica dei pesi delle connessioni. Sono inoltre sistemi tolleranti agli errori con la capacità di produrre output ragionevoli con input mai incontrati prima durante l'apprendimento. \textbf{Perchè addestrabili?} L'attività della singola unità è semplice e la potenza dipende dalla configurazione delle connessioni.
 		Partendo dalle unità di input, a cui vengono forniti i dati dei problema da risolvere, la computazione si propaga in parallelo nella rete fino alle unità di output che forniscono il risultato.
 		Il tratto peculiare delle reti neurali è che queste vengono addestrate utilizzando algoritmi di apprendimento mediante una serie di esempi della realtà da modellare.
 		
