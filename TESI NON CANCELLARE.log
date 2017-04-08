@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  8 APR 2017 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.30)  8 APR 2017 23:56
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -506,20 +506,20 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 ("TESI NON CANCELLARE.aux")
 \openout1 = `"TESI NON CANCELLARE.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Info: Redefining \it@ocap on input line 29.
-LaTeX Info: Redefining \it@ccap on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Info: Redefining \it@ocap on input line 30.
+LaTeX Info: Redefining \it@ccap on input line 30.
 
 
 File italian.ldf warning: 
@@ -527,7 +527,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 29.
+italian.ldf    on input line 30.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -590,17 +590,17 @@ G,.JBIG2,.JB2,.eps]
 File: IMMAGINI/Frontespizio.png Graphic file (type png)
 
 <use IMMAGINI/Frontespizio.png>
-Package pdftex.def Info: IMMAGINI/Frontespizio.png used on input line 35.
-(pdftex.def)             Requested size: 537.75343pt x 837.28513pt.
+Package pdftex.def Info: IMMAGINI/Frontespizio.png used on input line 36.
+(pdftex.def)             Requested size: 597.50787pt x 930.32635pt.
  [1
 
  <./IMMAGINI/Frontespizio.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 38.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 38.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -617,81 +617,93 @@ LARE.toc")
 ]
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 [6
 
 ] [7] [8] [9]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 106.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 106.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
 
-<IMMAGINI/Sistemanervoso.png, id=37, 703.87968pt x 145.29282pt>
+<IMMAGINI/Sistemanervoso.png, id=38, 703.87968pt x 145.29282pt>
 File: IMMAGINI/Sistemanervoso.png Graphic file (type png)
 
 <use IMMAGINI/Sistemanervoso.png>
-Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 114.
+Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 115.
 (pdftex.def)             Requested size: 390.0pt x 80.501pt.
  [10 <./IMMAGINI/Sistemanervoso.png>]
-<IMMAGINI/neuron.png, id=45, 571.38469pt x 295.1025pt>
+<IMMAGINI/neuron.png, id=46, 571.38469pt x 295.1025pt>
 File: IMMAGINI/neuron.png Graphic file (type png)
 
 <use IMMAGINI/neuron.png>
-Package pdftex.def Info: IMMAGINI/neuron.png used on input line 131.
+Package pdftex.def Info: IMMAGINI/neuron.png used on input line 132.
 (pdftex.def)             Requested size: 390.0pt x 201.42351pt.
- [11 <./IMMAGINI/neuron.png>]
-<IMMAGINI/palla1.png, id=51, 387.69844pt x 227.34938pt>
+ [11 <./IMMAGINI/neuron.png>] [12]
+<IMMAGINI/palla1.png, id=56, 387.69844pt x 227.34938pt>
 File: IMMAGINI/palla1.png Graphic file (type png)
 
 <use IMMAGINI/palla1.png>
-Package pdftex.def Info: IMMAGINI/palla1.png used on input line 151.
+Package pdftex.def Info: IMMAGINI/palla1.png used on input line 154.
 (pdftex.def)             Requested size: 272.99881pt x 160.09053pt.
- [12 <./IMMAGINI/palla1.png>]
+
 <IMMAGINI/palla2.png, id=57, 511.9125pt x 227.34938pt>
 File: IMMAGINI/palla2.png Graphic file (type png)
 
 <use IMMAGINI/palla2.png>
-Package pdftex.def Info: IMMAGINI/palla2.png used on input line 165.
+Package pdftex.def Info: IMMAGINI/palla2.png used on input line 177.
 (pdftex.def)             Requested size: 390.0pt x 173.20708pt.
- [13 <./IMMAGINI/palla2.png>]
-<IMMAGINI/palla3.png, id=64, 547.2947pt x 271.0125pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13
+
+ <./IMMAGINI/palla1.png>]
+<IMMAGINI/palla3.png, id=63, 547.2947pt x 271.0125pt>
 File: IMMAGINI/palla3.png Graphic file (type png)
 
 <use IMMAGINI/palla3.png>
-Package pdftex.def Info: IMMAGINI/palla3.png used on input line 184.
+Package pdftex.def Info: IMMAGINI/palla3.png used on input line 196.
 (pdftex.def)             Requested size: 390.0pt x 193.12321pt.
- [14 <./IMMAGINI/palla3.png>] [15]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <./IMMAGINI/palla2.png>] [15 <./IMMAGINI/palla3.png>] [16
+
+] [17]
 Capitolo 2.
-[16
+[18
 
 ]
 Capitolo 3.
-[17
+[19
 
-] [18
+] [20
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
  4371 strings out of 493333
- 54940 string characters out of 3139198
- 139480 words of memory out of 3000000
+ 54940 string characters out of 3139153
+ 139478 words of memory out of 3000000
  7804 multiletter control sequences out of 15000+200000
  10862 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -707,9 +719,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (18 pages, 834453 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (20 pages, 840336 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

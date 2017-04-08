@@ -17,7 +17,7 @@
 \newcommand\AlCentroPagina[1]{% 
 \AddToShipoutPicture*{\AtPageCenter{%
 \makebox(0,0){\includegraphics%
-[width=0.9\paperwidth]{#1}}}}}
+[width=1\paperwidth]{#1}}}}}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
 \author{Maria Luisa Feola}
@@ -25,6 +25,7 @@
 
 %`` e '': sono le virgolette del TeX; non esistono, nel TeX, le virgolette semplici ( " ) come in Word; le virgolette `` nella tastiera italiana vengono ottenute con la combinazione di tasti “ALT + 96”, mentre le altre sono il segno dell'apostrofo;
 
+% ~ ALT+126 tilde da mettere tra due parole per non farle staccare quando si va a capo
 
 \begin{document}
 	%FRONTESPIZIO
@@ -35,7 +36,7 @@
 		\newpage
 		\null\vspace{\stretch{1}}
 		\thispagestyle{empty}
-		\textit{Ciccino $<3$}
+		\textit{1 $20 \sqrt(e) $ u $<3$}
 		\vspace{\stretch{2}}\null
 	\end{flushright} 
    	%FINE DEDICA
@@ -99,7 +100,7 @@
 		
 		\section{Il neurone biologico}
 		
-		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve illustrazione e descrizione del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.
+		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve illustrazione e descrizione \textbf{(illustrazione e descrizione in questo caso non sono sinonimi?)} del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.
   		Il sistema nervoso è diviso in tre stadi:
 		
 		\begin{itemize}
@@ -140,13 +141,15 @@
 		 
 		\section{Modello del neurone artificiale}
 		
-		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, e che sono capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni, così come le sinapsi collegano i neuroni nella rete umana. \\
+		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, e che \textbf{(toglierei il che)} sono capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni, così come le sinapsi collegano i neuroni nella rete umana. \\
 		Consideriamo una generica unità $j$ costituita da $n$ canali di ingresso:
 		\begin{center} $x_{1}, x_{2}, ... ,x_{n}$  \end{center}
 		
 		Gli input provenienti da strati precedenti o direttamente dall'esterno entrano nel neurone tramite tali canali. 
 		
-		\begin{figure}[h]
+		\clearpage
+		
+		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.7\linewidth]{IMMAGINI/palla1}
 			\caption{Canali di un neurone}
@@ -154,10 +157,19 @@
 		\end{figure}
 		
 		Sulle connessioni sono presenti dei \emph{pesi sinaptici} $w_{i}$, numeri reali che denotano l'\emph{efficacia sinaptica}, ovvero la forza della connessione. Se $w_{i}>0$ il canale è detto \emph{eccitatorio}, se $w_{i}<0$ il canale è \emph{inibitorio}.\\
-		I segnali in entrata, pesati dalle rispettive sinapsi, sono convogliati nel \emph{soma} del neurone artificiale, all'interno del quale vengono sommati, producendo una combinazione lineare così definita:
+		I segnali in entrata, pesati dalle rispettive sinapsi, sono convogliati nel \emph{soma} del neurone artificiale, all'interno del quale vengono sommati producendo una combinazione lineare così definita:
 		
 		\begin{center} $\sum\limits_{i=1}^n w_{i}x_{i}$  \end{center}
 		
+		\textbf{Qua farei una cosa del genere (o comunque qualcosa di simile se ti piace) i valori di 2 e 3 cm nel codice sono empirici e sperimentali xD}
+		\begin{center}
+			\begin{tabular}{ccr}
+			\textbf{net:} \hspace{2cm} & $\sum\limits_{i=1}^n w_{i}x_{i}$ & \hspace{3cm} \\
+			\end{tabular}
+		\end{center}
+
+		%qua sopra ho fatto una tabella \begin{tabular} i "ccr" stanno a significare che fai 3 colonne (3 sono le lettere usate) e che la prima e la seconda colonna devono avere il contenuto centrato mentre la terza colonna sulla destra. Separi il contenuto da una colonna all'altra con & mentre le due \\ dicono che è finita la riga della tabella.
+		 
 		La somma pesata degli ingressi viene indicata con la parola \emph{net} ed il segnale con cui il neurone trasmette la sua attività all'esterno è calcolato applicando una \emph{funzione di attivazione} $\varphi$ che limita l'ampiezza dell'output; si assume per comodità che le ampiezze degli output appartengono all'intervallo $[0,1]$ oppure $[-1,1]$.
 		
 		\begin{figure}[h]
@@ -179,12 +191,14 @@
 		\begin{center} $y= \varphi (\sum\limits_{i=0}^n w_{i}x_{i})$  \end{center}
 		Il modello finale sarà:
 		
-		\begin{figure}[h]
+		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=1\linewidth]{IMMAGINI/palla3}
 			\caption{Modello neurone con soglia}
 			\label{fig:palla3}
 		\end{figure}
+
+		\clearpage
 
 		L'effetto di un segnale $ x_{i} $ sul neurone è quindi uguale al prodotto 
 		$w_{i}$ $\cdot$ $x_{i}$ dove $w_{i}$ è il peso attribuito alla sinapsi corrispondente ed il potenziale di attivazione è dato dalla somma algebrica dei prodotti di tutti i segnali di ingresso e dei valori dei pesi corrispondenti.\\
@@ -202,6 +216,8 @@
 		MANNAGGIA TUTTI GLI ELENCHI CHE NON ENTRANO NELLE PAGINE! COME POSSO FARE?
 		
 		SEI UN CICCINO!
+		
+\textbf{NON TI PREOCCUPARE SE LE COSE VENGONO SPEZZATE. TE GUARDA IL CODICE E CAPISCI COME STANNO MESSE LE COSE. QUANDO HAI FINITO DI SCRIVERE SI RIVEDE TUTTO QUANTO PER SISTEMARE, TRANQUILLA. BASTA UN CODICETTO QUA E LA E TUTTO SI SISTEMA. SECONDO ME HAI CONFUSO LE DUE IMMAGINI PALLA2 E PALLA3, CONTROLLA.}
 		
 		Discorso scritto da me che mi piace e che devo introdurre in questo paragrafo!\\
 		io) Abbiamo a che fare quindi con sistemi altamente paralleli ed addestrabili il cui apprendimento avviene attraverso la modifica dei pesi delle connessioni. Sono inoltre sistemi tolleranti agli errori con la capacità di produrre output ragionevoli con input mai incontrati prima durante l'apprendimento. \textbf{Perchè addestrabili?} L'attività della singola unità è semplice e la potenza dipende dalla configurazione delle connessioni.

@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {1.2}Il sistema nervoso e le reti neurali artificiali}{9}
 \contentsline {section}{\numberline {1.3}Il neurone biologico}{10}
 \contentsline {section}{\numberline {1.4}Modello del neurone artificiale}{12}
-\contentsline {section}{\numberline {1.5}Funzioni di attivazione}{15}
-\contentsline {chapter}{\numberline {2}Feed Forward}{16}
-\contentsline {chapter}{\numberline {3}Ricorrenti}{17}
-\contentsline {chapter}{Riferimenti bibliografici}{18}
+\contentsline {section}{\numberline {1.5}Funzioni di attivazione}{16}
+\contentsline {chapter}{\numberline {2}Feed Forward}{18}
+\contentsline {chapter}{\numberline {3}Ricorrenti}{19}
+\contentsline {chapter}{Riferimenti bibliografici}{20}
