@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  9 APR 2017 12:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  9 APR 2017 14:06
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -634,59 +634,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
 [6
 
 ] [7] [8] [9]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
 
-<IMMAGINI/Sistemanervoso.png, id=39, 703.87968pt x 145.29282pt>
+[10] <IMMAGINI/Sistemanervoso.png, id=43, 703.87968pt x 145.29282pt>
 File: IMMAGINI/Sistemanervoso.png Graphic file (type png)
 
 <use IMMAGINI/Sistemanervoso.png>
-Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 115.
+Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 133.
 (pdftex.def)             Requested size: 390.0pt x 80.501pt.
- [10 <./IMMAGINI/Sistemanervoso.png>]
-<IMMAGINI/neuron.png, id=47, 571.38469pt x 295.1025pt>
+
+<IMMAGINI/neuron.png, id=45, 571.38469pt x 295.1025pt>
 File: IMMAGINI/neuron.png Graphic file (type png)
 
 <use IMMAGINI/neuron.png>
-Package pdftex.def Info: IMMAGINI/neuron.png used on input line 132.
+Package pdftex.def Info: IMMAGINI/neuron.png used on input line 150.
 (pdftex.def)             Requested size: 390.0pt x 201.42351pt.
- [11 <./IMMAGINI/neuron.png>]
-<IMMAGINI/palla1.png, id=52, 387.69844pt x 227.34938pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11 <./IMMAGINI/Sistemanervoso.png>] [12 <./IMMAGINI/neuron.png>]
+<IMMAGINI/palla1.png, id=55, 387.69844pt x 227.34938pt>
 File: IMMAGINI/palla1.png Graphic file (type png)
 
 <use IMMAGINI/palla1.png>
-Package pdftex.def Info: IMMAGINI/palla1.png used on input line 153.
+Package pdftex.def Info: IMMAGINI/palla1.png used on input line 171.
 (pdftex.def)             Requested size: 272.99881pt x 160.09053pt.
- [12 <./IMMAGINI/palla1.png>]
-<IMMAGINI/palla2.png, id=58, 511.9125pt x 227.34938pt>
+ [13 <./IMMAGINI/palla1.png>]
+<IMMAGINI/palla2.png, id=62, 511.9125pt x 227.34938pt>
 File: IMMAGINI/palla2.png Graphic file (type png)
 
 <use IMMAGINI/palla2.png>
-Package pdftex.def Info: IMMAGINI/palla2.png used on input line 167.
+Package pdftex.def Info: IMMAGINI/palla2.png used on input line 185.
 (pdftex.def)             Requested size: 390.0pt x 173.20708pt.
- [13 <./IMMAGINI/palla2.png>]
-<IMMAGINI/palla3.png, id=64, 547.2947pt x 271.0125pt>
+ [14 <./IMMAGINI/palla2.png>]
+<IMMAGINI/palla3.png, id=67, 547.2947pt x 271.0125pt>
 File: IMMAGINI/palla3.png Graphic file (type png)
 
 <use IMMAGINI/palla3.png>
-Package pdftex.def Info: IMMAGINI/palla3.png used on input line 186.
+Package pdftex.def Info: IMMAGINI/palla3.png used on input line 204.
 (pdftex.def)             Requested size: 390.0pt x 193.12321pt.
- [14
+ [15
 
- <./IMMAGINI/palla3.png>] [15]
+ <./IMMAGINI/palla3.png>] [16]
 Capitolo 2.
-[16
+[17
 
 ]
 Capitolo 3.
-[17
+[18
 
-] [18
+] [19
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
@@ -709,9 +713,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (18 pages, 836419 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (19 pages, 817575 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
+ 120 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

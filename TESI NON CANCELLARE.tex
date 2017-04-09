@@ -89,12 +89,30 @@
 		
 		
 		
-		\section{Il sistema nervoso e le reti neurali artificiali}
+		\section{Analogie con il sistema nervoso ed applicazioni delle ANN}
 	
-		Come accennato nel paragrafo precedente, una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali, il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, ad esempio la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme ecc\dots \\
+		Come accennato nel paragrafo precedente, una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali, il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, ad esempio la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme  \\
 		In altre parole, lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale, in particolar modo di quello umano, il quale presenta numerose caratteristiche che risultano essere ottime per la riproduzione di un sistema computazionale che lo imiti: è flessibile poiché si adatta ad ogni tipologia di situazione imparando, è robusto in quanto le cellule nervose muoiono ogni giorno senza avere effetti significativi sulla performance del sistema, è resistente, piccolo e dissipa poca energia. \\
 		Tale riproduzione non deve essere intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano.\\
 		Il sistema nervoso umano può essere pensato, quindi, come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo e che riesce a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione, basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari.
+		
+		
+		
+		II campo tipico di applicazione delle reti neurali è quello dell'individuazione di legami di \textbf{ingresso-uscita} all'interno di sistemi complessi in cui i dati a disposizione sono molto 
+		numerosi o contenenti poca informazione e quindi non risulta chiaro quali relazioni deterministiche esistano tra le diverse variabili che caratterizzano il problema. Si tratta di campi in cui l'analisi statistica di tutte le variabili risulta difficoltosa o dispendiosa in termini di calcolo.\\ 
+		Ecco un breve elenco di applicazioni note:
+		\begin{itemize}
+			\item Elaborazione delle immagini (compressione e miglioramento di immagini in tempo reale);
+			\item Elaborazione del suono (compressione e miglioramento in tempo reale della voce e della musica, aiuti audio e protesi ecc. \dots);
+			\item Rivelazione, verifica e identificazione di caratteri e oggetti (codici a barre, impronte digitali, firme, facce ecc. \dots );  
+			\item Riconoscimento della voce (elaborazione di parole dettate, identificazione di persone per via vocale, selezione telefonica, elaborazione di parole dettate ecc. \dots );
+			\item Applicazioni basate su ingressi di origine sensoriale (ingresso tattile, visivo, acustico, olfattivo);
+			\item Archivi (musica, video, immagini ecc. \dots);
+			\item Sintesi e miglioramento dati (fax, grafica, cancellazione di rumore, apparecchiature televisive ad alta risoluzione ecc. \dots);
+			\item Robot autonomi.
+		\end{itemize}
+		
+
 		
 		
 		
@@ -173,12 +191,12 @@
 		L'output finale sarà allora:
 		\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i})$  \end{center}
 	
-		\clearpage
 		E se indichiamo con $\theta$ il valore di soglia, si avrà:
 		\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i}-\theta)$  \end{center}
 		
 		Interpretando la soglia come il peso associato ad un ulteriore canale di ingresso $x_{0}$, e quindi $w_{0}=\theta$, potremmo anche scrivere : 
 		\begin{center} $y= \varphi (\sum\limits_{i=0}^n w_{i}x_{i})$  \end{center}
+		\clearpage
 		Il modello finale sarà:
 		
 		\begin{figure}[h]
