@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  9 APR 2017 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  9 APR 2017 15:02
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -617,32 +617,32 @@ LARE.toc")
 ]
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--76
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 [6
 
 ] [7] [8] [9]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 105.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
@@ -650,10 +650,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 File: IMMAGINI/Sistemanervoso.png Graphic file (type png)
 
 <use IMMAGINI/Sistemanervoso.png>
-Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 133.
+Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 127.
 (pdftex.def)             Requested size: 390.0pt x 80.501pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
@@ -661,7 +661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 File: IMMAGINI/neuron.png Graphic file (type png)
 
 <use IMMAGINI/neuron.png>
-Package pdftex.def Info: IMMAGINI/neuron.png used on input line 150.
+Package pdftex.def Info: IMMAGINI/neuron.png used on input line 144.
 (pdftex.def)             Requested size: 390.0pt x 201.42351pt.
  [11
 
@@ -670,7 +670,7 @@ Package pdftex.def Info: IMMAGINI/neuron.png used on input line 150.
 File: IMMAGINI/palla1.png Graphic file (type png)
 
 <use IMMAGINI/palla1.png>
-Package pdftex.def Info: IMMAGINI/palla1.png used on input line 171.
+Package pdftex.def Info: IMMAGINI/palla1.png used on input line 168.
 (pdftex.def)             Requested size: 272.99881pt x 160.09053pt.
  [13 <./IMMAGINI/palla1.png>]
 <IMMAGINI/palla2.png, id=62, 511.9125pt x 227.34938pt>
@@ -679,30 +679,34 @@ File: IMMAGINI/palla2.png Graphic file (type png)
 <use IMMAGINI/palla2.png>
 Package pdftex.def Info: IMMAGINI/palla2.png used on input line 185.
 (pdftex.def)             Requested size: 390.0pt x 173.20708pt.
- [14 <./IMMAGINI/palla2.png>]
-<IMMAGINI/palla3.png, id=67, 547.2947pt x 271.0125pt>
+ [14 <./IMMAGINI/palla2.png>] [15
+
+]
+<IMMAGINI/palla3.png, id=70, 547.2947pt x 271.0125pt>
 File: IMMAGINI/palla3.png Graphic file (type png)
 
 <use IMMAGINI/palla3.png>
-Package pdftex.def Info: IMMAGINI/palla3.png used on input line 204.
+Package pdftex.def Info: IMMAGINI/palla3.png used on input line 217.
 (pdftex.def)             Requested size: 390.0pt x 193.12321pt.
- [15 <./IMMAGINI/palla3.png>] [16]
+ [16
+
+ <./IMMAGINI/palla3.png>] [17]
 Capitolo 2.
-[17
+[18
 
 ]
 Capitolo 3.
-[18
+[19
 
-] [19
+] [20
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
- 4372 strings out of 493333
- 54948 string characters out of 3139198
- 139478 words of memory out of 3000000
- 7805 multiletter control sequences out of 15000+200000
+ 4381 strings out of 493333
+ 55054 string characters out of 3139198
+ 139533 words of memory out of 3000000
+ 7814 multiletter control sequences out of 15000+200000
  10862 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,14n,43p,1034b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -717,9 +721,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (19 pages, 831254 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (20 pages, 839744 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

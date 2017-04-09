@@ -66,7 +66,6 @@
 	\chapter{Rete neurale artificiale}
 		
 		
-		
 		\section{Cenni storici ed origini}
 		Le reti neurali artificiali, dall'inglese \textit{Artificial Neural Network (ANN)}, e la conseguente computazione neurale, sono state costruite ispirandosi ai sistemi neurali biologici, con l'obiettivo di modellarne il comportamento e la struttura e di simularne le funzioni basilari e fondamentali.\\
 		Una definizione semplice e formale di tali strutture è fornita dall'inventore del primo neurocomputer, il Dr. Robert Hecht-Nielsen che le definì come: \\
@@ -94,10 +93,7 @@
 		Come accennato nel paragrafo precedente, una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali, il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, ad esempio la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme  \\
 		In altre parole, lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale, in particolar modo di quello umano, il quale presenta numerose caratteristiche che risultano essere ottime per la riproduzione di un sistema computazionale che lo imiti: è flessibile poiché si adatta ad ogni tipologia di situazione imparando, è robusto in quanto le cellule nervose muoiono ogni giorno senza avere effetti significativi sulla performance del sistema, è resistente, piccolo e dissipa poca energia. \\
 		Tale riproduzione non deve essere intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano.\\
-		Il sistema nervoso umano può essere pensato, quindi, come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo e che riesce a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione, basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari.
-		
-		
-		
+		Il sistema nervoso umano può essere pensato, quindi, come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo e che riesce a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione, basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari.\\
 		II campo tipico di applicazione delle reti neurali è quello dell'individuazione di legami di \textbf{ingresso-uscita} all'interno di sistemi complessi in cui i dati a disposizione sono molto 
 		numerosi o contenenti poca informazione e quindi non risulta chiaro quali relazioni deterministiche esistano tra le diverse variabili che caratterizzano il problema. Si tratta di campi in cui l'analisi statistica di tutte le variabili risulta difficoltosa o dispendiosa in termini di calcolo.\\ 
 		Ecco un breve elenco di applicazioni note:
@@ -111,9 +107,7 @@
 			\item Sintesi e miglioramento dati (fax, grafica, cancellazione di rumore, apparecchiature televisive ad alta risoluzione ecc. \dots);
 			\item Robot autonomi.
 		\end{itemize}
-		
 
-		
 		
 		
 		\section{Il neurone biologico}
@@ -162,7 +156,10 @@
 		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni, così come le sinapsi collegano i neuroni nella rete umana. \\
 		Consideriamo una generica unità $j$ costituita da $n$ canali di ingresso:
 		
-		\begin{center} $x_{1}, x_{2}, ... ,x_{n}$  \end{center}
+		\begin{equation} 
+		\label{eqn:canali} 
+		$$ \begin{center} $x_{1}, x_{2}, ... ,x_{n}$ \end{center} $$
+		\end{equation} 
 		
 		Gli input provenienti da strati precedenti o direttamente dall'esterno entrano nel neurone tramite tali canali.
 		
@@ -176,8 +173,11 @@
 		Sulle connessioni sono presenti dei \emph{pesi sinaptici} $w_{i}$, numeri reali che denotano l'\emph{efficacia sinaptica}, ovvero la forza della connessione. Se $w_{i}>0$ il canale è detto \emph{eccitatorio}, se $w_{i}<0$ il canale è \emph{inibitorio}.\\
 		I segnali in entrata, pesati dalle rispettive sinapsi, sono convogliati nel \emph{soma} del neurone artificiale, all'interno del quale vengono sommati producendo una combinazione lineare così definita:
 		
-		\begin{center} $\sum\limits_{i=1}^n w_{i}x_{i}$  \end{center}
-		 
+		\begin{equation} 
+		\label{eqn:net} 
+		$$ \begin{center} $\sum\limits_{i=1}^n w_{i}x_{i}$ \end{center}$$
+		\end{equation} 
+		
 		La somma pesata degli ingressi viene indicata con la parola \emph{net} ed il segnale con cui il neurone trasmette la sua attività all'esterno è calcolato applicando una \emph{funzione di attivazione} $\varphi$ che limita l'ampiezza dell'output; si assume per comodità che le ampiezze degli output appartengono all'intervallo $[0,1]$ oppure $[-1,1]$.
 		
 		\begin{figure}[h]
@@ -186,26 +186,40 @@
 			\caption{Modello neurone}
 			\label{fig:palla2}
 		\end{figure}
-	
+		
+		\clearpage
 		Il modello neuronale include anche un valore \emph{soglia} che ha l'effetto, a seconda della sua positività o negatività, di aumentare o diminuire il valore in ingresso alla funzione di attivazione.\\
 		L'output finale sarà allora:
-		\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i})$  \end{center}
+		
+		\begin{equation}
+		\label{eqn:output1} 
+		$$\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i})$  \end{center}$$
+		\end{equation}
 	
-		E se indichiamo con $\theta$ il valore di soglia, si avrà:
-		\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i}-\theta)$  \end{center}
+		E se indichiamo con $\theta$ il valore di soglia, la~\eqref{eqn:output1} diventerà:
+		\begin{equation}
+		\label{eqn:output2}
+		$$\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i}-\theta)$  \end{center}$$
+		\end{equation}
 		
 		Interpretando la soglia come il peso associato ad un ulteriore canale di ingresso $x_{0}$, e quindi $w_{0}=\theta$, potremmo anche scrivere : 
-		\begin{center} $y= \varphi (\sum\limits_{i=0}^n w_{i}x_{i})$  \end{center}
 		
+		\begin{equation}
+		\label{eqn:output3}
+		$$\begin{center} $y= \varphi (\sum\limits_{i=0}^n w_{i}x_{i})$ \end{center}$$
+		\end{equation}
+		
+		\clearpage
 		Il modello finale sarà:
 		
-		\begin{figure}[h]
+		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=1\linewidth]{IMMAGINI/palla3}
-			\caption{Modello neurone con soglia}
+			\caption{ Modello neurone con soglia }
 			\label{fig:palla3}
 		\end{figure}
 		
+	
 		L'effetto di un segnale $ x_{i} $ sul neurone è quindi uguale al prodotto 
 		$w_{i}$ $\cdot$ $x_{i}$ dove $w_{i}$ è il peso attribuito alla sinapsi corrispondente ed il potenziale di attivazione è dato dalla somma algebrica dei prodotti di tutti i segnali di ingresso e dei valori dei pesi corrispondenti.\\
 	 	Schematizzando, ed individuando il neurone artificiale come l'unità di calcolo fondamentale della rete neurale, gli elementi base che lo rappresentano sono:
