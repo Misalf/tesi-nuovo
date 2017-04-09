@@ -41,6 +41,7 @@
 		\vspace{\stretch{2}}\null
 	\end{flushright} 
    	%FINE DEDICA
+   	
    	%FRASE
    	\begin{flushright} 
    		\newpage
@@ -63,8 +64,11 @@
 	%FINE INTRODUZIONE
 		
 	%INIZIO DEL PRIMO CAPITOLO
+	
 	\chapter{Rete neurale artificiale}
 		
+		
+	
 		
 		\section{Cenni storici ed origini}
 		Le reti neurali artificiali, dall'inglese \textit{Artificial Neural Network (ANN)}, e la conseguente computazione neurale, sono state costruite ispirandosi ai sistemi neurali biologici, con l'obiettivo di modellarne il comportamento e la struttura e di simularne le funzioni basilari e fondamentali.\\
@@ -76,7 +80,7 @@
 		Tradotto in italiano \\
 		\textit{«... un sistema di calcolo costituito da una serie di semplici, altamente interconnessi elementi di elaborazione, che elaborano le informazioni attraverso il loro stato dinamico rispondendo agli input esterni.»}\\
 		
-	    Le basi per lo studio di tali reti furono poste dallo psichiatra Warren McCulloch e del matematico Walter Pitts, i quali riuscirono a riprodurre una rete neurale utilizzando semplici circuiti elettrici collegati tra loro. Questa collaborazione portò alla luce l'analogia che sussiste tra le reti neurali e la macchina di Turing ed in tal modo si capì che qualsiasi operazione eseguita da una rete neurale poteva essere eseguita anche da un computer; infatti le reti che furono prodotte risultavano essere automi a stati finiti in grado di realizzare la logica delle proposizioni e di formulare ipotesi sulla natura dei meccanismi cerebrali, il tutto equivalentemente ad un programma per computer. Il frutto di tale lavoro fu reso noto nel 1943 con la pubblicazione del libro ``\emph{A logical calculus of the ideas immanent in nervous activity}'', nel quale fu schematizzato un combinatore lineare a soglia con dati binari multipli in entrata e un singolo dato binario in uscita.\\
+		Le basi per lo studio di tali reti furono poste dallo psichiatra Warren McCulloch e del matematico Walter Pitts, i quali riuscirono a riprodurre una rete neurale utilizzando semplici circuiti elettrici collegati tra loro. Questa collaborazione portò alla luce l'analogia che sussiste tra le reti neurali e la macchina di Turing ed in tal modo si capì che qualsiasi operazione eseguita da una rete neurale poteva essere eseguita anche da un computer; infatti le reti che furono prodotte risultavano essere automi a stati finiti in grado di realizzare la logica delle proposizioni e di formulare ipotesi sulla natura dei meccanismi cerebrali, il tutto equivalentemente ad un programma per computer. Il frutto di tale lavoro fu reso noto nel 1943 con la pubblicazione del libro ``\emph{A logical calculus of the ideas immanent in nervous activity}'', nel quale fu schematizzato un combinatore lineare a soglia con dati binari multipli in entrata e un singolo dato binario in uscita.\\
 	    Ciò che quindi McCulloch e Pitts riuscirono a fare è presentare un modello di neurone formale dimostrando che reti formate da tali neuroni riuscivano a computare funzioni della logica del primo ordine.\\
 	    Un punto di svolta per lo studio delle reti neurali si ebbe successivamente alla pubblicazione del lavoro dello psicologo Donald Hebb, ``\emph{The Organization of Behavior}'' nel 1949. Hebb trovò una correlazione tra la psicologia del comportamento umano e la fisiologia del sistema nervoso, donando un grande contributo alla teoria sull'apprendimento associativo, teoria che risultò essere alla base dei metodi di apprendimento delle reti neurali, e che si basava sulla nota legge di Hebb: \textit{«Se un neurone A è abbastanza vicino ad un neurone B da contribuire ripetutamente e in maniera duratura alla sua eccitazione, allora ha luogo in entrambi i neuroni un processo di crescita o di cambiamento metabolico tale per cui l'efficacia di A nell'eccitare B viene accresciuta»}.\\
 	    Il decennio che va dagli anni cinquanta agli anni sessanta fu totalmente influenzato dalla legge di Hebb a tal punto che numerosi gruppi di ricerca condussero esperimenti e test sulle funzionalità del cervello, fino a porre le basi per la nascita dell'intelligenza artificiale (AI).\\
@@ -85,6 +89,7 @@
 		Nonostante, però, l'iniziale successo di tale modello e l'interesse mostrato dalla comunità scientifica, tale rete neurale non risultò abbastanza potente; le reti a due strati basate sui percettroni avevano limiti operativi, infatti non riuscivano a risolvere tutte le classi di problemi, in particolare quelli non caratterizzati dalla separabilità lineare delle soluzioni come ad esempio l'operatore \emph{XOR}, ovvero la funzione \emph{OR} esclusivo, che discrimina gli ingressi in modo non linearmente separabile.\\
 		Solo negli anni ottanta, con il matematico Paul Werbos, si superarono i limiti del percettrone di Rosenblatt.  Quest'ultimo introdusse uno o più livelli intermedi all'interno delle reti neurali creando una classe chiamata  ``\textbf{\emph{Multi-Layers Perceptron}}'', ovvero percettrone multistrato, il cui metodo di addestramento principale era l'\emph{error backpropagation}, ovvero l'algoritmo di retropropagazione dell'errore, che permetteva la modifica sistematica dei pesi delle connessioni, in modo da rendere la risposta della rete quanto più vicina a quella desiderata.\\
 		Tale algoritmo, proposto nel 1986 da David E.Rumelhart, G. Hinton e R. J. Williams consentì di superare le problematiche legate al percettrone di Rosenblatt e permise di risolvere il problema della separabilità non lineare delle soluzioni, rendendo quindi possibile calcolare la funzione XOR e segnando il definitivo rilancio delle reti neurali.
+		
 		
 		
 		
@@ -97,6 +102,7 @@
 		II campo tipico di applicazione delle reti neurali è quello dell'individuazione di legami di \textbf{ingresso-uscita} all'interno di sistemi complessi in cui i dati a disposizione sono molto 
 		numerosi o contenenti poca informazione e quindi non risulta chiaro quali relazioni deterministiche esistano tra le diverse variabili che caratterizzano il problema. Si tratta di campi in cui l'analisi statistica di tutte le variabili risulta difficoltosa o dispendiosa in termini di calcolo.\\ 
 		Ecco un breve elenco di applicazioni note:
+		
 		\begin{itemize}
 			\item Elaborazione delle immagini (compressione e miglioramento di immagini in tempo reale);
 			\item Elaborazione del suono (compressione e miglioramento in tempo reale della voce e della musica, aiuti audio e protesi ecc. \dots);
@@ -110,6 +116,7 @@
 
 		
 		
+
 		\section{Il neurone biologico}
 		
 		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve descrizione del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.\\
@@ -130,7 +137,7 @@
 		\end{figure}
 		
 		Nel sistema nervoso centrale sono presenti circa $10^{11}$ cellule nervose, i \emph{neuroni}. Tali cellule sono connesse strettamente tra loro attraverso numerosi collegamenti che nel loro insieme vanno a formare la rete neurale. \\
-		 Un neurone è formato da un corpo centrale, identificato con il nome di \emph{soma}, all'interno del quale è presente il nucleo, e da molti prolungamenti citoplasmatici, detti \emph{neutriti}, che si distinguono in:
+		Un neurone è formato da un corpo centrale, identificato con il nome di \emph{soma}, all'interno del quale è presente il nucleo, e da molti prolungamenti citoplasmatici, detti \emph{neutriti}, che si distinguono in:
 		 
 		 \begin{itemize}
 		 	\item \emph{dendriti}, organizzati con diramazioni ad albero che costituiscono il \emph{ramo dendritico};
@@ -151,6 +158,7 @@
 		
 		
 		 
+		
 		\section{Modello del neurone artificiale}
 		
 		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni, così come le sinapsi collegano i neuroni nella rete umana. \\
@@ -219,10 +227,10 @@
 			\label{fig:palla3}
 		\end{figure}
 		
-	
 		L'effetto di un segnale $ x_{i} $ sul neurone è quindi uguale al prodotto 
 		$w_{i}$ $\cdot$ $x_{i}$ dove $w_{i}$ è il peso attribuito alla sinapsi corrispondente ed il potenziale di attivazione è dato dalla somma algebrica dei prodotti di tutti i segnali di ingresso e dei valori dei pesi corrispondenti.\\
 	 	Schematizzando, ed individuando il neurone artificiale come l'unità di calcolo fondamentale della rete neurale, gli elementi base che lo rappresentano sono:
+		
 		\begin{itemize}
 			\item Un insieme di connessioni;
 			\item Un sommatore;
@@ -230,17 +238,153 @@
 			\item Un valore di soglia.
 		\end{itemize}
 		
+		
+		
+		\clearpage
 		\section{Funzioni di attivazione}
 		
+		La funzione di attivazione determina il tipo di risposta che un neurone è in grado di emettere, definisce, quindi, l’uscita di un neurone in funzione del livello di attivazione. L'uscita può essere un numero reale, un numero reale appartenente ad un intervallo, oppure un numero appartenente ad un insieme discreto.\\
 		
-		Discorso scritto da me che mi piace e che devo introdurre in questo paragrafo!\\
-		io) Abbiamo a che fare quindi con sistemi altamente paralleli ed addestrabili il cui apprendimento avviene attraverso la modifica dei pesi delle connessioni. Sono inoltre sistemi tolleranti agli errori con la capacità di produrre output ragionevoli con input mai incontrati prima durante l'apprendimento. \textbf{Perchè addestrabili?} L'attività della singola unità è semplice e la potenza dipende dalla configurazione delle connessioni.
-		Partendo dalle unità di input, a cui vengono forniti i dati dei problema da risolvere, la computazione si propaga in parallelo nella rete fino alle unità di output che forniscono il risultato.
-		Il tratto peculiare delle reti neurali è che queste vengono addestrate utilizzando algoritmi di apprendimento mediante una serie di esempi della realtà da modellare.
+		\subsection{Funzione a soglia}
 		
+		Imponendo $a=\sum\limits_{i=0}^n w_{i}x_{i}$, il valore di uscita di un neurone assunto tramite una funzione a soglia é:
+		
+		\begin{equation}
+		\label{eqn:sistemafunzioneasoglia} 
+		$$ \begin{center} 
+				$y=\varphi(a)=$
+					$\begin{cases}
+						1 \hspace{0.8cm}se\hspace{0.1cm} a \geq 0 \\
+						0 \hspace{0.8cm}se\hspace{0.1cm} a < 0
+					\end{cases}$
+			\end{center} $$
+		\end{equation}
+	
+		ed il grafico relativo
+		
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.6\linewidth]{IMMAGINI/asoglia}
+			\caption{ Funzione di attivazione a soglia }
+			\label{fig:asoglia}
+		\end{figure}
+		
+		\clearpage
+		Se si tralascia il contributo dell'ingresso $x_{0}$ dal livello di attivazione e si ha quindi $a=\sum\limits_{i=1}^n w_{i}x_{i}$, si avrà
+		
+		\begin{equation}
+		\label{eqn:sistemafunzioneasoglianosoglia} 
+			$$ \begin{center} 
+				$y=\varphi(a)=$
+					$\begin{cases}
+						1 \hspace{0.8cm}se\hspace{0.1cm} a \geq \theta \\
+						0 \hspace{0.8cm}se\hspace{0.1cm} a <\theta 
+					\end{cases}$
+			\end{center} $$
+		\end{equation}
+		
+		Il rispettivo grafico sarà
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\linewidth]{IMMAGINI/asoglia1}
+			\caption{ Funzione a soglia senza contributo $x_{0}$ }
+			\label{fig:asoglia1}
+		\end{figure}
+	
+	A volte è opportuno che la funzione di attivazione assuma valori tra $–1$ e $+1$ ed in questo caso la funzione a soglia, che diviene la ben nota \emph{funzione segno} è ridefinita così : 
+	
+	\begin{equation}
+		\label{eqn:sistemafunzionesegno} 
+			$$ \begin{center} 
+				$y=\varphi(a)=$
+					$\begin{cases}
+					1 \hspace{0.8cm}se\hspace{0.1cm} a>0 \\
+					0 \hspace{0.8cm}se\hspace{0.1cm} a=0 \\
+				    -1 \hspace{0.8cm}se\hspace{0.1cm} a<0
+					\end{cases}$
+			\end{center} $$
+	\end{equation}
+	
+		
+	\subsection{Funzione lineare}
+	
+	Se $a=\sum\limits_{i=0}^n w_{i}x_{i}$, si avrà:
+	
+	\begin{equation}
+	\label{eqn:sistemafunzionelineare} 
+	$$ \begin{center} 
+			$y=\varphi(a)=a$
+		\end{center} $$
+	\end{equation}
+
+	Il grafico rispettivo
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\linewidth]{IMMAGINI/lineare}
+		\caption{ Funzione lineare }
+		\label{fig:lineare}
+	\end{figure}
+	
+	\subsection{Funzione lineare a tratti}
+	
+	Un esempio di funzione di attivazione lineare a tratti è:
+	
+	\begin{equation}
+	\label{eqn:sistemafunzionelineareatratti} 
+		$$ \begin{center} 
+			$y=\varphi(a)=$
+				$\begin{cases}
+					1 \hspace{1.86cm}se\hspace{0.1cm} a \leq -0.5 \\
+					a+0.5 \hspace{0.8cm}se\hspace{0.1cm} -0.5<a<0.5\\
+					0 \hspace{1.86cm}se\hspace{0.1cm} a\geq0.5 
+				\end{cases}$
+		\end{center} $$
+	\end{equation}
+	
+	\clearpage
+	Che rappresentata è
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\linewidth]{"IMMAGINI/a tratti"}
+		\caption{ Funzione a tratti }
+		\label{fig:atratti}
+	\end{figure}
+
+	\subsection{Funzione sigmoide}
+	
+	La funzione sigmoide appartenente alla famiglia di funzioni continue non lineari ed è tra le più utilizzate. Tra queste funzioni riportiamo la \emph{funzione logistica} così definita:
+	
+	\begin{equation}
+		\label{eqn:sigmoide} 
+			$$ \begin{center} 
+				$y=\varphi(a)=\dfrac{1}{1+e^{-a}}$
+			\end{center} $$
+	\end{equation}
+	
+	imponendo sempre $a=\sum\limits_{i=0}^n w_{i}x_{i}$.
+	\clearpage
+	Essa assume questa forma
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\linewidth]{IMMAGINI/sigmoide}
+		\caption{ Funzione sigmoide }
+		\label{fig:sigmoide}
+	\end{figure}
+	
+	
+	
+	
+	
+	
 	%FINE DEL PRIMO CAPITOLO
 	
 	\chapter{Feed Forward}
+	Discorso scritto da me che mi piace e che devo introdurre in questo paragrafo!\\
+	io) Abbiamo a che fare quindi con sistemi altamente paralleli ed addestrabili il cui apprendimento avviene attraverso la modifica dei pesi delle connessioni. Sono inoltre sistemi tolleranti agli errori con la capacità di produrre output ragionevoli con input mai incontrati prima durante l'apprendimento. \textbf{Perchè addestrabili?} L'attività della singola unità è semplice e la potenza dipende dalla configurazione delle connessioni.
+	Partendo dalle unità di input, a cui vengono forniti i dati dei problema da risolvere, la computazione si propaga in parallelo nella rete fino alle unità di output che forniscono il risultato.
+	Il tratto peculiare delle reti neurali è che queste vengono addestrate utilizzando algoritmi di apprendimento mediante una serie di esempi della realtà da modellare.
+	
 	\chapter{Ricorrenti}
 
 \clearpage 

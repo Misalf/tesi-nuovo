@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  9 APR 2017 15:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  9 APR 2017 17:38
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -617,32 +617,32 @@ LARE.toc")
 ]
 Capitolo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
 
 [6
 
 ] [7] [8] [9]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
@@ -650,10 +650,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 File: IMMAGINI/Sistemanervoso.png Graphic file (type png)
 
 <use IMMAGINI/Sistemanervoso.png>
-Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 127.
+Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 134.
 (pdftex.def)             Requested size: 390.0pt x 80.501pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
@@ -661,7 +661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
 File: IMMAGINI/neuron.png Graphic file (type png)
 
 <use IMMAGINI/neuron.png>
-Package pdftex.def Info: IMMAGINI/neuron.png used on input line 144.
+Package pdftex.def Info: IMMAGINI/neuron.png used on input line 151.
 (pdftex.def)             Requested size: 390.0pt x 201.42351pt.
  [11
 
@@ -670,14 +670,14 @@ Package pdftex.def Info: IMMAGINI/neuron.png used on input line 144.
 File: IMMAGINI/palla1.png Graphic file (type png)
 
 <use IMMAGINI/palla1.png>
-Package pdftex.def Info: IMMAGINI/palla1.png used on input line 168.
+Package pdftex.def Info: IMMAGINI/palla1.png used on input line 176.
 (pdftex.def)             Requested size: 272.99881pt x 160.09053pt.
  [13 <./IMMAGINI/palla1.png>]
 <IMMAGINI/palla2.png, id=62, 511.9125pt x 227.34938pt>
 File: IMMAGINI/palla2.png Graphic file (type png)
 
 <use IMMAGINI/palla2.png>
-Package pdftex.def Info: IMMAGINI/palla2.png used on input line 185.
+Package pdftex.def Info: IMMAGINI/palla2.png used on input line 193.
 (pdftex.def)             Requested size: 390.0pt x 173.20708pt.
  [14 <./IMMAGINI/palla2.png>] [15
 
@@ -686,30 +686,81 @@ Package pdftex.def Info: IMMAGINI/palla2.png used on input line 185.
 File: IMMAGINI/palla3.png Graphic file (type png)
 
 <use IMMAGINI/palla3.png>
-Package pdftex.def Info: IMMAGINI/palla3.png used on input line 217.
+Package pdftex.def Info: IMMAGINI/palla3.png used on input line 225.
 (pdftex.def)             Requested size: 390.0pt x 193.12321pt.
  [16
 
- <./IMMAGINI/palla3.png>] [17]
-Capitolo 2.
+ <./IMMAGINI/palla3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+<IMMAGINI/asoglia.png, id=75, 252.19218pt x 145.29282pt>
+File: IMMAGINI/asoglia.png Graphic file (type png)
+
+<use IMMAGINI/asoglia.png>
+Package pdftex.def Info: IMMAGINI/asoglia.png used on input line 267.
+(pdftex.def)             Requested size: 234.00238pt x 134.81496pt.
+ [17
+
+ <./IMMAGINI/asoglia.png>]
+<IMMAGINI/asoglia1.png, id=80, 240.14719pt x 179.92218pt>
+File: IMMAGINI/asoglia1.png Graphic file (type png)
+
+<use IMMAGINI/asoglia1.png>
+Package pdftex.def Info: IMMAGINI/asoglia1.png used on input line 290.
+(pdftex.def)             Requested size: 234.00238pt x 175.32047pt.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 295.
+
 [18
+
+ <./IMMAGINI/asoglia1.png>]
+<IMMAGINI/lineare.png, id=85, 217.5628pt x 137.7647pt>
+File: IMMAGINI/lineare.png Graphic file (type png)
+
+<use IMMAGINI/lineare.png>
+Package pdftex.def Info: IMMAGINI/lineare.png used on input line 324.
+(pdftex.def)             Requested size: 234.00238pt x 148.18452pt.
+ [19 <./IMMAGINI/lineare.png>]
+<"IMMAGINI/a tratti".png, id=91, 225.09094pt x 145.29282pt>
+File: "IMMAGINI/a tratti".png Graphic file (type png)
+
+<use "IMMAGINI/a tratti".png>
+Package pdftex.def Info: "IMMAGINI/a tratti".png used on input line 349.
+(pdftex.def)             Requested size: 234.00238pt x 151.05217pt.
+ [20
+
+ <./IMMAGINI/a tratti.png>]
+<IMMAGINI/sigmoide.png, id=97, 310.91156pt x 189.70876pt>
+File: IMMAGINI/sigmoide.png Graphic file (type png)
+
+<use IMMAGINI/sigmoide.png>
+Package pdftex.def Info: IMMAGINI/sigmoide.png used on input line 370.
+(pdftex.def)             Requested size: 234.00238pt x 142.782pt.
+ [21
+
+ <./IMMAGINI/sigmoide.png>]
+Capitolo 2.
+[22
 
 ]
 Capitolo 3.
-[19
+[23
 
-] [20
+] [24
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
- 4381 strings out of 493333
- 55054 string characters out of 3139198
- 139533 words of memory out of 3000000
- 7814 multiletter control sequences out of 15000+200000
- 10862 words of font info for 40 fonts, out of 3000000 for 9000
+ 4419 strings out of 493333
+ 55896 string characters out of 3139198
+ 139657 words of memory out of 3000000
+ 7847 multiletter control sequences out of 15000+200000
+ 11467 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,43p,1034b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,43p,1031b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
@@ -720,10 +771,11 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
 9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (20 pages, 839744 bytes).
+onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mti12.pfb>
+Output written on "TESI NON CANCELLARE.pdf" (24 pages, 880192 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
