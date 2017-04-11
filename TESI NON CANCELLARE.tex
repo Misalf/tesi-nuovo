@@ -73,7 +73,7 @@
 		
 	
 		
-		\section{Cenni storici ed origini}
+	\section{Cenni storici ed origini}
 		Le reti neurali artificiali, dall'inglese \textit{Artificial Neural Network (ANN)}, e la conseguente computazione neurale, sono state costruite ispirandosi ai sistemi neurali biologici, con l'obiettivo di modellarne il comportamento e la struttura e di simularne le funzioni basilari e fondamentali.\\
 		Una definizione semplice e formale di tali strutture è fornita dall'inventore del primo neurocomputer, il Dr. Robert Hecht-Nielsen che le definì come: \\
 		
@@ -96,7 +96,7 @@
 		
 		
 		
-		\section{Analogie con il sistema nervoso ed applicazioni delle ANN}
+	\section{Analogie con il sistema nervoso ed applicazioni delle ANN}
 	
 		Come accennato nel paragrafo precedente, una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali, il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, ad esempio la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme  \\
 		In altre parole, lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale, in particolar modo di quello umano, il quale presenta numerose caratteristiche che risultano essere ottime per la riproduzione di un sistema computazionale che lo imiti: è flessibile poiché si adatta ad ogni tipologia di situazione imparando, è robusto in quanto le cellule nervose muoiono ogni giorno senza avere effetti significativi sulla performance del sistema, è resistente, piccolo e dissipa poca energia. \\
@@ -120,7 +120,7 @@
 		
 		
 
-		\section{Il neurone biologico}
+	\section{Il neurone biologico}
 		
 		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve descrizione del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.\\
   	    \clearpage
@@ -162,7 +162,7 @@
 		
 		 
 		
-		\section{Modello del neurone artificiale}
+	\section{Modello del neurone artificiale}
 		
 		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni, così come le sinapsi collegano i neuroni nella rete umana. \\
 		Consideriamo una generica unità $j$ costituita da $n$ canali di ingresso:
@@ -244,7 +244,7 @@
 		
 		
 		\clearpage
-		\section{Funzioni di attivazione}
+	\section{Funzioni di attivazione}
 		
 		La funzione di attivazione determina il tipo di risposta che un neurone è in grado di emettere. Definisce, quindi, l’uscita di un neurone in funzione del livello di attivazione. L'uscita può essere un numero reale, un numero reale appartenente ad un intervallo, oppure un numero appartenente ad un insieme discreto.\\
 		
@@ -377,7 +377,33 @@
 		\end{figure}
 	
 	
-	
+	\section{Architetture}
+		
+		L'architettura di una rete neurale artificiale è caratterizzata da:
+		
+		\begin{itemize}
+			\item Numero di strati di sinapsi;
+			\item Numero di neuroni presenti nell'\emph{input layer}, ovvero lo strato di ingresso;
+			\item Numero di neuroni nell'{output layer}, lo strato di uscita.
+		\end{itemize}
+		
+		Esistono tree grandi classi di reti: le \emph{reti completamente connesse}, le \emph{reti stratificate} e le \emph{reti ricorrenti}.\\	
+		
+		\underline{\emph{Reti completamente connesse}}\\
+		Nelle reti completamente connesse ogni neurone è connesso con tutti gli altri. Le connessioni tra i neuroni sono bidirezionali e possono essere rappresentate per mezzo di una matrice quadrata $W$, di dimensione pari al numero di neuroni. Un suo generico elemento $w_{i,j}$ rappresenta il peso della connessione tra il neurone $i$ ed il neurone $j$.  
+		
+		\underline{\emph{Reti a strati}}\\
+		In queste reti i segnali viaggiano dallo strato di ingresso verso lo strato di uscita e pertanto si parla anche di \textbf{reti feedforward}. Nelle reti stratificate non esistono connessioni tra i neuroni all'interno di uno stesso strato, nè tra neuroni di strati non limitrofi. Ogni neurone in un generico strato è connesso con tutti quelli dello strato successivo ed i neuroni dello strato di ingresso hanno come unico compito quello di trasmettere i segnali ricevuti allo strato successivo, all'interno di essi non avviene alcuna computazione.\\
+		Le reti a strati si distinguono in base al numero di strati che presentano, numero che dipende dallo specifico problema che si intende risolvere.\\ 
+		- \emph{Reti feedforward ad uno strato} : questa è una forma semplice di reti a strati. Il segnale nella rete si propaga in avanti senza cicli, ci sono connessioni che tornano indietro e nemmeno connessioni trasversali nel layer di output.\\
+		- \emph{Reti feedforward a più strati }: le reti a più strati sono anche dette \textit{reti multilivello }, in inglese \textbf{\textit{}Multi-Layer Perceptron, MLP}. Tra l'input layer e l'output layer sono presenti uno o più strati di neuroni nascosti, si parla quindi di \textit{\textit{hidden layers}} Nelle MLP non esistono connessioni nè tra neuroni di uno stesso strato nè tra neuroni di strati non limitrofi. Ogni strato ha connessioni entranti dal precedente strato e uscenti in quello successivo, quindi la propagazione del segnale avviene in avanti in modo aciclico e senza connessioni trasversali.\\
+		Tali reti vengono utilizzare per superare problemi che possono sorgere nella discriminazione dei segnali: attraverso i neuroni nascosti si ottengono delle rappresentazioni interne dei segnali di input che consentono il riconoscimento di forme più complesse, facilitando il compito della rete. 
+		Nonostante tutto, però, l’aggiunta di ulteriori strati nascosti non ottimizza le abilità di discriminazione della rete; questo è possibile solo se la funzione di attivazione è non lineare (una rete 
+		multistrato a neuroni lineari è sempre riconducibile ad una rete con due soli strati).\\ 
+		
+		\underline{\emph{Reti ricorrenti}}\\
+		Una rete ricorrente si distingue dalle precedenti nel fatto che è ciclica. Il sistema è quindi dimamico La presenza di cicli ha un impatto profondo sulle capacità di apprendimento della rete e sulle sue performance, in particolare rendono il sistema dinamico.
+		
 	
 	
 	

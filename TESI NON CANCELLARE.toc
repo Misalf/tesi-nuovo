@@ -11,6 +11,7 @@
 \contentsline {subsection}{\numberline {1.5.2}Funzione lineare}{19}
 \contentsline {subsection}{\numberline {1.5.3}Funzione lineare a tratti}{19}
 \contentsline {subsection}{\numberline {1.5.4}Funzione sigmoide}{20}
-\contentsline {chapter}{\numberline {2}Feed Forward}{22}
-\contentsline {chapter}{\numberline {3}Ricorrenti}{23}
-\contentsline {chapter}{Riferimenti bibliografici}{24}
+\contentsline {section}{\numberline {1.6}Architetture}{21}
+\contentsline {chapter}{\numberline {2}Feed Forward}{24}
+\contentsline {chapter}{\numberline {3}Ricorrenti}{25}
+\contentsline {chapter}{Riferimenti bibliografici}{26}
