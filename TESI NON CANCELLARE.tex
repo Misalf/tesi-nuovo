@@ -102,6 +102,14 @@
 		In altre parole, lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale, in particolar modo di quello umano, il quale presenta numerose caratteristiche che risultano essere ottime per la riproduzione di un sistema computazionale che lo imiti: è flessibile poiché si adatta ad ogni tipologia di situazione imparando, è robusto in quanto le cellule nervose muoiono ogni giorno senza avere effetti significativi sulla performance del sistema, è resistente, piccolo e dissipa poca energia. \\
 		Tale riproduzione non deve essere intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano.\\
 		Il sistema nervoso umano può essere pensato, quindi, come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo e che riesce a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione, basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari.\\
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\linewidth]{IMMAGINI/esempioiniziale}
+			\caption{Esempio di rete neurale}
+			\label{fig:esempio}
+		\end{figure}
+		
 		II campo tipico di applicazione delle reti neurali è quello dell'individuazione di legami di \textbf{ingresso-uscita} all'interno di sistemi complessi in cui i dati a disposizione sono molto 
 		numerosi o contenenti poca informazione e quindi non risulta chiaro quali relazioni deterministiche esistano tra le diverse variabili che caratterizzano il problema. Si tratta di campi in cui l'analisi statistica di tutte le variabili risulta difficoltosa o dispendiosa in termini di calcolo.\\ 
 		Ecco un breve elenco di applicazioni note:
@@ -123,7 +131,6 @@
 	\section{Il neurone biologico}
 		
 		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve descrizione del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.\\
-  	    \clearpage
   		Il sistema nervoso è diviso in tre stadi:
 		
 		\begin{itemize}
@@ -165,16 +172,10 @@
 	\section{Modello del neurone artificiale}
 		
 		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni, così come le sinapsi collegano i neuroni nella rete umana. \\
-		Consideriamo una generica unità $j$ costituita da $n$ canali di ingresso:
-		
-		\begin{equation} 
-			\label{eqn:canali} 
-				$$ \begin{center} $x_{1}, x_{2}, ... ,x_{n}$ \end{center} $$
-		\end{equation} 
-		
+		Consideriamo una generica unità $j$ costituita da $n$ canali di ingresso $x_{1}, x_{2}, ... ,x_{n}$.
 		Gli input provenienti da strati precedenti o direttamente dall'esterno entrano nel neurone tramite tali canali.
-		
-		\begin{figure}[h]
+
+		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.7\linewidth]{IMMAGINI/palla1}
 			\caption{Canali di ingresso in un neurone}
@@ -191,7 +192,7 @@
 		
 		La somma pesata degli ingressi viene indicata con la parola \emph{net} ed il segnale con cui il neurone trasmette la sua attività all'esterno è calcolato applicando una \emph{funzione di attivazione} $\varphi$ che limita l'ampiezza dell'output; si assume per comodità che le ampiezze degli output appartengono all'intervallo $[0,1]$ oppure $[-1,1]$.
 		
-		\begin{figure}[h]
+		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=1\linewidth]{IMMAGINI/palla2}
 			\caption{Modello neurone}
