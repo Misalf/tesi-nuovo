@@ -68,7 +68,7 @@
 		
 	%INIZIO DEL PRIMO CAPITOLO
 	
-	\chapter{Rete neurale artificiale}
+	\chapter{Presentazione delle reti neurali artificiali}
 		
 		
 	
@@ -101,7 +101,7 @@
 		Come accennato nel paragrafo precedente, una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali, il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, ad esempio la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme  \\
 		In altre parole, lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale, in particolar modo di quello umano, il quale presenta numerose caratteristiche che risultano essere ottime per la riproduzione di un sistema computazionale che lo imiti: è flessibile poiché si adatta ad ogni tipologia di situazione imparando, è robusto in quanto le cellule nervose muoiono ogni giorno senza avere effetti significativi sulla performance del sistema, è resistente, piccolo e dissipa poca energia. \\
 		Tale riproduzione non deve essere intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano.\\
-		Il sistema nervoso umano può essere pensato, quindi, come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo e che riesce a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione, basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari.\\
+		Il sistema nervoso umano può essere pensato, quindi, come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo e che riesce a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione, basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari. Sono sistemi altamente paralleli: fornendo i dati del problema alle unità di input, la computazione si propaga in parallelo nella rete fino alle unità di output che producono il risultato. \\
 	
 		\begin{figure}[h]
 			\centering
@@ -384,10 +384,19 @@
 		\begin{itemize}
 			\item Numero di strati di sinapsi;
 			\item Numero di neuroni presenti nell'\emph{input layer}, ovvero lo strato di ingresso;
-			\item Numero di neuroni nell'{output layer}, lo strato di uscita.
+			\item Numero di neuroni nell'\emph{output layer}, lo strato di uscita.
 		\end{itemize}
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{IMMAGINI/diagrammareti}
+			\caption{ Suddivisione delle reti neurali}
+			\label{fig:diagrammareti}
+		\end{figure}
 		
-		Esistono tree grandi classi di reti: le \emph{reti completamente connesse}, le \emph{reti stratificate} e le \emph{reti ricorrenti}.\\	
+		
+		Le reti neurali si suddividono principalmente in due grandi classi: le reti \emph{feedforward} e le reti \emph{feedback} o \emph{ricorrenti}. 
+		Si ha inoltre un'altra tipologia di reti che sono le \emph{reti completamente connesse}.\\
 		
 		\underline{\emph{Reti completamente connesse}}\\
 		Nelle reti completamente connesse ogni neurone è connesso con tutti gli altri. Le connessioni tra i neuroni sono bidirezionali e possono essere rappresentate per mezzo di una matrice quadrata $W$, di dimensione pari al numero di neuroni. Un suo generico elemento $w_{i,j}$ rappresenta il peso della connessione tra il neurone $i$ ed il neurone $j$.  
@@ -400,9 +409,9 @@
 		\end{figure}
 		
 		
-		\underline{\emph{Reti a strati}}\\
-		In queste reti i segnali viaggiano dallo strato di ingresso verso lo strato di uscita e pertanto si parla anche di \textbf{reti feedforward}. Nelle reti stratificate non esistono connessioni tra i neuroni all'interno di uno stesso strato, nè tra neuroni di strati non limitrofi. Ogni neurone in un generico strato è connesso con tutti quelli dello strato successivo ed i neuroni dello strato di ingresso hanno come unico compito quello di trasmettere i segnali ricevuti allo strato successivo, all'interno di essi non avviene alcuna computazione.\\
-		Le reti a strati si distinguono in base al numero di strati che presentano, numero che dipende dallo specifico problema che si intende risolvere.\\ 
+		\underline{\emph{Reti feedforward a strati}}\\
+		In queste reti i segnali viaggiano dallo strato di ingresso verso lo strato di uscita e pertanto vengono anche chiamate \textbf{reti feedforward}. Nelle reti stratificate non esistono connessioni tra i neuroni all'interno di uno stesso strato, nè tra neuroni di strati non limitrofi. Ogni neurone in un generico strato è connesso con tutti quelli dello strato successivo ed i neuroni dello strato di ingresso hanno come unico compito quello di trasmettere i segnali ricevuti allo strato successivo, all'interno di essi non avviene alcuna computazione.\\
+		Le reti feedforward a strati si distinguono in base al numero di strati che presentano, numero che dipende dallo specifico problema che si intende risolvere.\\ 
 		- \emph{Reti feedforward ad uno strato} : questa è una forma semplice di reti a strati. Il segnale nella rete si propaga in avanti senza cicli, ci sono connessioni che tornano indietro e nemmeno connessioni trasversali nel layer di output.\\
 		- \emph{Reti feedforward a più strati }: le reti a più strati sono anche dette \textit{reti multilivello }, in inglese \textbf{\textit{}Multi-Layer Perceptron, MLP}. Tra l'input layer e l'output layer sono presenti uno o più strati di neuroni nascosti, si parla quindi di \textit{\textit{hidden layers}} Nelle MLP non esistono connessioni nè tra neuroni di uno stesso strato nè tra neuroni di strati non limitrofi. Ogni strato ha connessioni entranti dal precedente strato e uscenti in quello successivo, quindi la propagazione del segnale avviene in avanti in modo aciclico e senza connessioni trasversali.\\
 		Tali reti vengono utilizzare per superare problemi che possono sorgere nella discriminazione dei segnali: attraverso i neuroni nascosti si ottengono delle rappresentazioni interne dei segnali di input che consentono il riconoscimento di forme più complesse, facilitando il compito della rete. 
@@ -415,9 +424,40 @@
 			\label{fig:multistrato}
 		\end{figure}
 		
-		
 		\underline{\emph{Reti ricorrenti}}\\
 		Una rete neurale ricorrente (RNN) si distingue dalle precedenti nel fatto che è ciclica. Il sistema è dinamico, le unità di output sono connesse con quelle intermedie e con quelle di input, si ha una \emph{retroazione}. Dato un determinato stimolo, la risposta della rete ricorrente non viene dettata soltanto dai caratteri strutturali della rete stessa, come si verifica nella rete feedforward, ma varia in funzione del precedente contesto in cui si è manifestato lo stimolo. L'output non è determinato solo dall'input, ma anche da una \emph{cronologia} di input che fornisce una forma di memoria a breve termine. Queste reti sono adatte per dati strutturati temporalmente ed hanno anche la possibilità di avere un’attività in assenza di una stimolazione input, poiché gli impulsi che viaggiano sulle vie ricorrenti possono essere sufficienti a mantenere il sistema in attività.
+	
+	\section{Apprendimento}
+	
+	Per costruire una rete neurale efficiente, un passo fondamentale è individuare un \emph{insieme di apprendimento} ed un \emph{algoritmo di apprendimento}.\\
+	Per insieme di appredimento si intende una collezione di esempi dai quali essa può attingere per raggiungere lo scopo per il quale è stata progettata; per algoritmo, invece, un procedimento che permetta di prelevare le informazioni dall'insieme di apprendimento fissandone dei parametri, e che modifichi questi ultimi attraverso operazioni iterative interfaccianti con l'ambiente.
+	Ciò ci suggerisce assieme al tratto caratteristico del sistema nervoso a cui le reti si ispirano, ovvero la capacità di acquisire esperienza da esempi del mondo reale, che la rete viene \emph{addestrata} mediante gli algoritmi di apprendimento e gli esempi presenti nell'insieme di apprendimento.
+    
+    
+    
+    Il corretto funzionamento di una neurale sull’insieme di apprendimento non offre, ovviamente,  garanzia di un altrettanto soddisfacente funzionamento su altri dati relativi allo stesso concetto, ma non utilizzati nella fase di apprendimento (insieme che può essere utilizzato per effettuare un test). Inoltre, è evidente che l’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza della fase di apprendimento. Si consideri, ad esempio, il caso delle reti feedforward, che si vedranno più avanti. Verrà enunciata la loro capacità universale di approssimazione, che 
+    le porta ad apprendere qualsiasi funzione, si potrebbe dire che sono in grado di imparare ogni complesso legame ingresso-uscita. Quando il numero delle unità cresce aumenta il potere computazionale, ma la capacità di generalizzare su nuovi esempi tende a diminuire dato che il fitting, in questo caso può essere definito come over-fitting, sull’insieme di apprendimento ha luogo in un enorme spazio di parametri vincolati solo da pochi esempi. Questo origina una sorta di principio di indeterminazione dell’apprendimento secondo il quale non è possibile al variare dei pesi della rete neurale ottenere un'adeguata generalizzazione per nuovi esempi. 
+    Come si vedrà la limitazione del numero degli ingressi risulta particolarmente importante per limitare l'over-fitting. La memorizzazione e la generalizzazione possono anche essere espresse in termini di dispendio di risorse di memoria richiesto nel primo caso rispetto al secondo. Quindi l'efficienza nell'uso delle risorse disponibili, principio di base per un ingegnere, è anche il principio a cui si adegua il sistema nervoso nell'acquisizione di esperienza. 
+    
+    Tale principio è ben noto in letteratura tecnica sotto il nome di "Principio di Occam" e può essere enunciato nel seguente modo in relazione alle reti neurali: 
+    
+    "date due reti che soddisfano l'insieme di apprendimento, la rete di minore complessità è quella 
+    che si comporta meglio su esempi non visti, cioè ha la migliore capacità di generalizzazione" 
+    
+    II Principio di Occam è la guida più adatta alla determinazione della struttura della rete neurale ottimale dal punto di vista della capacità di generalizzazione. Infatti, esso suggerisce, nel caso delle reti neurali supervisionate, di utilizzare una funzione obiettivo da minimizzare costituita  da due termini: l'uno riguardante l'adeguatezza della rete rispetto all'insieme di apprendimento; l'altro riguardante la complessità della rete. Indicando con Es il primo, con Ec il secondo e con m un valore che misura il numero dei parametri della rete, si ha per la funzione obiettivo: 
+	
+	
+	
+	
+	
+	
+	L'apprendimento è un processo col quale parametri liberi di una rete neurale sono adattati, attraverso un processo di stimolazione, all'ambiente in cui essa è inserita. Il tipo di apprendimento è determinato dal modo in cui questi adattamenti avvengono. 
+
+
+	
+	
+	
+	
 	
 	
 	
@@ -425,10 +465,7 @@
 	
 	\chapter{Feed Forward}
 	Discorso scritto da me che mi piace e che devo introdurre in questo paragrafo!\\
-	io) Abbiamo a che fare quindi con sistemi altamente paralleli ed addestrabili il cui apprendimento avviene attraverso la modifica dei pesi delle connessioni. Sono inoltre sistemi tolleranti agli errori con la capacità di produrre output ragionevoli con input mai incontrati prima durante l'apprendimento. \textbf{Perchè addestrabili?} L'attività della singola unità è semplice e la potenza dipende dalla configurazione delle connessioni.
-	Partendo dalle unità di input, a cui vengono forniti i dati dei problema da risolvere, la computazione si propaga in parallelo nella rete fino alle unità di output che forniscono il risultato.
-	Il tratto peculiare delle reti neurali è che queste vengono addestrate utilizzando algoritmi di apprendimento mediante una serie di esempi della realtà da modellare.
-	
+	io) 
 	\chapter{Ricorrenti}
 
 \clearpage 
