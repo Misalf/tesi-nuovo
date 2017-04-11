@@ -36,21 +36,11 @@
 		\newpage
 		\null\vspace{\stretch{1}}
 		\thispagestyle{empty}
-		\textit{``Er cavaliere nero e er cavaliere bianco vanno a duello! \\
-		Mo ce sta er cavaliere nero che t'ammazza il cavaliere bianco. \\
-		Il cavaliere bianco c'aveva tre fiji: tutti sti tre fiji sfidano er cavaliere nero\\
-		ma er cavaliere nero t'ammazza tutti e tre.\\
-		Mo sti tre fiji c'avevano tre fiji per uno: \\
-		Tutti e nove te sfidano er cavaliere nero \\
-		ma er cavaliere nero t'ammazza tutti e nove.\\
-		Sti tre cavalieri bianchi c'avevano tre fiji per uno:\\
-		tutti e ventisette te sfidano er cavaliere nero \\
-		ma er cavaliere nero t'ammazza tutti e ventisette!
-		Mo sti ventisette cavalieri bianchi c'avevano..."\\
+		\textit{``Si sta come d'autunno\\
 		\vspace{1cm}
-		``E BASTA! Dimmi la morale di questa favola!"\\
+		sugli alberi\\
 		\vspace{1cm}
-		``A morale della favola? \\E' che ar cavaliere nero non je devi cacà er cazzo!"}
+		le foglie."}
 		\vspace{\stretch{2}}\null
 	\end{flushright} 
    	%FINE DEDICA
@@ -178,8 +168,8 @@
 		Consideriamo una generica unità $j$ costituita da $n$ canali di ingresso:
 		
 		\begin{equation} 
-		\label{eqn:canali} 
-		$$ \begin{center} $x_{1}, x_{2}, ... ,x_{n}$ \end{center} $$
+			\label{eqn:canali} 
+				$$ \begin{center} $x_{1}, x_{2}, ... ,x_{n}$ \end{center} $$
 		\end{equation} 
 		
 		Gli input provenienti da strati precedenti o direttamente dall'esterno entrano nel neurone tramite tali canali.
@@ -195,8 +185,8 @@
 		I segnali in entrata, pesati dalle rispettive sinapsi, sono convogliati nel \emph{soma} del neurone artificiale, all'interno del quale vengono sommati producendo una combinazione lineare così definita:
 		
 		\begin{equation} 
-		\label{eqn:net} 
-		$$ \begin{center} $\sum\limits_{i=1}^n w_{i}x_{i}$ \end{center}$$
+			\label{eqn:net} 
+				$$ \begin{center} $\sum\limits_{i=1}^n w_{i}x_{i}$ \end{center}$$
 		\end{equation} 
 		
 		La somma pesata degli ingressi viene indicata con la parola \emph{net} ed il segnale con cui il neurone trasmette la sua attività all'esterno è calcolato applicando una \emph{funzione di attivazione} $\varphi$ che limita l'ampiezza dell'output; si assume per comodità che le ampiezze degli output appartengono all'intervallo $[0,1]$ oppure $[-1,1]$.
@@ -213,21 +203,21 @@
 		L'output finale sarà allora:
 		
 		\begin{equation}
-		\label{eqn:output1} 
-		$$\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i})$  \end{center}$$
+			\label{eqn:output1} 
+				$$\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i})$  \end{center}$$
 		\end{equation}
 	
 		E se indichiamo con $\theta$ il valore di soglia, la~\eqref{eqn:output1} diventerà:
 		\begin{equation}
-		\label{eqn:output2}
-		$$\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i}-\theta)$  \end{center}$$
+			\label{eqn:output2}
+				$$\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i}-\theta)$  \end{center}$$
 		\end{equation}
 		
 		Interpretando la soglia come il peso associato ad un ulteriore canale di ingresso $x_{0}$, e quindi $w_{0}=\theta$, potremmo anche scrivere : 
 		
 		\begin{equation}
-		\label{eqn:output3}
-		$$\begin{center} $y= \varphi (\sum\limits_{i=0}^n w_{i}x_{i})$ \end{center}$$
+			\label{eqn:output3}
+				$$\begin{center} $y= \varphi (\sum\limits_{i=0}^n w_{i}x_{i})$ \end{center}$$
 		\end{equation}
 		
 		\clearpage
@@ -305,85 +295,86 @@
 			\label{fig:asoglia1}
 		\end{figure}
 	
-	A volte è opportuno che la funzione di attivazione assuma valori tra $–1$ e $+1$ ed in questo caso la funzione a soglia, che diviene la ben nota \emph{funzione segno} è ridefinita così : 
+		A volte è opportuno che la funzione di attivazione assuma valori tra $–1$ e $+1$ ed in questo caso la funzione a soglia, che diviene la ben nota \emph{funzione segno} è ridefinita così : 
 	
-	\begin{equation}
-		\label{eqn:sistemafunzionesegno} 
+		\begin{equation}
+			\label{eqn:sistemafunzionesegno} 
+				$$ \begin{center} 
+					$y=\varphi(a)=$
+						$\begin{cases}
+							1 \hspace{1.1cm}se\hspace{0.1cm} a>0 \\
+							0 \hspace{1.1cm}se\hspace{0.1cm} a=0 \\
+				    		-1 \hspace{0.8cm}se\hspace{0.1cm} a<0
+						\end{cases}$
+				\end{center} $$
+		\end{equation}
+	
+		
+		\subsection{Funzione lineare}
+	
+		Se $a=\sum\limits_{i=0}^n w_{i}x_{i}$, si avrà:
+	
+		\begin{equation}
+		\label{eqn:sistemafunzionelineare} 
+			$$ \begin{center} 
+					$y=\varphi(a)=a$
+			\end{center} $$
+		\end{equation}
+
+		Il grafico rispettivo
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\linewidth]{IMMAGINI/lineare}
+			\caption{ Funzione lineare }
+			\label{fig:lineare}
+		\end{figure}
+	
+		\subsection{Funzione lineare a tratti}
+	
+		Un esempio di funzione di attivazione lineare a tratti è:
+	
+		\begin{equation}
+		\label{eqn:sistemafunzionelineareatratti} 
 			$$ \begin{center} 
 				$y=\varphi(a)=$
 					$\begin{cases}
-					1 \hspace{1.1cm}se\hspace{0.1cm} a>0 \\
-					0 \hspace{1.1cm}se\hspace{0.1cm} a=0 \\
-				    -1 \hspace{0.8cm}se\hspace{0.1cm} a<0
+						1 \hspace{1.86cm}se\hspace{0.1cm} a \leq -0.5 \\
+						a+0.5 \hspace{0.8cm}se\hspace{0.1cm} -0.5<a<0.5\\
+						0 \hspace{1.86cm}se\hspace{0.1cm} a\geq0.5 
 					\end{cases}$
 			\end{center} $$
-	\end{equation}
+		\end{equation}
 	
-		
-	\subsection{Funzione lineare}
-	
-	Se $a=\sum\limits_{i=0}^n w_{i}x_{i}$, si avrà:
-	
-	\begin{equation}
-	\label{eqn:sistemafunzionelineare} 
-	$$ \begin{center} 
-			$y=\varphi(a)=a$
-		\end{center} $$
-	\end{equation}
+		\clearpage
+		Che rappresentata è
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\linewidth]{"IMMAGINI/a tratti"}
+			\caption{ Funzione a tratti }
+			\label{fig:atratti}
+		\end{figure}
 
-	Il grafico rispettivo
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.6\linewidth]{IMMAGINI/lineare}
-		\caption{ Funzione lineare }
-		\label{fig:lineare}
-	\end{figure}
+		\subsection{Funzione sigmoide}
 	
-	\subsection{Funzione lineare a tratti}
+		La funzione sigmoide appartenente alla famiglia di funzioni continue non lineari ed è tra le più utilizzate. Tra queste funzioni riportiamo la \emph{funzione logistica} così definita:
 	
-	Un esempio di funzione di attivazione lineare a tratti è:
-	
-	\begin{equation}
-	\label{eqn:sistemafunzionelineareatratti} 
-		$$ \begin{center} 
-			$y=\varphi(a)=$
-				$\begin{cases}
-					1 \hspace{1.86cm}se\hspace{0.1cm} a \leq -0.5 \\
-					a+0.5 \hspace{0.8cm}se\hspace{0.1cm} -0.5<a<0.5\\
-					0 \hspace{1.86cm}se\hspace{0.1cm} a\geq0.5 
-				\end{cases}$
-		\end{center} $$
-	\end{equation}
-	
-	\clearpage
-	Che rappresentata è
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.6\linewidth]{"IMMAGINI/a tratti"}
-		\caption{ Funzione a tratti }
-		\label{fig:atratti}
-	\end{figure}
-
-	\subsection{Funzione sigmoide}
-	
-	La funzione sigmoide appartenente alla famiglia di funzioni continue non lineari ed è tra le più utilizzate. Tra queste funzioni riportiamo la \emph{funzione logistica} così definita:
-	
-	\begin{equation}
-		\label{eqn:sigmoide} 
+		\begin{equation}
+			\label{eqn:sigmoide} 
 			$$ \begin{center} 
 				$y=\varphi(a)=\dfrac{1}{1+e^{-a}}$
-			\end{center} $$
-	\end{equation}
+				\end{center} $$
+		\end{equation}
 	
-	imponendo sempre $a=\sum\limits_{i=0}^n w_{i}x_{i}$.
-	\clearpage
-	Essa assume questa forma
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=0.6\linewidth]{IMMAGINI/sigmoide}
-		\caption{ Funzione sigmoide }
-		\label{fig:sigmoide}
-	\end{figure}
+		imponendo sempre $a=\sum\limits_{i=0}^n w_{i}x_{i}$.
+		
+		\clearpage
+		Essa assume questa forma
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.6\linewidth]{IMMAGINI/sigmoide}
+			\caption{ Funzione sigmoide }
+			\label{fig:sigmoide}
+		\end{figure}
 	
 	
 	
