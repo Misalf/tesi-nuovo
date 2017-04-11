@@ -345,7 +345,6 @@
 			\end{center} $$
 		\end{equation}
 	
-		\clearpage
 		Che rappresentata è
 		\begin{figure}[h]
 			\centering
@@ -392,18 +391,32 @@
 		\underline{\emph{Reti completamente connesse}}\\
 		Nelle reti completamente connesse ogni neurone è connesso con tutti gli altri. Le connessioni tra i neuroni sono bidirezionali e possono essere rappresentate per mezzo di una matrice quadrata $W$, di dimensione pari al numero di neuroni. Un suo generico elemento $w_{i,j}$ rappresenta il peso della connessione tra il neurone $i$ ed il neurone $j$.  
 		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{IMMAGINI/completamenteconnesssa}
+			\caption{ Rete completamente connessa}
+			\label{fig:completamenteconnesssa}
+		\end{figure}
+		
+		
 		\underline{\emph{Reti a strati}}\\
 		In queste reti i segnali viaggiano dallo strato di ingresso verso lo strato di uscita e pertanto si parla anche di \textbf{reti feedforward}. Nelle reti stratificate non esistono connessioni tra i neuroni all'interno di uno stesso strato, nè tra neuroni di strati non limitrofi. Ogni neurone in un generico strato è connesso con tutti quelli dello strato successivo ed i neuroni dello strato di ingresso hanno come unico compito quello di trasmettere i segnali ricevuti allo strato successivo, all'interno di essi non avviene alcuna computazione.\\
 		Le reti a strati si distinguono in base al numero di strati che presentano, numero che dipende dallo specifico problema che si intende risolvere.\\ 
 		- \emph{Reti feedforward ad uno strato} : questa è una forma semplice di reti a strati. Il segnale nella rete si propaga in avanti senza cicli, ci sono connessioni che tornano indietro e nemmeno connessioni trasversali nel layer di output.\\
 		- \emph{Reti feedforward a più strati }: le reti a più strati sono anche dette \textit{reti multilivello }, in inglese \textbf{\textit{}Multi-Layer Perceptron, MLP}. Tra l'input layer e l'output layer sono presenti uno o più strati di neuroni nascosti, si parla quindi di \textit{\textit{hidden layers}} Nelle MLP non esistono connessioni nè tra neuroni di uno stesso strato nè tra neuroni di strati non limitrofi. Ogni strato ha connessioni entranti dal precedente strato e uscenti in quello successivo, quindi la propagazione del segnale avviene in avanti in modo aciclico e senza connessioni trasversali.\\
 		Tali reti vengono utilizzare per superare problemi che possono sorgere nella discriminazione dei segnali: attraverso i neuroni nascosti si ottengono delle rappresentazioni interne dei segnali di input che consentono il riconoscimento di forme più complesse, facilitando il compito della rete. 
-		Nonostante tutto, però, l’aggiunta di ulteriori strati nascosti non ottimizza le abilità di discriminazione della rete; questo è possibile solo se la funzione di attivazione è non lineare (una rete 
-		multistrato a neuroni lineari è sempre riconducibile ad una rete con due soli strati).\\ 
+		Nonostante tutto, però, l’aggiunta di ulteriori strati nascosti non ottimizza le abilità di discriminazione della rete; questo è possibile solo se la funzione di attivazione è non lineare (una rete multistrato a neuroni lineari è sempre riconducibile ad una rete con due soli strati).\\ 
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=1\linewidth]{IMMAGINI/unostrato}
+			\caption{Rete ad uno strato (a sinistra), rete multilivello (a destra)}
+			\label{fig:multistrato}
+		\end{figure}
+		
 		
 		\underline{\emph{Reti ricorrenti}}\\
-		Una rete ricorrente si distingue dalle precedenti nel fatto che è ciclica. Il sistema è quindi dimamico La presenza di cicli ha un impatto profondo sulle capacità di apprendimento della rete e sulle sue performance, in particolare rendono il sistema dinamico.
-		
+		Una rete neurale ricorrente (RNN) si distingue dalle precedenti nel fatto che è ciclica. Il sistema è dinamico, le unità di output sono connesse con quelle intermedie e con quelle di input, si ha una \emph{retroazione}. Dato un determinato stimolo, la risposta della rete ricorrente non viene dettata soltanto dai caratteri strutturali della rete stessa, come si verifica nella rete feedforward, ma varia in funzione del precedente contesto in cui si è manifestato lo stimolo. L'output non è determinato solo dall'input, ma anche da una \emph{cronologia} di input che fornisce una forma di memoria a breve termine. Queste reti sono adatte per dati strutturati temporalmente ed hanno anche la possibilità di avere un’attività in assenza di una stimolazione input, poiché gli impulsi che viaggiano sulle vie ricorrenti possono essere sufficienti a mantenere il sistema in attività.
 	
 	
 	

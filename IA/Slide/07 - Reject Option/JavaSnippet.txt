@@ -1,0 +1,26 @@
+double risultato[] = {0,0,0,0};
+String classe[] = {"Iris-setosa","Iris-versicolor","Iris-virginica","Rejected"};
+double minimo = -1;
+int colonna = -1;
+       // matrice dei costi
+int costo[][]= {
+{0,10,10,1},
+{10,0,10,1},
+{10,10,0,1}
+};
+for(int i=0; i<4; i++) {
+risultato[i]=risultato[i]+ $Iris-setosa (Neuron 0)$*costo[0][i]+$Iris-versicolor (Neuron 1)$*costo[1][i]+$Iris-virginica (Neuron 2)$*costo[2][i];
+if(i==0){
+       minimo = risultato[0];
+       colonna = 0;
+}
+else {
+       if(minimo>risultato[i]) {
+              minimo = risultato[i];
+              colonna = i;
+              }
+       }
+}
+return classe[colonna];
+
+

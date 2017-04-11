@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  11 APR 2017 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  11 APR 2017 15:48
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -722,51 +722,67 @@ File: IMMAGINI/lineare.png Graphic file (type png)
 <use IMMAGINI/lineare.png>
 Package pdftex.def Info: IMMAGINI/lineare.png used on input line 327.
 (pdftex.def)             Requested size: 234.00238pt x 148.18452pt.
- [19 <./IMMAGINI/lineare.png>]
-<"IMMAGINI/a tratti".png, id=91, 225.09094pt x 145.29282pt>
+
+<"IMMAGINI/a tratti".png, id=86, 225.09094pt x 145.29282pt>
 File: "IMMAGINI/a tratti".png Graphic file (type png)
 
 <use "IMMAGINI/a tratti".png>
-Package pdftex.def Info: "IMMAGINI/a tratti".png used on input line 352.
+Package pdftex.def Info: "IMMAGINI/a tratti".png used on input line 351.
 (pdftex.def)             Requested size: 234.00238pt x 151.05217pt.
- [20
-
- <./IMMAGINI/a tratti.png>]
-<IMMAGINI/sigmoide.png, id=97, 310.91156pt x 189.70876pt>
+ [19 <./IMMAGINI/lineare.png>] [20 <./IMMAGINI/a tratti.png>] <IMMAGINI/sigmoid
+e.png, id=97, 310.91156pt x 189.70876pt>
 File: IMMAGINI/sigmoide.png Graphic file (type png)
 
 <use IMMAGINI/sigmoide.png>
-Package pdftex.def Info: IMMAGINI/sigmoide.png used on input line 374.
+Package pdftex.def Info: IMMAGINI/sigmoide.png used on input line 373.
 (pdftex.def)             Requested size: 234.00238pt x 142.782pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
+<IMMAGINI/completamenteconnesssa.png, id=98, 361.35pt x 243.15843pt>
+File: IMMAGINI/completamenteconnesssa.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--403
+<use IMMAGINI/completamenteconnesssa.png>
+Package pdftex.def Info: IMMAGINI/completamenteconnesssa.png used on input line
+ 396.
+(pdftex.def)             Requested size: 272.99881pt x 183.70778pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--409
 
  []
 
 [21
 
- <./IMMAGINI/sigmoide.png>] [22] [23]
+ <./IMMAGINI/sigmoide.png>] [22 <./IMMAGINI/completamenteconnesssa.png>]
+<IMMAGINI/unostrato.png, id=107, 634.62094pt x 253.69781pt>
+File: IMMAGINI/unostrato.png Graphic file (type png)
+
+<use IMMAGINI/unostrato.png>
+Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 412.
+(pdftex.def)             Requested size: 390.0pt x 155.91289pt.
+ [23 <./IMMAGINI/unostrato.png>] [24]
 Capitolo 2.
-[24
+[25
 
 ]
 Capitolo 3.
-[25
+[26
 
-] [26
+] [27
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
- 4419 strings out of 493333
- 55896 string characters out of 3139198
- 139657 words of memory out of 3000000
- 7847 multiletter control sequences out of 15000+200000
+ 4431 strings out of 493333
+ 56246 string characters out of 3139198
+ 139681 words of memory out of 3000000
+ 7857 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,14n,43p,1031b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -782,9 +798,9 @@ type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (26 pages, 871763 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (27 pages, 922311 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
