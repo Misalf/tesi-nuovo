@@ -11,8 +11,9 @@
 \contentsline {subsection}{\numberline {1.5.2}Funzione lineare}{19}
 \contentsline {subsection}{\numberline {1.5.3}Funzione lineare a tratti}{19}
 \contentsline {subsection}{\numberline {1.5.4}Funzione sigmoide}{20}
-\contentsline {section}{\numberline {1.6}Architetture}{21}
-\contentsline {section}{\numberline {1.7}Apprendimento}{24}
-\contentsline {chapter}{\numberline {2}Feed Forward}{27}
-\contentsline {chapter}{\numberline {3}Ricorrenti}{28}
-\contentsline {chapter}{Riferimenti bibliografici}{29}
+\contentsline {section}{\numberline {1.6}Architettura di una rete neurale }{21}
+\contentsline {chapter}{\numberline {2}L'apprendimento delle reti neurali}{25}
+\contentsline {section}{\numberline {2.1}Paradigmi ed addestramento}{25}
+\contentsline {chapter}{\numberline {3}Feed Forward}{29}
+\contentsline {chapter}{\numberline {4}Ricorrenti}{30}
+\contentsline {chapter}{Riferimenti bibliografici}{31}
