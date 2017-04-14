@@ -28,10 +28,10 @@
 % ~ ALT+126 tilde da mettere tra due parole per non farle staccare quando si va a capo
 
 \begin{document}
-	%FRONTESPIZIO
+%FRONTESPIZIO
 	\AlCentroPagina{IMMAGINI/Frontespizio}\thispagestyle{empty}
 	
-	%DEDICA
+%DEDICA
 	\begin{flushright} 
 		\newpage
 		\null\vspace{\stretch{1}}
@@ -43,9 +43,9 @@
 		le foglie."}
 		\vspace{\stretch{2}}\null
 	\end{flushright} 
-   	%FINE DEDICA
+%FINE DEDICA
    	
-   	%FRASE
+%FRASE
    	\begin{flushright} 
    		\newpage
    		\null\vspace{\stretch{1}}
@@ -53,26 +53,25 @@
    		\textit{Se non puoi passare attraverso una montagna, giraci intorno; \\ se non puoi girarci intorno, passaci sopra;\\ se non puoi passarci sopra, siediti un attimo \\e chiediti se raggiungere l'altro lato sia davvero così importante.\\ \vspace{1cm} Se lo è comincia a scavare una galleria.}
    		\vspace{\stretch{2}}\null
    	\end{flushright} 
-   %FINEFRASE
+%FINEFRASE
    
-   	%INDICE
+%INDICE
 	\tableofcontents\thispagestyle{empty}
-	%FINE INDICE
+%FINE INDICE
 	
-	%INTRODUZIONE
+%INTRODUZIONE
 	\chapter*{Introduzione}
 	\onehalfspacing
 	\addcontentsline{toc}{chapter}{Introduzione}
 	prova
-	%FINE INTRODUZIONE
+%FINE INTRODUZIONE
 		
-	%INIZIO DEL PRIMO CAPITOLO
+%INIZIO DEL PRIMO CAPITOLO
 	
 	\chapter{Presentazione delle reti neurali artificiali}
-		
-		
 	
-		
+	
+	
 	\section{Cenni storici ed origini}
 		Le reti neurali artificiali, dall'inglese \textit{Artificial Neural Network (ANN)}, e la conseguente computazione neurale, sono state costruite ispirandosi ai sistemi neurali biologici, con l'obiettivo di modellarne il comportamento e la struttura e di simularne le funzioni basilari e fondamentali.\\
 		Una definizione semplice e formale di tali strutture è fornita dall'inventore del primo neurocomputer, il Dr. Robert Hecht-Nielsen che le definì come: \\
@@ -127,7 +126,6 @@
 
 		
 		
-
 	\section{Il neurone biologico}
 		
 		Per convincersi a fondo sulla connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano, e le numerose analogie che ne derivano, è bene dare una breve descrizione del secondo sistema, in modo da far emergere le principali caratteristiche ed i principali costituenti che sono utili al fine della comprensione delle reti neurali.\\
@@ -168,7 +166,6 @@
 		
 		
 		 
-		
 	\section{Modello del neurone artificiale}
 		
 		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni, così come le sinapsi collegano i neuroni nella rete umana. \\
@@ -243,10 +240,10 @@
 		\end{itemize}
 		
 		
-		
 		\clearpage
-	\section{Funzioni di attivazione}
+	\section{Attivazione di un neurone e funzioni di attivazione}
 		
+		Nelle reti neurali si può avere una \emph{attivazione asincrona}, in cui i neuroni si attivano uno per volta, ed una {attivazione sincrona} in cui tutti i neuroni si attivano contemporaneamente. L'attivazione di un neurone dipende solo dall'informazione ricevuta ed è indipendente dalle operazioni svolte dagli altri nodi.\\ 
 		La funzione di attivazione determina il tipo di risposta che un neurone è in grado di emettere. Definisce, quindi, l’uscita di un neurone in funzione del livello di attivazione. L'uscita può essere un numero reale, un numero reale appartenente ad un intervallo, oppure un numero appartenente ad un insieme discreto.\\
 		
 		\subsection{Funzione a soglia}
@@ -263,7 +260,8 @@
 					\end{cases}$
 			\end{center} $$
 		\end{equation}
-	
+		
+		\clearpage
 		ed il grafico relativo
 		
 		\begin{figure}[h!]
@@ -272,8 +270,7 @@
 			\caption{ Funzione di attivazione a soglia }
 			\label{fig:asoglia}
 		\end{figure}
-		
-		\clearpage
+	
 		Se si tralascia il contributo dell'ingresso $x_{0}$ dal livello di attivazione e si ha quindi $a=\sum\limits_{i=1}^n w_{i}x_{i}$, si avrà
 		
 		\begin{equation}
@@ -295,7 +292,8 @@
 			\caption{ Funzione a soglia senza contributo $x_{0}$ }
 			\label{fig:asoglia1}
 		\end{figure}
-	
+		
+		\clearpage
 		A volte è opportuno che la funzione di attivazione assuma valori tra $–1$ e $+1$ ed in questo caso la funzione a soglia, che diviene la ben nota \emph{funzione segno} è ridefinita così : 
 	
 		\begin{equation}
@@ -330,6 +328,7 @@
 			\label{fig:lineare}
 		\end{figure}
 	
+		\clearpage
 		\subsection{Funzione lineare a tratti}
 	
 		Un esempio di funzione di attivazione lineare a tratti è:
@@ -356,7 +355,9 @@
 
 		\subsection{Funzione sigmoide}
 	
-		La funzione sigmoide appartenente alla famiglia di funzioni continue non lineari ed è tra le più utilizzate. Tra queste funzioni riportiamo la \emph{funzione logistica} così definita:
+		La funzione sigmoide appartenente alla famiglia di funzioni continue non lineari ed è tra le più utilizzate. \\
+		\clearpage
+		Tra queste funzioni riportiamo la \emph{funzione logistica} così definita:
 	
 		\begin{equation}
 			\label{eqn:sigmoide} 
@@ -366,8 +367,7 @@
 		\end{equation}
 	
 		imponendo sempre $a=\sum\limits_{i=0}^n w_{i}x_{i}$.
-		
-		\clearpage
+	
 		Essa assume questa forma
 		\begin{figure}[h]
 			\centering
@@ -376,8 +376,8 @@
 			\label{fig:sigmoide}
 		\end{figure}
 	
-	
-	\section{Architettura di una rete neurale }
+		
+		\section{Architettura di una rete neurale }
 		
 		L'architettura di una rete neurale artificiale è caratterizzata da:
 		
@@ -408,7 +408,6 @@
 			\label{fig:completamenteconnesssa}
 		\end{figure}
 		
-		
 		\underline{\emph{Reti feedforward a strati}}\\
 		In queste reti i segnali viaggiano dallo strato di ingresso verso lo strato di uscita e pertanto vengono anche chiamate \textbf{reti feedforward}. Nelle reti stratificate non esistono connessioni tra i neuroni all'interno di uno stesso strato, nè tra neuroni di strati non limitrofi. Ogni neurone in un generico strato è connesso con tutti quelli dello strato successivo ed i neuroni dello strato di ingresso hanno come unico compito quello di trasmettere i segnali ricevuti allo strato successivo, all'interno di essi non avviene alcuna computazione.\\
 		Le reti feedforward a strati si distinguono in base al numero di strati che presentano, numero che dipende dallo specifico problema che si intende risolvere.\\ 
@@ -417,22 +416,33 @@
 		Tali reti vengono utilizzare per superare problemi che possono sorgere nella discriminazione dei segnali: attraverso i neuroni nascosti si ottengono delle rappresentazioni interne dei segnali di input che consentono il riconoscimento di forme più complesse, facilitando il compito della rete. 
 		Nonostante tutto, però, l’aggiunta di ulteriori strati nascosti non ottimizza le abilità di discriminazione della rete; questo è possibile solo se la funzione di attivazione è non lineare (una rete multistrato a neuroni lineari è sempre riconducibile ad una rete con due soli strati).\\ 
 		
+		\clearpage
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=1\linewidth]{IMMAGINI/unostrato}
 			\caption{Rete ad uno strato (a sinistra), rete multilivello (a destra)}
 			\label{fig:multistrato}
 		\end{figure}
-		
+	
 		\underline{\emph{Reti ricorrenti}}\\
 		Una rete neurale ricorrente (RNN) si distingue dalle precedenti nel fatto che è ciclica. Il sistema è dinamico, le unità di output sono connesse con quelle intermedie e con quelle di input, si ha una \emph{retroazione}. Dato un determinato stimolo, la risposta della rete ricorrente non viene dettata soltanto dai caratteri strutturali della rete stessa, come si verifica nella rete feedforward, ma varia in funzione del precedente contesto in cui si è manifestato lo stimolo. L'output non è determinato solo dall'input, ma anche da una \emph{cronologia} di input che fornisce una forma di memoria a breve termine. Queste reti sono adatte per dati strutturati temporalmente ed hanno anche la possibilità di avere un’attività in assenza di una stimolazione input, poiché gli impulsi che viaggiano sulle vie ricorrenti possono essere sufficienti a mantenere il sistema in attività.
 	
-		\chapter{L'apprendimento delle reti neurali}
+%FINE PRIMO CAPITOLO%
 	
-		\section{Paradigmi ed addestramento}
+	\chapter{L'apprendimento delle reti neurali}
+	
+	
+	
+	\section{Addestramento e Principio di Occam}
 		Per costruire una rete neurale efficiente, un passo fondamentale è individuare un \emph{\textbf{insieme di apprendimento}} ed un \emph{\textbf{algoritmo di apprendimento}}.\\
 		Per insieme di apprendimento si intende una collezione di esempi dai quali la rete può attingere per raggiungere lo scopo per il quale è stata progettata; per algoritmo, invece, un procedimento che permetta di prelevare le informazioni dall'insieme di apprendimento e di fissare dei parametri che vengano poi modificati attraverso operazioni iterative interfaccianti con l'ambiente.
-		Le reti neurali si ispirano al tratto caratteristico del sistema nervoso ovvero la capacità di acquisire esperienza da esempi del mondo reale: per questo nella fase di apprendimento si parla di \emph{addestramento} delle reti neurali attraverso dei \textit{paradigmi di apprendimento}.\\
+		Le reti neurali si ispirano al tratto caratteristico del sistema nervoso, ovvero la capacità di acquisire esperienza da esempi del mondo reale: per questo oltre che di apprendimento si parla di \emph{addestramento} delle reti neurali attraverso dei \textit{paradigmi di apprendimento}.\\
+		L’addestramento, quindi, avviene sempre grazie ad un certo numero di esempi prelevati dal mondo reale ed è evidente che l’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza nella fase di apprendimento. Non bisogna però immaginare che con l'aumentare del numero di unità, cresce il potere computazionale della rete. Infatti, in tal caso, ci si troverebbe di fronte ad una situazione di \emph{overfitting}, un adattamento forzato della rete dato che risulterebbe avere un numero eccessivo di parametri rispetto al numero di esempi forniti. Questa situazione tende a far diminuire la capacità della rete di generalizzare su nuovi esempi originando una sorta di principio di indeterminazione dell'apprendimento che può essere affrontato con la limitazione del numero degli ingressi.\\ 
+		Una rete neurale \emph{generalizza bene} se la mappa input/output che genera la rete è corretta per esempi di test mai presentati alla rete in fase di training (si assume che gli esempi di test siano tratti dalla stessa popolazione usata per generare il training set). In questi termini essa produce mappature input/output corrette anche se l’input è lievemente differente dagli esempi usati in fase di training; se però la rete viene addestra con troppi esempi, la rete rischia di memorizzare il training set trovandosi nella condizione di \emph{overtraining}. \\ 
+		Per avere una struttura ottimale della rete dal punto di vista della capacità di generalizzazione una guida adatta è il \textbf{Principio di Occam}, che suggerisce molto sulla complessità delle reti e sulla loro adeguatezza e che in relazione a queste ultime, può essere enunciato nel seguente modo:
+		
+		\textit{``Date due reti che soddisfano l'insieme di apprendimento, la rete di minore complessità è quella che si comporta meglio su esempi non visti, cioè ha la migliore capacità di generalizzazione.}"\\ 
+		
 		I paradigmi di apprendimento si suddividono in:
 		
 		\begin{itemize}
@@ -440,41 +450,69 @@
 			\item \emph{apprendimento \textbf{non supervisionato}}
 		\end{itemize}
 	
-		Nell'apprendimento supervisionato si utilizza un \emph{training set} cioè un set di esempi nel quale sono presenti coppie del tipo $(x_{k},y_{dk})$ dove la prima variabile indica il $k$-esimo ingresso e la seconda la $k$-esima uscita. Con $y_{k}$ si indica l'uscita reale e la si confronta con l'uscita desiderata: l'obiettivo è modificare i pesi affinché si minimizzi la differenza tra le due uscite. Il training set iniziale viene proposto ripetutamente finché $y_{dk}\approx y_{k}$, ovvero l'uscita desiderata sia il più simile possibile a quella reale, il tutto modificando i pesi in base alla legge di apprendimento scelta.\\
+		\underline{Apprendimento supervisionato}\\
+		Tale paradigma presuppone un \emph{training set} cioè un set di esempi nel quale sono presenti coppie del tipo $(x_{k},y_{dk})$ dove la prima variabile indica il $k$-esimo ingresso e la seconda la $k$-esima uscita. Con $y_{k}$ si indica l'uscita reale e la si confronta con l'uscita desiderata: l'obiettivo è modificare i pesi affinché si minimizzi la differenza tra le due uscite. Il training set iniziale viene proposto ripetutamente finché $y_{dk}\approx y_{k}$, ovvero l'uscita desiderata sia il più simile possibile a quella reale, il tutto modificando i pesi in base alla legge di apprendimento scelta.\\
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{IMMAGINI/supervisionato}
+			\caption{ Apprendimento supervisionato }
+			\label{fig:supervisionato}
+		\end{figure}
+		
+		\underline{Apprendimento non supervisionato}\\
+		
+		Nell'apprendimento non supervisionato la rete modifica i pesi autonomamente, si auto-organizza. Viene fornito solo il training set senza precisare le uscite.\\
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{IMMAGINI/nonsupervisionato}
+			\caption{ Apprendimento non supervisionato}
+			\label{fig:nonsupervisionato}
+		\end{figure}
 		
 		
-		FIGURA\\
+	\section {Processi di apprendimento}
 		
-		Un esempio di utilizzo di apprendimento supervisionato è quello adoperato nelle reti neurali che vengono utilizzate come \emph{classificatori}, in grado cioè di riconoscere oggetti appartenenti a diverse categorie. Tale funzionamento si basa su vettori di numeri reali forniti all'ingresso che la rete deve poi attribuire ad una specifica classe.
-		Un'altra classe di problemi risolti dalle reti neurali con apprendimento supervisionato è quella dell'approssimazione di funzioni. Data una funzione nota per punti, di cui non si conosce la forma analitica, il compito della rete neurale è quello di approssimarla nel modo migliore possibile, calcolandone il valore anche in punti diversi da quelli proposti in ingresso.\\
+	\section{Attività di apprendimento}
+		
+		La scelta del paradigma di apprendimento, e quindi la metodologia di addestramento di una rete neurale, avviene in base all'attività che la rete deve svolgere, ovvero il problema che deve risolvere. Le reti neurali possono essere utilizzate come \emph{classificatori}, in grado cioè di riconoscere oggetti appartenenti a diverse categorie o possono essere responsabili dell'approssimazione di funzioni. Data una funzione nota per punti, di cui non si conosce la forma analitica, il compito della rete neurale è quello di approssimarla nel modo migliore possibile, calcolandone il valore anche in punti diversi da quelli proposti in ingresso.\\
+		
+		\subsection{Associazione di pattern e memoria associativa}
+		
+		Per memoria associativa intendiamo un criterio di memorizzazione e recupero di informazioni attraverso l'associazione. Completamente ispirata al metodo di memorizzazione del cervello umano, consente il recupero dell'informazione sulle basi di una conoscenza parziale del suo contenuto senza conoscerne la locazione di memoria.\\
+		La memoria associativa si articola in due fasi\\
+		
+		\begin{itemize}
+		 \item Fase di memorizzazione: la rete viene addestrata per fare in modo che dei \emph{pattern},vettori di numeri reali, vengano memorizzati ed associati;
+		 \item Fase di richiamo: si richiama dalla rete un pattern memorizzato a seguito della presentazione di una versione parziale o distorta di un pattern chiave. 
+		\end{itemize}
+	
+		Le \emph{associazioni} possono essere di due forme:\\ 
+		- \underline{\emph{Autoassociazioni}}: generalmente utilizzate nell'apprendimento non supervisionato, la rete neurale memorizza un insieme di pattern che vengono ripetutamente presentati per la memorizzazione. Tra essi ne viene presentato in particolare uno che risulta essere distorto o in forma parziale. L'obiettivo è che la rete riconosca il pattern e ne richiami la versione completa/originale precedentemente memorizzata.\\
+		-  \underline{\emph{Eteroassociazioni}}: ogni pattern è associato ad un altro pattern. Se $x_{k}$ è un generico pattern chiave associato al pattern memorizzato $y_{k}$, allora $x_{k}$ opera in modo tale da richiamare $y_{k}$.
+		\clearpage
+		
+		\subsection{Riconoscimento di pattern}
+		
+		\subsection{Approssimazione di funzioni}
 		
 		
-		Nell'apprendimento non supervisionato la rete modifica i pesi autonomamente, si auto-organizza. Viene fornito solo il training set senza precisare le uscite. 
 		
-    GENERALIZZAZIONE\\
-    ASTRAZIONE\\
-    MEMORIA\\
+		
     
-    PRINCIPIO DI OCCAM
-    	 L’addestramento avviene sempre grazie ad un certo numero di esempi prelevati dal mondo reale. Nell’addestramento supervisionato, gli esempi forniti alla RN sono delle coppie (ingresso, uscita corrispondente desiderata). . Altra classe di problemi risolti dalle RN è l’inseguimento (approssimazione) di funzioni. Una funzione in una o più variabili è nota per punti (non ne conosciamo la forma analitica); la RN deve riuscire ad approssimarla nel modo migliore possibile, calcolandone il valore anche in punti diversi da quelli proposti in ingresso. Nella fase di addestramento, diremo alla RN quale valore di uscita corrisponde a ciascun ingresso assegnato. Quanto nella modalità operativa riceverà un ingresso diverso, la rete dovrà tirare fuori un valore approssimato dell’uscita quanto più vicino possibile a quello reale. Nell’addestramento non supervisionato forniamo alla rete dei soli valori di ingresso (il TS, training set) senza precisare le relative uscite. La rete è in grado di auto-organizzarsi (come nelle SOM cui si è accennato prima) modificando la propria conoscenza interna (ovvero la memoria locale dei neuroni). Fra questi due estremi c’è l’addestramento graded: tipicamente la rete evolve in maniera autonoma, come nella modalità non supervisionata. I particolari istanti di tempo viene però utilizzata anche l’informazione sull’uscita desiderata. Si parla anche di reinforcement: ad intervalli di cicli di addestramento scanditi da un periodo si affianca alla modalità non supervisionata una modalità supervisionata. Noi non considereremo questo genere di addestramento.
-    	
-    	
-    	Il corretto funzionamento di una neurale sull’insieme di apprendimento non offre, ovviamente,  garanzia di un altrettanto soddisfacente funzionamento su altri dati relativi allo stesso concetto, ma non utilizzati nella fase di apprendimento (insieme che può essere utilizzato per effettuare un test). Inoltre, è evidente che l’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza della fase di apprendimento. Si consideri, ad esempio, il caso delle reti feedforward, che si vedranno più avanti. Verrà enunciata la loro capacità universale di approssimazione, che 
-    	le porta ad apprendere qualsiasi funzione, si potrebbe dire che sono in grado di imparare ogni complesso legame ingresso-uscita. Quando il numero delle unità cresce aumenta il potere computazionale, ma la capacità di generalizzare su nuovi esempi tende a diminuire dato che il fitting, in questo caso può essere definito come over-fitting, sull’insieme di apprendimento ha luogo in un enorme spazio di parametri vincolati solo da pochi esempi. Questo origina una sorta di principio di indeterminazione dell’apprendimento secondo il quale non è possibile al variare dei pesi della rete neurale ottenere un'adeguata generalizzazione per nuovi esempi. 
-    Come si vedrà la limitazione del numero degli ingressi risulta particolarmente importante per limitare l'over-fitting. La memorizzazione e la generalizzazione possono anche essere espresse in termini di dispendio di risorse di memoria richiesto nel primo caso rispetto al secondo. Quindi l'efficienza nell'uso delle risorse disponibili, principio di base per un ingegnere, è anche il principio a cui si adegua il sistema nervoso nell'acquisizione di esperienza. 
     
-    Tale principio è ben noto in letteratura tecnica sotto il nome di "Principio di Occam" e può essere enunciato nel seguente modo in relazione alle reti neurali: 
     
-    "date due reti che soddisfano l'insieme di apprendimento, la rete di minore complessità è quella 
-    che si comporta meglio su esempi non visti, cioè ha la migliore capacità di generalizzazione" 
-    
-    II Principio di Occam è la guida più adatta alla determinazione della struttura della rete neurale ottimale dal punto di vista della capacità di generalizzazione. Infatti, esso suggerisce, nel caso delle reti neurali supervisionate, di utilizzare una funzione obiettivo da minimizzare costituita  da due termini: l'uno riguardante l'adeguatezza della rete rispetto all'insieme di apprendimento; l'altro riguardante la complessità della rete. Indicando con Es il primo, con Ec il secondo e con m un valore che misura il numero dei parametri della rete, si ha per la funzione obiettivo: 
+   
+   
+
+    	 
 	
 	%FINE DEL PRIMO CAPITOLO
 	
-	\chapter{Feed Forward}
+	\chapter{Reti Feedforward: Rosenblatt ed il superamento con le MLP}
 	
-	\chapter{Ricorrenti}
+	\chapter{Ricorrenti: Reti di Hopfield}
 
 \clearpage 
 %\phantomsection 
@@ -483,8 +521,8 @@
 	\bibitem[1]{Lazzarini} Prof.ssa Lazzarini Beatrice, (2015), \emph{Introduzione alle reti neurali.}
 	\bibitem[2]{Gambosi} Prof. Gambosi Giorgio, (2010), \emph{Reti neurali, note dal corso di Machine Learning.}
 	\bibitem[3]{Labonia} Prof.ssa Labonia Laura, \emph{Storia delle reti neurali artificiali.}
-	\bibitem[4]{Bicego} Prof. Bicego Manuele, \emph{Riconoscimento e recupero dell’informazione per bioinformatica. Reti neurali.}
-	\bibitem[5]{Pioggia} Ing. Pioggia Giovanni, (2009), \emph{Modelli di sistemi fisiologici}
+	\bibitem[4]{Bicego} Prof. Bicego Manuele, \emph{Riconoscimento e recupero dell’informazione per bioinformatica, reti neurali.}
+	\bibitem[5]{Pioggia} Ing. Pioggia Giovanni, (2009), \emph{Modelli di sistemi fisiologici.}
  \end{thebibliography}
 	
 \end{document}
