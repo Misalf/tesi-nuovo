@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.30)  15 APR 2017 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  15 APR 2017 20:59
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -786,113 +786,109 @@ File: IMMAGINI/completamenteconnesssa.png Graphic file (type png)
 
 <use IMMAGINI/completamenteconnesssa.png>
 Package pdftex.def Info: IMMAGINI/completamenteconnesssa.png used on input line
- 408.
+ 406.
 (pdftex.def)             Requested size: 272.99881pt x 183.70778pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 413--420
+Underfull \hbox (badness 10000) in paragraph at lines 411--418
 
  []
 
-[23 <./IMMAGINI/diagrammareti.png>] [24 <./IMMAGINI/completamenteconnesssa.png>
-] [25] <IMMAGINI/unostrato.png, id=120, 634.62094pt x 253.69781pt>
+[23 <./IMMAGINI/diagrammareti.png> <./IMMAGINI/completamenteconnesssa.png>]
+[24] <IMMAGINI/unostrato.png, id=116, 634.62094pt x 253.69781pt>
 File: IMMAGINI/unostrato.png Graphic file (type png)
 
 <use IMMAGINI/unostrato.png>
-Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 424.
+Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 422.
 (pdftex.def)             Requested size: 390.0pt x 155.91289pt.
- [26
+ [25
 
  <./IMMAGINI/unostrato.png>]
 Capitolo 2.
-[27
+[26
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 446--447
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--457
+Underfull \hbox (badness 10000) in paragraph at lines 453--455
 
  []
 
-[28] <IMMAGINI/supervisionato.png, id=131, 546.54187pt x 248.42813pt>
+[27] <IMMAGINI/supervisionato.png, id=128, 546.54187pt x 248.42813pt>
 File: IMMAGINI/supervisionato.png Graphic file (type png)
 
 <use IMMAGINI/supervisionato.png>
-Package pdftex.def Info: IMMAGINI/supervisionato.png used on input line 460.
+Package pdftex.def Info: IMMAGINI/supervisionato.png used on input line 458.
 (pdftex.def)             Requested size: 272.99881pt x 124.09245pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
-
- []
-
-<IMMAGINI/nonsupervisionato.png, id=132, 520.94624pt x 184.43906pt>
+<IMMAGINI/nonsupervisionato.png, id=129, 520.94624pt x 184.43906pt>
 File: IMMAGINI/nonsupervisionato.png Graphic file (type png)
 
 <use IMMAGINI/nonsupervisionato.png>
-Package pdftex.def Info: IMMAGINI/nonsupervisionato.png used on input line 471.
+Package pdftex.def Info: IMMAGINI/nonsupervisionato.png used on input line 469.
 
 (pdftex.def)             Requested size: 272.99881pt x 96.65465pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
 
  []
 
-[29 <./IMMAGINI/supervisionato.png> <./IMMAGINI/nonsupervisionato.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 485--487
+[28 <./IMMAGINI/supervisionato.png> <./IMMAGINI/nonsupervisionato.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
 
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 499--501
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
 
  []
 
-<IMMAGINI/classificazione.png, id=141, 405.76593pt x 201.00093pt>
+<IMMAGINI/classificazione.png, id=138, 405.76593pt x 201.00093pt>
 File: IMMAGINI/classificazione.png Graphic file (type png)
 
 <use IMMAGINI/classificazione.png>
-Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 510.
+Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 508.
 (pdftex.def)             Requested size: 272.99881pt x 135.2373pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 515--516
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
 
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
-[32 <./IMMAGINI/classificazione.png>]
+[31 <./IMMAGINI/classificazione.png>]
 Capitolo 3.
-[33
+[32
 
 ]
 Capitolo 4.
-[34
+[33
 
-] [35
+] [34
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
  4461 strings out of 493333
- 57079 string characters out of 3139153
+ 57079 string characters out of 3139198
  139726 words of memory out of 3000000
  7881 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
@@ -910,9 +906,9 @@ type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (35 pages, 1096840 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (34 pages, 971177 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
+ 193 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
