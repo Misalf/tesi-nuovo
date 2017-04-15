@@ -433,16 +433,28 @@
 	
 	
 	
-	\section{Addestramento e Principio di Occam}
-		Per costruire una rete neurale efficiente, un passo fondamentale è individuare un \emph{\textbf{insieme di apprendimento}} ed un \emph{\textbf{algoritmo di apprendimento}}.\\
-		Per insieme di apprendimento si intende una collezione di esempi dai quali la rete può attingere per raggiungere lo scopo per il quale è stata progettata; per algoritmo, invece, un procedimento che permetta di prelevare le informazioni dall'insieme di apprendimento e di fissare dei parametri che vengano poi modificati attraverso operazioni iterative interfaccianti con l'ambiente.
-		Le reti neurali si ispirano al tratto caratteristico del sistema nervoso, ovvero la capacità di acquisire esperienza da esempi del mondo reale: per questo oltre che di apprendimento si parla di \emph{addestramento} delle reti neurali attraverso dei \textit{paradigmi di apprendimento}.\\
-		L’addestramento, quindi, avviene sempre grazie ad un certo numero di esempi prelevati dal mondo reale ed è evidente che l’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza nella fase di apprendimento. Non bisogna però immaginare che con l'aumentare del numero di unità, cresce il potere computazionale della rete. Infatti, in tal caso, ci si troverebbe di fronte ad una situazione di \emph{overfitting}, un adattamento forzato della rete dato che risulterebbe avere un numero eccessivo di parametri rispetto al numero di esempi forniti. Questa situazione tende a far diminuire la capacità della rete di generalizzare su nuovi esempi originando una sorta di principio di indeterminazione dell'apprendimento che può essere affrontato con la limitazione del numero degli ingressi.\\ 
-		Una rete neurale \emph{generalizza bene} se la mappa input/output che genera la rete è corretta per esempi di test mai presentati alla rete in fase di training (si assume che gli esempi di test siano tratti dalla stessa popolazione usata per generare il training set). In questi termini essa produce mappature input/output corrette anche se l’input è lievemente differente dagli esempi usati in fase di training; se però la rete viene addestra con troppi esempi, la rete rischia di memorizzare il training set trovandosi nella condizione di \emph{overtraining}. \\ 
+	\section{Addestramento e generalizzazione}
+		
+		Per costruire una rete neurale efficiente, un passo fondamentale è individuare un \\textbf{insieme di apprendimento} ed un \textbf{algoritmo di apprendimento}.\\
+		Per insieme di apprendimento si intende una collezione di esempi, chiamata \textbf{training set}, dai quali la rete può attingere per raggiungere lo scopo per il quale è stata progettata; per algoritmo, invece, un procedimento che permetta di prelevare le informazioni dall'insieme di apprendimento e di fissare dei parametri che vengano poi modificati attraverso operazioni iterative interfaccianti con l'ambiente.\\
+		L’apprendimento avviene sempre grazie ad un certo numero di esempi prelevati dal mondo reale ed opera in due fasi distinte: 
+		
+		\begin{itemize}
+			\item Fase di apprendimento o addestramento nota come \textbf{learning} o \textbf{training};\\
+			\item Fase di generalizzazione nota come \textbf{recall}.
+		\end{itemize} 
+		
+		Durante la fase di learning si cerca di far imparare alla rete tutte le informazioni contenute nel training set, ottenendo un modello che verrà poi utilizzato nella fase di generalizzazione per analizzare nuovi ingressi.\\  
+		L’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza nella fase di apprendimento. Non bisogna però immaginare che con l'aumentare del numero di unità, cresce il potere computazionale della rete. Infatti, in tal caso, ci si troverebbe di fronte ad una situazione di \emph{overfitting}, un adattamento forzato della rete dato che risulterebbe avere un numero eccessivo di parametri rispetto al numero di esempi forniti. Questa situazione tende a far diminuire la capacità della rete di generalizzare su nuovi esempi originando una sorta di principio di indeterminazione dell'apprendimento che può essere affrontato con la limitazione del numero degli ingressi.\\ 
+		Per \textbf{generalizzazione} di una rete, si intende la sua capacità di fornire le risposte appropriate a pattern di input che non sono mai stati incontrati. Essa risulta essere un punto di forza delle reti neurali e dipende dal numero di unità nascoste, dai pesi sinaptici e dal numero di training record.\\
+		Una rete neurale ``generalizza bene" se la mappa input/output che essa genera è corretta per esempi di test mai presentati in fase di training (si assume che gli esempi di test siano tratti dalla stessa popolazione usata per generare il training set). In questi termini essa produce mappature input/output corrette anche se l’input è lievemente differente dagli esempi usati in fase di training; se però la rete viene addestra con troppi esempi, si rischia che quest'ultima memorizzi il training set trovandosi nella condizione di \emph{overtraining}. \\ 
 		Per avere una struttura ottimale della rete dal punto di vista della capacità di generalizzazione una guida adatta è il \textbf{Principio di Occam}, che suggerisce molto sulla complessità delle reti e sulla loro adeguatezza e che in relazione a queste ultime, può essere enunciato nel seguente modo:
 		
-		\textit{``Date due reti che soddisfano l'insieme di apprendimento, la rete di minore complessità è quella che si comporta meglio su esempi non visti, cioè ha la migliore capacità di generalizzazione.}"\\ 
+		\textit{``Date due reti che soddisfano l'insieme di apprendimento, la rete di minore complessità è quella che si comporta meglio su esempi non visti, cioè ha la migliore capacità di generalizzazione".}\\ 
 		
+		
+	\section{Paradigmi di apprendimento}	
+		Le reti neurali si ispirano al tratto caratteristico del sistema nervoso, ovvero la capacità di acquisire esperienza da esempi del mondo reale: per questo, oltre che di apprendimento, si parla di \emph{addestramento} delle reti neurali attraverso dei \textit{paradigmi di apprendimento}.\\
 		I paradigmi di apprendimento si suddividono in:
 		
 		\begin{itemize}
@@ -460,6 +472,7 @@
 			\label{fig:supervisionato}
 		\end{figure}
 		
+		\clearpage
 		\underline{Apprendimento non supervisionato}\\
 		
 		Nell'apprendimento non supervisionato la rete modifica i pesi autonomamente, si auto-organizza. Viene fornito solo il training set senza precisare le uscite.\\
@@ -470,8 +483,8 @@
 			\caption{ Apprendimento non supervisionato}
 			\label{fig:nonsupervisionato}
 		\end{figure}
-		
-		
+	
+	
 	\section {Processi di apprendimento}
 		
 	\section{Attività di apprendimento}
@@ -520,7 +533,8 @@
 		
 		dove $\varepsilon$ è un numero positivo piccolo, che risulterà essere sempre più piccolo con l'accrescere delle dimensioni e dei parametri liberi della rete. 
 		
-		
+	
+	
 		
 		
 		
