@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  14 APR 2017 23:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  15 APR 2017 20:59
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -605,13 +605,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [4
+
+])
 \tf@toc=\write3
 \openout3 = `"TESI NON CANCELLARE.toc"'.
 
- [4
-
-] [5
+ [5] [6
 
 ]
 Capitolo 1.
@@ -630,26 +630,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
-[6
+[7
 
-]
-Overfull \hbox (8.61678pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 7
- []
-
-[7]
+] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 100--104
 
  []
 
-
-Overfull \hbox (8.61678pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 8
- []
-
-[8] <IMMAGINI/esempioiniziale.jpg, id=34, 382.42876pt x 211.79124pt>
+[9] <IMMAGINI/esempioiniziale.jpg, id=37, 382.42876pt x 211.79124pt>
 File: IMMAGINI/esempioiniziale.jpg Graphic file (type jpg)
 
 <use IMMAGINI/esempioiniziale.jpg>
@@ -659,13 +647,7 @@ Package pdftex.def Info: IMMAGINI/esempioiniziale.jpg used on input line 107.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (8.61678pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 9
- []
-
-[9]
+[10]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 117.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -673,50 +655,32 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 117.
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 10
- []
-
-[10 <./IMMAGINI/esempioiniziale.jpg>]
-<IMMAGINI/Sistemanervoso.png, id=42, 703.87968pt x 145.29282pt>
+ [11 <./IMMAGINI/esempioiniziale.jpg>]
+<IMMAGINI/Sistemanervoso.png, id=45, 703.87968pt x 145.29282pt>
 File: IMMAGINI/Sistemanervoso.png Graphic file (type png)
 
 <use IMMAGINI/Sistemanervoso.png>
 Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 142.
 (pdftex.def)             Requested size: 390.0pt x 80.501pt.
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 11
- []
-
-[11 <./IMMAGINI/Sistemanervoso.png>]
+ [12 <./IMMAGINI/Sistemanervoso.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
-<IMMAGINI/neuron.png, id=49, 571.38469pt x 295.1025pt>
+<IMMAGINI/neuron.png, id=52, 571.38469pt x 295.1025pt>
 File: IMMAGINI/neuron.png Graphic file (type png)
 
 <use IMMAGINI/neuron.png>
 Package pdftex.def Info: IMMAGINI/neuron.png used on input line 159.
 (pdftex.def)             Requested size: 390.0pt x 201.42351pt.
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 12
- []
-
-[12 <./IMMAGINI/neuron.png>]
+ [13 <./IMMAGINI/neuron.png>]
 Overfull \hbox (13.88495pt too wide) in paragraph at lines 171--174
 \OT1/cmr/m/n/12 Consideriamo una ge-ne-ri-ca unita $\OML/cmm/m/it/12 j$ \OT1/c
 mr/m/n/12 co-sti-tui-ta da $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 ca-na-li di in-
 gres-so $\OML/cmm/m/it/12 x[]; x[]; :::; x[]$\OT1/cmr/m/n/12 .
  []
 
-<IMMAGINI/palla1.png, id=54, 384.6872pt x 222.07968pt>
+<IMMAGINI/palla1.png, id=58, 384.6872pt x 222.07968pt>
 File: IMMAGINI/palla1.png Graphic file (type png)
 
 <use IMMAGINI/palla1.png>
@@ -726,100 +690,59 @@ Package pdftex.def Info: IMMAGINI/palla1.png used on input line 177.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 13
- []
-
-[13] <IMMAGINI/palla2.png, id=61, 511.9125pt x 227.34938pt>
+[14] <IMMAGINI/palla2.png, id=64, 511.9125pt x 227.34938pt>
 File: IMMAGINI/palla2.png Graphic file (type png)
 
 <use IMMAGINI/palla2.png>
 Package pdftex.def Info: IMMAGINI/palla2.png used on input line 194.
 (pdftex.def)             Requested size: 390.0pt x 173.20708pt.
+ [15 <./IMMAGINI/palla1.png> <./IMMAGINI/palla2.png>]
+[16
 
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 14
- []
-
-[14 <./IMMAGINI/palla1.png> <./IMMAGINI/palla2.png>]
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 15
- []
-
-[15
-
-] <IMMAGINI/palla3.png, id=71, 547.2947pt x 271.0125pt>
+] <IMMAGINI/palla3.png, id=74, 547.2947pt x 271.0125pt>
 File: IMMAGINI/palla3.png Graphic file (type png)
 
 <use IMMAGINI/palla3.png>
 Package pdftex.def Info: IMMAGINI/palla3.png used on input line 226.
 (pdftex.def)             Requested size: 390.0pt x 193.12321pt.
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 16
- []
-
-[16
+ [17
 
  <./IMMAGINI/palla3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
+[18
 
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 17
- []
-
-[17
-
-] <IMMAGINI/asoglia.png, id=79, 252.19218pt x 145.29282pt>
+] <IMMAGINI/asoglia.png, id=82, 252.19218pt x 145.29282pt>
 File: IMMAGINI/asoglia.png Graphic file (type png)
 
 <use IMMAGINI/asoglia.png>
 Package pdftex.def Info: IMMAGINI/asoglia.png used on input line 269.
 (pdftex.def)             Requested size: 234.00238pt x 134.81496pt.
 
-<IMMAGINI/asoglia1.png, id=80, 236.38312pt x 129.48375pt>
+<IMMAGINI/asoglia1.png, id=83, 236.38312pt x 129.48375pt>
 File: IMMAGINI/asoglia1.png Graphic file (type png)
 
 <use IMMAGINI/asoglia1.png>
 Package pdftex.def Info: IMMAGINI/asoglia1.png used on input line 291.
 (pdftex.def)             Requested size: 234.00238pt x 128.18335pt.
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 18
- []
-
-[18
+ [19
 
  <./IMMAGINI/asoglia.png> <./IMMAGINI/asoglia1.png>]
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 297.
 
-<IMMAGINI/lineare.png, id=86, 215.30438pt x 112.92188pt>
+<IMMAGINI/lineare.png, id=90, 215.30438pt x 112.92188pt>
 File: IMMAGINI/lineare.png Graphic file (type png)
 
 <use IMMAGINI/lineare.png>
 Package pdftex.def Info: IMMAGINI/lineare.png used on input line 326.
 (pdftex.def)             Requested size: 234.00238pt x 122.73088pt.
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 19
- []
-
-[19
+ [20
 
  <./IMMAGINI/lineare.png>]
-<"IMMAGINI/a tratti".png, id=92, 225.09094pt x 145.29282pt>
+<"IMMAGINI/a tratti".png, id=95, 225.09094pt x 145.29282pt>
 File: "IMMAGINI/a tratti".png Graphic file (type png)
 
 <use "IMMAGINI/a tratti".png>
@@ -830,23 +753,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 20
- []
-
-[20
+[21
 
  <./IMMAGINI/a tratti.png>]
-<IMMAGINI/sigmoide.png, id=97, 310.91156pt x 189.70876pt>
+<IMMAGINI/sigmoide.png, id=100, 310.91156pt x 189.70876pt>
 File: IMMAGINI/sigmoide.png Graphic file (type png)
 
 <use IMMAGINI/sigmoide.png>
 Package pdftex.def Info: IMMAGINI/sigmoide.png used on input line 374.
 (pdftex.def)             Requested size: 234.00238pt x 142.782pt.
 
-<IMMAGINI/diagrammareti.png, id=98, 487.8225pt x 235.63031pt>
+<IMMAGINI/diagrammareti.png, id=101, 487.8225pt x 235.63031pt>
 File: IMMAGINI/diagrammareti.png Graphic file (type png)
 
 <use IMMAGINI/diagrammareti.png>
@@ -861,16 +778,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--400
 
  []
 
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 21
- []
-
-[21
+[22
 
  <./IMMAGINI/sigmoide.png>]
-<IMMAGINI/completamenteconnesssa.png, id=104, 361.35pt x 243.15843pt>
+<IMMAGINI/completamenteconnesssa.png, id=107, 361.35pt x 243.15843pt>
 File: IMMAGINI/completamenteconnesssa.png Graphic file (type png)
 
 <use IMMAGINI/completamenteconnesssa.png>
@@ -882,35 +793,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--418
 
  []
 
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 22
- []
-
-[22 <./IMMAGINI/diagrammareti.png> <./IMMAGINI/completamenteconnesssa.png>]
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 23
- []
-
-[23] <IMMAGINI/unostrato.png, id=113, 634.62094pt x 253.69781pt>
+[23 <./IMMAGINI/diagrammareti.png> <./IMMAGINI/completamenteconnesssa.png>]
+[24] <IMMAGINI/unostrato.png, id=116, 634.62094pt x 253.69781pt>
 File: IMMAGINI/unostrato.png Graphic file (type png)
 
 <use IMMAGINI/unostrato.png>
 Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 422.
 (pdftex.def)             Requested size: 390.0pt x 155.91289pt.
-
-Overfull \hbox (14.49171pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CAPITOLO 1.  PRESENTAZIONE DELLE RETI NEURALI ARTIFICIALI \OT1
-/cmr/m/n/12 24
- []
-
-[24
+ [25
 
  <./IMMAGINI/unostrato.png>]
 Capitolo 2.
-[25
+[26
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 444--445
@@ -922,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 453--455
 
  []
 
-[26] <IMMAGINI/supervisionato.png, id=125, 546.54187pt x 248.42813pt>
+[27] <IMMAGINI/supervisionato.png, id=128, 546.54187pt x 248.42813pt>
 File: IMMAGINI/supervisionato.png Graphic file (type png)
 
 <use IMMAGINI/supervisionato.png>
@@ -938,7 +832,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
-<IMMAGINI/nonsupervisionato.png, id=126, 520.94624pt x 184.43906pt>
+<IMMAGINI/nonsupervisionato.png, id=129, 520.94624pt x 184.43906pt>
 File: IMMAGINI/nonsupervisionato.png Graphic file (type png)
 
 <use IMMAGINI/nonsupervisionato.png>
@@ -950,33 +844,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 479--480
 
  []
 
-[27 <./IMMAGINI/supervisionato.png> <./IMMAGINI/nonsupervisionato.png>]
+[28 <./IMMAGINI/supervisionato.png> <./IMMAGINI/nonsupervisionato.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 483--485
 
  []
 
-[28] [29] [30
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 497--499
 
-]
+ []
+
+<IMMAGINI/classificazione.png, id=138, 405.76593pt x 201.00093pt>
+File: IMMAGINI/classificazione.png Graphic file (type png)
+
+<use IMMAGINI/classificazione.png>
+Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 508.
+(pdftex.def)             Requested size: 272.99881pt x 135.2373pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
+
+ []
+
+[31 <./IMMAGINI/classificazione.png>]
 Capitolo 3.
-[31
+[32
 
 ]
 Capitolo 4.
-[32
+[33
 
-] [33
+] [34
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
- 4455 strings out of 493333
- 56908 string characters out of 3139198
- 137715 words of memory out of 3000000
- 7876 multiletter control sequences out of 15000+200000
+ 4461 strings out of 493333
+ 57079 string characters out of 3139198
+ 139726 words of memory out of 3000000
+ 7881 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,14n,43p,1035b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,14n,43p,1031b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
@@ -989,9 +906,9 @@ type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (33 pages, 1061791 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (34 pages, 971177 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
+ 193 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

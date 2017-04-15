@@ -68,7 +68,7 @@
 		
 %INIZIO DEL PRIMO CAPITOLO
 	
-	\chapter{Presentazione delle reti neurali artificiali}
+	\chapter{ Presentazione delle reti neurali }
 	
 	
 	
@@ -481,21 +481,46 @@
 		\subsection{Associazione di pattern e memoria associativa}
 		
 		Per memoria associativa intendiamo un criterio di memorizzazione e recupero di informazioni attraverso l'associazione. Completamente ispirata al metodo di memorizzazione del cervello umano, consente il recupero dell'informazione sulle basi di una conoscenza parziale del suo contenuto senza conoscerne la locazione di memoria.\\
-		La memoria associativa si articola in due fasi\\
+		La memoria associativa si articola in due fasi:\\
 		
 		\begin{itemize}
-		 \item Fase di memorizzazione: la rete viene addestrata per fare in modo che dei \emph{pattern},vettori di numeri reali, vengano memorizzati ed associati;
+		 \item Fase di memorizzazione: la rete viene addestrata per fare in modo che dei \emph{pattern}, vettori di numeri reali, vengano memorizzati ed associati;
 		 \item Fase di richiamo: si richiama dalla rete un pattern memorizzato a seguito della presentazione di una versione parziale o distorta di un pattern chiave. 
 		\end{itemize}
 	
 		Le \emph{associazioni} possono essere di due forme:\\ 
-		- \underline{\emph{Autoassociazioni}}: generalmente utilizzate nell'apprendimento non supervisionato, la rete neurale memorizza un insieme di pattern che vengono ripetutamente presentati per la memorizzazione. Tra essi ne viene presentato in particolare uno che risulta essere distorto o in forma parziale. L'obiettivo è che la rete riconosca il pattern e ne richiami la versione completa/originale precedentemente memorizzata.\\
+		- \underline{\emph{Autoassociazioni}}: generalmente utilizzate nell'apprendimento non supervisionato, la rete neurale memorizza un insieme di pattern che vengono ripetutamente presentati. Tra essi ne viene presentato in particolare uno che risulta essere distorto o in forma parziale. L'obiettivo è che la rete riconosca il pattern e ne richiami la versione completa/originale precedentemente memorizzata.\\
 		-  \underline{\emph{Eteroassociazioni}}: ogni pattern è associato ad un altro pattern. Se $x_{k}$ è un generico pattern chiave associato al pattern memorizzato $y_{k}$, allora $x_{k}$ opera in modo tale da richiamare $y_{k}$.
-		\clearpage
 		
 		\subsection{Riconoscimento di pattern}
 		
+		Tale processo si articola in due fasi: la prima fase consiste in una sessione di addestramento in cui  alla rete vengono presentati ripetutamente un insieme di pattern specificando per ognuno la classe di appartenenza; nella seconda fase alla rete viene presentato un pattern mai mostrato precedentemente, ma appartenente ad una categoria di pattern che la rete ha memorizzato. La rete neurale sarà in grado di riconoscerne la categoria e classificare il pattern grazie ai dati precedentemente acquisiti.\\
+		Il sistema è diviso in tre spazi:\\
+		
+		\begin{itemize}
+		\item Lo \emph{spazio dei dati} costituito da tutti i pattern, un generico pattern $x$ identifica un punto dimensionale di tale spazio;
+		\item Lo \emph{spazio delle caratteristiche} all'interno del quale sono presenti dei punti $y$;
+		\item Lo \emph{spazio decisionale} multidimensionale suddiviso in regioni determinate dalla rete nella fase di addestramento, ognuna delle quali è associata ad una classe.
+		\end{itemize}.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{IMMAGINI/classificazione}
+			\caption{ Classificazione di pattern }
+			\label{fig:classificazione}
+		\end{figure}
+		
+		Il processo di riconoscimento inizia con l'estrazione delle \emph{features} ovvero le caratteristiche che un generico pattern nello spazio dei dati deve rispettare. L'\emph{estrazione} è una trasformazione che collega il pattern $x$ con un punto $y$ nello spazio delle caratteristiche. Infine un'ultima trasformazione detta \emph{classificazione} mappa dal punto $y$ in una regione dello spazio decisionale.\\
+		
 		\subsection{Approssimazione di funzioni}
+		
+		Si prenda in esame una rappresentazione non lineare input/output descritta da $y=f(x)$ dove $x$ è l'input e $y$ è l'output e si consideri un insieme di esempi ${(x_{i},y_{i} )}$ per $i=1, 2, ..., n$. L'incognita è la funzione $f$ ed il problema consiste nel creare una rete capace di generare una rappresentazione $F$ quanto più vicina alla funzione $f$. In senso euclidiano bisogna soddisfare la condizione\\
+		
+		\begin{center} $ ||F(x)-f(x)<\varepsilon|| \hspace{0,7cm} \forall x $ \end{center}
+		
+		dove $\varepsilon$ è un numero positivo piccolo, che risulterà essere sempre più piccolo con l'accrescere delle dimensioni e dei parametri liberi della rete. 
+		
+		
 		
 		
 		
