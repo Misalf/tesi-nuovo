@@ -36,11 +36,7 @@
 		\newpage
 		\null\vspace{\stretch{1}}
 		\thispagestyle{empty}
-		\textit{``Si sta come d'autunno\\
-		\vspace{1cm}
-		sugli alberi\\
-		\vspace{1cm}
-		le foglie."}
+		\textit{Grazie PAINT}
 		\vspace{\stretch{2}}\null
 	\end{flushright} 
 %FINE DEDICA
@@ -411,9 +407,9 @@
 		\underline{\emph{Reti feedforward a strati}}\\
 		In queste reti i segnali viaggiano dallo strato di ingresso verso lo strato di uscita e pertanto vengono anche chiamate \textbf{reti feedforward}. Nelle reti stratificate non esistono connessioni tra i neuroni all'interno di uno stesso strato, nè tra neuroni di strati non limitrofi. Ogni neurone in un generico strato è connesso con tutti quelli dello strato successivo ed i neuroni dello strato di ingresso hanno come unico compito quello di trasmettere i segnali ricevuti allo strato successivo, all'interno di essi non avviene alcuna computazione.\\
 		Le reti feedforward a strati si distinguono in base al numero di strati che presentano, numero che dipende dallo specifico problema che si intende risolvere.\\ 
-		- \emph{Reti feedforward ad uno strato} : questa è una forma semplice di reti a strati. Il segnale nella rete si propaga in avanti senza cicli, ci sono connessioni che tornano indietro e nemmeno connessioni trasversali nel layer di output.\\
+		- \emph{Reti feedforward ad uno strato} : questa è una forma semplice di reti a strati. Il segnale nella rete si propaga in avanti senza cicli, \textbf{NON} ci sono connessioni che tornano indietro e nemmeno connessioni trasversali nel layer di output.\\
 		- \emph{Reti feedforward a più strati }: le reti a più strati sono anche dette \textit{reti multilivello }, in inglese \textbf{\textit{}Multi-Layer Perceptron, MLP}. Tra l'input layer e l'output layer sono presenti uno o più strati di neuroni nascosti, si parla quindi di \textit{\textit{hidden layers}} Nelle MLP non esistono connessioni nè tra neuroni di uno stesso strato nè tra neuroni di strati non limitrofi. Ogni strato ha connessioni entranti dal precedente strato e uscenti in quello successivo, quindi la propagazione del segnale avviene in avanti in modo aciclico e senza connessioni trasversali.\\
-		Tali reti vengono utilizzare per superare problemi che possono sorgere nella discriminazione dei segnali: attraverso i neuroni nascosti si ottengono delle rappresentazioni interne dei segnali di input che consentono il riconoscimento di forme più complesse, facilitando il compito della rete. 
+		Tali reti vengono utilizzate per superare problemi che possono sorgere nella discriminazione dei segnali: attraverso i neuroni nascosti si ottengono delle rappresentazioni interne dei segnali di input che consentono il riconoscimento di forme più complesse, facilitando il compito della rete. 
 		Nonostante tutto, però, l’aggiunta di ulteriori strati nascosti non ottimizza le abilità di discriminazione della rete; questo è possibile solo se la funzione di attivazione è non lineare (una rete multistrato a neuroni lineari è sempre riconducibile ad una rete con due soli strati).\\ 
 		
 		\clearpage
@@ -435,8 +431,8 @@
 	
 	\section{Addestramento e generalizzazione}
 		
-		Per costruire una rete neurale efficiente, un passo fondamentale è individuare un \\textbf{insieme di apprendimento} ed un \textbf{algoritmo di apprendimento}.\\
-		Per insieme di apprendimento si intende una collezione di esempi, chiamata \textbf{training set}, dai quali la rete può attingere per raggiungere lo scopo per il quale è stata progettata; per algoritmo, invece, un procedimento che permetta di prelevare le informazioni dall'insieme di apprendimento e di fissare dei parametri che vengano poi modificati attraverso operazioni iterative interfaccianti con l'ambiente.\\
+		Per costruire una rete neurale efficiente, un passo fondamentale è individuare un \textbf{insieme di apprendimento} ed un \textbf{algoritmo di apprendimento}.\\
+		Per insieme di apprendimento si intende una collezione di esempi, chiamata \textbf{(cioè un)} \textbf{training set}, dai quali la rete può attingere per raggiungere lo scopo per il quale è stata progettata; per algoritmo, invece, un procedimento che permetta di prelevare le informazioni dall'insieme di apprendimento e di fissare dei parametri che vengano poi modificati attraverso operazioni iterative interfaccianti con l'ambiente.\\
 		L’apprendimento avviene sempre grazie ad un certo numero di esempi prelevati dal mondo reale ed opera in due fasi distinte: 
 		
 		\begin{itemize}
@@ -445,12 +441,12 @@
 		\end{itemize} 
 		
 		Durante la fase di learning si cerca di far imparare alla rete tutte le informazioni contenute nel training set, ottenendo un modello che verrà poi utilizzato nella fase di generalizzazione per analizzare nuovi ingressi.\\  
-		L’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza nella fase di apprendimento. Non bisogna però immaginare che con l'aumentare del numero di unità, cresce il potere computazionale della rete. Infatti, in tal caso, ci si troverebbe di fronte ad una situazione di \emph{overfitting}, un adattamento forzato della rete dato che risulterebbe avere un numero eccessivo di parametri rispetto al numero di esempi forniti. Questa situazione tende a far diminuire la capacità della rete di generalizzare su nuovi esempi originando una sorta di principio di indeterminazione dell'apprendimento che può essere affrontato con la limitazione del numero degli ingressi.\\ 
+		L’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza nella fase di apprendimento. \textbf{Non bisogna però immaginare che con l'aumentare del numero di unità, cresce il potere computazionale della rete. Infatti, in tal caso, ci si troverebbe di fronte ad una situazione di \emph{overfitting}, un adattamento forzato della rete dato che risulterebbe avere un numero eccessivo di parametri rispetto al numero di esempi forniti. (QUESTA PARTE NON L'HO CAPITA: O E' SCRITTA MALE O HO SONNO IO. SE PER TE VA BENE OK, ALTRIMENTI CAMBIALA)} Questa situazione tende a far diminuire la capacità della rete di generalizzare su nuovi esempi originando una sorta di principio di indeterminazione dell'apprendimento che può essere affrontato con la limitazione del numero degli ingressi.\\ 
 		Per \textbf{generalizzazione} di una rete, si intende la sua capacità di fornire le risposte appropriate a pattern di input che non sono mai stati incontrati. Essa risulta essere un punto di forza delle reti neurali e dipende dal numero di unità nascoste, dai pesi sinaptici e dal numero di training record.\\
-		Una rete neurale ``generalizza bene" se la mappa input/output che essa genera è corretta per esempi di test mai presentati in fase di training (si assume che gli esempi di test siano tratti dalla stessa popolazione usata per generare il training set). In questi termini essa produce mappature input/output corrette anche se l’input è lievemente differente dagli esempi usati in fase di training; se però la rete viene addestra con troppi esempi, si rischia che quest'ultima memorizzi il training set trovandosi nella condizione di \emph{overtraining}. \\ 
-		Per avere una struttura ottimale della rete dal punto di vista della capacità di generalizzazione una guida adatta è il \textbf{Principio di Occam}, che suggerisce molto sulla complessità delle reti e sulla loro adeguatezza e che in relazione a queste ultime, può essere enunciato nel seguente modo:
+		Una rete neurale ``generalizza bene" se la mappa input/output che essa genera è corretta per esempi di test mai presentati in fase di training (si assume che gli esempi di test siano tratti dalla stessa popolazione usata per generare il training set). In questi termini essa produce mappature input/output corrette anche se l’input è lievemente differente dagli esempi usati in fase di training; se però la rete viene addestrata con troppi esempi, si rischia che quest'ultima memorizzi il training set trovandosi nella condizione di \emph{overtraining}. \\ 
+		Per avere una struttura ottimale della rete dal punto di vista della capacità di generalizzazione una guida adatta è il \textbf{Principio di Occam}, che suggerisce molto sulla complessità delle reti e sulla loro adeguatezza e che in relazione a queste ultime può essere enunciato nel seguente modo:
 		
-		\textit{``Date due reti che soddisfano l'insieme di apprendimento, la rete di minore complessità è quella che si comporta meglio su esempi non visti, cioè ha la migliore capacità di generalizzazione".}\\ 
+		\textit{``Date due reti che soddisfano l'insieme di apprendimento, la rete di minore complessità è quella che si comporta meglio su esempi non visti, cioè ha la migliore capacità di generalizzazione."}\\ 
 		
 		
 	\section{Paradigmi di apprendimento}	
