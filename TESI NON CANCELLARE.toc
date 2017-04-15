@@ -12,13 +12,13 @@
 \contentsline {subsection}{\numberline {1.5.3}Funzione lineare a tratti}{21}
 \contentsline {subsection}{\numberline {1.5.4}Funzione sigmoide}{21}
 \contentsline {section}{\numberline {1.6}Architettura di una rete neurale }{22}
-\contentsline {chapter}{\numberline {2}L'apprendimento delle reti neurali}{26}
-\contentsline {section}{\numberline {2.1}Addestramento e Principio di Occam}{26}
-\contentsline {section}{\numberline {2.2}Processi di apprendimento}{29}
-\contentsline {section}{\numberline {2.3}Attivit\IeC {\`a} di apprendimento}{29}
-\contentsline {subsection}{\numberline {2.3.1}Associazione di pattern e memoria associativa}{29}
-\contentsline {subsection}{\numberline {2.3.2}Riconoscimento di pattern}{30}
-\contentsline {subsection}{\numberline {2.3.3}Approssimazione di funzioni}{31}
-\contentsline {chapter}{\numberline {3}Reti Feedforward: Rosenblatt ed il superamento con le MLP}{32}
-\contentsline {chapter}{\numberline {4}Ricorrenti: Reti di Hopfield}{33}
-\contentsline {chapter}{Riferimenti bibliografici}{34}
+\contentsline {chapter}{\numberline {2}L'apprendimento delle reti neurali}{27}
+\contentsline {section}{\numberline {2.1}Addestramento e Principio di Occam}{27}
+\contentsline {section}{\numberline {2.2}Processi di apprendimento}{30}
+\contentsline {section}{\numberline {2.3}Attivit\IeC {\`a} di apprendimento}{30}
+\contentsline {subsection}{\numberline {2.3.1}Associazione di pattern e memoria associativa}{30}
+\contentsline {subsection}{\numberline {2.3.2}Riconoscimento di pattern}{31}
+\contentsline {subsection}{\numberline {2.3.3}Approssimazione di funzioni}{32}
+\contentsline {chapter}{\numberline {3}Reti Feedforward: Rosenblatt ed il superamento con le MLP}{33}
+\contentsline {chapter}{\numberline {4}Ricorrenti: Reti di Hopfield}{34}
+\contentsline {chapter}{Riferimenti bibliografici}{35}
