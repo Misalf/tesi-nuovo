@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.30)  16 APR 2017 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  17 APR 2017 00:04
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -805,19 +805,19 @@ Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 418.
  <./IMMAGINI/unostrato.png>]
 Capitolo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--440
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
  []
 
 [26
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 449--450
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 461--463
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
 
  []
 
@@ -825,27 +825,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--463
 File: IMMAGINI/supervisionato.png Graphic file (type png)
 
 <use IMMAGINI/supervisionato.png>
-Package pdftex.def Info: IMMAGINI/supervisionato.png used on input line 466.
+Package pdftex.def Info: IMMAGINI/supervisionato.png used on input line 468.
 (pdftex.def)             Requested size: 272.99881pt x 124.09245pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28] [29 <./IMMAGINI/supervisionato.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
-
- []
-
-
+ [28 <./IMMAGINI/supervisionato.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
 
-<IMMAGINI/nonsupervisionato.png, id=136, 511.15968pt x 149.8097pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+<IMMAGINI/nonsupervisionato.png, id=133, 511.15968pt x 149.8097pt>
 File: IMMAGINI/nonsupervisionato.png Graphic file (type png)
 
 <use IMMAGINI/nonsupervisionato.png>
-Package pdftex.def Info: IMMAGINI/nonsupervisionato.png used on input line 478.
+Package pdftex.def Info: IMMAGINI/nonsupervisionato.png used on input line 480.
 
 (pdftex.def)             Requested size: 272.99881pt x 80.00908pt.
 
@@ -854,14 +850,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--489
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--494
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
-[30
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--502
+
+ []
+
+[29
 
  <./IMMAGINI/nonsupervisionato.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 506--508
+Underfull \hbox (badness 10000) in paragraph at lines 503--505
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--522
+
+ []
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 534--536
 
  []
 
@@ -869,15 +885,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 506--508
 File: IMMAGINI/classificazione.png Graphic file (type png)
 
 <use IMMAGINI/classificazione.png>
-Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 517.
+Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 545.
 (pdftex.def)             Requested size: 272.99881pt x 135.2373pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
  []
 
@@ -885,17 +901,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--527
 Capitolo 3.
 [34
 
-]
-Capitolo 4.
-[35
-
-] [36
+] [35
 
 
 ] ("TESI NON CANCELLARE.aux") ) 
 Here is how much of TeX's memory you used:
  4461 strings out of 493333
- 57079 string characters out of 3139153
+ 57079 string characters out of 3139198
  139726 words of memory out of 3000000
  7881 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
@@ -913,9 +925,9 @@ type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mti12.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (36 pages, 1086129 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (35 pages, 1086856 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
+ 196 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

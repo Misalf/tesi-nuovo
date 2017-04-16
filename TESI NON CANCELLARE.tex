@@ -424,6 +424,8 @@
 		Una rete neurale ricorrente (RNN) si distingue dalle precedenti nel fatto che è ciclica. Il sistema è dinamico, le unità di output sono connesse con quelle intermedie e con quelle di input, si ha una \emph{retroazione}. Dato un determinato stimolo, la risposta della rete ricorrente non viene dettata soltanto dai caratteri strutturali della rete stessa, come si verifica nella rete feedforward, ma varia in funzione del precedente contesto in cui si è manifestato lo stimolo. L'output non è determinato solo dall'input, ma anche da una \emph{cronologia} di input che fornisce una forma di memoria a breve termine. Queste reti sono adatte per dati strutturati temporalmente ed hanno anche la possibilità di avere un’attività in assenza di una stimolazione input, poiché gli impulsi che viaggiano sulle vie ricorrenti possono essere sufficienti a mantenere il sistema in attività.
 	
 %FINE PRIMO CAPITOLO%
+
+%INIZIO DEL SECONDO CAPITOLO%
 	
 	\chapter{L'apprendimento delle reti neurali}
 	
@@ -441,7 +443,7 @@
 		\end{itemize} 
 		
 		Durante la fase di learning si cerca di far imparare alla rete tutte le informazioni contenute nel training set, ottenendo un modello che verrà poi utilizzato nella fase di generalizzazione per analizzare nuovi ingressi.\\  
-		L’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza nella fase di apprendimento. \textbf{Non bisogna però immaginare che con l'aumentare del numero di unità, cresce il potere computazionale della rete. Infatti, in tal caso, ci si troverebbe di fronte ad una situazione di \emph{overfitting}, un adattamento forzato della rete dato che risulterebbe avere un numero eccessivo di parametri rispetto al numero di esempi forniti. (QUESTA PARTE NON L'HO CAPITA: O E' SCRITTA MALE O HO SONNO IO. SE PER TE VA BENE OK, ALTRIMENTI CAMBIALA)} Questa situazione tende a far diminuire la capacità della rete di generalizzare su nuovi esempi originando una sorta di principio di indeterminazione dell'apprendimento che può essere affrontato con la limitazione del numero degli ingressi.\\ 
+		L’architettura della rete neurale gioca un ruolo fondamentale per l’efficienza nella fase di apprendimento. Non bisogna però immaginare che con l'aumentare del numero di unità, cresce il potere computazionale della rete. Infatti, in tal caso, ci si troverebbe di fronte ad una situazione di \emph{overfitting}, un adattamento forzato della rete dato che risulterebbe avere un numero eccessivo di parametri rispetto al numero di esempi forniti. Questa situazione tende a far diminuire la capacità della rete di generalizzare su nuovi esempi originando una sorta di principio di indeterminazione dell'apprendimento che può essere affrontato con la limitazione del numero degli ingressi.\\ 
 		Per \textbf{generalizzazione} di una rete, si intende la sua capacità di fornire le risposte appropriate a pattern di input che non sono mai stati incontrati. Essa risulta essere un punto di forza delle reti neurali e dipende dal numero di unità nascoste, dai pesi sinaptici e dal numero di training record.\\
 		Una rete neurale ``generalizza bene" se la mappa input/output che essa genera è corretta per esempi di test mai presentati in fase di training (si assume che gli esempi di test siano tratti dalla stessa popolazione usata per generare il training set). In questi termini essa produce mappature input/output corrette anche se l’input è lievemente differente dagli esempi usati in fase di training; se però la rete viene addestrata con troppi esempi, si rischia che quest'ultima memorizzi il training set trovandosi nella condizione di \emph{overtraining}. \\ 
 		Per avere una struttura ottimale della rete dal punto di vista della capacità di generalizzazione una guida adatta è il \textbf{Principio di Occam}, che suggerisce molto sulla complessità delle reti e sulla loro adeguatezza e che in relazione a queste ultime può essere enunciato nel seguente modo:
@@ -482,7 +484,33 @@
 	
 	
 	\section {Processi di apprendimento}
+		 
+		 L’addestramento è un processo ad hoc dipendente dallo specifico problema trattato. Riportiamo alcuni processi comunemente usati .\\
+		 
+		 \subsection{Delta rule o regola di Widrow-Hoff}
+		 
+		  \subsection{Apprendimento di Hebbian}
+		 
+		 \subsection{Apprendimento con correzione di errore o metodo discesa del gradiente}
+		 
+		 Se indichiamo con $y_{k}(t)$ una risposta generata da un segnale di stimolo $x(t)$ in un tempo $t$ ed indichiamo con $y_{dk}(t)$ la risposta desiderata, avremo un \emph{segnale di errore} che può essere così espresso:\\
+		 
+		 \begin{center} $e(t)= y_{dk}(t)-y_{k}(t)$ \end{center}
+		 
+		 Tale segnale dà il via ad un meccanismo di controllo che va ad applicare una sequenza di modifiche ai pesi sinaptici del neurone interessato, al fine di avvicinare la risposta ottenuta a quella desiderata.\\
+		 %figura
+		 
+		 Questo processo di ricerca dei pesi migliori si basa sulla scelta di pesi che minimizzano una funzione errore $E(\overline{W})$, costruita al variare dei pesi stessi. \\
+		 Per la scelta di tali pesi si sfruttano le informazioni fornite dal gradiente locale della funzione errore costruita, che suggeriscono una proporzionalità.\\
+		 
+		 %figura
+		 
+		 Se $\nabla_ {w}E(\overline{w})$
 		
+		 
+		 \subsection{Apprendimento competitivo}
+	
+	
 	\section{Attività di apprendimento}
 		
 		La scelta del paradigma di apprendimento, e quindi la metodologia di addestramento di una rete neurale, avviene in base all'attività che la rete deve svolgere, ovvero il problema che deve risolvere. Le reti neurali possono essere utilizzate come \emph{classificatori}, in grado cioè di riconoscere oggetti appartenenti a diverse categorie o possono essere responsabili dell'approssimazione di funzioni. Data una funzione nota per punti, di cui non si conosce la forma analitica, il compito della rete neurale è quello di approssimarla nel modo migliore possibile, calcolandone il valore anche in punti diversi da quelli proposti in ingresso.\\
@@ -530,6 +558,9 @@
 		dove $\varepsilon$ è un numero positivo piccolo, che risulterà essere sempre più piccolo con l'accrescere delle dimensioni e dei parametri liberi della rete. 
 		
 	
+		
+	\section{Un esempio di apprendimento supervisionato: il percettrone elementare}	
+	
 	
 		
 		
@@ -543,9 +574,9 @@
 
     	 
 	
-	%FINE DEL PRIMO CAPITOLO
+	%FINE DEL SECONDO CAPITOLO
 	
-	\chapter{Reti Feedforward: Rosenblatt ed il superamento con le MLP}
+
 	
 	\chapter{Ricorrenti: Reti di Hopfield}
 
