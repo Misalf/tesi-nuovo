@@ -461,7 +461,7 @@
 		\end{itemize}
 	
 		\underline{Apprendimento supervisionato}\\
-		Tale paradigma presuppone un \emph{training set} cioè un set di esempi nel quale sono presenti coppie del tipo $(x_{k},y_{dk})$ dove la prima variabile indica il $k$-esimo ingresso e la seconda la $k$-esima uscita. Con $y_{k}$ si indica l'uscita reale e la si confronta con l'uscita desiderata: l'obiettivo è modificare i pesi affinché si minimizzi la differenza tra le due uscite. Il training set iniziale viene proposto ripetutamente finché $y_{dk}\approx y_{k}$, ovvero l'uscita desiderata sia il più simile possibile a quella reale, il tutto modificando i pesi in base alla legge di apprendimento scelta.\\
+		Tale paradigma presuppone un \emph{training set} cioè un set di esempi nel quale sono presenti coppie del tipo $(x_{k},y_{dk})$ dove la prima variabile indica il $k$-esimo ingresso e la seconda la $k$-esima uscita desiderata. Con $y_{k}$ si indica l'uscita reale e la si confronta con l'uscita desiderata: l'obiettivo è modificare i pesi affinché si minimizzi la differenza tra le due uscite. Il training set iniziale viene proposto ripetutamente finché $y_{k}\approx y_{dk}$, ovvero l'uscita reale sia il più simile possibile a quella desiderata, il tutto modificando i pesi in base alla legge di apprendimento scelta.\\
 	
 		\begin{figure}[h]
 			\centering
@@ -498,7 +498,7 @@
 		 Definiamo l'\emph{errore} come:
 		
 		 \begin{equation}  
-			 $$ \begin{center} $\delta_{k}=y_{dk}-y_{k} $ \end{center} $$
+			 $$ \begin{center} $\delta_{k}=y_{k}-y_{dk} $ \end{center} $$
 		 \end{equation} 
 	
 		 Allora se consideriamo la variazione del generico vettore dei pesi $\overline{W}_{k}$ si ha che:
@@ -519,13 +519,22 @@
 		 
 		 \subsection{Apprendimento con correzione di errore o metodo discesa del gradiente}
 		 
-		 Se indichiamo con $y_{k}$ una risposta generata da un segnale di stimolo $x$ in un tempo $t$ ed indichiamo con $y_{dk}$ la risposta desiderata, avremo un \emph{segnale di errore} che può essere così espresso:
+		 Se indichiamo con $y_{k}$ una risposta generata da un segnale di stimolo $x$ in un tempo $t$ ed indichiamo con $y_{dk}$ la risposta desiderata, avremo un \emph{segnale di}\\
+		 \clearpage \emph{errore} che può essere così espresso:
 		 
 		 \begin{equation}
-		 	$$\begin{center} $e(t)= y_{dk}(t)-y_{k}(t)$ \end{center}$$
+		 	$$\begin{center} $\delta= y_{dk}-y_{k}$ \end{center}$$
 		 \end{equation}
 		 
 		 Tale segnale dà il via ad un meccanismo di controllo che va ad applicare una sequenza di modifiche ai pesi sinaptici del neurone interessato, al fine di avvicinare la risposta ottenuta a quella desiderata.\\
+		 
+		 \begin{figure}[h]
+		 	\centering
+		 	\includegraphics[width=0.7\linewidth]{"IMMAGINI/errore"}
+		 	\caption{ Apprendimento con correzione }
+		 	\label{fig:errore}
+		 \end{figure}
+		 
 		
 		 Questo processo di ricerca dei pesi migliori si basa sulla scelta di pesi che minimizzano una funzione errore $E(\overline{W})$, costruita al variare dei pesi stessi. \\
 		 Per la scelta di tali pesi si sfruttano le informazioni fornite dal gradiente locale della funzione errore costruita.\\
@@ -547,7 +556,7 @@
 		
 		\begin{equation}
 		 $$\begin{center}
-		 	 $\frac{dE(\overline{w})}{d\overline{w}}=\nabla_ {w}E(\overline{w})=( \frac{dE(\overline{w})}{\partial(w_{1})}, \frac{dE(\overline{w})}{\partial(w_{2})}, ... ,\frac{dE(\overline{w})}{\partial(w_{n})} )^{T}$
+		 	 $\frac{dE(\overline{w})}{d\overline{w}}=\nabla_ {w}E(\overline{w})=( \frac{\partial E(\overline{w})}{\partial w_{1}}, \frac{\partial E(\overline{w})}{\partial w_{2}}, ... ,\frac{\partial E(\overline{w})}{\partial w_{n}} )^{T}$
 		 \end{center}$$
 		\end{equation}
 		 
@@ -565,8 +574,8 @@
 	 		\label{eqn:coppiagradiente} 
 	 			$$\begin{center} 
 	 					$\begin{cases}
-	 						y_{dk}=g(net_{k})\\
-	 						\delta_{k}=y_{dk}-y_{k} 	
+	 						y_{k}=g(net_{k})\\
+	 						\delta_{k}=y_{k}-y_{dk} 	
 	 					\end{cases}$
 	 			\end{center} $$
 	 	\end{equation}
@@ -575,11 +584,11 @@
 	 	
 	 	\begin{equation}
 	 		$$\begin{center}
-	 		$E_{k}=\frac{1}{2}(y_{dk}-y_{k})^{2}$
+	 		$E_{k}=\frac{1}{2}(y_{k}-y_{dk})^{2}$
 	 		\end{center}$$
 	 	\end{equation}
 	 	
-		 Ma allora se consideriamo l'$i$-esimo peso del $k$-esimo pattern si avrà che:
+		 Ma allora se consideriamo l'$i$-esimo peso del $k$-esimo input si avrà che:
 		 
 		 \begin{equation}
 		 	$$\begin{center}
@@ -587,34 +596,54 @@
 		 	\end{center}$$
 		 \end{equation}
 		 
-		 e sviluppando
+		 e sviluppando:
 		 
 		 \begin{equation}
 		 	$$\begin{center}
 		 	$\frac{\partial E_{k}}{dw_{i}}=
-		 	\dfrac{\partial}{\partial w_{i}}[\frac{1}{2}(y_{dk}-y_{k})^{2}] =
-		 	(y_{dk}-y_{k}) \frac{\partial y_{dk}-y_{k}}{\partial w_{i}} =
-		 	(y_{dk}-y_{k})\frac{\partial y_{dk}}{\partial w_{i}}=
-		 	(y_{dk}-y_{k})\frac{\partial g(net)}{\partial w_{i}}=
-		 	(y_{dk}-y_{k})\frac{\partial g(net)}{\partial net_{k}}\frac{\partial net}{\partial w_{i}}=
+		 	\dfrac{\partial}{\partial w_{i}}[\frac{1}{2}(y_{k}-y_{dk})^{2}] =
+		 	(y_{k}-y_{dk}) \frac{\partial (y_{k}-y_{dk})}{\partial w_{i}} =
+		 	(y_{k}-y_{dk})\frac{\partial y_{k}}{\partial w_{i}}=
+		 	(y_{k}-y_{dk})\frac{\partial g(net_{k})}{\partial w_{i}}=
+		 	(y_{k}-y_{dk})\frac{\partial g(net_{k})}{\partial net_{k}}\frac{\partial net_{k}}{\partial w_{i}}=
 		 	\delta_{k} g'(net_{k}) x_{i} $
 		 \end{center}$$
 		 	\end{equation}
 		 	
-		 	Quindi:
+		 	Quindi il peso $w_{i}$ sarà modificato:
 		 	
 		 	\begin{equation}
-		 		$$\begin{center} $\triangle{w_{i}}=\eta\delta_{k} g'(net_{k}) x_{i}$ 
+		 		$$\begin{center} $\triangle{w_{i}}=\eta\frac{\partial E_{k}}{dw_{i}}=\eta\delta_{k} g'(net_{k}) x_{i}$ 
 		 		\end{center}$$	
 		 	\end{equation}
 		 
 		\subsection{Apprendimento di Hebbian}
-		 
+		
+		Come nella delta rule, definiamo:\\
+		$\overline{x}_{k}=[x_{1}, x_{2}, ..., x_{n}]^{T}$ il vettore $k$-esimo degli ingressi,\\ 
+		$\overline{W}_{k}=[w_{1}, w_{2}, ..., w_{n}]^{T}$ il vettore dei pesi al $k$-esimo ingresso,\\
+		e siano $y_{k}$ ed $y_{dk}$ rispettivamente l'uscita ottenuta e l'uscita desiderata.\\
+		
+		Nell'apprendimento di tipo hebbiano viene modificato ogni valore del peso di una connessione in questo modo:
+		
+		\begin{equation}  
+			$$ \begin{center} $\triangle\overline{W}_{k}=\eta\overline{x}_{k}y_{dk}$ \end{center} $$
+		\end{equation}
+		
+		con $\eta$ learning rate.\\
+		I passi dell'algoritmo sono i seguenti:
+		\begin{itemize}
+			\item 1- se $y_{k}=y_{dk}$ nessuna modifica pesi
+			\item 2- se $y_{k}>y_{dk}$ allora $\triangle\overline{W}_{k}=-\eta\overline{x}_{k}y_{dk}$
+			\item 3- se  $y_{k}<y_{dk}$ allora $\triangle\overline{W}_{k}=\eta\overline{x}_{k}y_{dk}$
+		\end{itemize}
+		
+		
 		\subsection{Apprendimento competitivo}
 		 
-		 Tale apprendimento si basa su una vera a propria competizione tra i neuroni di uscita di una rete neurale: questi competono tra loro per attivarsi in seguito ad uno stimolo. In un certo momento $t$ può attivarsi un solo neurone che viene denominato \textbf{winners-takes-all}.\\  
+		 Tale apprendimento si basa su una vera a propria competizione tra i neuroni di uscita di una rete neurale per attivarsi in seguito ad uno stimolo. In un certo momento $t$ può attivarsi un solo neurone che viene denominato \textbf{winners-takes-all}.\\  
 		 In tale processo è importare avere quindi un meccanismo che permetta ai neuroni di competere ed un valore che indichi il limite della ``forza" di ciascun neurone.\\
-		 Nella forma più semplice la rete neurale ha un solo strato di neuroni di uscita, completamente connessi ai nodi di input e possono essere presenti connessioni tra i neuroni che portano ad inibizioni laterali.\\
+		 Nella forma più semplice, la rete neurale ha un solo strato di neuroni di uscita, completamente connessi ai nodi di input e che possono essere connessi tra loro.\\
 		
 		 \begin{figure}[h]
 		 	\centering
@@ -623,7 +652,7 @@
 		 	\label{fig:competitivo}
 		 \end{figure}
 		 
-		 Il neurone $k$ che si attiva è quello con input netto $\nu_{k}$ più alto per un dato input $x$, con $\nu_{k}$ combinazione lineare di tutti gli input. Il suo segnale di output $y_{dk}$ sarà $1$, mentre quello degli altri neuroni rimasti inattivi è $0$.
+		 Il neurone $k$ che si attiva è quello con input netto $\nu_{k}$ più alto per un dato input $x$, con $\nu_{k}$ combinazione lineare di tutti gli input. Il suo segnale di output $y_{k}$ sarà $1$, mentre quello degli altri neuroni rimasti inattivi è $0$.
 		 
 		 \begin{equation}
 		 \label{eqn:competitivo} 
@@ -644,7 +673,7 @@
 		 		$\triangle w_{kj}=$
 		 			$\begin{cases}
 						\eta(x_{j}-w_{kj}) \hspace{0.8cm}se\hspace{0.1cm} il\hspace{0.1cm} neurone\hspace{0.1cm} k\hspace{0.1cm} vince;\\
-		 				0\hspace{0.8cm} altrimenti
+		 				0\hspace{2.7cm} altrimenti
 		 			\end{cases}$
 		    \end{center} $$
 		 \end{equation}
@@ -760,24 +789,15 @@
 		I passi da eseguire sono:
 		
 		\begin{itemize}
-			\item {1 - Si inizializzano i pesi con valori casuali};
-			\item {2 - Si presenta un ingresso $x_{k}$ ed il valore di uscita desiderato $y_{dk}$} ;
-			\item {3 - Si calcola la risposta $y_{k}$ e si aggiornano i pesi attraverso la delta rule;}
-			\item {4 - Si ripete il ciclo dal passo 2 finché non si ottiene una risposta soddisfacente.}
+			\item {1 - Si inizializzano i pesi con valori casuali}
+			\item {2 - Si presenta un ingresso $x_{k}$ ed il valore di uscita desiderato $y_{dk}$} 
+			\item {3 - Si calcola la risposta $y_{k}$ e si aggiornano i pesi attraverso la delta rule}
+			\item {4 - Si ripete il ciclo dal passo 2 finché non si ottiene una risposta soddisfacente}
 		\end{itemize}
 	   
 	   Con riferimento alla figura 2.5, si osservi che modificando i pesi $w_{1}, w_{2}, w_{0}$ si modifica la posizione e la pendenza della retta di separazione tra le due classi. Il processo termina quando la retta separa correttamente le due classi.
 	
-	
-    
-   
-   
-
-    	 
-	
 	%FINE DEL SECONDO CAPITOLO
-	
-
 	
 	\chapter{Ricorrenti: Reti di Hopfield}
 

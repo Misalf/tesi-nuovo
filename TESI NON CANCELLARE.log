@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  19 APR 2017 22:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  19 APR 2017 23:27
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -860,99 +860,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 492--497
 
 [29
 
- <./IMMAGINI/nonsupervisionato.png>] [30
+ <./IMMAGINI/nonsupervisionato.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 522--523
+
+ []
+
+[30
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
 
  []
 
+<"IMMAGINI/errore".png, id=141, 501.37312pt x 159.59625pt>
+File: "IMMAGINI/errore".png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--532
+<use "IMMAGINI/errore".png>
+Package pdftex.def Info: "IMMAGINI/errore".png used on input line 533.
+(pdftex.def)             Requested size: 272.99881pt x 86.90395pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--541
 
  []
 
-<IMMAGINI/gradiente.png, id=141, 373.395pt x 191.9672pt>
+<IMMAGINI/gradiente.png, id=142, 373.395pt x 191.9672pt>
 File: IMMAGINI/gradiente.png Graphic file (type png)
 
 <use IMMAGINI/gradiente.png>
-Package pdftex.def Info: IMMAGINI/gradiente.png used on input line 535.
+Package pdftex.def Info: IMMAGINI/gradiente.png used on input line 544.
 (pdftex.def)             Requested size: 272.99881pt x 140.3575pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
-
- []
-
-[31 <./IMMAGINI/gradiente.png>] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 615--618
-
- []
-
-<IMMAGINI/competitivo.png, id=153, 201.75375pt x 180.675pt>
-File: IMMAGINI/competitivo.png Graphic file (type png)
-
-<use IMMAGINI/competitivo.png>
-Package pdftex.def Info: IMMAGINI/competitivo.png used on input line 621.
-(pdftex.def)             Requested size: 155.99762pt x 139.69911pt.
- [33] [34 <./IMMAGINI/competitivo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 655--656
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 659--661
-
- []
-
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 673--675
-
- []
-
-<IMMAGINI/classificazione.png, id=164, 405.76593pt x 201.00093pt>
-File: IMMAGINI/classificazione.png Graphic file (type png)
-
-<use IMMAGINI/classificazione.png>
-Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 684.
-(pdftex.def)             Requested size: 272.99881pt x 135.2373pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--690
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
+
+ []
+
+[31
+
+ <./IMMAGINI/errore.png>] [32 <./IMMAGINI/gradiente.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 622--626
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 644--647
+
+ []
+
+[34] <IMMAGINI/competitivo.png, id=161, 201.75375pt x 180.675pt>
+File: IMMAGINI/competitivo.png Graphic file (type png)
+
+<use IMMAGINI/competitivo.png>
+Package pdftex.def Info: IMMAGINI/competitivo.png used on input line 650.
+(pdftex.def)             Requested size: 155.99762pt x 139.69911pt.
+ [35 <./IMMAGINI/competitivo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 688--690
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 702--704
 
  []
 
-<IMMAGINI/perceptron.png, id=168, 498.36188pt x 250.68657pt>
+[37] <IMMAGINI/classificazione.png, id=173, 405.76593pt x 201.00093pt>
+File: IMMAGINI/classificazione.png Graphic file (type png)
+
+<use IMMAGINI/classificazione.png>
+Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 713.
+(pdftex.def)             Requested size: 272.99881pt x 135.2373pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 722--723
+
+ []
+
+[38 <./IMMAGINI/classificazione.png>]
+<IMMAGINI/perceptron.png, id=177, 498.36188pt x 250.68657pt>
 File: IMMAGINI/perceptron.png Graphic file (type png)
 
 <use IMMAGINI/perceptron.png>
-Package pdftex.def Info: IMMAGINI/perceptron.png used on input line 705.
+Package pdftex.def Info: IMMAGINI/perceptron.png used on input line 734.
 (pdftex.def)             Requested size: 272.99881pt x 137.32721pt.
- [37 <./IMMAGINI/classificazione.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 729--731
+ [39 <./IMMAGINI/perceptron.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 758--760
 
  []
 
-[38 <./IMMAGINI/perceptron.png>]
-<IMMAGINI/rettapercettrone.png, id=177, 573.64313pt x 374.90062pt>
+<IMMAGINI/rettapercettrone.png, id=182, 573.64313pt x 374.90062pt>
 File: IMMAGINI/rettapercettrone.png Graphic file (type png)
 
 <use IMMAGINI/rettapercettrone.png>
-Package pdftex.def Info: IMMAGINI/rettapercettrone.png used on input line 734.
+Package pdftex.def Info: IMMAGINI/rettapercettrone.png used on input line 763.
 (pdftex.def)             Requested size: 272.99881pt x 178.41714pt.
- [39 <./IMMAGINI/rettapercettrone.png>]
-[40]
+ [40 <./IMMAGINI/rettapercettrone.png>]
+[41]
 Capitolo 3.
-[41
+[42
 
-] [42
+] [43
 
 
 ] ("TESI NON CANCELLARE.aux")
@@ -961,10 +979,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4489 strings out of 493333
- 57746 string characters out of 3139198
- 139856 words of memory out of 3000000
- 7905 multiletter control sequences out of 15000+200000
+ 4495 strings out of 493333
+ 57871 string characters out of 3139198
+ 139867 words of memory out of 3000000
+ 7910 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,14n,43p,1031b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -982,9 +1000,9 @@ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (42 pages, 1198798 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (43 pages, 1188653 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
+ 246 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 116 words of extra memory for PDF output out of 10000 (max. 10000000)
 
