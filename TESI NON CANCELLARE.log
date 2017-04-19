@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  19 APR 2017 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  19 APR 2017 22:13
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -503,7 +503,11 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@olf=\skip53
 \f@ncyO@orf=\skip54
 )
-("TESI NON CANCELLARE.aux")
+("TESI NON CANCELLARE.aux"
+
+LaTeX Warning: Label `eqn:competitivo' multiply defined.
+
+)
 \openout1 = `"TESI NON CANCELLARE.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -850,104 +854,137 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--489
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--497
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 500--502
+Underfull \hbox (badness 10000) in paragraph at lines 492--497
 
  []
 
 [29
 
- <./IMMAGINI/nonsupervisionato.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 503--505
+ <./IMMAGINI/nonsupervisionato.png>] [30
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
+
+ []
+
+<IMMAGINI/gradiente.png, id=141, 373.395pt x 191.9672pt>
+File: IMMAGINI/gradiente.png Graphic file (type png)
+
+<use IMMAGINI/gradiente.png>
+Package pdftex.def Info: IMMAGINI/gradiente.png used on input line 535.
+(pdftex.def)             Requested size: 272.99881pt x 140.3575pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+
+ []
+
+[31 <./IMMAGINI/gradiente.png>] [32]
+Underfull \hbox (badness 10000) in paragraph at lines 615--618
+
+ []
+
+<IMMAGINI/competitivo.png, id=153, 201.75375pt x 180.675pt>
+File: IMMAGINI/competitivo.png Graphic file (type png)
+
+<use IMMAGINI/competitivo.png>
+Package pdftex.def Info: IMMAGINI/competitivo.png used on input line 621.
+(pdftex.def)             Requested size: 155.99762pt x 139.69911pt.
+ [33] [34 <./IMMAGINI/competitivo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--522
+Underfull \hbox (badness 10000) in paragraph at lines 659--661
 
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 534--536
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 673--675
 
  []
 
-[31] <IMMAGINI/classificazione.png, id=145, 405.76593pt x 201.00093pt>
+<IMMAGINI/classificazione.png, id=164, 405.76593pt x 201.00093pt>
 File: IMMAGINI/classificazione.png Graphic file (type png)
 
 <use IMMAGINI/classificazione.png>
-Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 545.
+Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 684.
 (pdftex.def)             Requested size: 272.99881pt x 135.2373pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 554--555
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
 
  []
 
-[32 <./IMMAGINI/classificazione.png>]
-<IMMAGINI/perceptron.png, id=149, 498.36188pt x 250.68657pt>
+<IMMAGINI/perceptron.png, id=168, 498.36188pt x 250.68657pt>
 File: IMMAGINI/perceptron.png Graphic file (type png)
 
 <use IMMAGINI/perceptron.png>
-Package pdftex.def Info: IMMAGINI/perceptron.png used on input line 566.
+Package pdftex.def Info: IMMAGINI/perceptron.png used on input line 705.
 (pdftex.def)             Requested size: 272.99881pt x 137.32721pt.
- [33 <./IMMAGINI/perceptron.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 590--592
+ [37 <./IMMAGINI/classificazione.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 729--731
 
  []
 
-<IMMAGINI/rettapercettrone.png, id=154, 573.64313pt x 374.90062pt>
+[38 <./IMMAGINI/perceptron.png>]
+<IMMAGINI/rettapercettrone.png, id=177, 573.64313pt x 374.90062pt>
 File: IMMAGINI/rettapercettrone.png Graphic file (type png)
 
 <use IMMAGINI/rettapercettrone.png>
-Package pdftex.def Info: IMMAGINI/rettapercettrone.png used on input line 595.
+Package pdftex.def Info: IMMAGINI/rettapercettrone.png used on input line 734.
 (pdftex.def)             Requested size: 272.99881pt x 178.41714pt.
- [34 <./IMMAGINI/rettapercettrone.png>]
-[35]
+ [39 <./IMMAGINI/rettapercettrone.png>]
+[40]
 Capitolo 3.
-[36
+[41
 
-] [37
+] [42
 
 
-] ("TESI NON CANCELLARE.aux") ) 
+] ("TESI NON CANCELLARE.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4475 strings out of 493333
- 57426 string characters out of 3139198
- 139770 words of memory out of 3000000
- 7893 multiletter control sequences out of 15000+200000
+ 4489 strings out of 493333
+ 57746 string characters out of 3139198
+ 139856 words of memory out of 3000000
+ 7905 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,14n,43p,1031b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-
-Output written on "TESI NON CANCELLARE.pdf" (37 pages, 1029218 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/symbols/msam10.pfb>
+Output written on "TESI NON CANCELLARE.pdf" (42 pages, 1198798 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
+ 240 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
