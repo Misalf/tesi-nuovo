@@ -25,5 +25,5 @@
 \contentsline {subsection}{\numberline {2.4.2}Riconoscimento di pattern}{31}
 \contentsline {subsection}{\numberline {2.4.3}Approssimazione di funzioni}{32}
 \contentsline {section}{\numberline {2.5}Un esempio di apprendimento supervisionato: il percettrone elementare}{33}
-\contentsline {chapter}{\numberline {3}Ricorrenti: Reti di Hopfield}{34}
-\contentsline {chapter}{Riferimenti bibliografici}{35}
+\contentsline {chapter}{\numberline {3}Ricorrenti: Reti di Hopfield}{36}
+\contentsline {chapter}{Riferimenti bibliografici}{37}

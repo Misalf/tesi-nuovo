@@ -559,15 +559,70 @@
 		
 	
 		
-	\section{Un esempio di apprendimento supervisionato: il percettrone elementare}	
+	\section{Un esempio di apprendimento supervisionato: il percettrone elementare}
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{IMMAGINI/perceptron}
+			\caption{ Il percettrone }
+			\label{fig:perceptron}
+		\end{figure}	
+	
+		Proposto da Rosenblatt, il percettrone è la forma più semplice di rete neurale e coincide con la struttura del neurone formale. Esso è costituito da un singolo neurone in cui confluiscono più ingressi i cui pesi sinaptici sono modificabili. La funzione di attivazione è una funzione a gradino detta \emph{funzione di Heavside}:
+		
+		\begin{equation}
+			\label{eqn:Heavside} 
+				$$\begin{center} 
+					$g(net_{j})=$
+						$\begin{cases}
+							1 \hspace{0.8cm}se\hspace{0.1cm} net_{j} \geq 0 \\
+							0 \hspace{0.8cm}se\hspace{0.1cm} net_{j} < 0
+						\end{cases}$
+				\end{center} $$
+		\end{equation}
+		
+	 	Il percettrone divide lo spazio di ingresso in due regione mediante l'iperpiano in $\Re^{n}$ di equazione: 
+	 
+	 	\begin{equation}  
+	 		$$ \begin{center} $ w_{0}+\sum\limits_{i=1}^n w_{i}x_{i}=0 $ \end{center} $$
+	 	\end{equation} 
+		
+		ed è quindi in grado di risolvere solo problemi \emph{linearmente separabili}.\\ 
+		Supponiamo di voler classificare in due classi distinte, $C_{1}$ e $C_{2}$, oggetti rappresentati mediante punti nel piano e di sfruttare $n=2$ ingressi. Se le due classi sono linearmente separabili, l'iperpiano è una retta che funge da separatore lineare tra le due classi. Un oggetto sarà quindi classificato in base alla parte di semipiano in cui il suo punto di rappresentazione cadrà. \\
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{IMMAGINI/rettapercettrone}
+			\caption{ Separazione lineare dello spazio di ingresso di un Perceptron}
+			\label{fig:rettapercettrone}
+		\end{figure}
+		
+		Nel piano $(x_{1}, x_{2})$ degli ingressi della rete le classi $C_{1}$ e $C_{2}$ sono rappresentate da due semipiani separati dalla retta $x_{2}=-\frac{w_{1}}{w_{2}}x_{1}+\frac{w_{0}}{w_{2}}$ e possiamo classificare gli stimoli in questo modo:
+		
+		\begin{equation}
+		 \label{eqn:semipiani} 
+			$$\begin{center} 
+				$\begin{cases}
+						x\in C1 \hspace{0.8cm}se\hspace{0.1cm} y=1 \\
+						x\in C2 \hspace{0.8cm}se\hspace{0.1cm} y=0
+				\end{cases}$
+			\end{center} $$
+		\end{equation}
+		
+		
+		L'apprendimento utilizzato nel perceptron è di tipo supervisionato e la learning rule attraverso i quali si modificano i singoli pesi in modo appropriato è la delta rule.\\
+		I passi da eseguire sono:
+		
+		\begin{itemize}
+			\item {1) Si inizializzano i pesi con valori casuali};
+			\item {2) Si presenta un ingresso $x_{k}$ ed il valore di uscita desiderato $y_{k}$} ;
+			\item {3) Si calcola la risposta $y_{dk}$ e si aggiornano i pesi attraverso la delta rule;}
+			\item {4) Si ripete il ciclo dal passo 2 finché non si ottiene una risposta soddisfacente.}
+		\end{itemize}
+	   
+	   Con riferimento alla figura 2.5, si osservi che modificando i pesi $w_{1}, w_{2}, w_{0}$ si modifica la posizione e la pendenza della retta di separazione tra le due classi. Il processo termina quando la retta separa correttamente le due classi.
 	
 	
-		
-		
-		
-		
-    
-    
     
    
    
