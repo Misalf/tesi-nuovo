@@ -1,0 +1,25 @@
+Cose levate
+
+\begin{document}
+%FRONTESPIZIO
+	\AlCentroPagina{IMMAGINI/Frontespizio}\thispagestyle{empty}
+
+%DEDICA
+	\begin{flushright} 
+		\newpage
+		\null\vspace{\stretch{1}}
+		\thispagestyle{empty}
+		\textit{Grazie PAINT}
+		\vspace{\stretch{2}}\null
+	\end{flushright} 
+%FINE DEDICA
+   	
+%FRASE
+   	\begin{flushright} 
+   		\newpage
+   		\null\vspace{\stretch{1}}
+   		\thispagestyle{empty}
+   		\textit{Se non puoi passare attraverso una montagna, giraci intorno; \\ se non puoi girarci intorno, passaci sopra;\\ se non puoi passarci sopra, siediti un attimo \\e chiediti se raggiungere l'altro lato sia davvero così importante.\\ \vspace{1cm} Se lo è comincia a scavare una galleria.}
+   		\vspace{\stretch{2}}\null
+   	\end{flushright} 
+%FINEFRASE

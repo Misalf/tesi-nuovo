@@ -1,29 +1,28 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{Introduzione}{6}
-\contentsline {chapter}{\numberline {1} Presentazione delle reti neurali }{7}
-\contentsline {section}{\numberline {1.1}Cenni storici ed origini}{7}
-\contentsline {section}{\numberline {1.2}Analogie con il sistema nervoso ed applicazioni}{10}
-\contentsline {section}{\numberline {1.3}Il neurone biologico}{12}
-\contentsline {section}{\numberline {1.4}Modello del neurone artificiale}{14}
-\contentsline {section}{\numberline {1.5}Attivazione di un neurone e funzioni di attivazione}{18}
-\contentsline {subsection}{\numberline {1.5.1}Funzione a soglia}{18}
-\contentsline {subsection}{\numberline {1.5.2}Funzione lineare}{19}
-\contentsline {subsection}{\numberline {1.5.3}Funzione lineare a tratti}{20}
-\contentsline {subsection}{\numberline {1.5.4}Funzione sigmoide}{21}
-\contentsline {section}{\numberline {1.6}Architettura di una rete neurale }{22}
-\contentsline {chapter}{\numberline {2}L'apprendimento delle reti neurali}{25}
-\contentsline {section}{\numberline {2.1}Addestramento e generalizzazione}{25}
-\contentsline {section}{\numberline {2.2}Paradigmi di apprendimento}{27}
-\contentsline {section}{\numberline {2.3}Processi di apprendimento}{28}
-\contentsline {subsection}{\numberline {2.3.1}Delta rule}{28}
-\contentsline {subsection}{\numberline {2.3.2}Apprendimento con correzione di errore o metodo discesa del gradiente}{29}
-\contentsline {subsection}{\numberline {2.3.3}Apprendimento di Hebbian}{33}
-\contentsline {subsection}{\numberline {2.3.4}Apprendimento competitivo}{33}
-\contentsline {section}{\numberline {2.4}Attivit\IeC {\`a} di apprendimento}{35}
-\contentsline {subsection}{\numberline {2.4.1}Associazione di pattern e memoria associativa}{35}
-\contentsline {subsection}{\numberline {2.4.2}Riconoscimento di pattern}{36}
-\contentsline {subsection}{\numberline {2.4.3}Approssimazione di funzioni}{38}
-\contentsline {section}{\numberline {2.5}Un esempio di apprendimento supervisionato: il percettrone elementare}{38}
-\contentsline {chapter}{\numberline {3}Ricorrenti: Reti di Hopfield}{42}
-\contentsline {chapter}{Riferimenti bibliografici}{43}
+\contentsline {chapter}{\numberline {1} Presentazione delle reti neurali }{6}
+\contentsline {section}{\numberline {1.1}Cenni storici ed origini}{6}
+\contentsline {section}{\numberline {1.2}Analogie con il sistema nervoso ed applicazioni}{9}
+\contentsline {section}{\numberline {1.3}Il neurone biologico}{11}
+\contentsline {section}{\numberline {1.4}Modello del neurone artificiale}{12}
+\contentsline {section}{\numberline {1.5}Attivazione di un neurone e funzioni di attivazione}{16}
+\contentsline {subsection}{\numberline {1.5.1}Funzione a soglia}{16}
+\contentsline {subsection}{\numberline {1.5.2}Funzione lineare}{17}
+\contentsline {subsection}{\numberline {1.5.3}Funzione lineare a tratti}{18}
+\contentsline {subsection}{\numberline {1.5.4}Funzione sigmoide}{19}
+\contentsline {section}{\numberline {1.6}Architettura di una rete neurale}{20}
+\contentsline {chapter}{\numberline {2}L'apprendimento delle reti neurali}{23}
+\contentsline {section}{\numberline {2.1}Addestramento e generalizzazione}{23}
+\contentsline {section}{\numberline {2.2}Paradigmi di apprendimento}{24}
+\contentsline {section}{\numberline {2.3}Processi di apprendimento}{26}
+\contentsline {subsection}{\numberline {2.3.1}Delta rule}{26}
+\contentsline {subsection}{\numberline {2.3.2}Apprendimento con correzione di errore o metodo discesa del gradiente}{27}
+\contentsline {subsection}{\numberline {2.3.3}Apprendimento di Hebbian}{30}
+\contentsline {subsection}{\numberline {2.3.4}Apprendimento competitivo}{30}
+\contentsline {section}{\numberline {2.4}Attivit\IeC {\`a} di apprendimento}{31}
+\contentsline {subsection}{\numberline {2.4.1}Associazione di pattern e memoria associativa}{32}
+\contentsline {subsection}{\numberline {2.4.2}Riconoscimento di pattern}{32}
+\contentsline {subsection}{\numberline {2.4.3}Approssimazione di funzioni}{34}
+\contentsline {section}{\numberline {2.5}Un esempio di apprendimento supervisionato: il percettrone elementare}{34}
+\contentsline {chapter}{\numberline {3}Reti di Hopfield}{37}
+\contentsline {chapter}{Riferimenti bibliografici}{38}

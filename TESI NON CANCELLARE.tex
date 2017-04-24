@@ -23,51 +23,63 @@
 \author{Maria Luisa Feola}
 \title{Reti Neurali}
 
+%COSE CHE SERVONO
+
 %`` e '': sono le virgolette del TeX; non esistono, nel TeX, le virgolette semplici ( " ) come in Word; le virgolette `` nella tastiera italiana vengono ottenute con la combinazione di tasti “ALT + 96”, mentre le altre sono il segno dell'apostrofo;
 
-% ~ ALT+126 tilde da mettere tra due parole per non farle staccare quando si va a capo
+%\mbox{parola} per non far staccare la parola
 
+% \vspace{lunghezza} inserisce uno spazio verticale pari a lunghezza
+
+%\hyphenation{parola sillabata}
+
+% ~ ALT+126 tilde da mettere tra due parole per non farle staccare quando si va a capo
+%FINE COSE CHE SERVONO
+
+
+%INIZIO DI TUTTO
 \begin{document}
+
+
 %FRONTESPIZIO
-	\AlCentroPagina{IMMAGINI/Frontespizio}\thispagestyle{empty}
-	
+\AlCentroPagina{IMMAGINI/Frontespizio}\thispagestyle{empty} 
+
+
 %DEDICA
-	\begin{flushright} 
-		\newpage
-		\null\vspace{\stretch{1}}
-		\thispagestyle{empty}
-		\textit{Grazie PAINT}
-		\vspace{\stretch{2}}\null
-	\end{flushright} 
+\begin{flushright}
+	\newpage
+	\null\vspace{\stretch{1}}
+	\thispagestyle{empty}
+	\textit{Prima di fare qualsiasi cosa\\ un bacio.}
+	\vspace{\stretch{2}}\null
+\end{flushright} 
 %FINE DEDICA
-   	
+
+
 %FRASE
-   	\begin{flushright} 
-   		\newpage
-   		\null\vspace{\stretch{1}}
-   		\thispagestyle{empty}
-   		\textit{Se non puoi passare attraverso una montagna, giraci intorno; \\ se non puoi girarci intorno, passaci sopra;\\ se non puoi passarci sopra, siediti un attimo \\e chiediti se raggiungere l'altro lato sia davvero così importante.\\ \vspace{1cm} Se lo è comincia a scavare una galleria.}
-   		\vspace{\stretch{2}}\null
-   	\end{flushright} 
+\begin{flushright} 
+	\newpage
+	\null\vspace{\stretch{1}}
+	\thispagestyle{empty}
+	\textit{Se non puoi passare attraverso una montagna, giraci intorno; \\ se non puoi girarci intorno, passaci sopra;\\ se non puoi passarci sopra, siediti un attimo \\e chiediti se raggiungere l'altro lato sia davvero così importante.\\ \vspace{1cm} Se lo è comincia a scavare una galleria.}
+	\vspace{\stretch{2}}\null
+\end{flushright} 
 %FINEFRASE
-   
+
+\clearpage
 %INDICE
 	\tableofcontents\thispagestyle{empty}
 %FINE INDICE
-	
-%INTRODUZIONE
-	\chapter*{Introduzione}
-	\onehalfspacing
-	\addcontentsline{toc}{chapter}{Introduzione}
-	prova
-%FINE INTRODUZIONE
-		
+
+
+
+
 %INIZIO DEL PRIMO CAPITOLO
 	
-	\chapter{ Presentazione delle reti neurali }
+\chapter{ Presentazione delle reti neurali }
 	
 	
-	
+% CAPITOLO 1 PARAGRAFO 1
 	\section{Cenni storici ed origini}
 		Le reti neurali artificiali, dall'inglese \textit{Artificial Neural Network (ANN)}, e la conseguente computazione neurale, sono state costruite ispirandosi ai sistemi neurali biologici con l'obiettivo di simulare il comportamento di questi ultimi, riprodurne la struttura e le funzioni basilari.\\
 		Una definizione semplice e formale di tali strutture è fornita dall'inventore del primo neurocomputer, il Dr. Robert Hecht-Nielsen che le definì come: \\
@@ -89,7 +101,7 @@
 		Tale algoritmo proposto nel 1986 da David E.Rumelhart, G. Hinton e R. J. Williams consentì di superare le problematiche legate al percettrone di Rosenblatt e permise di risolvere il problema della separabilità non lineare delle soluzioni, rendendo quindi possibile calcolare la funzione XOR e segnando il definitivo rilancio delle reti neurali.
 		
 		
-		
+% CAPITOLO 1 PARAGRAFO 2		
 	\clearpage	
 	\section{Analogie con il sistema nervoso ed applicazioni}
 	
@@ -122,7 +134,7 @@
 		\end{itemize}
 
 		
-		
+%CAPITOLO1 PARAGRAFO 3		
 	\section{Il neurone biologico}
 		
 		Per capire a fondo la connessione tra le reti neurali artificiali e le reti neurali del sistema nervoso umano e le numerose analogie che ne derivano, è bene dare una breve descrizione del secondo sistema.\\
@@ -145,10 +157,10 @@
 		
 		Un neurone è formato da un corpo centrale identificato con il nome di \emph{soma} all'interno del quale è presente il nucleo, e da molti prolungamenti citoplasmatici che si distinguono in:
 		 
-		 \begin{itemize}
-		 	\item \emph{dendriti}, organizzati con diramazioni ad albero che costituiscono il \emph{ramo dendritico};
-		 	\item \emph{assone}, la cui parte finale prende il nome di \emph{bottone sinaptico}.
-		 \end{itemize}
+		 \begin{description}
+		 	\item[- \emph{dendriti}], organizzati con diramazioni ad albero che costituiscono il \emph{ramo dendritico};
+		 	\item [- \emph{assone}], la cui parte finale prende il nome di \emph{bottone sinaptico}.
+		 \end{description}
 		 
 		I dendriti ricevono segnali dai neuroni afferenti e li propagano verso il nucleo. Viaggiando lungo i dendriti, i segnali confluiscono al corpo del neurone che, comportandosi come un centro di integrazione, li interpreta e decide se produrre un potenziale d'azione ovvero il segnale elettrico di uscita del neurone.\\ 
 		L'assone conduce il segnale verso altre cellule grazie alla presenza del bottone sinaptico alla sua estremità.
@@ -165,9 +177,7 @@
 	 	 Nel sistema nervoso sono presenti circa $10^{11}$ cellule nervose connesse strettamente tra loro attraverso numerosi collegamenti che nel loro insieme vanno a formare la rete neurale. L'attività neurale è quindi l'attività di reti di neuroni che trasportano l'informazione ed ha come risultato finale l'emergere di sequenze significative di segnali.\\
 	 	
 	 	
-	 	
-	 	
-		 
+% CAPITOLO 1 PARAGRAFO 4	
 	\section{Modello del neurone artificiale}
 		
 		La breve illustrazione del sistema neurale umano nel paragrafo precedente suggerisce uno schema per delineare l'organizzazione delle reti neurali artificiali: queste ultime sono formate da un elevato numero di unità computazionali, che possono essere equiparate ai neuroni umani, capaci di eseguire una somma pesata. Tali unità sono collegate tra loro attraverso delle connessioni, così come le sinapsi collegano i neuroni nella rete umana. \\
@@ -189,7 +199,7 @@
 				$$ \begin{center} $\sum\limits_{i=1}^n w_{i}x_{i}$ \end{center}$$
 		\end{equation} 
 		
-		La somma pesata degli ingressi viene indicata con la parola \emph{net} ed il segnale con cui il neurone trasmette la sua attività all'esterno è calcolato applicando una \emph{funzione di attivazione} $\varphi$ che limita l'ampiezza dell'output; si assume per comodità che le ampiezze degli output appartengono all'intervallo $[0,1]$ oppure $[-1,1]$.
+		La somma pesata degli ingressi viene indicata con la parola \emph{net} ed il segnale con cui il neurone trasmette la sua attività all'esterno è calcolato applicando una \emph{funzione di attivazione} $\varphi$ che limita l'ampiezza dell'output; si assume per comodità che le ampiezze degli output appartengono all'intervallo $[0,1]$ oppure $[-1,1]$. \clearpage
 		
 		\begin{figure}[h!]
 			\centering
@@ -200,8 +210,6 @@
 		
 	
 		Il modello neuronale include anche un valore \emph{soglia} che ha l'effetto, a seconda della sua positività o negatività, di aumentare o diminuire il valore in ingresso alla funzione di attivazione.\\
-		
-		\clearpage
 		L'output finale sarà allora:
 		
 		\begin{equation}
@@ -244,10 +252,12 @@
 		\end{itemize}
 		
 		
+% CAPITOLO 1 PARAGRAFO 5		
 		\clearpage
 	\section{Attivazione di un neurone e funzioni di attivazione}
 		
 		Nelle reti neurali si può avere una \emph{attivazione asincrona} in cui i neuroni si attivano uno per volta ed un'{attivazione sincrona} in cui tutti i neuroni si attivano contemporaneamente. L'attivazione di un neurone dipende solo dall'informazione ricevuta ed è indipendente dalle operazioni svolte dagli altri nodi. La funzione di attivazione determina il tipo di risposta che un neurone è in grado di emettere. Definisce, quindi, l’uscita di un neurone in funzione del livello di attivazione. L'uscita può essere un numero reale, un numero reale appartenente ad un intervallo, oppure un numero appartenente ad un insieme discreto.\\
+		
 		
 		\subsection{Funzione a soglia}
 		
@@ -277,8 +287,8 @@
 			\end{center} $$
 		\end{equation}
 		
+		\clearpage
 		I rispettivi grafici saranno
-		
 		
 		\begin{figure}[h]
 			\centering
@@ -312,7 +322,8 @@
 					$y=\varphi(a)=a$
 			\end{center} $$
 		\end{equation}
-
+		
+		\clearpage
 		Il grafico rispettivo
 		
 		\begin{figure}[h]
@@ -321,6 +332,7 @@
 			\caption{ Funzione lineare }
 			\label{fig:lineare}
 		\end{figure}
+	
 	
 		\subsection{Funzione lineare a tratti}
 	
@@ -368,8 +380,10 @@
 			\label{fig:sigmoide}
 		\end{figure}
 	
+	
+%CAPITOLO 1 PARAGRAFO 6	
 		\clearpage
-		\section{Architettura di una rete neurale }
+	\section{Architettura di una rete neurale}
 		
 		L'architettura di una rete neurale artificiale è caratterizzata da:
 		
@@ -379,16 +393,15 @@
 			\item numero di neuroni nell'\emph{output layer}, lo strato di uscita.
 		\end{itemize}
 	
+		Le reti neurali si suddividono principalmente in due grandi classi: le reti \emph{feedforward} e le reti \emph{feedback} o \emph{ricorrenti}. 
+		Si ha inoltre un'altra tipologia di reti che sono le \emph{reti completamente connesse}.\\
+		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.7\linewidth]{IMMAGINI/diagrammareti}
+			\includegraphics[width=1\linewidth]{IMMAGINI/diagrammareti}
 			\caption{ Suddivisione delle reti neurali}
 			\label{fig:diagrammareti}
 		\end{figure}
-		
-		
-		Le reti neurali si suddividono principalmente in due grandi classi: le reti \emph{feedforward} e le reti \emph{feedback} o \emph{ricorrenti}. 
-		Si ha inoltre un'altra tipologia di reti che sono le \emph{reti completamente connesse}.\\
 		
 		\underline{\emph{Reti completamente connesse}}\\
 		Nelle reti completamente connesse ogni neurone è connesso con tutti gli altri. Le connessioni tra i neuroni sono bidirezionali e possono essere rappresentate per mezzo di una matrice quadrata $W$ di dimensione pari al numero di neuroni. Un suo generico elemento $w_{i,j}$ rappresenta il peso della connessione tra il neurone $i$ ed il neurone $j$.  
@@ -411,7 +424,7 @@
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.9\linewidth]{IMMAGINI/unostrato}
+			\includegraphics[width=0.95\linewidth]{IMMAGINI/unostrato}
 			\caption{Rete ad uno strato (a sinistra), rete multilivello (a destra)}
 			\label{fig:multistrato}
 		\end{figure}
@@ -421,12 +434,14 @@
 	
 %FINE PRIMO CAPITOLO%
 
+
+
 %INIZIO DEL SECONDO CAPITOLO%
 	
-	\chapter{L'apprendimento delle reti neurali}
+\chapter{L'apprendimento delle reti neurali}
 	
 	
-	
+%CAPITOLO 2 PARAGRAFO 1
 	\section{Addestramento e generalizzazione}
 		
 		Per costruire una rete neurale efficiente un passo fondamentale è individuare un \textbf{insieme di apprendimento} ed un \textbf{algoritmo di apprendimento}.\\
@@ -447,6 +462,8 @@
 		\textit{``Date due reti che soddisfano l'insieme di apprendimento, la rete di minore complessità è quella che si comporta meglio su esempi non visti, cioè ha la migliore capacità di generalizzazione."}\\ 
 		
 		
+	
+% CAPITOLO 2 PARAGRAFO 2
 	\section{Paradigmi di apprendimento}	
 		Le reti neurali si ispirano al tratto caratteristico del sistema nervoso, ovvero la capacità di acquisire esperienza da esempi del mondo reale: per questo, oltre che di apprendimento, si parla di \emph{addestramento} delle reti neurali attraverso dei \textit{paradigmi di apprendimento}.\\
 		I paradigmi di apprendimento si suddividono in:
@@ -466,7 +483,6 @@
 			\label{fig:supervisionato}
 		\end{figure}
 		
-		\clearpage
 		\underline{Apprendimento non supervisionato}\\
 		
 		Nell'apprendimento non supervisionato la rete modifica i pesi autonomamente, si auto-organizza. Viene fornito solo il training set senza precisare le uscite.\\
@@ -479,9 +495,12 @@
 		\end{figure}
 	
 	
+
+% CAPITOLO 2 PARAGRAFO 3
 	\section {Processi di apprendimento}
 		 
 		 L’addestramento è un processo ad hoc dipendente dallo specifico problema trattato. Riportiamo alcuni processi comunemente usati.\\
+		 
 		 
 		 \subsection{Delta rule}
 		 
@@ -489,9 +508,7 @@
 		 Siano:\\
 		 $\overline{x}_{k}=[x_{1}, x_{2}, ..., x_{n}]^{T}$ il vettore $k$-esimo degli ingressi,\\ 
 		 $\overline{W}_{k}=[w_{1}, w_{2}, ..., w_{n}]^{T}$ il vettore dei pesi al $k$-esimo ingresso,\\
-		 e siano $y_{k}$ ed $y_{dk}$ rispettivamente l'uscita ottenuta e l'uscita desiderata.\\
-		 \clearpage
-		 Definiamo l'\emph{errore} come:
+		 e siano $y_{k}$ ed $y_{dk}$ rispettivamente l'uscita ottenuta e l'uscita desiderata. Definiamo l'\emph{errore} come:
 		
 		 \begin{equation}  
 			 $$ \begin{center} $\delta_{k}=y_{k}-y_{dk} $ \end{center} $$
@@ -507,16 +524,15 @@
 		 Questa regola modifica in maniera proporzionale solo i pesi delle connessioni che hanno contribuito all'errore.\\
 		 L'algoritmo è il seguente:
 		 
-		 \begin{itemize}
+		 \begin{enumerate}
 		 	\item se $y_{k}=y_{dk}$ nessuna modifica dei pesi
 		 	\item se $y_{k}\neq y_{dk}$ allora $\triangle\overline{W}_{k}=\eta\overline{x}_{k}\delta_{k}$.
-		 \end{itemize}
+		 \end{enumerate}
 		 
 		 
 		 \subsection{Apprendimento con correzione di errore o metodo discesa del gradiente}
 		 
-		 Se indichiamo con $y_{k}$ una risposta generata da un segnale di stimolo $x$ in un tempo $t$ ed indichiamo con $y_{dk}$ la risposta desiderata, avremo un \emph{segnale di}\\
-		 \clearpage \emph{errore} che può essere così espresso:
+		 Se indichiamo con $y_{k}$ una risposta generata da un segnale di stimolo $x$ in un tempo $t$ ed indichiamo con $y_{dk}$ la risposta desiderata, avremo un \emph{segnale di errore} che può essere così espresso:
 		 
 		 \begin{equation}
 		 	$$\begin{center} $\delta= y_{dk}-y_{k}$ \end{center}$$
@@ -531,13 +547,12 @@
 		 	\label{fig:errore}
 		 \end{figure}
 		 
-		
 		 Questo processo di ricerca dei pesi migliori si basa sulla scelta di pesi che minimizzano una funzione errore $E(\overline{W})$, costruita al variare dei pesi stessi. \\
-		 Per la scelta di tali pesi si sfruttano le informazioni fornite dal gradiente locale della funzione errore costruita.\\
+		 Per la scelta di tali pesi si sfruttano le informazioni fornite dal gradiente locale della funzione errore costruita.
 		
 		 \begin{figure}[h]
 		 	\centering
-		 	\includegraphics[width=0.7\linewidth]{IMMAGINI/gradiente}
+		 	\includegraphics[width=0.8\linewidth]{IMMAGINI/gradiente}
 		 	\caption{Metodo della discesa del gradiente}
 		 	\label{fig:gradiente}
 		 \end{figure}
@@ -613,6 +628,7 @@
 		 		\end{center}$$	
 		 	\end{equation}
 		 
+		 
 		\subsection{Apprendimento di Hebbian}
 		
 		Come nella delta rule, definiamo:\\
@@ -628,11 +644,11 @@
 		
 		con $\eta$ learning rate.\\
 		I passi dell'algoritmo sono i seguenti:
-		\begin{itemize}
+		\begin{enumerate}
 			\item se $y_{k}=y_{dk}$ nessuna modifica pesi
 			\item se $y_{k}>y_{dk}$ allora $\triangle\overline{W}_{k}=-\eta\overline{x}_{k}y_{dk}$
 			\item se  $y_{k}<y_{dk}$ allora $\triangle\overline{W}_{k}=\eta\overline{x}_{k}y_{dk}$
-		\end{itemize}
+		\end{enumerate}
 		
 		
 		\subsection{Apprendimento competitivo}
@@ -661,7 +677,7 @@
 		 	\end{center} $$
 		 \end{equation}
 		 
-		 Ora se indichiamo con $w_{k,j}$ i pesi tra il neurone $k$ e l'input $j$, supponendo che ogni neurone abbia un ammontare di peso sinaptico fisso $\sum\limits_{j} w_{kj}=1, \forall k$, il neurone che vince apprende spostando i pesi dagli input inattivi agli input \clearpage attivi utilizzando tale regola:
+		 Ora se indichiamo con $w_{k,j}$ i pesi tra il neurone $k$ e l'input $j$, supponendo che ogni neurone abbia un ammontare di peso sinaptico fisso $\sum\limits_{j} w_{kj}=1, \forall k$, il neurone che vince apprende spostando i pesi dagli input inattivi agli input attivi utilizzando tale regola:
 		 
 		 \begin{equation}
 		 \label{eqn:competitivo} 
@@ -675,14 +691,14 @@
 		 \end{equation}
 	
 	
-	\section{Attività di apprendimento}
+% CAPITOLO 2 PARAGRAFO 4	
+\section{Attività di apprendimento}
 		
 		La scelta del paradigma di apprendimento, e quindi la metodologia di addestramento di una rete neurale, avviene in base all'attività che la rete deve svolgere ovvero il problema che deve risolvere. Le reti neurali possono essere utilizzate come \emph{classificatori} in grado cioè di riconoscere oggetti appartenenti a diverse categorie o possono essere responsabili dell'approssimazione di funzioni. Data una funzione nota per punti, di cui non si conosce la forma analitica, il compito della rete neurale è quello di approssimarla nel modo migliore possibile calcolandone il valore anche in punti diversi da quelli proposti in ingresso.\\
 		
 		\subsection{Associazione di pattern e memoria associativa}
 		
 		Per memoria associativa intendiamo un criterio di memorizzazione e recupero di informazioni attraverso l'associazione. Completamente ispirata al metodo di memorizzazione del cervello umano, consente il recupero dell'informazione sulle basi di una conoscenza parziale del suo contenuto senza conoscerne la locazione di memoria.\\
-		\clearpage
 		La memoria associativa si articola in due fasi:\\
 		
 		\begin{itemize}
@@ -697,7 +713,6 @@
 		\subsection{Riconoscimento di pattern}
 		
 		Tale processo si articola in due fasi: la prima fase consiste in una sessione di addestramento in cui  alla rete vengono presentati ripetutamente un insieme di pattern specificando per ognuno la classe di appartenenza; nella seconda fase alla rete viene presentato un pattern mai mostrato precedentemente, ma appartenente ad una categoria di pattern che la rete ha memorizzato. La rete neurale sarà in grado di riconoscerne la categoria e classificare il pattern grazie ai dati precedentemente acquisiti.\\
-		\clearpage
 		Il sistema è diviso in tre spazi:\\
 		
 		\begin{itemize}
@@ -724,7 +739,8 @@
 		dove $\varepsilon$ è un numero positivo piccolo, che risulterà essere sempre più piccolo con l'accrescere delle dimensioni e dei parametri liberi della rete. 
 		
 	
-		
+
+% CAPITOLO 2 PARAGRAFO 5		
 	\section{Un esempio di apprendimento supervisionato: il percettrone elementare}
 	
 		\begin{figure}[h]
@@ -756,18 +772,8 @@
 	 	\end{equation} 
 		
 		ed è quindi in grado di risolvere solo problemi \emph{linearmente separabili}.\\ 
-		Supponiamo di voler classificare in due classi distinte $C_{1}$ e $C_{2}$, degli oggetti rappresentati mediante punti nel piano e di sfruttare $n=2$ ingressi.
-		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.7\linewidth]{IMMAGINI/rettapercettrone}
-			\caption{ Separazione lineare dello spazio di ingresso di un Perceptron}
-			\label{fig:rettapercettrone}
-		\end{figure}
-		
-		Se le due classi sono linearmente separabili, l'iperpiano è una retta che funge da separatore lineare tra le due classi. Un oggetto sarà quindi classificato in base alla parte di semipiano in cui il suo punto di rappresentazione cadrà.
-		
-		
+		Supponiamo di voler classificare in due classi distinte $C_{1}$ e $C_{2}$, degli oggetti rappresentati mediante punti nel piano e di sfruttare $n=2$ ingressi.\\
+		Se le due classi sono linearmente separabili, l'iperpiano è una retta che funge da separatore lineare tra le due classi. Un oggetto sarà quindi classificato in base alla parte di semipiano in cui il suo punto di rappresentazione cadrà.\\
 		Nel piano $(x_{1}, x_{2})$ degli ingressi della rete le classi $C_{1}$ e $C_{2}$ sono rappresentate da due semipiani separati dalla retta $x_{2}=-\frac{w_{1}}{w_{2}}x_{1}+\frac{w_{0}}{w_{2}}$ e possiamo classificare gli stimoli in questo modo:
 		
 		\begin{equation}
@@ -789,6 +795,13 @@
 		
 		dove $\overline{W}_{k}=[w_{1}, w_{2}, ..., w_{n}]^{T}$ è il vettore dei pesi al $k$-esimo ingresso.
 		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.9\linewidth]{IMMAGINI/rettapercettrone}
+			\caption{ Separazione lineare dello spazio di ingresso di un Perceptron}
+			\label{fig:rettapercettrone}
+		\end{figure}
+	
 		I passi da eseguire sono:
 		
 		\begin{itemize}
@@ -800,11 +813,23 @@
 	   
 	   Con riferimento alla figura 2.8 si osservi che modificando i pesi $w_{1}, w_{2}, w_{0}$ si modifica la posizione e la pendenza della retta di separazione tra le due classi. Il processo termina quando la retta separa correttamente le due classi.
 	
-	%FINE DEL SECONDO CAPITOLO
-	
-	\chapter{Ricorrenti: Reti di Hopfield}
+%FINE DEL SECONDO CAPITOLO
 
-\clearpage 
+
+
+
+%INIZIO DEL TERZO CAPITOLO
+	
+\chapter{Reti di Hopfield}
+
+$\frac{w_{0}}{w_{2}}$
+$\frac{w_{0}}{w_{1}}$
+
+
+
+
+
+
 %\phantomsection 
 \begin{thebibliography}{9} 
 	\addcontentsline{toc}{chapter}{\refname}
