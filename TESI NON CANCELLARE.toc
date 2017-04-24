@@ -25,4 +25,6 @@
 \contentsline {subsection}{\numberline {2.4.3}Approssimazione di funzioni}{34}
 \contentsline {section}{\numberline {2.5}Un esempio di apprendimento supervisionato: il percettrone elementare}{34}
 \contentsline {chapter}{\numberline {3}Reti di Hopfield}{37}
-\contentsline {chapter}{Riferimenti bibliografici}{38}
+\contentsline {section}{\numberline {3.1}Presentazione ed utilizzo}{37}
+\contentsline {section}{\numberline {3.2}Architettura}{38}
+\contentsline {chapter}{Riferimenti bibliografici}{39}

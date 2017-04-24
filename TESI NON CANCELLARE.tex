@@ -804,12 +804,12 @@
 	
 		I passi da eseguire sono:
 		
-		\begin{itemize}
+		\begin{enumerate}
 			\item {si inizializzano i pesi con valori casuali;}
 			\item {si presenta un ingresso $x_{k}$ ed il valore di uscita desiderato $y_{dk}$;} 
 			\item {si calcola la risposta $y_{k}$ e si aggiornano i pesi attraverso la delta rule;}
 			\item {si ripete il ciclo dal passo 2 finché non si ottiene una risposta soddisfacente.}
-		\end{itemize}
+		\end{enumerate}
 	   
 	   Con riferimento alla figura 2.8 si osservi che modificando i pesi $w_{1}, w_{2}, w_{0}$ si modifica la posizione e la pendenza della retta di separazione tra le due classi. Il processo termina quando la retta separa correttamente le due classi.
 	
@@ -822,22 +822,44 @@
 	
 \chapter{Reti di Hopfield}
 
-$\frac{w_{0}}{w_{2}}$
-$\frac{w_{0}}{w_{1}}$
+	\section{Presentazione ed utilizzo}
+
+	Le reti di Hopfield furono presentate nel 1982 dal fisico John Hopfield nel suo articolo \textit{``Neural networks and physical systems with emergent collective computational abilities"}. A seguito di numerose osservazioni sulle proprietà dinamiche ed elettrochimiche dei neuroni e delle loro interconnessioni, Hopfield cercò di fare emergere gli schemi di funzionamento che erano dietro ai comportamenti biologici elementari. Il modello matematico realizzato da Hopfield dimostrò che un gran numero di semplici elementi di elaborazione possedevano capacità computazionali dal \emph{comportamento collettivo} e che tali capacità emergevano spontaneamente come conseguenza di interazioni tra le unità.\\
+	Le proprietà collettive di tale modello contraddistinguono tutt'oggi le reti di Hopfield dalle restanti e danno vita ad una memoria associativa per il riconoscimento di rappresentazioni alterate ed il recupero di informazioni mancanti. Per capire cosa si intende per memoria associativa, un esempio è la capacità del nostro cervello di riconoscere un'immagine anche quando questa non è esatta, risulta deformata o distorta o di riuscire a leggere parole con lettere mancanti e quindi non complete.\\
+	Le reti di Hopfield sono principalmente utilizzate:
+
+	\begin{itemize}
+		\item nella realizzazione di memorie associative;
+		\item nella risoluzione di problemi d'ottimizzazione combinatoriale;
+		\item nei problemi di classificazione.
+	\end{itemize}
+
+	\section{Architettura}
+
+	Ogni neurone è collegato a tutti gli altri attraverso dei pesi. Lo stesso vettore x è contemporaneamente ingresso, stato e uscita della rete. L’utilizzo tipico della rete di Hofield, come si è detto, è quello di memoria associativa: presentiamo un ingresso, e la rete ricerca lo stato stabile più vicino a tale ingresso. In fase di apprendimento la rete memorizza un certo numero di informazioni, detti stati stabili (o configurazioni), rappresentati da vettori xi. In modalità operativa la rete, ricevuto un vettore iniziale, ricalcola – modificandolo – il proprio stato sulla base dei pesi colleganti i vari neuroni.
 
 
 
+
+
+%sono reti ricorrenti ad uno strato in cui ogni neurone è connesso a tutti gli altri (sono assenti connessioni con sé stesso);  simmetriche: perché hanno la matrice dei pesi sinaptici simmetrica, quindi $wji = wij$ , ∀i,j; non lineari: ogni neurone ha una funzione di attivazione non lineare invertibile. 
+
+Possiamo distinguere diverse tecniche di aggiornamento dello stato dei neuroni: • aggiornamento asincrono: in cui si aggiorna un neurone alla volta; • aggiornamento sincrono: tutti i neuroni vengono aggiornati allo stesso istante; • aggiornamento continuo: in cui tutti i neuroni si aggiornano continuamente. 
+Vedremo inoltre le reti di Hopfield nel caso discreto con aggiornamento asincrono e nel caso continuo con aggiornamento continuo. 
+
+èutilizzata come MEMORIA ASSOCIATIVA e come CLASSIFICATORE •input e output sono BINARI {+1, -1} •i pesi sono fissati con un apprendimento non iterativo (fixedpointlearning) •al tempo t=0 si dàin input un pattern binario sconosciuto; la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input presente nella memoria della rete.
 
 
 
 %\phantomsection 
 \begin{thebibliography}{9} 
 	\addcontentsline{toc}{chapter}{\refname}
-	\bibitem[1]{Lazzarini} Prof.ssa Lazzarini Beatrice, (2015), \emph{Introduzione alle reti neurali.}
-	\bibitem[2]{Gambosi} Prof. Gambosi Giorgio, (2010), \emph{Reti neurali, note dal corso di Machine Learning.}
-	\bibitem[3]{Labonia} Prof.ssa Labonia Laura, \emph{Storia delle reti neurali artificiali.}
-	\bibitem[4]{Bicego} Prof. Bicego Manuele, \emph{Riconoscimento e recupero dell’informazione per bioinformatica, reti neurali.}
-	\bibitem[5]{Pioggia} Ing. Pioggia Giovanni, (2009), \emph{Modelli di sistemi fisiologici.}
+	\bibitem[1]{Bicego} Prof. Bicego Manuele, \emph{Riconoscimento e recupero dell’informazione per bioinformatica, reti neurali}
+	\bibitem[2]{Gambosi} Prof. Gambosi Giorgio, \emph{Reti neurali, note dal corso di Machine Learning}, (2010), Packt Publishing 
+	\bibitem[3]{GarretaMoncecchi} Garreta Raùl, Moncecchi Guillermo, \emph{Learning scikit-learn:Machine Learning in Python}, (2013) 
+	\bibitem[4] {Labonia} Prof.ssa Labonia Laura, \emph{Storia delle reti neurali artificiali}
+	\bibitem[5]{Lazzarini} Prof.ssa Lazzarini Beatrice, \emph{Introduzione alle reti neurali}, (2015)
+	\bibitem[6] {Pioggia} Ing. Pioggia Giovanni, \emph{Modelli di sistemi fisiologici}, (2009)
  \end{thebibliography}
 	
 \end{document}
