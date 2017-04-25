@@ -14,6 +14,12 @@
 {\cleardoublepage\fncyblank\null \vfill\begin{center}% 
 \bfseries \abstractname \end{center}}% 
 {\vfill\null}
+\usepackage{afterpage}
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{0}%
+	\newpage}
 \newcommand\AlCentroPagina[1]{% 
 \AddToShipoutPicture*{\AtPageCenter{%
 \makebox(0,0){\includegraphics%
@@ -42,12 +48,12 @@
 
 
 %FRONTESPIZIO
-\AlCentroPagina{IMMAGINI/Frontespizio}\thispagestyle{empty} 
-
+%\AlCentroPagina{IMMAGINI/Frontespizio}\thispagestyle{empty} 
+\blankpage
 
 %DEDICA
 \begin{flushright}
-	\newpage
+	%\newpage
 	\null\vspace{\stretch{1}}
 	\thispagestyle{empty}
 	\textit{Prima di fare qualsiasi cosa\\ un bacio.}
@@ -68,7 +74,8 @@
 
 \clearpage
 %INDICE
-	\tableofcontents\thispagestyle{empty}
+	\tableofcontents\addtocontents{toc}{\protect\thispagestyle{empty}}
+	\thispagestyle{empty}
 %FINE INDICE
 
 
@@ -88,7 +95,7 @@
 		\textit{(da Neural Network Primer: Parte uno, Maureen Caudill, 1989)}\\
 		
 		Tradotto in italiano \\
-		\textit{«... un sistema di calcolo costituito da una serie di semplici, elementi di elaborazione, altamente interconnessi, che elaborano le informazioni attraverso il loro stato dinamico rispondendo agli input esterni.»}\\
+		\textit{«... un sistema di calcolo costituito da una serie di semplici elementi di elaborazione, altamente interconnessi, che elaborano le informazioni attraverso il loro stato dinamico rispondendo agli input esterni.»}\\
 		
 		Le basi per lo studio di tali reti furono poste dallo psichiatra Warren McCulloch e del matematico Walter Pitts, i quali riuscirono a riprodurre una rete neurale utilizzando semplici circuiti elettrici collegati tra loro. Questa collaborazione portò alla luce l'analogia esistente tra le reti neurali e la macchina di Turing ed in tal modo si capì che qualsiasi operazione eseguita da una rete neurale poteva essere eseguita anche da un computer. Le reti che furono prodotte risultavano essere automi a stati finiti in grado di realizzare la logica delle proposizioni e di formulare ipotesi sulla natura dei meccanismi cerebrali come un programma per computer. Il frutto di tale lavoro fu reso noto nel 1943 con la pubblicazione del libro ``\emph{A logical calculus of the ideas immanent in nervous activity}'', nel quale fu schematizzato un combinatore lineare a soglia con dati binari multipli in entrata e un singolo dato binario in uscita.\\
 	    McCulloch e Pitts riuscirono quindi a presentare il modello di neurone formale dimostrando che reti formate da tali neuroni riuscivano a computare funzioni della logica del primo ordine.\\
@@ -102,22 +109,21 @@
 		
 		
 % CAPITOLO 1 PARAGRAFO 2		
-	\clearpage	
+	
 	\section{Analogie con il sistema nervoso ed applicazioni}
 	
 		Come accennato nel paragrafo precedente, una rete neurale è un sistema computazionale costruito basandosi sui processi biologici naturali il cui obiettivo è la riproduzione delle attività tipiche del cervello umano, ad esempio la comprensione del linguaggio, la percezione di immagini, il riconoscimento di forme ecc.  \\
-		In altre parole lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale in particolar modo di quello umano. Quest'ultimo presenta numerose caratteristiche che risultano essere idonee per la riproduzione di un sistema computazionale: esso è flessibile poiché si adatta ad ogni tipologia di situazione, è robusto, resistente, piccolo e dissipa poca energia. \\
-		Tale riproduzione non deve essere però intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano.\\
+		In altre parole lo scopo di una rete neurale artificiale è l’emulazione del sistema nervoso animale in particolar modo di quello umano. Quest'ultimo presenta numerose caratteristiche che risultano essere idonee per la riproduzione di un sistema computazionale: esso è flessibile poiché si adatta ad ogni tipologia di situazione, è robusto, resistente, piccolo e dissipa poca energia.
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.6\linewidth]{IMMAGINI/esempioiniziale}
+			\includegraphics[width=0.5\linewidth]{IMMAGINI/esempioiniziale}
 			\caption{Esempio di rete neurale}
 			\label{fig:esempio}
 		\end{figure}
-		
-		\clearpage
-		Il sistema nervoso umano può essere pensato quindi come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo riuscendo a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari. Esse sono sistemi altamente paralleli: fornendo i dati del problema alle unità di input, la computazione si propaga in parallelo nella rete fino alle unità di output che producono il risultato.\\
+	
+		Tale riproduzione non deve essere però intesa come atta alla costruzione di un cervello artificiale. Infatti le caratteristiche delle reti neurali biologiche, riprese dalla computazione neurale artificiale, sono in esigua minoranza: gli stessi neuroni artificiali sono solo un’approssimazione dei neuroni biologici e sono in grado di riprodurre solo tre dei circa centocinquanta processi che sono tipici dei neuroni del cervello umano.
+		\\Il sistema nervoso umano può essere pensato quindi come una grande struttura computazionale formata da milioni di unità fortemente interconnesse tra loro in modo parallelo riuscendo a trasformare continui input in output ragionevoli. Le reti neurali rappresentano una riproduzione significativa di tale struttura, in particolar modo degli algoritmi di apprendimento e di ottimizzazione basati su un modello \emph{connessionistico} di calcolo: le operazioni responsabili dello scambio di informazioni avvengono per mezzo dell'interazione tra le unità elementari. Esse sono sistemi altamente paralleli: fornendo i dati del problema alle unità di input, la computazione si propaga in parallelo nella rete fino alle unità di output che producono il risultato.\\
 		II campo tipico di applicazione delle reti neurali è quello dell'individuazione di legami di \textbf{ingresso-uscita} all'interno di sistemi complessi in cui i dati a disposizione sono molto 
 		numerosi oppure contengono poca informazione e quindi non risulta chiaro quali relazioni esistano tra le diverse variabili che caratterizzano il problema. Si tratta di campi in cui l'analisi statistica di tutte le variabili risulta difficoltosa o dispendiosa in termini di calcolo.\\ 
 		Ecco un breve elenco di applicazioni note:
@@ -129,7 +135,7 @@
 			\item riconoscimento della voce (elaborazione di parole dettate, identificazione di persone per via vocale, selezione telefonica ecc\dots );
 			\item applicazioni basate su ingressi di origine sensoriale (ingresso tattile, visivo, acustico, olfattivo);
 			\item archivi (musica, video, immagini ecc\dots);
-			\item sintesi e miglioramento dati (fax, grafica, cancellazione di rumore, apparecchiature televisive ad alta risoluzione ecc\dots);
+			\item sintesi e miglioramento dati (fax, grafica, cancellazione di rumore, ecc\dots);
 			\item robot autonomi.
 		\end{itemize}
 
@@ -150,7 +156,7 @@
   	
   		\begin{figure}[h]
   			\centering
-  			\includegraphics[width=0.8\linewidth]{IMMAGINI/Sistemanervoso}
+  			\includegraphics[width=0.6\linewidth]{IMMAGINI/Sistemanervoso}
   			\caption{Stadi del sistema nervoso}
   			\label{fig: stadi sistema nervoso}
   		\end{figure}
@@ -196,14 +202,14 @@
 		
 		\begin{equation} 
 			\label{eqn:net} 
-				$$ \begin{center} $\sum\limits_{i=1}^n w_{i}x_{i}$ \end{center}$$
+				$$ \begin{center} $\displaystyle\sum\limits_{i=1}^n w_{i}x_{i}$ \end{center}$$
 		\end{equation} 
 		
 		La somma pesata degli ingressi viene indicata con la parola \emph{net} ed il segnale con cui il neurone trasmette la sua attività all'esterno è calcolato applicando una \emph{funzione di attivazione} $\varphi$ che limita l'ampiezza dell'output; si assume per comodità che le ampiezze degli output appartengono all'intervallo $[0,1]$ oppure $[-1,1]$. \clearpage
 		
 		\begin{figure}[h!]
 			\centering
-			\includegraphics[width=1\linewidth]{IMMAGINI/palla2}
+			\includegraphics[width=0.8\linewidth]{IMMAGINI/palla2}
 			\caption{Modello neurone}
 			\label{fig:palla2}
 		\end{figure}
@@ -214,20 +220,20 @@
 		
 		\begin{equation}
 			\label{eqn:output1} 
-				$$\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i})$  \end{center}$$
+				$$\begin{center} $\displaystyle y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i})$  \end{center}$$
 		\end{equation}
 	
 		E se indichiamo con $\theta$ il valore di soglia, la~\eqref{eqn:output1} diventerà:
 		\begin{equation}
 			\label{eqn:output2}
-				$$\begin{center} $y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i}-\theta)$  \end{center}$$
+				$$\begin{center} $\displaystyle y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i}-\theta)$  \end{center}$$
 		\end{equation}
 		
 		Interpretando la soglia come il peso associato ad un ulteriore canale di ingresso $x_{0}$, e quindi $w_{0}=\theta$, potremmo anche scrivere : 
 		
 		\begin{equation}
 			\label{eqn:output3}
-				$$\begin{center} $y= \varphi (\sum\limits_{i=0}^n w_{i}x_{i})$ \end{center}$$
+				$$\begin{center} $\displaystyle y= \varphi (\sum\limits_{i=0}^n w_{i}x_{i})$ \end{center}$$
 		\end{equation}
 		
 		\clearpage
@@ -256,8 +262,7 @@
 		\clearpage
 	\section{Attivazione di un neurone e funzioni di attivazione}
 		
-		Nelle reti neurali si può avere una \emph{attivazione asincrona} in cui i neuroni si attivano uno per volta ed un'{attivazione sincrona} in cui tutti i neuroni si attivano contemporaneamente. L'attivazione di un neurone dipende solo dall'informazione ricevuta ed è indipendente dalle operazioni svolte dagli altri nodi. La funzione di attivazione determina il tipo di risposta che un neurone è in grado di emettere. Definisce, quindi, l’uscita di un neurone in funzione del livello di attivazione. L'uscita può essere un numero reale, un numero reale appartenente ad un intervallo, oppure un numero appartenente ad un insieme discreto.\\
-		
+		Nelle reti neurali si può avere una \emph{attivazione asincrona} in cui i neuroni si attivano uno per volta ed un'{attivazione sincrona} in cui tutti i neuroni si attivano contemporaneamente. L'attivazione di un neurone dipende solo dall'informazione ricevuta ed è indipendente dalle operazioni svolte dagli altri nodi. La funzione di attivazione determina il tipo di risposta che un neurone è in grado di emettere. Definisce, quindi, l’uscita di un neurone in funzione del livello di attivazione. L'uscita può essere un numero reale, un numero reale appartenente ad un intervallo, oppure un numero appartenente ad un insieme discreto.
 		
 		\subsection{Funzione a soglia}
 		
@@ -265,8 +270,8 @@
 		
 		\begin{equation}
 		\label{eqn:sistemafunzioneasoglia} 
-		$$ \begin{center} 
-				$y=\varphi(a)=$
+		$$\begin{center} 
+				$\displaystyle y=\varphi(a)=$
 					$\begin{cases}
 						1 \hspace{0.8cm}se\hspace{0.1cm} a \geq 0 \\
 						0 \hspace{0.8cm}se\hspace{0.1cm} a < 0
@@ -279,7 +284,7 @@
 		\begin{equation}
 		\label{eqn:sistemafunzioneasoglianosoglia} 
 			$$ \begin{center} 
-				$y=\varphi(a)=$
+				$\displaystyle y=\varphi(a)=$
 					$\begin{cases}
 						1 \hspace{0.8cm}se\hspace{0.1cm} a \geq \theta \\
 						0 \hspace{0.8cm}se\hspace{0.1cm} a <\theta 
@@ -302,7 +307,7 @@
 		\begin{equation}
 			\label{eqn:sistemafunzionesegno} 
 				$$ \begin{center} 
-					$y=\varphi(a)=$
+					$\displaystyle y=\varphi(a)=$
 						$\begin{cases}
 							1 \hspace{1.1cm}se\hspace{0.1cm} a>0 \\
 							0 \hspace{1.1cm}se\hspace{0.1cm} a=0 \\
@@ -319,7 +324,7 @@
 		\begin{equation}
 		\label{eqn:sistemafunzionelineare} 
 			$$ \begin{center} 
-					$y=\varphi(a)=a$
+					$ \displaystyle y=\varphi(a)=a$
 			\end{center} $$
 		\end{equation}
 		
@@ -341,7 +346,7 @@
 		\begin{equation}
 		\label{eqn:sistemafunzionelineareatratti} 
 			$$ \begin{center} 
-				$y=\varphi(a)=$
+				$\displaystyle y=\varphi(a)=$
 					$\begin{cases}
 						1 \hspace{1.86cm}se\hspace{0.1cm} a \leq -0.5 \\
 						a+0.5 \hspace{0.8cm}se\hspace{0.1cm} -0.5<a<0.5\\
@@ -366,12 +371,11 @@
 		\begin{equation}
 			\label{eqn:sigmoide} 
 			$$ \begin{center} 
-				$y=\varphi(a)=\dfrac{1}{1+e^{-a}}$
+				$\displaystyle y=\varphi(a)=\dfrac{1}{1+e^{-a}}$
 				\end{center} $$
 		\end{equation}
 	
-		imponendo sempre $a=\sum\limits_{i=0}^n w_{i}x_{i}$.
-	
+		imponendo sempre $a=\sum\limits_{i=0}^n w_{i}x_{i}$.\\
 		Essa assume questa forma
 		\begin{figure}[h]
 			\centering
@@ -414,7 +418,7 @@
 			\label{fig:completamenteconnesssa}
 		\end{figure}
 		
-			\underline{\emph{Reti feedforward a strati}}\\
+		\underline{\emph{Reti feedforward a strati}}\\
 		In queste reti i segnali viaggiano dallo strato di ingresso verso lo strato di uscita e pertanto vengono anche chiamate \textbf{reti feedforward}. Nelle reti stratificate non esistono connessioni tra i neuroni all'interno di uno stesso strato, nè tra neuroni di strati non limitrofi. Ogni neurone in un generico strato è connesso con tutti quelli dello strato successivo ed i neuroni dello strato di ingresso hanno come unico compito quello di trasmettere i segnali ricevuti allo strato successivo, all'interno di essi non avviene alcuna computazione.\\
 		Le reti feedforward a strati si distinguono in base al numero di strati che presentano, numero che dipende dallo specifico problema che si intende risolvere.\\ 
 		- \emph{Reti feedforward ad uno strato} : questa è una forma semplice di reti a strati. Il segnale nella rete si propaga in avanti senza cicli, non ci sono connessioni che tornano indietro e nemmeno connessioni trasversali nel layer di output.\\
@@ -506,22 +510,23 @@
 		 
 		 Con regola delta, o \emph{delta rule}, si intende un apprendimento con correzione dell’errore. 
 		 Siano:\\
-		 $\overline{x}_{k}=[x_{1}, x_{2}, ..., x_{n}]^{T}$ il vettore $k$-esimo degli ingressi,\\ 
-		 $\overline{W}_{k}=[w_{1}, w_{2}, ..., w_{n}]^{T}$ il vettore dei pesi al $k$-esimo ingresso,\\
+		 $\displaystyle\overline{x}_{k}=[x_{1}, x_{2}, ..., x_{n}]^{T}$ il vettore $k$-esimo degli ingressi,\\ 
+		 $\displaystyle\overline{W}_{k}=[w_{1}, w_{2}, ..., w_{n}]^{T}$ il vettore dei pesi al $k$-esimo ingresso,\\
 		 e siano $y_{k}$ ed $y_{dk}$ rispettivamente l'uscita ottenuta e l'uscita desiderata. Definiamo l'\emph{errore} come:
 		
 		 \begin{equation}  
-			 $$ \begin{center} $\delta_{k}=y_{k}-y_{dk} $ \end{center} $$
+			 $$ \begin{center} $\displaystyle \delta_{k}=y_{k}-y_{dk} $ \end{center} $$
 		 \end{equation} 
 	
 		 Allora se consideriamo la variazione del generico vettore dei pesi $\overline{W}_{k}$ si ha che:
 		 
 		 \begin{equation}  
-		 	$$ \begin{center} $\triangle\overline{W}_{k}=\eta\overline{x}_{k}\delta_{k}$ \end{center} $$
+		 	$$ \begin{center} $\displaystyle \triangle\overline{W}_{k}=\eta\overline{x}_{k}\delta_{k}$ \end{center} $$
 		 \end{equation}
 		 
 		 Il numero $\eta$ che compare nell'equazione (2.2) è compreso tra $0$ ed $1$, prende il nome di \textbf{learning rate} ed indica la velocità di apprendimento del neurone.\\
 		 Questa regola modifica in maniera proporzionale solo i pesi delle connessioni che hanno contribuito all'errore.\\
+		 
 		 L'algoritmo è il seguente:
 		 
 		 \begin{enumerate}
@@ -535,7 +540,7 @@
 		 Se indichiamo con $y_{k}$ una risposta generata da un segnale di stimolo $x$ in un tempo $t$ ed indichiamo con $y_{dk}$ la risposta desiderata, avremo un \emph{segnale di errore} che può essere così espresso:
 		 
 		 \begin{equation}
-		 	$$\begin{center} $\delta= y_{dk}-y_{k}$ \end{center}$$
+		 	$$\begin{center} $\displaystyle \delta= y_{dk}-y_{k}$ \end{center}$$
 		 \end{equation}
 		 
 		 Tale segnale dà il via ad un meccanismo di controllo che va ad applicare una sequenza di modifiche ai pesi sinaptici del neurone interessato al fine di avvicinare la risposta ottenuta a quella desiderata.\\
@@ -548,26 +553,25 @@
 		 \end{figure}
 		 
 		 Questo processo di ricerca dei pesi migliori si basa sulla scelta di pesi che minimizzano una funzione errore $E(\overline{W})$, costruita al variare dei pesi stessi. \\
-		 Per la scelta di tali pesi si sfruttano le informazioni fornite dal gradiente locale della funzione errore costruita.
-		
+		 Per la scelta di tali pesi si sfruttano le informazioni fornite dal gradiente locale della funzione errore costruita.\\
+		 Se con $\nabla_ {w}E(\overline{W})$ indichiamo il gradiente della funzione, allora:
+		 
+		 \begin{equation}
+			 $$\begin{center} $\displaystyle \Delta W \varpropto \nabla_ {w}E(\overline{W}) $ \end{center}$$
+		 \end{equation}
+		 
 		 \begin{figure}[h]
 		 	\centering
 		 	\includegraphics[width=0.8\linewidth]{IMMAGINI/gradiente}
 		 	\caption{Metodo della discesa del gradiente}
 		 	\label{fig:gradiente}
 		 \end{figure}
-		
-		 Se con $\nabla_ {w}E(\overline{W})$ indichiamo il gradiente della funzione, allora:
-		 
-		 \begin{equation}
-			 $$\begin{center} $\Delta W \varpropto \nabla_ {w}E(\overline{W}) $ \end{center}$$
-		 \end{equation}
 		 
 		 La ricerca risulta quindi essere guidata in modo proporzionale e dato che:\\
 		
 		\begin{equation}
 		 $$\begin{center}
-		 	 $\frac{dE(\overline{w})}{d\overline{w}}=\nabla_ {w}E(\overline{w})=( \frac{\partial E(\overline{w})}{\partial w_{1}}, \frac{\partial E(\overline{w})}{\partial w_{2}}, ... ,\frac{\partial E(\overline{w})}{\partial w_{n}} )^{T}$
+		 	 $\displaystyle\frac{dE(\overline{w})}{d\overline{w}}=\nabla_ {w}E(\overline{w})=( \frac{\partial E(\overline{w})}{\partial w_{1}}, \frac{\partial E(\overline{w})}{\partial w_{2}}, ... ,\frac{\partial E(\overline{w})}{\partial w_{n}} )^{T}$
 		 \end{center}$$
 		\end{equation}
 		 
@@ -575,7 +579,7 @@
 	 	
 	 	\begin{equation}
 	 		$$\begin{center}
-	 			$\triangle\overline{W_{k}}=\eta\frac{dE(\overline{w})}{d(\overline{w})}$
+	 		   $\displaystyle\triangle\overline{W_{k}}=\eta\frac{dE(\overline{w})}{d(\overline{w})}$
 	 		\end{center}$$
 	 	\end{equation}
 	 	
@@ -584,7 +588,7 @@
 	 	\begin{equation}
 	 		\label{eqn:coppiagradiente} 
 	 			$$\begin{center} 
-	 					$\begin{cases}
+	 					$\displaystyle \begin{cases}
 	 						y_{k}=g(net_{k})\\
 	 						\delta_{k}=y_{k}-y_{dk} 	
 	 					\end{cases}$
@@ -595,7 +599,7 @@
 	 	
 	 	\begin{equation}
 	 		$$\begin{center}
-	 		$E_{k}=\frac{1}{2}(y_{k}-y_{dk})^{2}$
+	 		$\displaystyle E_{k}=\frac{1}{2}(y_{k}-y_{dk})^{2}$
 	 		\end{center}$$
 	 	\end{equation}
 	 	
@@ -603,7 +607,7 @@
 		 
 		 \begin{equation}
 		 	$$\begin{center}
-				 $\triangle{w_{i}}=\eta\frac{\partial E_{k}}{dw_{i}}$
+				 $\displaystyle\triangle{w_{i}}=\eta\frac{\partial E_{k}}{dw_{i}}$
 		 	\end{center}$$
 		 \end{equation}
 		 
@@ -611,20 +615,22 @@
 		 
 		 \begin{equation}
 		 	$$\begin{center}
-		 	$\frac{\partial E_{k}}{dw_{i}}=
+		 	$\displaystyle\frac{\partial E_{k}}{dw_{i}}=
 		 	\dfrac{\partial}{\partial w_{i}}[\frac{1}{2}(y_{k}-y_{dk})^{2}] =
 		 	(y_{k}-y_{dk}) \frac{\partial (y_{k}-y_{dk})}{\partial w_{i}} =
-		 	(y_{k}-y_{dk})\frac{\partial y_{k}}{\partial w_{i}}=
-		 	(y_{k}-y_{dk})\frac{\partial g(net_{k})}{\partial w_{i}}=
+		 	(y_{k}-y_{dk})\frac{\partial y_{k}}{\partial w_{i}} = $
+		 	\end{center}$$
+		 	$$\begin{center}
+		 	$\displaystyle = (y_{k}-y_{dk})\frac{\partial g(net_{k})}{\partial w_{i}}=
 		 	(y_{k}-y_{dk})\frac{\partial g(net_{k})}{\partial net_{k}}\frac{\partial net_{k}}{\partial w_{i}}=
 		 	\delta_{k} g'(net_{k}) x_{i} $
-		 \end{center}$$
-		 	\end{equation}
+		 	\end{center}$$
+		 \end{equation}
 		 	
 		 	Quindi il peso $w_{i}$ sarà modificato:
 		 	
 		 	\begin{equation}
-		 		$$\begin{center} $\triangle{w_{i}}=\eta\frac{\partial E_{k}}{dw_{i}}=\eta\delta_{k} g'(net_{k}) x_{i}$ 
+		 		$$\begin{center} $\displaystyle\triangle{w_{i}}=\eta\frac{\partial E_{k}}{dw_{i}}=\eta\delta_{k} g'(net_{k}) x_{i}$ 
 		 		\end{center}$$	
 		 	\end{equation}
 		 
@@ -635,14 +641,16 @@
 		$\overline{x}_{k}=[x_{1}, x_{2}, ..., x_{n}]^{T}$ il vettore $k$-esimo degli ingressi,\\ 
 		$\overline{W}_{k}=[w_{1}, w_{2}, ..., w_{n}]^{T}$ il vettore dei pesi al $k$-esimo ingresso,\\
 		e siano $y_{k}$ ed $y_{dk}$ rispettivamente l'uscita ottenuta e l'uscita desiderata.\\
-		
 		Nell'apprendimento di tipo hebbiano viene modificato ogni valore del peso di una connessione in questo modo:
-		
-		\begin{equation}  
-			$$ \begin{center} $\triangle\overline{W}_{k}=\eta\overline{x}_{k}y_{dk}$ \end{center} $$
+
+		\begin{equation}
+			$$ \begin{center}
+			 	$\displaystyle\triangle\overline{W}_{k}=\eta\overline{x}_{k}y_{dk}$ 
+			 \end{center} $$
 		\end{equation}
-		
+	
 		con $\eta$ learning rate.\\
+		
 		I passi dell'algoritmo sono i seguenti:
 		\begin{enumerate}
 			\item se $y_{k}=y_{dk}$ nessuna modifica pesi
@@ -655,7 +663,8 @@
 		 
 		 Tale apprendimento si basa su una vera a propria competizione tra i neuroni di uscita di una rete neurale per attivarsi in seguito ad uno stimolo. In un certo momento $t$ può attivarsi un solo neurone che viene denominato \textbf{winners-takes-all}.\\  
 		 In tale processo è importare avere quindi un meccanismo che permetta ai neuroni di competere ed un valore che indichi il limite della ``forza" di ciascun neurone.\\
-		 Nella forma più semplice la rete neurale ha un solo strato di neuroni di uscita completamente connessi ai nodi di input e che possono essere connessi tra loro.\\
+		 Nella forma più semplice la rete neurale ha un solo strato di neuroni di uscita completamente connessi ai nodi di input e che possono essere connessi tra loro.
+		 \clearpage
 		
 		 \begin{figure}[h]
 		 	\centering
@@ -669,8 +678,8 @@
 		 \begin{equation}
 		 \label{eqn:competitivo} 
 		 	$$\begin{center} 
-		 		$y_{k}=$
-		 		$\begin{cases}
+		 		$\displaystyle y_{k}=$
+		 		$\displaystyle \begin{cases}
 		 				1 \hspace{0.8cm}se\hspace{0.1cm} \nu_{k}>\nu{j} \hspace{0.6cm} \forall j,\hspace{0.2cm} j\neq k;\\
 		 				0\hspace{0.8cm} altrimenti
 		 			\end{cases}$
@@ -682,7 +691,7 @@
 		 \begin{equation}
 		 \label{eqn:competitivo} 
 		 	$$\begin{center} 
-		 		$\triangle w_{kj}=$
+		 		$\displaystyle\triangle w_{kj}=$
 		 			$\begin{cases}
 						\eta(x_{j}-w_{kj}) \hspace{0.8cm}se\hspace{0.1cm} il\hspace{0.1cm} neurone\hspace{0.1cm} k\hspace{0.1cm} vince;\\
 		 				0\hspace{2.7cm} altrimenti
@@ -734,7 +743,7 @@
 		
 		Si prenda in esame una rappresentazione non lineare input/output descritta da $y=f(x)$ dove $x$ è l'input e $y$ è l'output e si consideri un insieme di esempi ${(x_{i},y_{i} )}$ per $i=1, 2, ..., n$. L'incognita è la funzione $f$ ed il problema consiste nel creare una rete capace di generare una rappresentazione $F$ quanto più vicina alla funzione $f$. In senso euclidiano bisogna soddisfare la condizione\\
 		
-		\begin{center} $ ||F(x)-f(x)<\varepsilon|| \hspace{0,7cm} \forall x $ \end{center}
+		\begin{center} $\displaystyle ||F(x)-f(x)<\varepsilon|| \hspace{0,7cm} \forall x $ \end{center}
 		
 		dove $\varepsilon$ è un numero positivo piccolo, che risulterà essere sempre più piccolo con l'accrescere delle dimensioni e dei parametri liberi della rete. 
 		
@@ -745,7 +754,7 @@
 	
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.7\linewidth]{IMMAGINI/perceptron}
+			\includegraphics[width=0.85\linewidth]{IMMAGINI/perceptron}
 			\caption{ Il percettrone }
 			\label{fig:perceptron}
 		\end{figure}	
@@ -757,8 +766,8 @@
 		\begin{equation}
 			\label{eqn:Heavside} 
 				$$\begin{center} 
-					$g(net_{j})=$
-						$\begin{cases}
+					$\displaystyle g(net_{j})=$
+						$\displaystyle\begin{cases}
 							1 \hspace{0.8cm}se\hspace{0.1cm} net_{j} \geq 0 \\
 							0 \hspace{0.8cm}se\hspace{0.1cm} net_{j} < 0
 						\end{cases}$
@@ -768,7 +777,7 @@
 	 	Il percettrone divide lo spazio di ingresso in due regione mediante l'iperpiano in $\Re^{n}$ di equazione: 
 	 
 	 	\begin{equation}  
-	 		$$ \begin{center} $ w_{0}+\sum\limits_{i=1}^n w_{i}x_{i}=0 $ \end{center} $$
+	 		$$ \begin{center} $\displaystyle w_{0}+\sum\limits_{i=1}^n w_{i}x_{i}=0 $ \end{center} $$
 	 	\end{equation} 
 		
 		ed è quindi in grado di risolvere solo problemi \emph{linearmente separabili}.\\ 
@@ -779,7 +788,7 @@
 		\begin{equation}
 		 \label{eqn:semipiani} 
 			$$\begin{center} 
-				$\begin{cases}
+				$\displaystyle\begin{cases}
 						x\in C1 \hspace{0.8cm}se\hspace{0.1cm} y=1 \\
 						x\in C2 \hspace{0.8cm}se\hspace{0.1cm} y=0
 				\end{cases}$
@@ -787,10 +796,12 @@
 		\end{equation}
 		
 		
-		L'apprendimento utilizzato nel perceptron è di tipo supervisionato e la learning rule attraverso i quali si modificano i singoli pesi in modo appropriato è la delta rule, definita in forma generale come:
+		L'apprendimento utilizzato nel perceptron è di tipo supervisionato e la learning rule attraverso i quali si modificano i singoli pesi in modo appropriato 
+		\clearpage
+		è la delta rule, definita in forma generale come:
 		
 		\begin{equation}  
-			$$ \begin{center} $ \overline{W}_{k+1}=\overline{W}_{k}+\triangle\overline{W}_{k} $ \end{center} $$
+			$$ \begin{center} $ \displaystyle\overline{W}_{k+1}=\overline{W}_{k}+\triangle\overline{W}_{k} $ \end{center} $$
 		\end{equation} 
 		
 		dove $\overline{W}_{k}=[w_{1}, w_{2}, ..., w_{n}]^{T}$ è il vettore dei pesi al $k$-esimo ingresso.
