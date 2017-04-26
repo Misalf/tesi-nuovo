@@ -229,7 +229,7 @@
 				$$\begin{center} $\displaystyle y= \varphi (\sum\limits_{i=1}^n w_{i}x_{i}-\theta)$  \end{center}$$
 		\end{equation}
 		
-		Interpretando la soglia come il peso associato ad un ulteriore canale di ingresso $x_{0}$, e quindi $w_{0}=\theta$, potremmo anche scrivere : 
+		Interpretando la soglia come il peso associato ad un ulteriore canale di ingresso $x_{0}$, e quindi $w_{0}=\theta$, potremmo anche scrivere:
 		
 		\begin{equation}
 			\label{eqn:output3}
@@ -237,7 +237,7 @@
 		\end{equation}
 		
 		\clearpage
-		Il modello finale sarà:
+		Il modello finale sarà
 		
 		\begin{figure}[h!]
 			\centering
@@ -266,9 +266,9 @@
 		Gli step per l'attivazione di un neurone sono:
 		
 		\begin{enumerate}
-		\item i valori di input arrivano al neurone e vengono combinati con i relativi pesi. 
-		\item i prodotti risultanti vengono sommati e tale somma viene confrontata con un dato valore di soglia che dipende dalla funzione di attivazione del neurone.
-		\item se la somma supera il valore di soglia, il neurone si attiva inviando output sulle connessioni pesate in uscita, altrimenti sarà inibito.
+		\item i valori di input arrivano al neurone e vengono combinati con i relativi pesi; 
+		\item i prodotti risultanti vengono sommati e tale somma viene confrontata con un valore di soglia che dipende dalla funzione di attivazione del neurone;
+		\item se la somma supera il valore di soglia, il neurone si attiva inviando output sulle connessioni pesate in uscita, altrimenti viene inibito.
 		\end{enumerate}
 	
 		Esistono varie tipologie di funzioni di attivazione, le principali sono: funzioni a soglia, funzioni lineari, funzioni lineari a tratti, funzione sigmoide.
@@ -845,9 +845,8 @@
 	\section{Architettura}
 
 	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati.
-	Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnessioni, $w_{i,i}=0$ e sono ricorrenti. \\
-	I valori di input di ogni unità sono binari $\{-1,1\}$ e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta, per poi farli fuoriuscire dalle stesse unità una volta elaborati.\\
-	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \emph{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete.\\
+	Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnession, $w_{i,i}=0$, la cui matrice dei pesi sinaptici è simmetrica e sono ricorrenti. \\
+	I valori di input di ogni unità sono binari $\{-1,1\}$ e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta, per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello, l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale. \\
 	
 	\begin{figure}[h]
 		\centering
@@ -856,36 +855,49 @@
 		\label{fig:hopfield}
 	\end{figure}
 	
+	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \emph{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete.\\
 	\clearpage
-	I pesi sono fissati con un apprendimento non iterativo in un solo stadio e se indichiamo con $x_{i,k}$ il valore assunto dall'$i$-esima unità all'esempio $k$-esimo, sono fissati secondo questa formula:
+	Il meccanismo di aggiornamento dei neuroni può essere diviso in:
+	
+	\begin{itemize}
+		\item\textbf{\emph{aggiornamento asincrono}} in cui si aggiorna un neurone alla volta;
+		\item\textbf{\emph{aggiornamento sincrono}} in cui tutti i neuroni sono aggiornati nello stesso istante;
+		\item\textbf{\emph{aggiornamento continuo}} in cui tutti i neuroni si aggiornano continuamente.
+	\end{itemize}
+
+	Abbiamo visto che il principio alla base della memorizzazione delle reti neurali è che l’informazione sia contenuta nei coefficienti di connessione. Nel modello di Hopfield si persegue tale obiettivo sfruttando la legge di Hebb, esposta nel capitolo 1 e che riprendiamo a grandi linee: se un’unità $j$ manda un input ad un'altra unità $i$ e se entrambe sono attive, il peso corrispondente $w_{i,j}$ deve essere rafforzato.\\
+	Supponiamo di voler memorizzare il set di stati $v^ {s}$ con $s = 1, ..., n$.\\
+	I pesi delle connessioni sono fissati attraverso un apprendimento non iterativo \emph{fixed point learning}, seguendo la seguente formula: 
 	
 	\begin{equation}
-		\label{eqn:hopfieldpesi} 
+	\label{eqn:hopfieldpesi} 
 		$$\begin{center}
-			 $\displaystyle w_{i,j}=\sum\limits_{k}x_{k,i}x_{k,j}$
+			$\displaystyle w_{i,j}=\sum\limits_{s}v_{i}^{s}v_{j}^{s} \hspace{0.7cm}i\neq j, \hspace{0.2cm} i,j=1,...,n $
 		\end{center}$$
 	\end{equation}
 	
-	dove la sommatoria si riferisce agli esempi che devono essere memorizzati.
+	\section {Il caso discreto e la funzione energia}
 	
+	La prima rete presentata da Hopfield era una rete discreta, completamente connessa, con aggiornamento asincrono completamente connessa e matrice dei pesi simmetrica.\\
+	In questo modello ogni neurone può assumere due stati $v_i=0$ e $v_{i}=1$. Lo stato istantaneo del sistema è specificato elencando gli n valori di $v_{i}$ e lo stato di ciascun neurone ad un certo istante $t$ è determinato da una formula di attivazione binaria a soglia che modificherà i valori input seguendo questo schema: 
 	
-	
-	Si dà in input un pattern binario sconosciuto e 
-	
-	 
-	Lo stesso vettore x è contemporaneamente ingresso, stato e uscita della rete. L’utilizzo tipico della rete di Hofield, come si è detto, è quello di memoria associativa: presentiamo un ingresso, e la rete ricerca lo stato stabile più vicino a tale ingresso.
+	\begin{equation}
+	\label{eqn:casodiscreto} 
+		$$ \begin{center} 
+			$\displaystyle v_{i}^{t}=$
+				$\begin{cases}
+					1 \hspace{1.86cm}se\hspace{0.1cm} \sum\limits_{i\neq j} w_{i,j}v_{j}^{t-1} > \theta_{i}\\
+					0 \hspace{1.86cm}se\hspace{0.1cm} \sum\limits_{i\neq j} w_{i,j}v_{j}^{t-1} < \theta_{i}
+				\end{cases}$
+		\end{center} $$
+	\end{equation}
 
+	dove $\theta_{i}$ è la soglia di attivazione associata al neurone $i$-esimo.\\
+	Questo processo è applicato ad un'unità per volta secondo un ordine stabilito o casualmente ed iterato fino a quando la rete non raggiungerà uno stato di equilibrio che corrisponderà ai valori di output. 
 
-
-non lineari: ogni neurone ha una funzione di attivazione non lineare invertibile. 
-
-Possiamo distinguere diverse tecniche di aggiornamento dello stato dei neuroni: • aggiornamento asincrono: in cui si aggiorna un neurone alla volta; • aggiornamento sincrono: tutti i neuroni vengono aggiornati allo stesso istante; • aggiornamento continuo: in cui tutti i neuroni si aggiornano continuamente. 
- 
-
-i pesi sono fissati con un apprendimento non iterativo (fixedpointlearning) \\
-
-
-
+%funzione energia
+%caso continuo
+%situazione vettoriale con esempio
 
 
 %\phantomsection 

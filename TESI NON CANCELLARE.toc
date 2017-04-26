@@ -27,4 +27,5 @@
 \contentsline {chapter}{\numberline {3}Reti di Hopfield}{35}
 \contentsline {section}{\numberline {3.1}Presentazione ed utilizzo}{35}
 \contentsline {section}{\numberline {3.2}Architettura}{36}
-\contentsline {chapter}{Riferimenti bibliografici}{38}
+\contentsline {section}{\numberline {3.3}Il caso discreto e la funzione energia}{37}
+\contentsline {chapter}{Riferimenti bibliografici}{39}
