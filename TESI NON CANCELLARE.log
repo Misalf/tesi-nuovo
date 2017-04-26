@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  25 APR 2017 19:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  26 APR 2017 22:13
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -711,225 +711,233 @@ Package pdftex.def Info: IMMAGINI/palla3.png used on input line 244.
 (pdftex.def)             Requested size: 390.0pt x 193.12321pt.
  [14
 
- <./IMMAGINI/palla3.png>] [15
-
-]
+ <./IMMAGINI/palla3.png>] [15]
 <IMMAGINI/asoglia.png, id=72, 392.96812pt x 129.48375pt>
 File: IMMAGINI/asoglia.png Graphic file (type png)
 
 <use IMMAGINI/asoglia.png>
-Package pdftex.def Info: IMMAGINI/asoglia.png used on input line 300.
-(pdftex.def)             Requested size: 390.0pt x 128.51529pt.
+Package pdftex.def Info: IMMAGINI/asoglia.png used on input line 310.
+(pdftex.def)             Requested size: 370.49881pt x 122.08813pt.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 305.
+LaTeX Warning: Command \textendash invalid in math mode on input line 315.
 
 [16
 
  <./IMMAGINI/asoglia.png>]
-<IMMAGINI/lineare.png, id=77, 215.30438pt x 112.92188pt>
-File: IMMAGINI/lineare.png Graphic file (type png)
+<"IMMAGINI/lineare e lineare a tratti".png, id=77, 436.63126pt x 112.92188pt>
+File: "IMMAGINI/lineare e lineare a tratti".png Graphic file (type png)
 
-<use IMMAGINI/lineare.png>
-Package pdftex.def Info: IMMAGINI/lineare.png used on input line 336.
-(pdftex.def)             Requested size: 234.00238pt x 122.73088pt.
+<use "IMMAGINI/lineare e lineare a tratti".png>
+Package pdftex.def Info: "IMMAGINI/lineare e lineare a tratti".png used on inpu
+t line 359.
+(pdftex.def)             Requested size: 390.0pt x 100.86197pt.
 
-<"IMMAGINI/a tratti".png, id=78, 166.37157pt x 86.57344pt>
-File: "IMMAGINI/a tratti".png Graphic file (type png)
-
-<use "IMMAGINI/a tratti".png>
-Package pdftex.def Info: "IMMAGINI/a tratti".png used on input line 360.
-(pdftex.def)             Requested size: 195.0pt x 101.47675pt.
- [17
-
- <./IMMAGINI/lineare.png> <./IMMAGINI/a tratti.png>] <IMMAGINI/sigmoide.png, id
-=84, 310.91156pt x 189.70876pt>
-File: IMMAGINI/sigmoide.png Graphic file (type png)
-
-<use IMMAGINI/sigmoide.png>
-Package pdftex.def Info: IMMAGINI/sigmoide.png used on input line 382.
-(pdftex.def)             Requested size: 234.00238pt x 142.782pt.
- [18 <./IMMAGINI/sigmoide.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 400--402
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-<IMMAGINI/diagrammareti.png, id=90, 487.8225pt x 235.63031pt>
+[17
+
+ <./IMMAGINI/lineare e lineare a tratti.png>]
+<IMMAGINI/sigmoide.png, id=83, 310.91156pt x 189.70876pt>
+File: IMMAGINI/sigmoide.png Graphic file (type png)
+
+<use IMMAGINI/sigmoide.png>
+Package pdftex.def Info: IMMAGINI/sigmoide.png used on input line 381.
+(pdftex.def)             Requested size: 234.00238pt x 142.782pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
+
+ []
+
+<IMMAGINI/diagrammareti.png, id=84, 487.8225pt x 176.15813pt>
 File: IMMAGINI/diagrammareti.png Graphic file (type png)
 
 <use IMMAGINI/diagrammareti.png>
-Package pdftex.def Info: IMMAGINI/diagrammareti.png used on input line 405.
-(pdftex.def)             Requested size: 390.0pt x 188.38225pt.
- [19
+Package pdftex.def Info: IMMAGINI/diagrammareti.png used on input line 403.
+(pdftex.def)             Requested size: 292.5pt x 105.6258pt.
+ [18
 
- <./IMMAGINI/diagrammareti.png>]
-<IMMAGINI/completamenteconnesssa.png, id=96, 280.79906pt x 203.25937pt>
+ <./IMMAGINI/sigmoide.png> <./IMMAGINI/diagrammareti.png>]
+<IMMAGINI/completamenteconnesssa.png, id=90, 280.79906pt x 203.25937pt>
 File: IMMAGINI/completamenteconnesssa.png Graphic file (type png)
 
 <use IMMAGINI/completamenteconnesssa.png>
 Package pdftex.def Info: IMMAGINI/completamenteconnesssa.png used on input line
- 416.
-(pdftex.def)             Requested size: 234.00238pt x 169.38445pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 421--428
-
- []
-
-[20
-
- <./IMMAGINI/completamenteconnesssa.png>]
-<IMMAGINI/unostrato.png, id=101, 634.62094pt x 253.69781pt>
+ 413.
+(pdftex.def)             Requested size: 195.0pt x 141.15164pt.
+ [19 <./IMMAGINI/completamenteconnesssa.png>] <IMMAGINI/unostrato.png, id=96, 6
+34.62094pt x 253.69781pt>
 File: IMMAGINI/unostrato.png Graphic file (type png)
 
 <use IMMAGINI/unostrato.png>
-Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 431.
+Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 428.
 (pdftex.def)             Requested size: 370.49881pt x 148.11647pt.
- [21 <./IMMAGINI/unostrato.png>]
+ [20 <./IMMAGINI/unostrato.png>]
 Capitolo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
-[22
+[21
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 466--467
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--482
+Underfull \hbox (badness 10000) in paragraph at lines 477--479
 
  []
 
-[23] <IMMAGINI/supervisionato.png, id=112, 546.54187pt x 248.42813pt>
+[22] <IMMAGINI/supervisionato.png, id=107, 546.54187pt x 248.42813pt>
 File: IMMAGINI/supervisionato.png Graphic file (type png)
 
 <use IMMAGINI/supervisionato.png>
-Package pdftex.def Info: IMMAGINI/supervisionato.png used on input line 485.
+Package pdftex.def Info: IMMAGINI/supervisionato.png used on input line 482.
 (pdftex.def)             Requested size: 312.00119pt x 141.81778pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
-<IMMAGINI/nonsupervisionato.png, id=113, 511.15968pt x 149.8097pt>
+<IMMAGINI/nonsupervisionato.png, id=108, 511.15968pt x 149.8097pt>
 File: IMMAGINI/nonsupervisionato.png Graphic file (type png)
 
 <use IMMAGINI/nonsupervisionato.png>
-Package pdftex.def Info: IMMAGINI/nonsupervisionato.png used on input line 496.
+Package pdftex.def Info: IMMAGINI/nonsupervisionato.png used on input line 493.
 
 (pdftex.def)             Requested size: 272.99881pt x 80.00908pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 503--504
 
  []
 
-[24 <./IMMAGINI/supervisionato.png> <./IMMAGINI/nonsupervisionato.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 527--529
+[23 <./IMMAGINI/supervisionato.png> <./IMMAGINI/nonsupervisionato.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 524--526
 
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
  []
 
-<"IMMAGINI/errore".png, id=123, 501.37312pt x 159.59625pt>
+<"IMMAGINI/errore".png, id=117, 501.37312pt x 159.59625pt>
 File: "IMMAGINI/errore".png Graphic file (type png)
 
 <use "IMMAGINI/errore".png>
-Package pdftex.def Info: "IMMAGINI/errore".png used on input line 550.
+Package pdftex.def Info: "IMMAGINI/errore".png used on input line 547.
 (pdftex.def)             Requested size: 312.00119pt x 99.32123pt.
 
-<IMMAGINI/gradiente.png, id=124, 347.04657pt x 170.88844pt>
+<IMMAGINI/gradiente.png, id=118, 347.04657pt x 170.88844pt>
 File: IMMAGINI/gradiente.png Graphic file (type png)
 
 <use IMMAGINI/gradiente.png>
-Package pdftex.def Info: IMMAGINI/gradiente.png used on input line 565.
+Package pdftex.def Info: IMMAGINI/gradiente.png used on input line 562.
 (pdftex.def)             Requested size: 312.00119pt x 153.63649pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--571
+Underfull \hbox (badness 10000) in paragraph at lines 567--568
 
  []
 
-[26 <./IMMAGINI/errore.png>] [27 <./IMMAGINI/gradiente.png>] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 652--653
+[25 <./IMMAGINI/errore.png>] [26 <./IMMAGINI/gradiente.png>] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
 
  []
 
-[29] <IMMAGINI/competitivo.png, id=140, 201.75375pt x 180.675pt>
+[28] <IMMAGINI/competitivo.png, id=135, 201.75375pt x 180.675pt>
 File: IMMAGINI/competitivo.png Graphic file (type png)
 
 <use IMMAGINI/competitivo.png>
-Package pdftex.def Info: IMMAGINI/competitivo.png used on input line 671.
+Package pdftex.def Info: IMMAGINI/competitivo.png used on input line 668.
 (pdftex.def)             Requested size: 155.99762pt x 139.69911pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
-[30
+[29
 
  <./IMMAGINI/competitivo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 710--712
+Underfull \hbox (badness 10000) in paragraph at lines 707--709
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 724--726
+Underfull \hbox (badness 10000) in paragraph at lines 721--723
 
  []
 
-[31] <IMMAGINI/classificazione.png, id=149, 405.76593pt x 201.00093pt>
+[30] <IMMAGINI/classificazione.png, id=143, 405.76593pt x 201.00093pt>
 File: IMMAGINI/classificazione.png Graphic file (type png)
 
 <use IMMAGINI/classificazione.png>
-Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 735.
+Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 732.
 (pdftex.def)             Requested size: 312.00119pt x 154.55649pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 740--741
+Underfull \hbox (badness 10000) in paragraph at lines 737--738
 
  []
 
-[32 <./IMMAGINI/classificazione.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 744--745
+[31 <./IMMAGINI/classificazione.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
 
-<IMMAGINI/perceptron.png, id=153, 498.36188pt x 250.68657pt>
+<IMMAGINI/perceptron.png, id=148, 498.36188pt x 250.68657pt>
 File: IMMAGINI/perceptron.png Graphic file (type png)
 
 <use IMMAGINI/perceptron.png>
-Package pdftex.def Info: IMMAGINI/perceptron.png used on input line 757.
+Package pdftex.def Info: IMMAGINI/perceptron.png used on input line 754.
 (pdftex.def)             Requested size: 331.50238pt x 166.75801pt.
- [33 <./IMMAGINI/perceptron.png>] [34
+ [32 <./IMMAGINI/perceptron.png>] [33
 
 ]
-<IMMAGINI/rettapercettrone.png, id=162, 720.44156pt x 443.40656pt>
+<IMMAGINI/rettapercettrone.png, id=157, 720.44156pt x 443.40656pt>
 File: IMMAGINI/rettapercettrone.png Graphic file (type png)
 
 <use IMMAGINI/rettapercettrone.png>
-Package pdftex.def Info: IMMAGINI/rettapercettrone.png used on input line 811.
+Package pdftex.def Info: IMMAGINI/rettapercettrone.png used on input line 808.
 (pdftex.def)             Requested size: 350.99762pt x 216.0262pt.
- [35
+ [34
 
  <./IMMAGINI/rettapercettrone.png>]
 Capitolo 3.
-[36
 
-] [37]
-Underfull \hbox (badness 1931) in paragraph at lines 870--871
+Underfull \hbox (badness 10000) in paragraph at lines 847--851
+
+ []
+
+[35
+
+] <IMMAGINI/hopfield.png, id=165, 615.80063pt x 365.86688pt>
+File: IMMAGINI/hopfield.png Graphic file (type png)
+
+<use IMMAGINI/hopfield.png>
+Package pdftex.def Info: IMMAGINI/hopfield.png used on input line 854.
+(pdftex.def)             Requested size: 390.0pt x 231.71437pt.
+ [36 <./IMMAGINI/hopfield.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 885--886
+
+ []
+
+[37
+
+]
+Underfull \hbox (badness 1931) in paragraph at lines 896--897
 []\OT1/cmr/m/n/12 Garreta Raul, Mon-cec-chi Guil-ler-mo, \OT1/cmr/m/it/12 Lear
 -ning scikit-learn:Machine
  []
@@ -942,10 +950,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4506 strings out of 493333
- 57973 string characters out of 3139198
- 139371 words of memory out of 3000000
- 7919 multiletter control sequences out of 15000+200000
+ 4508 strings out of 493333
+ 58133 string characters out of 3139198
+ 139381 words of memory out of 3000000
+ 7921 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,43p,995b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -962,7 +970,7 @@ c/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (38 pages, 546988 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (38 pages, 624476 bytes).
 PDF statistics:
  223 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

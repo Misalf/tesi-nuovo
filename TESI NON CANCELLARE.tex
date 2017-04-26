@@ -259,14 +259,23 @@
 		
 		
 % CAPITOLO 1 PARAGRAFO 5		
-		\clearpage
+	
 	\section{Attivazione di un neurone e funzioni di attivazione}
 		
-		Nelle reti neurali si può avere una \emph{attivazione asincrona} in cui i neuroni si attivano uno per volta ed un'{attivazione sincrona} in cui tutti i neuroni si attivano contemporaneamente. L'attivazione di un neurone dipende solo dall'informazione ricevuta ed è indipendente dalle operazioni svolte dagli altri nodi. La funzione di attivazione determina il tipo di risposta che un neurone è in grado di emettere. Definisce, quindi, l’uscita di un neurone in funzione del livello di attivazione. L'uscita può essere un numero reale, un numero reale appartenente ad un intervallo, oppure un numero appartenente ad un insieme discreto.
+		Nelle reti neurali si può avere una \emph{attivazione asincrona} in cui i neuroni si attivano uno per volta ed un'{attivazione sincrona} in cui tutti i neuroni si attivano contemporaneamente. L'attivazione di un neurone dipende solo dall'informazione ricevuta ed è indipendente dalle operazioni svolte dagli altri nodi. La funzione di attivazione determina il tipo di risposta che un neurone è in grado di emettere. Definisce, quindi, l’uscita di un neurone in funzione del livello di attivazione. L'uscita può essere un numero reale, un numero reale appartenente ad un intervallo, oppure un numero appartenente ad un insieme discreto.\\
+		Gli step per l'attivazione di un neurone sono:
+		
+		\begin{enumerate}
+		\item i valori di input arrivano al neurone e vengono combinati con i relativi pesi. 
+		\item i prodotti risultanti vengono sommati e tale somma viene confrontata con un dato valore di soglia che dipende dalla funzione di attivazione del neurone.
+		\item se la somma supera il valore di soglia, il neurone si attiva inviando output sulle connessioni pesate in uscita, altrimenti sarà inibito.
+		\end{enumerate}
+	
+		Esistono varie tipologie di funzioni di attivazione, le principali sono: funzioni a soglia, funzioni lineari, funzioni lineari a tratti, funzione sigmoide.
 		
 		\subsection{Funzione a soglia}
 		
-		Imponendo $a=\sum\limits_{i=0}^n w_{i}x_{i}$, il valore di uscita di un neurone assunto tramite una funzione a soglia é:
+		Imponendo $a=\sum\limits_{i=0}^n w_{i}x_{i}$, il valore di uscita di un neurone assunto é:
 		
 		\begin{equation}
 		\label{eqn:sistemafunzioneasoglia} 
@@ -279,7 +288,8 @@
 			\end{center} $$
 		\end{equation}
 	
-		Se si tralascia il contributo dell'ingresso $x_{0}$ dal livello di attivazione e si ha quindi $a=\sum\limits_{i=1}^n w_{i}x_{i}$, si avrà
+		Se si tralascia il contributo dell'ingresso $x_{0}$ dal livello di attivazione e si ha
+		quindi $a=\sum\limits_{i=1}^n w_{i}x_{i}$, si avrà:
 		
 		\begin{equation}
 		\label{eqn:sistemafunzioneasoglianosoglia} 
@@ -297,7 +307,7 @@
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=1\linewidth]{IMMAGINI/asoglia}
+			\includegraphics[width=0.95\linewidth]{IMMAGINI/asoglia}
 			\caption{ Funzione di attivazione a soglia }
 			\label{fig:asoglia}
 		\end{figure}
@@ -317,9 +327,9 @@
 		\end{equation}
 	
 		
-		\subsection{Funzione lineare}
+		\subsection{Funzione lineare e funzioni lineare a tratti}
 	
-		Se $a=\sum\limits_{i=0}^n w_{i}x_{i}$, si avrà:
+		Se $a=\sum\limits_{i=0}^n w_{i}x_{i}$, una funzione lineare è di questo tipo:
 	
 		\begin{equation}
 		\label{eqn:sistemafunzionelineare} 
@@ -329,18 +339,6 @@
 		\end{equation}
 		
 		\clearpage
-		Il grafico rispettivo
-		
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.6\linewidth]{IMMAGINI/lineare}
-			\caption{ Funzione lineare }
-			\label{fig:lineare}
-		\end{figure}
-	
-	
-		\subsection{Funzione lineare a tratti}
-	
 		Un esempio di funzione di attivazione lineare a tratti è:
 	
 		\begin{equation}
@@ -355,17 +353,17 @@
 			\end{center} $$
 		\end{equation}
 		
+		Rappresentandole si ha
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.5\linewidth]{"IMMAGINI/a tratti"}
-			\caption{ Funzione a tratti }
-			\label{fig:atratti}
+			\includegraphics[width=1\linewidth]{"IMMAGINI/lineare e lineare a tratti"}
+			\caption{Funzione lineare(a sinistra), funzione lineare a tratti (a destra)}
+			\label{fig:linearelineareatratti}
 		\end{figure}
-		
 		
 		\subsection{Funzione sigmoide}
 	
-		La funzione sigmoide appartenente alla famiglia di funzioni continue non lineari ed è tra le più utilizzate. \\
+		La funzione sigmoide appartenente alla famiglia di funzioni continue non lineari ed è tra le più utilizzate.\\
 		Tra queste funzioni riportiamo la \emph{funzione logistica} così definita:
 	
 		\begin{equation}
@@ -376,6 +374,7 @@
 		\end{equation}
 	
 		imponendo sempre $a=\sum\limits_{i=0}^n w_{i}x_{i}$.\\
+		\clearpage
 		Essa assume questa forma
 		\begin{figure}[h]
 			\centering
@@ -386,7 +385,6 @@
 	
 	
 %CAPITOLO 1 PARAGRAFO 6	
-		\clearpage
 	\section{Architettura di una rete neurale}
 		
 		L'architettura di una rete neurale artificiale è caratterizzata da:
@@ -402,7 +400,7 @@
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=1\linewidth]{IMMAGINI/diagrammareti}
+			\includegraphics[width=0.75\linewidth]{IMMAGINI/diagrammareti}
 			\caption{ Suddivisione delle reti neurali}
 			\label{fig:diagrammareti}
 		\end{figure}
@@ -410,10 +408,9 @@
 		\underline{\emph{Reti completamente connesse}}\\
 		Nelle reti completamente connesse ogni neurone è connesso con tutti gli altri. Le connessioni tra i neuroni sono bidirezionali e possono essere rappresentate per mezzo di una matrice quadrata $W$ di dimensione pari al numero di neuroni. Un suo generico elemento $w_{i,j}$ rappresenta il peso della connessione tra il neurone $i$ ed il neurone $j$.  
 		
-		\clearpage
 		\begin{figure}[h!]
 			\centering
-			\includegraphics[width=0.6\linewidth]{IMMAGINI/completamenteconnesssa}
+			\includegraphics[width=0.5\linewidth]{IMMAGINI/completamenteconnesssa}
 			\caption{ Rete completamente connessa}
 			\label{fig:completamenteconnesssa}
 		\end{figure}
@@ -424,7 +421,7 @@
 		- \emph{Reti feedforward ad uno strato} : questa è una forma semplice di reti a strati. Il segnale nella rete si propaga in avanti senza cicli, non ci sono connessioni che tornano indietro e nemmeno connessioni trasversali nel layer di output.\\
 		- \emph{Reti feedforward a più strati }: le reti a più strati sono anche dette \textit{reti multilivello }, in inglese \textbf{\textit{}Multi-Layer Perceptron, MLP}. Tra l'input layer e l'output layer sono presenti uno o più strati di neuroni nascosti, si parla quindi di \textit{\textit{hidden layers}} Nelle MLP non esistono connessioni nè tra neuroni di uno stesso strato nè tra neuroni di strati non limitrofi. Ogni strato ha connessioni entranti dal precedente strato e uscenti in quello successivo, quindi la propagazione del segnale avviene in avanti in modo aciclico e senza connessioni trasversali.\\
 		Tali reti vengono utilizzate per superare problemi che possono sorgere nella discriminazione dei segnali: attraverso i neuroni nascosti si ottengono delle rappresentazioni interne dei segnali di input che consentono il riconoscimento di forme più complesse, facilitando il compito della rete. 
-		Nonostante tutto l’aggiunta di ulteriori strati nascosti non ottimizza le abilità di discriminazione della rete; questo è possibile solo se la funzione di attivazione è non lineare (una rete multistrato a neuroni lineari è sempre riconducibile ad una rete con due soli strati).\\ 
+		Nonostante tutto l’aggiunta di ulteriori strati nascosti non ottimizza le abilità di discriminazione della rete; questo è possibile solo se la funzione di attivazione è non lineare (una rete multistrato a neuroni lineari è sempre riconducibile ad una rete con due soli strati).
 		
 		\begin{figure}[h]
 			\centering
@@ -847,18 +844,47 @@
 
 	\section{Architettura}
 
-	Ogni neurone è collegato a tutti gli altri attraverso dei pesi. Lo stesso vettore x è contemporaneamente ingresso, stato e uscita della rete. L’utilizzo tipico della rete di Hofield, come si è detto, è quello di memoria associativa: presentiamo un ingresso, e la rete ricerca lo stato stabile più vicino a tale ingresso. In fase di apprendimento la rete memorizza un certo numero di informazioni, detti stati stabili (o configurazioni), rappresentati da vettori xi. In modalità operativa la rete, ricevuto un vettore iniziale, ricalcola – modificandolo – il proprio stato sulla base dei pesi colleganti i vari neuroni.
+	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati.
+	Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnessioni, $w_{i,i}=0$ e sono ricorrenti. \\
+	I valori di input di ogni unità sono binari $\{-1,1\}$ e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta, per poi farli fuoriuscire dalle stesse unità una volta elaborati.\\
+	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \emph{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete.\\
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\linewidth]{IMMAGINI/hopfield}
+		\caption{Esempio di una rete di Hopfield}
+		\label{fig:hopfield}
+	\end{figure}
+	
+	\clearpage
+	I pesi sono fissati con un apprendimento non iterativo in un solo stadio e se indichiamo con $x_{i,k}$ il valore assunto dall'$i$-esima unità all'esempio $k$-esimo, sono fissati secondo questa formula:
+	
+	\begin{equation}
+		\label{eqn:hopfieldpesi} 
+		$$\begin{center}
+			 $\displaystyle w_{i,j}=\sum\limits_{k}x_{k,i}x_{k,j}$
+		\end{center}$$
+	\end{equation}
+	
+	dove la sommatoria si riferisce agli esempi che devono essere memorizzati.
+	
+	
+	
+	Si dà in input un pattern binario sconosciuto e 
+	
+	 
+	Lo stesso vettore x è contemporaneamente ingresso, stato e uscita della rete. L’utilizzo tipico della rete di Hofield, come si è detto, è quello di memoria associativa: presentiamo un ingresso, e la rete ricerca lo stato stabile più vicino a tale ingresso.
 
 
 
-
-
-%sono reti ricorrenti ad uno strato in cui ogni neurone è connesso a tutti gli altri (sono assenti connessioni con sé stesso);  simmetriche: perché hanno la matrice dei pesi sinaptici simmetrica, quindi $wji = wij$ , ∀i,j; non lineari: ogni neurone ha una funzione di attivazione non lineare invertibile. 
+non lineari: ogni neurone ha una funzione di attivazione non lineare invertibile. 
 
 Possiamo distinguere diverse tecniche di aggiornamento dello stato dei neuroni: • aggiornamento asincrono: in cui si aggiorna un neurone alla volta; • aggiornamento sincrono: tutti i neuroni vengono aggiornati allo stesso istante; • aggiornamento continuo: in cui tutti i neuroni si aggiornano continuamente. 
-Vedremo inoltre le reti di Hopfield nel caso discreto con aggiornamento asincrono e nel caso continuo con aggiornamento continuo. 
+ 
 
-èutilizzata come MEMORIA ASSOCIATIVA e come CLASSIFICATORE •input e output sono BINARI {+1, -1} •i pesi sono fissati con un apprendimento non iterativo (fixedpointlearning) •al tempo t=0 si dàin input un pattern binario sconosciuto; la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input presente nella memoria della rete.
+i pesi sono fissati con un apprendimento non iterativo (fixedpointlearning) \\
+
+
 
 
 
