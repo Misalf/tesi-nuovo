@@ -3,6 +3,8 @@
 \usepackage[UTF8]{inputenc}
 %\usepackage[latin1]{inputenc}
 \usepackage{amsmath}
+\usepackage{amsthm}
+\newtheorem{thm}{Teorema}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -846,7 +848,7 @@
 
 	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati.
 	Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnession, $w_{i,i}=0$, la cui matrice dei pesi sinaptici è simmetrica e sono ricorrenti. \\
-	I valori di input di ogni unità sono binari $\{-1,1\}$ e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta, per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello, l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale. \\
+	I valori di input di ogni unità sono binari e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta, per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello, l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale. \\
 	
 	\begin{figure}[h]
 		\centering
@@ -860,13 +862,13 @@
 	Il meccanismo di aggiornamento dei neuroni può essere diviso in:
 	
 	\begin{itemize}
-		\item\textbf{\emph{aggiornamento asincrono}} in cui si aggiorna un neurone alla volta;
-		\item\textbf{\emph{aggiornamento sincrono}} in cui tutti i neuroni sono aggiornati nello stesso istante;
-		\item\textbf{\emph{aggiornamento continuo}} in cui tutti i neuroni si aggiornano continuamente.
+		\item\textbf{aggiornamento asincrono} in cui si aggiorna un neurone alla volta;
+		\item\textbf{aggiornamento sincrono} in cui tutti i neuroni sono aggiornati nello stesso istante;
+		\item\textbf{aggiornamento continuo} in cui tutti i neuroni si aggiornano continuamente.
 	\end{itemize}
 
 	Abbiamo visto che il principio alla base della memorizzazione delle reti neurali è che l’informazione sia contenuta nei coefficienti di connessione. Nel modello di Hopfield si persegue tale obiettivo sfruttando la legge di Hebb, esposta nel capitolo 1 e che riprendiamo a grandi linee: se un’unità $j$ manda un input ad un'altra unità $i$ e se entrambe sono attive, il peso corrispondente $w_{i,j}$ deve essere rafforzato.\\
-	Supponiamo di voler memorizzare il set di stati $v^ {s}$ con $s = 1, ..., n$.\\
+	Supponiamo di voler memorizzare il set di stati $v^ {s}$ con $s = 1, ..., n$, utilizzando la notazione in cui $0\Longleftrightarrow -1$ e $1\Longleftrightarrow 1$. \\
 	I pesi delle connessioni sono fissati attraverso un apprendimento non iterativo \emph{fixed point learning}, seguendo la seguente formula: 
 	
 	\begin{equation}
@@ -876,10 +878,65 @@
 		\end{center}$$
 	\end{equation}
 	
+	
+	\section {Cenni sulla stabilità}
+	
+	La rete di Hopfield può essere vista come un sistema dinamico non lineare che evolve verso una configurazione stabile e la stabilità del sistema è strettamente legata ad una \emph{funzione energia}.\\
+	Prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.\\
+	Il modello matematico per descrivere le dinamiche di un sistema non lineare è pensato in termini di \textbf{variabili di stato}. Tali variabili rendono possibile prevedere l'evoluzione del sistema a partire da un certo istante temporale utilizzando i valori che sono associati ad esse, poiché considerati sufficienti per la previsione dell'evoluzione.\\
+	Definiamo \textbf{vettore di stato}:\\
+	
+	\begin{equation}
+	\label{eqn:vettoredistato} 
+	$$\begin{center}
+	$\displaystyle x(t)=(x_{1}(t), x_{2}(t), ..., x_{n}(t))$
+	\end{center}$$
+	\end{equation}
+	
+	un vettore contenente le variabili di stato ed in cui la variabile indipendente è il tempo $t$ mentre $n$ è l’ordine del sistema. Sfruttando tali vettori è possibile descrivere un sistema dinamico mediante un sistema di equazioni differenziali di primo ordine del tipo:
+	
+	\begin{equation}
+		\label{eqn:eqzndifferenziale} 
+			$$\begin{center}
+				$\displaystyle \dfrac{d}{dt}x(t)=F(x(t))$
+			\end{center}$$
+	\end{equation}
+	
+	con $F(x)$ \textbf{funzione vettore} che applicata ad un vettore di stato $x$ ritorna un vettore che ha come $j$-esima componente $F_{j}(x_{j})$ con $F_{j}$ una qualche funzione. Tale equazione risulta inoltre descrittrice del movimento di un punto nello \textbf{spazio degli stati} $n$-dimensionale, spazio i cui punti rappresentano univocamente tutti e soli i possibili stati del sistema osservati a certi istanti $t$. Con lo scorrere del tempo il punto t descrive una curva detta traiettoria del sistema.\\
+	Definiamo \textbf{stato di equilibrio} un vettore costante $\overline{x}$ verificante la seguente condizione:
+	
+	\begin{equation}
+	\label{eqn:statodiequilibrio} 
+		$$\begin{center}
+			$\displaystyle F(\overline{x})=0$
+		\end{center}$$
+	\end{equation}
+	
+	\clearpage
+	Uno stato di equilibrio $\overline{x}$ è \textbf{uniformemente stabile} se:
+	
+	\begin{equation}
+		\label{eqn:unifstabile} 
+			$$\begin{center}
+				$\displaystyle \forall\varepsilon>0 \hspace{0.2cm} \exists \hspace{0.1cm} \delta>0 \hspace{0.1cm} \colon \hspace{0.1cm} \Arrowvert x(0)-\overline{x}\Arrowvert <\delta \Rightarrow \Arrowvert x(t)-\overline{x}\Arrowvert < \varepsilon $
+			\end{center}$$
+	\end{equation}
+	
+	In altre parole una traiettoria del sistema può variare in un piccolo intorno dello stato di equilibrio $\overline{x}$ se il suo stato iniziale è vicino a $\overline{x}$. 
+	
+	\begin{thm}[Lyapunov]
+	
+	Lo stato di equilibrio $\overline{x}$ è stabile se in un piccolo intorno di $\overline{x}$ esiste una funzione scalare definita positiva $V(x)$ tale che la sua derivata rispetto al tempo è minore o uguale a $0$ in quella regione.
+	\end{thm}
+
+	Una funzione $V(x)$ che soddisfa queste proprietà è detta \textbf{funzione di Lyapunov} per lo stato di equilibrio $\overline{x}$.\\
+	
+	Se consideriamo un sistema dinamico ad una sua condizione di equilibrio stabile corrisponde un minimo dell'energia posseduta dal sistema stesso come conseguenza del fatto che esso tende spontaneamente a minimizzarla. L'energia del sistema viene espressa come una funzione di Lyapunov verificante il teorema di cui sopra.
+	
 	\section {Il caso discreto e la funzione energia}
 	
 	La prima rete presentata da Hopfield era una rete discreta, completamente connessa, con aggiornamento asincrono completamente connessa e matrice dei pesi simmetrica.\\
-	In questo modello ogni neurone può assumere due stati $v_i=0$ e $v_{i}=1$. Lo stato istantaneo del sistema è specificato elencando gli n valori di $v_{i}$ e lo stato di ciascun neurone ad un certo istante $t$ è determinato da una formula di attivazione binaria a soglia che modificherà i valori input seguendo questo schema: 
+	In questo modello ogni neurone può assumere due stati $v_i=0$ e $v_{i}=1$. Lo stato istantaneo del sistema è specificato elencando gli n valori di $v_{i}$ e lo stato di ciascun neurone ad un certo istante $t$ è determinato da una formula di attivazione binaria a soglia che modificherà i valori input seguendo questo \clearpage schema: 
 	
 	\begin{equation}
 	\label{eqn:casodiscreto} 
@@ -893,9 +950,83 @@
 	\end{equation}
 
 	dove $\theta_{i}$ è la soglia di attivazione associata al neurone $i$-esimo.\\
-	Questo processo è applicato ad un'unità per volta secondo un ordine stabilito o casualmente ed iterato fino a quando la rete non raggiungerà uno stato di equilibrio che corrisponderà ai valori di output. 
+	In modo equivalente, se $f_{h}$ è una funzione non lineare a soglia:
+	
+	\begin{equation}
+		\label{eqn:hopfieldpesi2} 
+			$$\begin{center}
+				$\displaystyle v_{i}^{t}=f_{h}(\sum\limits_{i\neq j}v_{j}^{t-1} -\theta_{1}) \hspace{0.7cm}i=1, ..., n $
+			\end{center}$$
+	\end{equation}
+	
+	Questo processo è applicato ad un'unità per volta secondo un ordine stabilito o casualmente ed iterato fino a quando la rete non raggiungerà uno stato di equilibrio che corrisponderà ai valori di output.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\linewidth]{IMMAGINI/casodiscreto}
+		\caption{}
+		\label{fig:casodiscreto}
+	\end{figure}
 
-%funzione energia
+	Nel paragrafo precedente abbiamo detto che la rete di Hopfield può essere vista come un sistema dinamico non lineare che evolve verso una configurazione stabile ed abbiamo accennato ad una particolare funzione, la \emph{funzione energia}. Questa risulta essere una funzione di Lyapunov definita nello spazio di stato e che viene minimizzata con l’evolvere del processo.\\
+	\clearpage Tale funzione assume questa forma:
+	
+	\begin{equation}
+		\label{eqn:funzioneenergiadiscreto} 
+			$$\begin{center}
+				$\displaystyle E=-\frac{1}{2}\sum\limits_{i}\sum\limits_{j}w_{i,j}\hspace{0.1cm}v_{i}v_{j}+\sum\limits_{i}\theta_{i}v_{i} $
+		\end{center}$$
+	\end{equation}
+	
+	Tale funzione è limitata inferiormente ed assumendo un aggiornamento di tipo asincrono, essa risulta strettamente monotona decrescente lungo una qualsiasi traiettoria descritta dalla rete di Hopfield nello spazio di stato:
+	
+	\begin{equation}
+	\label{eqn:strettamentemonotonadecrescente} 
+		$$\begin{center}
+			$\displaystyle \Delta E(t)=E(t+1)-E(t)<0 $
+		\end{center}$$
+	\end{equation} 
+	
+ 	il che sta a significare che la rete evolve verso una configurazione stabile. Essa risulterà inoltre convergente ad uno stato stabile corrispondente ad un minimo locale della funzione energia.\\
+	Lavorando con un aggiornamento di tipo asincrono sarà valutata solo una generica unità $k$ alla volta e può accadere che:
+	
+	\begin{enumerate}
+		\item $v_{k}$ non cambia stato;\\
+		\item $v_{k}$ cambia stato $-1\longrightarrow 1$, $1\longrightarrow -1$.
+	\end{enumerate}
+	
+	Nel primo caso si ha $E(t+1)=E(t)$ e quindi la funzione rimane invariata.\\
+	Nel secondo caso la funzione energia cambia secondo il nuovo valore $v'_{k}$. Si avrà:
+	
+	\begin{equation}
+	\label{eqn:casodiscretodim} 
+		$$\begin{center}
+			$\displaystyle E(v) - E(v')= (-\frac{1}{2}\sum\limits_{j}w_{k,j}\hspace{0.1cm}v_{j}v_{k}+\theta_{k}v_{k})-(-\frac{1}{2}\sum\limits_{j}w_{k,j}\hspace{0.1cm}v_{j}v'_{k}+\theta_{k}v'_{k}) $
+		\end{center}$$
+	\end{equation} 
+	
+	\clearpage
+	Ma poiché $w_{k,k}=0$ si ha:
+	
+	\begin{equation}
+		\label{eqn:casodiscreto2} 
+			$$\begin{center}
+				$\displaystyle E(v) - E(v')=-(v_{k} - v'{k})(\sum\limits_{j}w_{k,j}\hspace{0.1cm}-\theta_{k}) $
+		   \end{center}$$
+	\end{equation} 
+	
+	Osservando il secondo termine e considerando che l'unità cambia il suo stato, l'eccitazione ha un segno diverso che dipende da $v_{k}$ e $-v'_{k}$.\\
+	La (3.11) è sempre positiva, infatti:
+	
+	\begin{enumerate}
+		\item se $v_{k}$ cambia stato e si ha $-1\longrightarrow 1$, allora $v_{k}=-1 \Rightarrow v'_{k}=1$ , da cui $-(v_{k}-v'{k})>0$;\\
+		\item se $v_{k}$ cambia stato e si ha $1\longrightarrow -1$, allora $v_{k}=1 \Rightarrow v'_{k}=-1$ , da cui $-(v_{k}-v'{k})>0$ .
+	\end{enumerate}
+
+	Quindi $E(v)>E(v')$ ed allora l’energia diminuirà per ogni cambiamento. Inoltre poiché gli stati possibili sono in numero finito, la rete raggiungerà uno stato in cui l'energia non potrà diminuire ulteriormente e tale stato risulterà stabile, assicurando la convergenza della rete.
+	
+	\subsection{Il caso continuo}
+
 %caso continuo
 %situazione vettoriale con esempio
 
