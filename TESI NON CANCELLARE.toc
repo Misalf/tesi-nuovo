@@ -26,8 +26,8 @@
 \contentsline {section}{\numberline {2.5}Un esempio di apprendimento supervisionato: il percettrone elementare}{32}
 \contentsline {chapter}{\numberline {3}Reti di Hopfield}{35}
 \contentsline {section}{\numberline {3.1}Presentazione ed utilizzo}{35}
-\contentsline {section}{\numberline {3.2}Architettura}{36}
-\contentsline {section}{\numberline {3.3}Cenni sulla stabilit\IeC {\`a}}{37}
-\contentsline {section}{\numberline {3.4}Il caso discreto e la funzione energia}{39}
-\contentsline {subsection}{\numberline {3.4.1}Il caso continuo}{42}
-\contentsline {chapter}{Riferimenti bibliografici}{43}
+\contentsline {section}{\numberline {3.2}Architettura ed aggiornamento}{36}
+\contentsline {section}{\numberline {3.3}Cenni sulla stabilit\IeC {\`a}}{38}
+\contentsline {section}{\numberline {3.4}Il caso discreto e la funzione energia}{40}
+\contentsline {subsection}{\numberline {3.4.1}Il caso continuo}{43}
+\contentsline {chapter}{Riferimenti bibliografici}{44}

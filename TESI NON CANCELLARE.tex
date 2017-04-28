@@ -58,7 +58,7 @@
 	%\newpage
 	\null\vspace{\stretch{1}}
 	\thispagestyle{empty}
-	\textit{Prima di fare qualsiasi cosa\\ un bacio.}
+	\textit{A mia madre, la mia vera insegnante.}
 	\vspace{\stretch{2}}\null
 \end{flushright} 
 %FINE DEDICA
@@ -844,21 +844,29 @@
 		\item nei problemi di classificazione.
 	\end{itemize}
 
-	\section{Architettura}
+	\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.55\linewidth]{IMMAGINI/riconoscimento}
+	\caption{ Rete di Hopfield utilizzata come memoria associativa: l'immagine deve essere sempre riconosciuta anche se leggermente distorta.}
+	\label{fig:riconoscimento}
+	\end{figure}
+
+	\section{Architettura ed aggiornamento}
 
 	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati.
 	Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnession, $w_{i,i}=0$, la cui matrice dei pesi sinaptici è simmetrica e sono ricorrenti. \\
-	I valori di input di ogni unità sono binari e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta, per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello, l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale. \\
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\linewidth]{IMMAGINI/hopfield}
+		\includegraphics[width=0.9\linewidth]{IMMAGINI/hopfield}
 		\caption{Esempio di una rete di Hopfield}
 		\label{fig:hopfield}
 	\end{figure}
-	
-	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \emph{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete.\\
+
 	\clearpage
+	I valori di input di ogni unità sono binari e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta, per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello, l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale. \\
+	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \emph{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete.\\
+	
 	Il meccanismo di aggiornamento dei neuroni può essere diviso in:
 	
 	\begin{itemize}
@@ -878,19 +886,51 @@
 		\end{center}$$
 	\end{equation}
 	
+	dove $w_{i,j}$ è il peso della connessione dal nodo $i$ al nodo $j$ e $v_{i}^{s}$ che può assumere i valori $+1$ o $-1$, è l'$i$-esimo elemento del set di stati.\\ 
+	\underline{Esempio:} In forma vettoriale possiamo scrivere:
+		
+		\begin{equation}
+			\label{eqn:hopfieldpesivettoriale} 
+				$$\begin{center}
+					$\displaystyle\overline{w}=\sum\limits_{s} \overline{x_{s}}\cdot\overline{x_{s}}^{T}-1$
+			\end{center}$$
+		\end{equation}
+		
+	Supponiamo di voler memorizzare il vettore $[+1, -1, +1, +1]$. La matrice dei pesi verrà calcolata seguendo questo procedimento
+	
+		\begin{equation}
+			\begin{bmatrix}
+				+1\\
+				-1\\
+				+1\\
+			 	+1\\
+			\end{bmatrix}
+			[+1, -1, +1, +1] - 
+			\begin{bmatrix}
+			+1 & 0 & 0 & 0 \\
+			0 & +1 & 0 & 0 \\
+			0 & 0 & +1 & 0 \\
+			0 & 0 & 0 & +1
+			\end{bmatrix} = 
+			\begin{bmatrix}
+			0 & -1 & +1 & +1 \\
+			-1 & 0 & -1 & -1 \\
+			+1 & -1 & 0 & +1 \\
+			+1 & -1 & +1 & 0
+			\end{bmatrix}
+		\end{equation}
+	
 	
 	\section {Cenni sulla stabilità}
 	
-	La rete di Hopfield può essere vista come un sistema dinamico non lineare che evolve verso una configurazione stabile e la stabilità del sistema è strettamente legata ad una \emph{funzione energia}.\\
-	Prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.\\
-	Il modello matematico per descrivere le dinamiche di un sistema non lineare è pensato in termini di \textbf{variabili di stato}. Tali variabili rendono possibile prevedere l'evoluzione del sistema a partire da un certo istante temporale utilizzando i valori che sono associati ad esse, poiché considerati sufficienti per la previsione dell'evoluzione.\\
-	Definiamo \textbf{vettore di stato}:\\
+	La rete di Hopfield può essere vista come un sistema dinamico non lineare che evolve verso una configurazione stabile e la stabilità del sistema è strettamente legata ad una \emph{funzione energia}. Prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.\\
+	Il modello matematico per descrivere le dinamiche di un sistema non lineare è pensato in termini di \textbf{variabili di stato}. Tali variabili rendono possibile prevedere l'evoluzione del sistema a partire da un certo istante temporale utilizzando i valori che sono associati ad esse, poiché considerati sufficienti per la previsione dell'evoluzione. Definiamo \textbf{vettore di stato}:
 	
 	\begin{equation}
 	\label{eqn:vettoredistato} 
-	$$\begin{center}
-	$\displaystyle x(t)=(x_{1}(t), x_{2}(t), ..., x_{n}(t))$
-	\end{center}$$
+		$$\begin{center}
+			$\displaystyle x(t)=(x_{1}(t), x_{2}(t), ..., x_{n}(t))$
+		\end{center}$$
 	\end{equation}
 	
 	un vettore contenente le variabili di stato ed in cui la variabile indipendente è il tempo $t$ mentre $n$ è l’ordine del sistema. Sfruttando tali vettori è possibile descrivere un sistema dinamico mediante un sistema di equazioni differenziali di primo ordine del tipo:
@@ -912,7 +952,6 @@
 		\end{center}$$
 	\end{equation}
 	
-	\clearpage
 	Uno stato di equilibrio $\overline{x}$ è \textbf{uniformemente stabile} se:
 	
 	\begin{equation}
@@ -930,13 +969,12 @@
 	\end{thm}
 
 	Una funzione $V(x)$ che soddisfa queste proprietà è detta \textbf{funzione di Lyapunov} per lo stato di equilibrio $\overline{x}$.\\
-	
 	Se consideriamo un sistema dinamico ad una sua condizione di equilibrio stabile corrisponde un minimo dell'energia posseduta dal sistema stesso come conseguenza del fatto che esso tende spontaneamente a minimizzarla. L'energia del sistema viene espressa come una funzione di Lyapunov verificante il teorema di cui sopra.
 	
 	\section {Il caso discreto e la funzione energia}
 	
 	La prima rete presentata da Hopfield era una rete discreta, completamente connessa, con aggiornamento asincrono completamente connessa e matrice dei pesi simmetrica.\\
-	In questo modello ogni neurone può assumere due stati $v_i=0$ e $v_{i}=1$. Lo stato istantaneo del sistema è specificato elencando gli n valori di $v_{i}$ e lo stato di ciascun neurone ad un certo istante $t$ è determinato da una formula di attivazione binaria a soglia che modificherà i valori input seguendo questo \clearpage schema: 
+	In questo modello ogni neurone può assumere due stati $v_i=0$ e $v_{i}=1$. Lo stato istantaneo del sistema è specificato elencando gli n valori di $v_{i}$ e lo stato di ciascun neurone ad un certo istante $t$ è determinato da una formula di attivazione binaria a soglia che modificherà i valori input seguendo questo schema: 
 	
 	\begin{equation}
 	\label{eqn:casodiscreto} 
@@ -969,7 +1007,7 @@
 	\end{figure}
 
 	Nel paragrafo precedente abbiamo detto che la rete di Hopfield può essere vista come un sistema dinamico non lineare che evolve verso una configurazione stabile ed abbiamo accennato ad una particolare funzione, la \emph{funzione energia}. Questa risulta essere una funzione di Lyapunov definita nello spazio di stato e che viene minimizzata con l’evolvere del processo.\\
-	\clearpage Tale funzione assume questa forma:
+	Tale funzione assume questa forma:
 	
 	\begin{equation}
 		\label{eqn:funzioneenergiadiscreto} 
@@ -978,7 +1016,7 @@
 		\end{center}$$
 	\end{equation}
 	
-	Tale funzione è limitata inferiormente ed assumendo un aggiornamento di tipo asincrono, essa risulta strettamente monotona decrescente lungo una qualsiasi traiettoria descritta dalla rete di Hopfield nello spazio di stato:
+	Essa è limitata inferiormente ed utilizzando un aggiornamento di tipo asincrono, risulta strettamente monotona decrescente lungo una qualsiasi traiettoria descritta dalla rete di Hopfield nello spazio di stato:
 	
 	\begin{equation}
 	\label{eqn:strettamentemonotonadecrescente} 
@@ -988,7 +1026,7 @@
 	\end{equation} 
 	
  	il che sta a significare che la rete evolve verso una configurazione stabile. Essa risulterà inoltre convergente ad uno stato stabile corrispondente ad un minimo locale della funzione energia.\\
-	Lavorando con un aggiornamento di tipo asincrono sarà valutata solo una generica unità $k$ alla volta e può accadere che:
+	Lavorando con un aggiornamento di tipo asincrono sarà valutata solo una \clearpage generica unità $k$ alla volta e può accadere che:
 	
 	\begin{enumerate}
 		\item $v_{k}$ non cambia stato;\\
@@ -1005,7 +1043,6 @@
 		\end{center}$$
 	\end{equation} 
 	
-	\clearpage
 	Ma poiché $w_{k,k}=0$ si ha:
 	
 	\begin{equation}
@@ -1016,7 +1053,7 @@
 	\end{equation} 
 	
 	Osservando il secondo termine e considerando che l'unità cambia il suo stato, l'eccitazione ha un segno diverso che dipende da $v_{k}$ e $-v'_{k}$.\\
-	La (3.11) è sempre positiva, infatti:
+	Sfruttando la simmetricità della matrice dei pesi e il fatto che ha gli elementi diagonali nulli (3.11) è sempre positiva, infatti:
 	
 	\begin{enumerate}
 		\item se $v_{k}$ cambia stato e si ha $-1\longrightarrow 1$, allora $v_{k}=-1 \Rightarrow v'_{k}=1$ , da cui $-(v_{k}-v'{k})>0$;\\
@@ -1025,8 +1062,42 @@
 
 	Quindi $E(v)>E(v')$ ed allora l’energia diminuirà per ogni cambiamento. Inoltre poiché gli stati possibili sono in numero finito, la rete raggiungerà uno stato in cui l'energia non potrà diminuire ulteriormente e tale stato risulterà stabile, assicurando la convergenza della rete.
 	
-	\subsection{Il caso continuo}
+		\subsection{Il caso continuo}
+	
+		A differenza del caso discreto, la rete di Hopfield continua può assumere un numero infinito di stati sebbene sia formata da un numero finito di neuroni.\\
+		Lo stato della rete all'istante $t$ è sempre rappresentato da un vettore $v$ composto dagli $n$ stati $v_{i}$ dei singoli neuroni, i cui valori sono compresi nell'intervallo reale ${0,1}$ se utilizziamo una notazione unipolare, ${-1,1}$ (notazione bipolare).\\
+		Scriviamo lo stato $v_{i}$ al tempo $t$ come segue:
+		
+		\begin{equation}
+			\label{eqn:casocontinuostato} 
+				$$\begin{center}
+					$\displaystyle v_{i}(t)= k v_{i}(t-1) + \alpha \sum\limits_{j=1}^{n}w_{i,j}F_{j}(t) $
+				\end{center}$$
+		\end{equation} 
+	
+		dove $k,\alpha \epsilon [0,1]$ ed $\alpha$ è una \textbf{costante di attenuazione} mentre:
+	
+		\begin{equation}
+		\label{eqn:casocontinuofunzione} 
+			$$\begin{center}
+				$\displaystyle F_{j}(t)=\dfrac{1}{1+e^{-\frac{v_{i}(t)}{T}}} $
+			\end{center}$$
+		\end{equation} 
+	
+		è una funzione di attivazione sigmoide.\\
+		La funzione energia assume questa forma:
+	
+		\begin{equation}
+			\label{eqn:funzioneenergiacontinuo} 
+				$$\begin{center}
+					$\displaystyle E=-\frac{1}{2}\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}w_{i,j}\hspace{0.1cm}v_{i}v_{j}+\sum\limits_{i=1}^{n}\frac{1}{\beta}\int_{0}^{v_{i}}F_{i}^{-1}(v)dv-\sum\limits_{i=1}^{n}\theta_{i}v_{i} $
+				\end{center}$$
+		\end{equation}
+	
+		Risulta anch'essa essere una funzione Lyapunoviana e quindi anche in questo caso si ha $\displaystyle \frac{dE}{dt}\leq 0 $.
+		
 
+	
 %caso continuo
 %situazione vettoriale con esempio
 
