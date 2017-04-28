@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  28 APR 2017 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  28 APR 2017 22:09
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -941,7 +941,7 @@ Package pdftex.def Info: IMMAGINI/riconoscimento.png used on input line 849.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 856--858
+Underfull \hbox (badness 10000) in paragraph at lines 856--857
 
  []
 
@@ -951,44 +951,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 856--858
 File: IMMAGINI/hopfield.png Graphic file (type png)
 
 <use IMMAGINI/hopfield.png>
-Package pdftex.def Info: IMMAGINI/hopfield.png used on input line 861.
-(pdftex.def)             Requested size: 350.99762pt x 208.5407pt.
- [36 <./IMMAGINI/riconoscimento.png> <./IMMAGINI/hopfield.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 867--869
+Package pdftex.def Info: IMMAGINI/hopfield.png used on input line 860.
+(pdftex.def)             Requested size: 331.50238pt x 196.95665pt.
+ [36 <./IMMAGINI/riconoscimento.png> <./IMMAGINI/hopfield.png>] [37] [38] [39
 
- []
+] [40
 
-[37
-
-] [38] [39] <IMMAGINI/casodiscreto.png, id=181, 498.36188pt x 146.04562pt>
+]
+<IMMAGINI/casodiscreto.png, id=184, 498.36188pt x 146.04562pt>
 File: IMMAGINI/casodiscreto.png Graphic file (type png)
 
 <use IMMAGINI/casodiscreto.png>
-Package pdftex.def Info: IMMAGINI/casodiscreto.png used on input line 1004.
+Package pdftex.def Info: IMMAGINI/casodiscreto.png used on input line 987.
 (pdftex.def)             Requested size: 390.0pt x 114.29172pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[40] [41 <./IMMAGINI/casodiscreto.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1033
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1059--1060
+ [41 <./IMMAGINI/casodiscreto.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1015--1016
 
  []
 
 [42
 
-] [43]
-Underfull \hbox (badness 1931) in paragraph at lines 1110--1111
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1043
+
+ []
+
+[43
+
+] [44]
+Underfull \hbox (badness 1931) in paragraph at lines 1121--1122
 []\OT1/cmr/m/n/12 Garreta Raul, Mon-cec-chi Guil-ler-mo, \OT1/cmr/m/it/12 Lear
 -ning scikit-learn:Machine
  []
 
-[44
+[45
 
 ] ("TESI NON CANCELLARE.aux")
 
@@ -996,13 +992,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4607 strings out of 493333
- 59609 string characters out of 3139198
- 140806 words of memory out of 3000000
- 8014 multiletter control sequences out of 15000+200000
+ 4608 strings out of 493333
+ 59629 string characters out of 3139198
+ 140817 words of memory out of 3000000
+ 8015 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,43p,995b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,8n,43p,1052b,259s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Mi
@@ -1017,9 +1013,9 @@ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (44 pages, 596469 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (45 pages, 620148 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
+ 252 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

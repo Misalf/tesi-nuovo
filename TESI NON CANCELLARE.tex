@@ -833,7 +833,7 @@
 \chapter{Reti di Hopfield}
 
 	\section{Presentazione ed utilizzo}
-
+	
 	Le reti di Hopfield furono presentate nel 1982 dal fisico John Hopfield nel suo articolo \textit{``Neural networks and physical systems with emergent collective computational abilities"}. A seguito di numerose osservazioni sulle proprietà dinamiche ed elettrochimiche dei neuroni e delle loro interconnessioni, Hopfield cercò di fare emergere gli schemi di funzionamento che erano dietro ai comportamenti biologici elementari. Il modello matematico realizzato da Hopfield dimostrò che un gran numero di semplici elementi di elaborazione possedevano capacità computazionali dal \emph{comportamento collettivo} e che tali capacità emergevano spontaneamente come conseguenza di interazioni tra le unità.\\
 	Le proprietà collettive di tale modello contraddistinguono tutt'oggi le reti di Hopfield dalle restanti e danno vita ad una memoria associativa per il riconoscimento di rappresentazioni alterate ed il recupero di informazioni mancanti. Per capire cosa si intende per memoria associativa, un esempio è la capacità del nostro cervello di riconoscere un'immagine anche quando questa non è esatta, risulta deformata o distorta o di riuscire a leggere parole con lettere mancanti e quindi non complete.\\
 	Le reti di Hopfield sono principalmente utilizzate:
@@ -847,27 +847,33 @@
 	\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.55\linewidth]{IMMAGINI/riconoscimento}
-	\caption{ Rete di Hopfield utilizzata come memoria associativa: l'immagine deve essere sempre riconosciuta anche se leggermente distorta.}
+	\caption{ Rete di Hopfield utilizzata come memoria associativa: l'immagine deve essere sempre riconosciuta anche se leggermente diversa.}
 	\label{fig:riconoscimento}
 	\end{figure}
 
 	\section{Architettura ed aggiornamento}
 
-	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati.
-	Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnession, $w_{i,i}=0$, la cui matrice dei pesi sinaptici è simmetrica e sono ricorrenti. \\
+	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati. Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnessioni, $w_{i,i}=0$, la cui matrice dei pesi sinaptici è simmetrica. \\
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.9\linewidth]{IMMAGINI/hopfield}
+		\includegraphics[width=0.85\linewidth]{IMMAGINI/hopfield}
 		\caption{Esempio di una rete di Hopfield}
 		\label{fig:hopfield}
 	\end{figure}
 
-	\clearpage
-	I valori di input di ogni unità sono binari e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta, per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello, l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale. \\
-	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \emph{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete.\\
+	I valori di input di ogni unità sono binari e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale.\\
+	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \textbf{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete. La rete di Hopfield è una rete \textbf{ricorrente} e ad ogni rete con una simile architettura è associata una sequenza di stati. Nel nostro caso tale sequenza è rappresentata da un vettore che coincide col vettore delle attività dei neuroni. Se chiamiamo con $\overline z$ quest'ultimo vettore ed indichiamo con $\overline v$ il vettore di ingresso, $\overline v$ avrà lo stesso numero di componenti di $\overline z$ e viene continuamente presentato alla rete in modo tale che ciascun neurone abbia in uscita il valore della corrispondente componente in $\overline z$. Detto $z_{n}$ lo stato della rete all'istante $t$, lo stato successivo viene calcolato come:
+
+	\begin{equation}
+	\label{eqn:hopfieldaggiornamento} 
+		$$\begin{center}
+			$\displaystyle z_{n+1}=Wz_{n}$
+		\end{center}$$
+	\end{equation}
 	
-	Il meccanismo di aggiornamento dei neuroni può essere diviso in:
+	con $W$ matrice dei pesi costituita da elementi del tipo $w_{i,j}$, elemento che simboleggia il peso della connessione dal nodo $i$ al nodo $j$.\\
+	In questo meccanismo di aggiornamento tutte le attività vengono aggiornate contemporaneamente e pertanto viene chiamato \textbf{aggiornamento sincrono}. Generalmente i meccanismi di aggiornamento dei neuroni sono divisi in:
 	
 	\begin{itemize}
 		\item\textbf{aggiornamento asincrono} in cui si aggiorna un neurone alla volta;
@@ -886,44 +892,21 @@
 		\end{center}$$
 	\end{equation}
 	
-	dove $w_{i,j}$ è il peso della connessione dal nodo $i$ al nodo $j$ e $v_{i}^{s}$ che può assumere i valori $+1$ o $-1$, è l'$i$-esimo elemento del set di stati.\\ 
-	\underline{Esempio:} In forma vettoriale possiamo scrivere:
-		
-		\begin{equation}
-			\label{eqn:hopfieldpesivettoriale} 
-				$$\begin{center}
-					$\displaystyle\overline{w}=\sum\limits_{s} \overline{x_{s}}\cdot\overline{x_{s}}^{T}-1$
-			\end{center}$$
-		\end{equation}
-		
-	Supponiamo di voler memorizzare il vettore $[+1, -1, +1, +1]$. La matrice dei pesi verrà calcolata seguendo questo procedimento
+	La matrice $W$ sarà data da:
 	
-		\begin{equation}
-			\begin{bmatrix}
-				+1\\
-				-1\\
-				+1\\
-			 	+1\\
-			\end{bmatrix}
-			[+1, -1, +1, +1] - 
-			\begin{bmatrix}
-			+1 & 0 & 0 & 0 \\
-			0 & +1 & 0 & 0 \\
-			0 & 0 & +1 & 0 \\
-			0 & 0 & 0 & +1
-			\end{bmatrix} = 
-			\begin{bmatrix}
-			0 & -1 & +1 & +1 \\
-			-1 & 0 & -1 & -1 \\
-			+1 & -1 & 0 & +1 \\
-			+1 & -1 & +1 & 0
-			\end{bmatrix}
-		\end{equation}
+	\begin{equation}
+	\label{eqn:hopfieldmatrice} 
+		$$\begin{center}
+			$\displaystyle W=v_{1}v_{1}^{T}+v_{2}v_{2}^{T}+...+v_{n}v_{n}^{T}$
+		\end{center}$$
+	\end{equation}
 	
 	
 	\section {Cenni sulla stabilità}
 	
-	La rete di Hopfield può essere vista come un sistema dinamico non lineare che evolve verso una configurazione stabile e la stabilità del sistema è strettamente legata ad una \emph{funzione energia}. Prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.\\
+	Nelle reti ricorrenti non è detto a priori che la rete riesca a convergere su uno stato stabile. Hopfield ha verificato che la stabilità del sistema delle sue reti è strettamente legata ad una funzione chiamata \emph{funzione energia della rete} che indichiamo con $E$. Aggiungendo l'ipotesi che la matrice dei pesi sia simmetrica con diagonale principale nulla e che si lavori in una condizione di aggiornamento asincrono, Hopfield ha dimostrato che $E$ non può aumentare nel passaggio da uno stato all'altro e poiché non può raggiungere valori infinitamente negativi, lo stato della rete cesserà di cambiare in un tempo finito ed essa raggiungerà dunque uno stato stabile.\\
+	La rete di Hopfield può essere quindi vista come un sistema dinamico non lineare che evolve verso una configurazione stabile con stabilità legata alla funzione energia, ma prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.
+	\clearpage
 	Il modello matematico per descrivere le dinamiche di un sistema non lineare è pensato in termini di \textbf{variabili di stato}. Tali variabili rendono possibile prevedere l'evoluzione del sistema a partire da un certo istante temporale utilizzando i valori che sono associati ad esse, poiché considerati sufficienti per la previsione dell'evoluzione. Definiamo \textbf{vettore di stato}:
 	
 	\begin{equation}
@@ -952,7 +935,7 @@
 		\end{center}$$
 	\end{equation}
 	
-	Uno stato di equilibrio $\overline{x}$ è \textbf{uniformemente stabile} se:
+	\clearpage Uno stato di equilibrio $\overline{x}$ è \textbf{uniformemente stabile} se:
 	
 	\begin{equation}
 		\label{eqn:unifstabile} 
@@ -1016,7 +999,7 @@
 		\end{center}$$
 	\end{equation}
 	
-	Essa è limitata inferiormente ed utilizzando un aggiornamento di tipo asincrono, risulta strettamente monotona decrescente lungo una qualsiasi traiettoria descritta dalla rete di Hopfield nello spazio di stato:
+	Essa è limitata inferiormente ed utilizzando un aggiornamento di tipo asincrono, risulta strettamente monotona decrescente lungo una qualsiasi traiettoria \clearpage descritta dalla rete di Hopfield nello spazio di stato:
 	
 	\begin{equation}
 	\label{eqn:strettamentemonotonadecrescente} 
@@ -1026,7 +1009,7 @@
 	\end{equation} 
 	
  	il che sta a significare che la rete evolve verso una configurazione stabile. Essa risulterà inoltre convergente ad uno stato stabile corrispondente ad un minimo locale della funzione energia.\\
-	Lavorando con un aggiornamento di tipo asincrono sarà valutata solo una \clearpage generica unità $k$ alla volta e può accadere che:
+	Lavorando con un aggiornamento di tipo asincrono sarà valutata solo una generica unità $k$ alla volta e può accadere che:
 	
 	\begin{enumerate}
 		\item $v_{k}$ non cambia stato;\\
@@ -1053,7 +1036,7 @@
 	\end{equation} 
 	
 	Osservando il secondo termine e considerando che l'unità cambia il suo stato, l'eccitazione ha un segno diverso che dipende da $v_{k}$ e $-v'_{k}$.\\
-	Sfruttando la simmetricità della matrice dei pesi e il fatto che ha gli elementi diagonali nulli (3.11) è sempre positiva, infatti:
+	Sfruttando la simmetricità della matrice dei pesi e il fatto che ha gli elementi \clearpage diagonali nulli la (3.13) è sempre positiva, infatti:
 	
 	\begin{enumerate}
 		\item se $v_{k}$ cambia stato e si ha $-1\longrightarrow 1$, allora $v_{k}=-1 \Rightarrow v'_{k}=1$ , da cui $-(v_{k}-v'{k})>0$;\\
@@ -1098,8 +1081,36 @@
 		
 
 	
-%caso continuo
-%situazione vettoriale con esempio
+%\underline{Esempio:} In forma vettoriale possiamo scrivere:
+
+%\begin{equation}
+%\label{eqn:hopfieldpesivettoriale} 
+%$$\begin{center}
+%$\displaystyle\overline{w}=\sum\limits_{s} %\overline{v_{s}}\cdot\overline{v_{s}}^{T}-1$
+%\end{center}$$
+%\end{equation}
+
+%Supponiamo di voler memorizzare il vettore $[+1, -1, +1, +1]$. La matrice dei %pesi verrà calcolata seguendo questo procedimento
+
+%$$ \begin{bmatrix}
+%+1\\
+%-1\\
+%+1\\
+%+1\\
+%\end{bmatrix}
+%[+1, -1, +1, +1] - 
+%\begin{bmatrix}
+%+1 & 0 & 0 & 0 \\
+%0 & +1 & 0 & 0 \\
+%0 & 0 & +1 & 0 \\
+%0 & 0 & 0 & +1
+%\end{bmatrix} = 
+%\begin{bmatrix}
+%0 & -1 & +1 & +1 \\
+%-1 & 0 & -1 & -1 \\
+%+1 & -1 & 0 & +1 \\
+%+1 & -1 & +1 & 0
+%\end{bmatrix} $$
 
 
 %\phantomsection 

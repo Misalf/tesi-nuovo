@@ -30,4 +30,4 @@
 \contentsline {section}{\numberline {3.3}Cenni sulla stabilit\IeC {\`a}}{38}
 \contentsline {section}{\numberline {3.4}Il caso discreto e la funzione energia}{40}
 \contentsline {subsection}{\numberline {3.4.1}Il caso continuo}{43}
-\contentsline {chapter}{Riferimenti bibliografici}{44}
+\contentsline {chapter}{Riferimenti bibliografici}{45}
