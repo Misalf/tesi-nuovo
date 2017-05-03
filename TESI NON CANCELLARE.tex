@@ -853,17 +853,17 @@
 
 	\section{Architettura ed aggiornamento}
 
-	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati. Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnessioni, $w_{i,i}=0$, la cui matrice dei pesi sinaptici è simmetrica. \\
+	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati. Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnessioni, $w_{i,i}=0$, la cui matrice dei pesi sinaptici è simmetrica con funzione di attivazione a gradino o a soglia. \\
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.85\linewidth]{IMMAGINI/hopfield}
+		\includegraphics[width=0.9\linewidth]{IMMAGINI/hopfield}
 		\caption{Esempio di una rete di Hopfield}
 		\label{fig:hopfield}
 	\end{figure}
 
 	I valori di input di ogni unità sono binari e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale.\\
-	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \textbf{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete. La rete di Hopfield è una rete \textbf{ricorrente} e ad ogni rete con una simile architettura è associata una sequenza di stati. Nel nostro caso tale sequenza è rappresentata da un vettore che coincide col vettore delle attività dei neuroni. Se chiamiamo con $\overline z$ quest'ultimo vettore ed indichiamo con $\overline v$ il vettore di ingresso, $\overline v$ avrà lo stesso numero di componenti di $\overline z$ e viene continuamente presentato alla rete in modo tale che ciascun neurone abbia in uscita il valore della corrispondente componente in $\overline z$. Detto $z_{n}$ lo stato della rete all'istante $t$, lo stato successivo viene calcolato come:
+	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \textbf{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete. La rete di Hopfield è una rete \textbf{ricorrente} e ad ogni rete con una simile architettura è associata una sequenza di stati. Nel nostro caso tale sequenza è rappresentata da un vettore che coincide col vettore delle attività dei neuroni. Se chiamiamo con $\overline z$ quest'ultimo vettore ed indichiamo con $\overline v$ il vettore di ingresso, $\overline v$ ha lo stesso numero di componenti di $\overline z$ e viene continuamente presentato alla rete in modo tale che ciascun neurone abbia in uscita il valore della corrispondente componente in $\overline z$. Detto $z_{n}$ lo stato della rete all'istante $t$, lo stato successivo viene calcolato come:
 
 	\begin{equation}
 	\label{eqn:hopfieldaggiornamento} 
@@ -880,7 +880,8 @@
 		\item\textbf{aggiornamento sincrono} in cui tutti i neuroni sono aggiornati nello stesso istante;
 		\item\textbf{aggiornamento continuo} in cui tutti i neuroni si aggiornano continuamente.
 	\end{itemize}
-
+	
+	L'idea di Hopfield fu quella di attribuire alla multi-stabilità della struttura una memoria. Ogni stato stabile può essere visto come un \textbf{attrattore} per gli stati iniziali vicini ad esso, ovvero un insieme verso il quale un sistema dinamico evolve dopo un tempo sufficientemente lungo. Inizializzando quindi la rete ad uno stato iniziale, quest'ultimo evolverà verso l'attrattore. Il proposito principale è fare in modo che certi stati siano appresi come stabili e con modifiche opportune sui pesi siano resi attrattori.\\
 	Abbiamo visto che il principio alla base della memorizzazione delle reti neurali è che l’informazione sia contenuta nei coefficienti di connessione. Nel modello di Hopfield si persegue tale obiettivo sfruttando la legge di Hebb, esposta nel capitolo 1 e che riprendiamo a grandi linee: se un’unità $j$ manda un input ad un'altra unità $i$ e se entrambe sono attive, il peso corrispondente $w_{i,j}$ deve essere rafforzato.\\
 	Supponiamo di voler memorizzare il set di stati $v^ {s}$ con $s = 1, ..., n$, utilizzando la notazione in cui $0\Longleftrightarrow -1$ e $1\Longleftrightarrow 1$. \\
 	I pesi delle connessioni sono fissati attraverso un apprendimento non iterativo \emph{fixed point learning}, seguendo la seguente formula: 
@@ -901,12 +902,13 @@
 		\end{center}$$
 	\end{equation}
 	
+	Gli stati stabili risulteranno proporzionali agli autovettori della matrice dei pesi e coincideranno con i minimi di una particolare funzione che introdurremo nel prossimo paragrafo e che risulterà essere convergente proprio in essi. Questi funzioneranno pertanto come bacini d’attrazione per gli stati della rete.
+	
 	
 	\section {Cenni sulla stabilità}
 	
 	Nelle reti ricorrenti non è detto a priori che la rete riesca a convergere su uno stato stabile. Hopfield ha verificato che la stabilità del sistema delle sue reti è strettamente legata ad una funzione chiamata \emph{funzione energia della rete} che indichiamo con $E$. Aggiungendo l'ipotesi che la matrice dei pesi sia simmetrica con diagonale principale nulla e che si lavori in una condizione di aggiornamento asincrono, Hopfield ha dimostrato che $E$ non può aumentare nel passaggio da uno stato all'altro e poiché non può raggiungere valori infinitamente negativi, lo stato della rete cesserà di cambiare in un tempo finito ed essa raggiungerà dunque uno stato stabile.\\
-	La rete di Hopfield può essere quindi vista come un sistema dinamico non lineare che evolve verso una configurazione stabile con stabilità legata alla funzione energia, ma prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.
-	\clearpage
+	La rete di Hopfield può essere quindi vista come un sistema dinamico non lineare che evolve verso una configurazione stabile con stabilità legata alla funzione energia, ma prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.\\
 	Il modello matematico per descrivere le dinamiche di un sistema non lineare è pensato in termini di \textbf{variabili di stato}. Tali variabili rendono possibile prevedere l'evoluzione del sistema a partire da un certo istante temporale utilizzando i valori che sono associati ad esse, poiché considerati sufficienti per la previsione dell'evoluzione. Definiamo \textbf{vettore di stato}:
 	
 	\begin{equation}
@@ -935,7 +937,7 @@
 		\end{center}$$
 	\end{equation}
 	
-	\clearpage Uno stato di equilibrio $\overline{x}$ è \textbf{uniformemente stabile} se:
+	Uno stato di equilibrio $\overline{x}$ è \textbf{uniformemente stabile} se:
 	
 	\begin{equation}
 		\label{eqn:unifstabile} 
@@ -999,7 +1001,7 @@
 		\end{center}$$
 	\end{equation}
 	
-	Essa è limitata inferiormente ed utilizzando un aggiornamento di tipo asincrono, risulta strettamente monotona decrescente lungo una qualsiasi traiettoria \clearpage descritta dalla rete di Hopfield nello spazio di stato:
+	Essa è limitata inferiormente ed utilizzando un aggiornamento di tipo asincrono, risulta strettamente monotona decrescente lungo una qualsiasi traiettoria descritta dalla rete di Hopfield nello spazio di stato:
 	
 	\begin{equation}
 	\label{eqn:strettamentemonotonadecrescente} 
@@ -1036,7 +1038,7 @@
 	\end{equation} 
 	
 	Osservando il secondo termine e considerando che l'unità cambia il suo stato, l'eccitazione ha un segno diverso che dipende da $v_{k}$ e $-v'_{k}$.\\
-	Sfruttando la simmetricità della matrice dei pesi e il fatto che ha gli elementi \clearpage diagonali nulli la (3.13) è sempre positiva, infatti:
+	Sfruttando la simmetricità della matrice dei pesi e il fatto che ha gli elementi diagonali nulli la (3.13) è sempre positiva, infatti:
 	
 	\begin{enumerate}
 		\item se $v_{k}$ cambia stato e si ha $-1\longrightarrow 1$, allora $v_{k}=-1 \Rightarrow v'_{k}=1$ , da cui $-(v_{k}-v'{k})>0$;\\
