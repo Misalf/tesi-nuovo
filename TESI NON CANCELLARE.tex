@@ -11,6 +11,7 @@
 \usepackage{eso-pic}
 \usepackage{setspace}
 \usepackage{fancyhdr} 
+ 
 \newcommand{\fncyblank}{\fancyhf{}}
 \newenvironment{abstract}% 
 {\cleardoublepage\fncyblank\null \vfill\begin{center}% 
@@ -54,24 +55,24 @@
 \blankpage
 
 %DEDICA
-\begin{flushright}
-	%\newpage
-	\null\vspace{\stretch{1}}
-	\thispagestyle{empty}
-	\textit{A mia madre, la mia vera insegnante.}
-	\vspace{\stretch{2}}\null
-\end{flushright} 
+%\begin{flushright}
+%	%\newpage
+%	\null\vspace{\stretch{1}}
+%	\thispagestyle{empty}
+%	\textit{A mia madre, la mia vera insegnante.}
+%	\vspace{\stretch{2}}\null
+%\end{flushright} 
 %FINE DEDICA
 
 
 %FRASE
-\begin{flushright} 
-	\newpage
-	\null\vspace{\stretch{1}}
-	\thispagestyle{empty}
-	\textit{Se non puoi passare attraverso una montagna, giraci intorno; \\ se non puoi girarci intorno, passaci sopra;\\ se non puoi passarci sopra, siediti un attimo \\e chiediti se raggiungere l'altro lato sia davvero così importante.\\ \vspace{0.5cm} Se lo è comincia a scavare una galleria.\\ \vspace{0.5cm} (Anonimo)}
-	\vspace{\stretch{2}}\null
-\end{flushright} 
+%\begin{flushright} 
+%	\newpage
+%	\null\vspace{\stretch{1}}
+%	\thispagestyle{empty}
+%	\textit{Se non puoi passare attraverso una montagna, giraci intorno; \\ se non puoi girarci intorno, passaci sopra;\\ se non puoi passarci sopra, siediti un attimo \\e chiediti se raggiungere l'altro lato sia davvero così importante.\\ \vspace{0.5cm} Se lo è comincia a scavare una galleria.\\ \vspace{0.5cm} (Anonimo)}
+%	\vspace{\stretch{2}}\null
+%\end{flushright} 
 %FINEFRASE
 
 \clearpage
@@ -81,10 +82,10 @@
 %FINE INDICE
 
 %INTRODUZIONE
-\chapter*{Introduzione}
-\addcontentsline{toc}{chapter}{Introduzione}
+%\chapter*{Introduzione}
+%\addcontentsline{toc}{chapter}{Introduzione}
 
-ciao
+%ciao
 
 %FINE INTRODUZIONE
 
@@ -841,12 +842,11 @@ ciao
 %CAPITOLO 3 PARAGRAFO 1
 	\section{Presentazione ed utilizzo}
 	
-	Le reti di Hopfield furono presentate nel 1982 dal fisico John Hopfield nel suo articolo \textit{``Neural networks and physical systems with emergent collective computational abilities"}. A seguito di numerose osservazioni sulle proprietà dinamiche ed elettrochimiche dei neuroni e delle loro interconnessioni, Hopfield cercò di fare emergere gli schemi di funzionamento che erano dietro ai comportamenti biologici elementari. Il modello matematico realizzato da Hopfield dimostrò che un gran numero di semplici elementi di elaborazione possedevano capacità computazionali dal \emph{comportamento collettivo} e che tali capacità emergevano spontaneamente come conseguenza di interazioni tra le unità.\\
-	Le proprietà collettive di tale modello contraddistinguono tutt'oggi le reti di Hopfield dalle restanti e danno vita ad una memoria associativa per il riconoscimento di rappresentazioni alterate ed il recupero di informazioni mancanti. Per capire cosa si intende per memoria associativa, un esempio è la capacità del nostro cervello di riconoscere un'immagine anche quando questa non è esatta, risulta deformata o distorta o di riuscire a leggere parole con lettere mancanti e quindi non complete.\\
-	Le reti di Hopfield sono principalmente utilizzate:
-
+	Le reti di Hopfield furono presentate nell'anno 1982 dal fisico John Hopfield nel suo articolo \textit{``Neural networks and physical systems with emergent collective computational abilities"}. A seguito di numerose osservazioni sulle proprietà dinamiche ed elettrochimiche dei neuroni e delle loro interconnessioni, Hopfield cercò di fare emergere gli schemi di funzionamento che erano dietro ai comportamenti biologici elementari. Il modello matematico realizzato da Hopfield dimostrò che un gran numero di semplici elementi di elaborazione possedevano capacità computazionali dal \emph{comportamento collettivo} e che tali capacità emergevano spontaneamente come conseguenza di interazioni tra le unità.\\
+	Le proprietà collettive di tale modello contraddistinguono tutt'oggi le reti di Hopfield dalle restanti. Queste reti sono utilizzate principalmente nella costruzione di  memorie associative per il riconoscimento di rappresentazioni alterate ed il recupero di informazioni mancanti, imitando quindi la capacità del nostro cervello di riconoscere un'immagine anche quando questa non è esatta, risulta deformata o distorta e di riuscire a leggere parole con lettere mancanti.\\
+	Tali reti sono impiegate anche:
+	
 	\begin{itemize}
-		\item nella realizzazione di memorie associative;
 		\item nella risoluzione di problemi d'ottimizzazione combinatoriale;
 		\item nei problemi di classificazione.
 	\end{itemize}
@@ -854,7 +854,7 @@ ciao
 	\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.55\linewidth]{IMMAGINI/riconoscimento}
-	\caption{ Rete di Hopfield utilizzata come memoria associativa: l'immagine deve essere sempre riconosciuta anche se leggermente diversa.}
+	\caption{ Rete di Hopfield utilizzata come memoria associativa: l'immagine deve essere sempre riconosciuta.}
 	\label{fig:riconoscimento}
 	\end{figure}
 
@@ -870,8 +870,9 @@ ciao
 		\label{fig:hopfield}
 	\end{figure}
 
-	I valori di input di ogni unità sono binari e non c'è distinzione tra unità di input ed unità di output in quanto la rete riceve i valori in entrata in numero pari alle unità che presenta per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale.\\
-	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \textbf{stati stabili} mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete. La rete di Hopfield è una rete \textbf{ricorrente} e ad ogni rete con una simile architettura è associata una sequenza di stati. Nel nostro caso tale sequenza è rappresentata da un vettore che coincide col vettore delle attività dei neuroni. Se chiamiamo con $\overline z$ quest'ultimo vettore ed indichiamo con $\overline v$ il vettore di ingresso, $\overline v$ ha lo stesso numero di componenti di $\overline z$ e viene continuamente presentato alla rete in modo tale che ciascun neurone abbia in uscita il valore della corrispondente componente in $\overline z$. Detto $z_{n}$ lo stato della rete all'istante $t$, lo stato successivo viene calcolato come:
+	I valori di input di ogni unità sono binari e non c'è distinzione tra unità di input ed unità di output. La rete riceve i valori in entrata in numero pari alle unità che presenta per poi farli fuoriuscire dalle stesse unità una volta elaborati. In questo modello l'uscita di ogni neurone è collegata all'ingresso di tutti gli altri neuroni, formando così una topologia di rete a grafo completo unidirezionale.\\
+	Nella fase di apprendimento la rete memorizza un certo numero di informazioni dette \textbf{stati stabili}, mentre nella fase operativa modifica il proprio stato sulla base dei pesi colleganti i vari neuroni: la rete itera fino a convergere su dei valori di output che rappresentano il pattern più simile all'input memorizzato dalla rete.\\
+	La rete di Hopfield è una rete \textbf{ricorrente} e ad ogni rete con una simile architettura è associata una sequenza di stati. Nel nostro caso tale sequenza è rappresentata da un vettore che coincide col vettore delle attività dei neuroni. Se chiamiamo con $\overline z$ quest'ultimo vettore ed indichiamo con $\overline v$ il vettore di ingresso, $\overline v$ ha lo stesso numero di componenti di $\overline z$ e viene continuamente presentato alla rete in modo tale che ciascun neurone abbia in uscita il valore della corrispondente componente in $\overline z$. Detto $z_{n}$ lo stato della rete all'istante $t$, lo stato successivo viene calcolato come:
 
 	\begin{equation}
 	\label{eqn:hopfieldaggiornamento} 
@@ -890,7 +891,7 @@ ciao
 	\end{itemize}
 	
 	L'idea di Hopfield fu quella di attribuire alla multi-stabilità della struttura una memoria. Ogni stato stabile può essere visto come un \textbf{attrattore} per gli stati iniziali vicini ad esso, ovvero un insieme verso il quale un sistema dinamico evolve dopo un tempo sufficientemente lungo. Inizializzando quindi la rete ad uno stato iniziale, quest'ultimo evolverà verso l'attrattore. Il proposito principale è fare in modo che certi stati siano appresi come stabili e con modifiche opportune sui pesi siano resi attrattori.\\
-	Abbiamo visto che il principio alla base della memorizzazione delle reti neurali è che l’informazione sia contenuta nei coefficienti di connessione. Nel modello di Hopfield si persegue tale obiettivo sfruttando la legge di Hebb, esposta nel capitolo 1 e che riprendiamo a grandi linee: se un’unità $j$ manda un input ad un'altra unità $i$ e se entrambe sono attive, il peso corrispondente $w_{i,j}$ deve essere rafforzato.\\
+	Abbiamo visto che il principio alla base della memorizzazione delle reti neurali è che l’informazione sia contenuta nei coefficienti di connessione. Nel modello di Hopfield si persegue tale obiettivo sfruttando la legge di Hebb, esposta nel capitolo 1 e che riprendiamo qui a grandi linee: se un’unità $j$ manda un input ad un'altra unità $i$ e se entrambe sono attive, il peso corrispondente $w_{i,j}$ deve essere rafforzato.\\
 	Supponiamo di voler memorizzare il set di stati $v^ {s}$ con $s = 1, ..., n$, utilizzando la notazione in cui $0\Longleftrightarrow -1$ e $1\Longleftrightarrow 1$. \\
 	I pesi delle connessioni sono fissati attraverso un apprendimento non iterativo \emph{fixed point learning}, seguendo la seguente formula: 
 	
@@ -915,8 +916,9 @@ ciao
 %CAPITOLO 3 PARAGRAFO 3	
 	\section {Cenni sulla stabilità}
 	
-	Nelle reti ricorrenti non è detto a priori che la rete riesca a convergere su uno stato stabile. Hopfield ha verificato che la stabilità del sistema delle sue reti è strettamente legata ad una funzione chiamata \emph{funzione energia della rete} che indichiamo con $E$. Aggiungendo l'ipotesi che la matrice dei pesi sia simmetrica con diagonale principale nulla e che si lavori in una condizione di aggiornamento asincrono, Hopfield ha dimostrato che $E$ non può aumentare nel passaggio da uno stato all'altro e poiché non può raggiungere valori infinitamente negativi, lo stato della rete cesserà di cambiare in un tempo finito ed essa raggiungerà dunque uno stato stabile.\\
-	La rete di Hopfield può essere quindi vista come un sistema dinamico non lineare che evolve verso una configurazione stabile con stabilità legata alla funzione energia, ma prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.\\
+	Nelle reti ricorrenti non è detto a priori che la rete riesca a convergere su uno stato stabile. Hopfield ha verificato che la stabilità del sistema delle sue reti è strettamente legata ad una funzione chiamata \textbf{funzione energia} della rete che indichiamo con $E$. Aggiungendo l'ipotesi che la matrice dei pesi sia simmetrica con diagonale principale nulla e che si lavori in una condizione di aggiornamento asincrono, Hopfield ha dimostrato che $E$ non può aumentare nel passaggio da uno stato all'altro e poiché non può raggiungere valori infinitamente negativi, lo stato della rete cesserà di cambiare in un tempo finito ed essa raggiungerà dunque uno stato stabile.\\
+	La rete di Hopfield può essere quindi vista come un sistema dinamico non lineare che evolve verso una configurazione stabile e la stabilità è legata alla funzione energia.\\ 
+	Prima di introdurre tale funzione, è bene dare qualche definizione in merito ai sistemi dinamici ed al concetto di stabilità vista in senso di Lyapuanov.\\
 	Il modello matematico per descrivere le dinamiche di un sistema non lineare è pensato in termini di \textbf{variabili di stato}. Tali variabili rendono possibile prevedere l'evoluzione del sistema a partire da un certo istante temporale utilizzando i valori che sono associati ad esse, poiché considerati sufficienti per la previsione dell'evoluzione. Definiamo \textbf{vettore di stato}:
 	
 	\begin{equation}
@@ -935,7 +937,7 @@ ciao
 			\end{center}$$
 	\end{equation}
 	
-	con $F(x)$ \textbf{funzione vettore} che applicata ad un vettore di stato $x$ ritorna un vettore che ha come $j$-esima componente $F_{j}(x_{j})$ con $F_{j}$ una qualche funzione. Tale equazione risulta inoltre descrittrice del movimento di un punto nello \textbf{spazio degli stati} $n$-dimensionale, spazio i cui punti rappresentano univocamente tutti e soli i possibili stati del sistema osservati a certi istanti $t$. Con lo scorrere del tempo il punto t descrive una curva detta traiettoria del sistema.\\
+	con $F(x)$ \textbf{funzione vettore} che applicata ad un vettore di stato $x$ ritorna un vettore che ha come $j$-esima componente $F_{j}(x_{j})$, con $F_{j}$ una qualche funzione. Tale equazione risulta descrittrice del movimento di un punto nello \textbf{spazio degli stati} $n$-dimensionale, spazio i cui punti rappresentano univocamente tutti e soli i possibili stati del sistema osservati a certi istanti $t$. Con il trascorrere del tempo il punto t descrive una curva detta traiettoria del sistema.\\
 	Definiamo \textbf{stato di equilibrio} un vettore costante $\overline{x}$ verificante la seguente condizione:
 	
 	\begin{equation}
@@ -962,13 +964,13 @@ ciao
 	\end{thm}
 
 	Una funzione $V(x)$ che soddisfa queste proprietà è detta \textbf{funzione di Lyapunov} per lo stato di equilibrio $\overline{x}$.\\
-	Se consideriamo un sistema dinamico ad una sua condizione di equilibrio stabile corrisponde un minimo dell'energia posseduta dal sistema stesso come conseguenza del fatto che esso tende spontaneamente a minimizzarla. L'energia del sistema viene espressa come una funzione di Lyapunov verificante il teorema di cui sopra.
+	Se consideriamo un sistema dinamico, ad una sua condizione di equilibrio stabile corrisponde un minimo dell'energia posseduta dal sistema stesso come conseguenza del fatto che esso tende spontaneamente a minimizzarla. L'energia del sistema viene espressa come una funzione di Lyapunov verificante il teorema di cui sopra.
 	
 	
 %CAPITOLO 3 PARAGRAFO 4 	
 	\section {Il caso discreto e la funzione energia}
 	
-	La prima rete presentata da Hopfield era una rete discreta, completamente connessa, con aggiornamento asincrono completamente connessa e matrice dei pesi simmetrica.\\
+	La prima rete presentata da Hopfield era una rete discreta, completamente connessa, con aggiornamento asincrono e matrice dei pesi simmetrica.\\
 	In questo modello ogni neurone può assumere due stati $v_i=0$ e $v_{i}=1$. Lo stato istantaneo del sistema è specificato elencando gli n valori di $v_{i}$ e lo stato di ciascun neurone ad un certo istante $t$ è determinato da una formula di attivazione binaria a soglia che modificherà i valori input seguendo questo schema: 
 	
 	\begin{equation}
@@ -1060,7 +1062,8 @@ ciao
 		\subsection{Il caso continuo}
 	
 		A differenza del caso discreto, la rete di Hopfield continua può assumere un numero infinito di stati sebbene sia formata da un numero finito di neuroni.\\
-		Lo stato della rete all'istante $t$ è sempre rappresentato da un vettore $v$ composto dagli $n$ stati $v_{i}$ dei singoli neuroni, i cui valori sono compresi nell'intervallo reale ${0,1}$ se utilizziamo una notazione unipolare, ${-1,1}$ (notazione bipolare).\\
+		Lo stato della rete all'istante $t$ è sempre rappresentato da un vettore $v$ composto dagli $n$ stati $v_{i}$ dei singoli neuroni, i cui valori sono compresi nell'intervallo reale $[{0,1}]$ se utilizziamo una notazione unipolare, $[{-1,1}]$ (notazione bipolare).
+		\clearpage
 		Scriviamo lo stato $v_{i}$ al tempo $t$ come segue:
 		
 		\begin{equation}
@@ -1094,9 +1097,9 @@ ciao
 %CAPITOLO 3 PARAGRAFO 5
 	\section{Limiti delle reti di Hopfield}
 	
-	L'articolo di presentazione delle reti di Hopfield \textit{Neural networks and physical systems with emergent collective computational abilities} pubblicato nell'aprile del 1982 riscosse grande interesse nella comunità scientifica.\\
-	La rete di Hopfield risulta tutt'ora essere un robusto ed innovativo paradigma computazionale capace di fornire risposte in tempo reale. La peculiarità che desta più interesse è l'abilità di tale rete di memorizzare e recuperare i pattern in base al loro contenuto e non in base al loro indirizzo di memoria. Se alla rete viene presentato un pattern incompleto ma già memorizzato, essa opera attraverso una sequenza di stati per ottenere il pattern originale. Nonostante queste caratteristiche, tale modello presenta limiti e svantaggi legati alla sua stessa natura.\\
-	Tale rete presenta un'alta complessità strutturale e la dipendenza della scelta dei pesi dal problema rende difficile la realizzazione hardware. Non ci sono garanzie sulla qualità delle soluzioni trovate ed in generale non si ottengono soluzioni ottime soprattutto per quanto concerne la memorizzazione di vettori simili, la quale può generare pattern instabili. Inoltre il numero di informazioni che possono essere memorizzate risulta essere piccolo rispetto al numero di neuroni di cui la rete è composta. Se indichiamo con $n$ il numero di neuroni e con $t$ il numero di informazioni si ha:
+	L'articolo di presentazione delle reti di Hopfield riscosse grande interesse nella comunità scientifica.\\
+	La rete di Hopfield risulta tutt'ora essere un robusto ed innovativo paradigma computazionale capace di fornire risposte in tempo reale. La peculiarità che desta più interesse è l'abilità di tale rete di memorizzare e recuperare i pattern in base al loro contenuto e non in base al loro indirizzo di memoria. Se alla rete viene presentato un pattern incompleto ma già memorizzato, essa opera attraverso una sequenza di stati per ottenere il pattern originale. Nonostante queste caratteristiche, il modello presenta limiti e svantaggi legati alla sua stessa natura.\\
+	Tale rete è caratterizzata da un'alta complessità strutturale e la dipendenza della scelta dei pesi dal problema rende difficile la realizzazione hardware. Non ci sono garanzie sulla qualità delle soluzioni trovate ed in generale non si ottengono soluzioni ottime soprattutto per quanto concerne la memorizzazione di vettori simili in quanto si ha la probabilità di incorrere in pattern instabili. Inoltre il numero di informazioni che possono essere memorizzate risulta essere piccolo rispetto al numero di neuroni di cui la rete è composta. Se indichiamo con $n$ il numero di neuroni e con $t$ il numero di informazioni si ha:
 	
 	\begin{equation}
 	\label{eqn:numero informazioni} 
@@ -1148,14 +1151,14 @@ ciao
 	\bibitem[6] {Pioggia} Ing. Pioggia Giovanni, \emph{Modelli di sistemi fisiologici}, (2009)
  \end{thebibliography}
 	
-\chapter*{Ringraziamenti}
-\addcontentsline{toc}{chapter}{Ringraziamenti}
+%\chapter*{Ringraziamenti}
+%\addcontentsline{toc}{chapter}{Ringraziamenti}
 
-Desidero ringraziare mia madre, a cui è dedicato questo lavoro di tesi, che fin dal principio mi ha sostenuto ed ha combattuto con me per il raggiungimento di questo obiettivo. Grazie per la possibilità che mi hai dato, grazie per i valori che mi hai trasmesso e per gli insegnamenti che mi hai donato rendendomi ciò che sono oggi. Grazie per aver sempre creduto in me dandomi tutto l'amore che solo una madre può dare e grazie soprattutto per i sacrifici e per la pazienza che negli anni hai mostrato. Solo grazie al tuo sostegno ho sempre avuto l'energia per affrontare e la determinazione per proseguire, solo grazie alla tua calorosa vicinanza ho realizzato il mio progetto. Per me sei stata e sarai per sempre un esempio di madre, figlia, amica, lavoratrice, donna.\\
-Ringrazio Vincenzo, compagno fedele ed amico fidato, per avermi dato forza ed entusiasmo per scalare la vetta e per essermi stato sempre vicino passo dopo passo tendendomi la mano. Grazie per avermi aiutato e sostenuto, per avermi incitato quando ero a terra, per avermi spronato quando ne avevo bisogno e per avermi rimproverato se mi lasciavo prendere da una eccessiva preoccupazione. Ti sono grata per tutti i suggerimenti ed i confronti, per aver gioito e sofferto con me, per il trasporto mostratomi che mi ha trasmesso sostegno e soprattutto coraggio. Non dimenticherò mai le tue espressioni in volto nei giorni dei miei ultimi orali mentre aspettavi l'esito e le telefonate serali prima di un esame in cui piangevo senza un motivo ben preciso. Sei stato un punto fondamentale per la mia vita negli ultimi anni e ti ringrazio per il tuo amore ed il tuo affetto.\\
-Ringrazio la mia amica Maria che ha rappresentato un pozzo di coraggio e forza nella mia quotidianità. Averti accanto in questo cammino, non solo in ambito universitario, mi ha aiutato e segnato molto e mi ha fatto scoprire una bellissima persona che non ho alcuna intenzione di perdere. Grazie per tutte le risate, le lacrime, i ricordi, le battute, i rimproveri, il calore, l'appoggio, i racconti ma soprattutto la fiducia. Grazie per aver contribuito alla mia rinascita ed aver sempre mostrato disponibilità ed accoglienza. Non dimenticherò mai questi anni passati insieme e ti sarò per sempre riconoscente per essere entrata nella storia della mia vita e per averla arricchita con la tua semplicità ed il tuo insostituibile affetto. Il ricordo di questi anni universitari passati a studiare, far sacrifici, crescere, sognare, piangere e sorridere, vincere e perdere sarà sempre legato alla tua persona. Approfitto per augurarti il meglio per il tuo prossimo ed imminente successo, sappiamo entrambe che questi nostri traguardi avrebbero avuto un altro sapore se fossero stati condivisi pienamente. Anche se il destino ha deciso di separarci, tale separazione è solo materiale, la gioia e l'orgoglio che nutriamo l'un per l'altra saranno immutati e basterà un solo nostro sguardo per cantare vittoria.\\
-Ringrazio poi Antonella, amica e collega, per tutti i suggerimenti e gli incoraggiamenti nonché per il caro affetto mostratomi nel corso degli anni. La sua prontezza nell'ascoltare tutti i miei dubbi, i miei pensieri e le mie idee è stata fondamentale, soprattutto nell'ultimo periodo. Grazie per esserci stata e per aver spronato la ricerca della forza per perseguire i miei obiettivi.\\
-Anche se non tra i primi, ma non meno importante, desidero ringraziare la mia amica Stefania che ha significato tanto durante questo percorso. Grazie per avermi sempre ascoltata ed aiutata, per essere stata sempre presente e disponibile mostrandoti una vera amica ed una ragazza dolcissima. I ricordi che abbiamo costruito insieme in questi anni rimarranno sempre nella mia memoria e non dimenticherò mai le numerose chiacchierate colme di consigli ed incoraggiamenti ma soprattutto di risate e di affetto vero. Grazie per esserti aperta con me, per avermi scelto spesso come confidente, per le serate insieme e per aver creduto nelle mia capacità. Che sia solo l'inizio di un'amicizia duratura.
+%Desidero ringraziare mia madre, a cui è dedicato questo lavoro di tesi, che fin dal principio mi ha sostenuto ed ha combattuto con me per il raggiungimento di questo obiettivo. Grazie per la possibilità che mi hai dato, grazie per i valori che mi hai trasmesso e per gli insegnamenti che mi hai donato rendendomi ciò che sono oggi. Grazie per aver sempre creduto in me dandomi tutto l'amore che solo una madre può dare e grazie soprattutto per i sacrifici e per la pazienza che negli anni hai mostrato. Solo grazie al tuo sostegno ho sempre avuto l'energia per affrontare e la determinazione per proseguire, solo grazie alla tua calorosa vicinanza ho realizzato il mio progetto. Per me sei stata e sarai per sempre un esempio di madre, figlia, amica, lavoratrice, donna.\\
+%Ringrazio Vincenzo, compagno fedele ed amico fidato, per avermi dato forza ed entusiasmo per scalare la vetta e per essermi stato sempre vicino passo dopo passo tendendomi la mano. Grazie per avermi aiutato e sostenuto, per avermi incitato quando ero a terra, per avermi spronato quando ne avevo bisogno e per avermi rimproverato se mi lasciavo prendere da una eccessiva preoccupazione. Ti sono grata per tutti i suggerimenti ed i confronti, per aver gioito e sofferto con me, per il trasporto mostratomi che mi ha trasmesso sostegno e soprattutto coraggio. Non dimenticherò mai le tue espressioni in volto nei giorni dei miei ultimi orali mentre aspettavi l'esito e le telefonate serali prima di un esame in cui piangevo senza un motivo ben preciso. Sei stato un punto fondamentale per la mia vita negli ultimi anni e ti ringrazio per il tuo amore ed il tuo affetto.\\
+%Ringrazio la mia amica Maria che ha rappresentato un pozzo di coraggio e forza nella mia quotidianità. Averti accanto in questo cammino, non solo in ambito universitario, mi ha aiutato e segnato molto e mi ha fatto scoprire una bellissima persona che non ho alcuna intenzione di perdere. Grazie per tutte le risate, le lacrime, i ricordi, le battute, i rimproveri, il calore, l'appoggio, i racconti ma soprattutto la fiducia. Grazie per aver contribuito alla mia rinascita ed aver sempre mostrato disponibilità ed accoglienza. Non dimenticherò mai questi anni passati insieme e ti sarò per sempre riconoscente per essere entrata nella storia della mia vita e per averla arricchita con la tua semplicità ed il tuo insostituibile affetto. Il ricordo di questi anni universitari passati a studiare, far sacrifici, crescere, sognare, piangere e sorridere, vincere e perdere sarà sempre legato alla tua persona. Approfitto per augurarti il meglio per il tuo prossimo ed imminente successo, sappiamo entrambe che questi nostri traguardi avrebbero avuto un altro sapore se fossero stati condivisi pienamente nello stesso giorno. Anche se il destino ha deciso di separarci, tale separazione è solo materiale, la gioia e l'orgoglio che nutriamo l'un per l'altra saranno immutati e basterà un solo nostro sguardo per cantare vittoria.\\
+%Ringrazio poi Antonella, amica e collega, per tutti i suggerimenti e gli incoraggiamenti nonché per il caro affetto mostratomi nel corso degli anni. La sua prontezza nell'ascoltare tutti i miei dubbi, i miei pensieri e le mie idee è stata fondamentale, soprattutto nell'ultimo periodo. Grazie per esserci stata e per aver spronato la ricerca della forza per perseguire i miei obiettivi.\\
+%Anche se non tra i primi, ma non meno importante, desidero ringraziare la mia amica Stefania che ha significato tanto durante questo percorso. Grazie per avermi sempre ascoltata ed aiutata, per essere stata sempre presente e disponibile mostrandoti una vera amica ed una ragazza dolcissima. I ricordi che abbiamo costruito insieme in questi anni rimarranno sempre nella mia memoria e non dimenticherò mai le numerose chiacchierate colme di consigli ed incoraggiamenti ma soprattutto di risate e di affetto vero. Grazie per esserti aperta con me, per avermi scelto spesso come confidente, per le serate insieme e per aver creduto nelle mia capacità. Che sia solo l'inizio di un'amicizia duratura.
 
 
 
