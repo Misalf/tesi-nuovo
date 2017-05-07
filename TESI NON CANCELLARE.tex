@@ -69,7 +69,7 @@
 	\newpage
 	\null\vspace{\stretch{1}}
 	\thispagestyle{empty}
-	\textit{Se non puoi passare attraverso una montagna, giraci intorno; \\ se non puoi girarci intorno, passaci sopra;\\ se non puoi passarci sopra, siediti un attimo \\e chiediti se raggiungere l'altro lato sia davvero così importante.\\ \vspace{1cm} Se lo è comincia a scavare una galleria.}
+	\textit{Se non puoi passare attraverso una montagna, giraci intorno; \\ se non puoi girarci intorno, passaci sopra;\\ se non puoi passarci sopra, siediti un attimo \\e chiediti se raggiungere l'altro lato sia davvero così importante.\\ \vspace{0.5cm} Se lo è comincia a scavare una galleria.\\ \vspace{0.5cm} (Anonimo)}
 	\vspace{\stretch{2}}\null
 \end{flushright} 
 %FINEFRASE
@@ -80,7 +80,13 @@
 	\thispagestyle{empty}
 %FINE INDICE
 
+%INTRODUZIONE
+\chapter*{Introduzione}
+\addcontentsline{toc}{chapter}{Introduzione}
 
+ciao
+
+%FINE INTRODUZIONE
 
 
 %INIZIO DEL PRIMO CAPITOLO
@@ -832,6 +838,7 @@
 	
 \chapter{Reti di Hopfield}
 
+%CAPITOLO 3 PARAGRAFO 1
 	\section{Presentazione ed utilizzo}
 	
 	Le reti di Hopfield furono presentate nel 1982 dal fisico John Hopfield nel suo articolo \textit{``Neural networks and physical systems with emergent collective computational abilities"}. A seguito di numerose osservazioni sulle proprietà dinamiche ed elettrochimiche dei neuroni e delle loro interconnessioni, Hopfield cercò di fare emergere gli schemi di funzionamento che erano dietro ai comportamenti biologici elementari. Il modello matematico realizzato da Hopfield dimostrò che un gran numero di semplici elementi di elaborazione possedevano capacità computazionali dal \emph{comportamento collettivo} e che tali capacità emergevano spontaneamente come conseguenza di interazioni tra le unità.\\
@@ -851,6 +858,7 @@
 	\label{fig:riconoscimento}
 	\end{figure}
 
+%CAPITOLO 3 PARAGRAFO 2
 	\section{Architettura ed aggiornamento}
 
 	La topologia delle reti di Hopfield è completamente diversa da quella delle reti a strati. Ogni unità è collegata a tutte le altre attraverso connessioni simmetriche, in termini di pesi sinaptici si ha $w_{i,j} = w_{j,i}$ , $\forall i,j$. Sono quindi reti completamente connesse, in cui non si hanno autoconnessioni, $w_{i,i}=0$, la cui matrice dei pesi sinaptici è simmetrica con funzione di attivazione a gradino o a soglia. \\
@@ -904,7 +912,7 @@
 	
 	Gli stati stabili risulteranno proporzionali agli autovettori della matrice dei pesi e coincideranno con i minimi di una particolare funzione che introdurremo nel prossimo paragrafo e che risulterà essere convergente proprio in essi. Questi funzioneranno pertanto come bacini d’attrazione per gli stati della rete.
 	
-	
+%CAPITOLO 3 PARAGRAFO 3	
 	\section {Cenni sulla stabilità}
 	
 	Nelle reti ricorrenti non è detto a priori che la rete riesca a convergere su uno stato stabile. Hopfield ha verificato che la stabilità del sistema delle sue reti è strettamente legata ad una funzione chiamata \emph{funzione energia della rete} che indichiamo con $E$. Aggiungendo l'ipotesi che la matrice dei pesi sia simmetrica con diagonale principale nulla e che si lavori in una condizione di aggiornamento asincrono, Hopfield ha dimostrato che $E$ non può aumentare nel passaggio da uno stato all'altro e poiché non può raggiungere valori infinitamente negativi, lo stato della rete cesserà di cambiare in un tempo finito ed essa raggiungerà dunque uno stato stabile.\\
@@ -956,6 +964,8 @@
 	Una funzione $V(x)$ che soddisfa queste proprietà è detta \textbf{funzione di Lyapunov} per lo stato di equilibrio $\overline{x}$.\\
 	Se consideriamo un sistema dinamico ad una sua condizione di equilibrio stabile corrisponde un minimo dell'energia posseduta dal sistema stesso come conseguenza del fatto che esso tende spontaneamente a minimizzarla. L'energia del sistema viene espressa come una funzione di Lyapunov verificante il teorema di cui sopra.
 	
+	
+%CAPITOLO 3 PARAGRAFO 4 	
 	\section {Il caso discreto e la funzione energia}
 	
 	La prima rete presentata da Hopfield era una rete discreta, completamente connessa, con aggiornamento asincrono completamente connessa e matrice dei pesi simmetrica.\\
@@ -1081,7 +1091,21 @@
 	
 		Risulta anch'essa essere una funzione Lyapunoviana e quindi anche in questo caso si ha $\displaystyle \frac{dE}{dt}\leq 0 $.
 		
-
+%CAPITOLO 3 PARAGRAFO 5
+	\section{Limiti delle reti di Hopfield}
+	
+	L'articolo di presentazione delle reti di Hopfield \textit{Neural networks and physical systems with emergent collective computational abilities} pubblicato nell'aprile del 1982 riscosse grande interesse nella comunità scientifica.\\
+	La rete di Hopfield risulta tutt'ora essere un robusto ed innovativo paradigma computazionale capace di fornire risposte in tempo reale. La peculiarità che desta più interesse è l'abilità di tale rete di memorizzare e recuperare i pattern in base al loro contenuto e non in base al loro indirizzo di memoria. Se alla rete viene presentato un pattern incompleto ma già memorizzato, essa opera attraverso una sequenza di stati per ottenere il pattern originale. Nonostante queste caratteristiche, tale modello presenta limiti e svantaggi legati alla sua stessa natura.\\
+	Tale rete presenta un'alta complessità strutturale e la dipendenza della scelta dei pesi dal problema rende difficile la realizzazione hardware. Non ci sono garanzie sulla qualità delle soluzioni trovate ed in generale non si ottengono soluzioni ottime soprattutto per quanto concerne la memorizzazione di vettori simili, la quale può generare pattern instabili. Inoltre il numero di informazioni che possono essere memorizzate risulta essere piccolo rispetto al numero di neuroni di cui la rete è composta. Se indichiamo con $n$ il numero di neuroni e con $t$ il numero di informazioni si ha:
+	
+	\begin{equation}
+	\label{eqn:numero informazioni} 
+		$$\begin{center}
+			$\displaystyle t<\frac{n}{log_2 n } $
+		\end{center}$$
+	\end{equation}
+	
+	 Un altro problema sostanziale è il problema dei falsi minimi legato alla funzione energia caratteristica della rete. Abbiamo detto nei paragrafi precedenti che a partire dallo stato iniziale, l'evoluzione dinamica della rete fa diminuire la funzione energia fin quando non si arriva in uno stato che corrisponde ad un minimo della funzione e che potrebbe costituire una soluzione del problema. Durante questo processo il sistema potrebbe cadere in minimi locali non garantendo l'affidabilità del risultato. Tale risultato potrebbe essere migliorato aggiungendo rumore alle dinamiche di rete, nella speranza che il sistema evolva nonostante sia vicino ad un minimo locale. 
 	
 %\underline{Esempio:} In forma vettoriale possiamo scrivere:
 
@@ -1113,8 +1137,6 @@
 %+1 & -1 & 0 & +1 \\
 %+1 & -1 & +1 & 0
 %\end{bmatrix} $$
-
-
 %\phantomsection 
 \begin{thebibliography}{9} 
 	\addcontentsline{toc}{chapter}{\refname}
@@ -1126,4 +1148,15 @@
 	\bibitem[6] {Pioggia} Ing. Pioggia Giovanni, \emph{Modelli di sistemi fisiologici}, (2009)
  \end{thebibliography}
 	
+\chapter*{Ringraziamenti}
+\addcontentsline{toc}{chapter}{Ringraziamenti}
+
+Desidero ringraziare mia madre, a cui è dedicato questo lavoro di tesi, che fin dal principio mi ha sostenuto ed ha combattuto con me per il raggiungimento di questo obiettivo. Grazie per la possibilità che mi hai dato, grazie per i valori che mi hai trasmesso e per gli insegnamenti che mi hai donato rendendomi ciò che sono oggi. Grazie per aver sempre creduto in me dandomi tutto l'amore che solo una madre può dare e grazie soprattutto per i sacrifici e per la pazienza che negli anni hai mostrato. Solo grazie al tuo sostegno ho sempre avuto l'energia per affrontare e la determinazione per proseguire, solo grazie alla tua calorosa vicinanza ho realizzato il mio progetto. Per me sei stata e sarai per sempre un esempio di madre, figlia, amica, lavoratrice, donna.\\
+Ringrazio Vincenzo, compagno fedele ed amico fidato, per avermi dato forza ed entusiasmo per scalare la vetta e per essermi stato sempre vicino passo dopo passo tendendomi la mano. Grazie per avermi aiutato e sostenuto, per avermi incitato quando ero a terra, per avermi spronato quando ne avevo bisogno e per avermi rimproverato se mi lasciavo prendere da una eccessiva preoccupazione. Ti sono grata per tutti i suggerimenti ed i confronti, per aver gioito e sofferto con me, per il trasporto mostratomi che mi ha trasmesso sostegno e soprattutto coraggio. Non dimenticherò mai le tue espressioni in volto nei giorni dei miei ultimi orali mentre aspettavi l'esito e le telefonate serali prima di un esame in cui piangevo senza un motivo ben preciso. Sei stato un punto fondamentale per la mia vita negli ultimi anni e ti ringrazio per il tuo amore ed il tuo affetto.\\
+Ringrazio la mia amica Maria che ha rappresentato un pozzo di coraggio e forza nella mia quotidianità. Averti accanto in questo cammino, non solo in ambito universitario, mi ha aiutato e segnato molto e mi ha fatto scoprire una bellissima persona che non ho alcuna intenzione di perdere. Grazie per tutte le risate, le lacrime, i ricordi, le battute, i rimproveri, il calore, l'appoggio, i racconti ma soprattutto la fiducia. Grazie per aver contribuito alla mia rinascita ed aver sempre mostrato disponibilità ed accoglienza. Non dimenticherò mai questi anni passati insieme e ti sarò per sempre riconoscente per essere entrata nella storia della mia vita e per averla arricchita con la tua semplicità ed il tuo insostituibile affetto. Il ricordo di questi anni universitari passati a studiare, far sacrifici, crescere, sognare, piangere e sorridere, vincere e perdere sarà sempre legato alla tua persona. Approfitto per augurarti il meglio per il tuo prossimo ed imminente successo, sappiamo entrambe che questi nostri traguardi avrebbero avuto un altro sapore se fossero stati condivisi pienamente. Anche se il destino ha deciso di separarci, tale separazione è solo materiale, la gioia e l'orgoglio che nutriamo l'un per l'altra saranno immutati e basterà un solo nostro sguardo per cantare vittoria.\\
+Ringrazio poi Antonella, amica e collega, per tutti i suggerimenti e gli incoraggiamenti nonché per il caro affetto mostratomi nel corso degli anni. La sua prontezza nell'ascoltare tutti i miei dubbi, i miei pensieri e le mie idee è stata fondamentale, soprattutto nell'ultimo periodo. Grazie per esserci stata e per aver spronato la ricerca della forza per perseguire i miei obiettivi.\\
+Anche se non tra i primi, ma non meno importante, desidero ringraziare la mia amica Stefania che ha significato tanto durante questo percorso. Grazie per avermi sempre ascoltata ed aiutata, per essere stata sempre presente e disponibile mostrandoti una vera amica ed una ragazza dolcissima. I ricordi che abbiamo costruito insieme in questi anni rimarranno sempre nella mia memoria e non dimenticherò mai le numerose chiacchierate colme di consigli ed incoraggiamenti ma soprattutto di risate e di affetto vero. Grazie per esserti aperta con me, per avermi scelto spesso come confidente, per le serate insieme e per aver creduto nelle mia capacità. Che sia solo l'inizio di un'amicizia duratura.
+
+
+
 \end{document}
