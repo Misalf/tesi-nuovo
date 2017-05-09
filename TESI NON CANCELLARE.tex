@@ -53,7 +53,7 @@
 %\AlCentroPagina{IMMAGINI/Frontespizio}\thispagestyle{empty} 
 \blankpage
 
-DEDICA
+%DEDICA
 \begin{flushright}
 	%\newpage
 	\null\vspace{\stretch{1}}
@@ -545,7 +545,7 @@ DEDICA
 		 Se indichiamo con $y_{k}$ una risposta generata da un segnale di stimolo $x$ in un tempo $t$ ed indichiamo con $y_{dk}$ la risposta desiderata, avremo un \emph{segnale di errore} che può essere così espresso:
 		 
 		 \begin{equation}
-		 	$$\begin{center} $\displaystyle \delta= y_{dk}-y_{k}$ \end{center}$$
+		 	$$\begin{center} $\displaystyle \delta= y_{k}-y_{dk}$ \end{center}$$
 		 \end{equation}
 		 
 		 Tale segnale dà il via ad un meccanismo di controllo che va ad applicare una sequenza di modifiche ai pesi sinaptici del neurone interessato al fine di avvicinare la risposta ottenuta a quella desiderata.\\
@@ -742,7 +742,7 @@ DEDICA
 			\label{fig:classificazione}
 		\end{figure}
 		
-		Il processo di riconoscimento inizia con l'estrazione delle \emph{features} ovvero le caratteristiche che un generico pattern nello spazio dei dati deve rispettare. L'\emph{estrazione} è una trasformazione che collega il pattern $x$ con un punto $y$ nello spazio delle caratteristiche. Infine un'ultima trasformazione detta \emph{classificazione} mappa dal punto $y$ in una regione dello spazio decisionale.\\
+		Il processo di riconoscimento inizia con l'estrazione delle \emph{features} ovvero le caratteristiche che un generico pattern nello spazio dei dati deve rispettare. L'\emph{estrazione} è una trasformazione che collega il pattern $x$ con un punto $y$ nello spazio delle caratteristiche. Infine un'ultima trasformazione detta \emph{classificazione} mappa dal punto $y$ ad una regione dello spazio decisionale.\\
 		
 		\subsection{Approssimazione di funzioni}
 		
