@@ -84,7 +84,13 @@
 \chapter*{Introduzione}
 \addcontentsline{toc}{chapter}{Introduzione}
 
-
+Il presente lavoro ha come oggetto le reti neurali artificiali ed in particolar modo il funzionamento delle reti di Hopfield.\\
+Il primo capitolo si apre con una breve presentazione storica sulle origini delle reti neurali artificiali e partendo da una breve esibizione del neurone biologico e della sua attività, sono mostrate le analogie che quest'ultimo ha con le reti artificiali. \\
+Costituite da un insieme di interconnessioni e neuroni artificiali, tali reti sono realizzate ispirandosi ai meccanismi ed alle strutture delle reti neurali biologiche ed il loro obiettivo è la riproduzione delle attività tipiche del cervello umano. Pertanto in tale capitolo è illustrato il modello matematico del neurone artificiale, nonché il processo di attivazione di un generico neurone, esibendo le funzioni di attivazione comunemente utilizzate e le principali architetture attraverso cui possono essere modellate le reti artificiali.\\
+Nel secondo capitolo è dedicato ampio spazio alle fasi di apprendimento delle reti artificiali ed ai paradigmi attraverso i quali una rete può apprendere, sottolineando il tratto caratteristico del sistema nervoso a cui tali reti neurali si rifanno, ovvero la capacità di acquisire esperienza da esempi del mondo reale. Dunque è contemplata la fase di addestramento di tali strutture e sono illustrati i maggiori processi di apprendimento e le attività che una rete può svolgere in base alla tipologia del problema che deve risolvere.\\
+Infine è presentato un esempio di apprendimento supervisionato attraverso il percettrone elementare, proposto da Frank Rosenblatt nel 1958 e che risulta essere ancora oggi la forma più semplice di rete neurale.\\
+Il terzo capitolo è incentrato sulle reti di Hopfield, una tipologia di rete neurale artificiale nota per il suo utilizzo nella costruzione di memorie associative. La rete può essere intesa come un sistema dinamico non lineare che evolve verso una configurazione stabile. Tale stabilità risulta essere strettamente legata ad una funzione interna che rappresenta l'energia totale del sistema e pertanto sono riportati cenni sul concetto di stabilità di Lyapunov e di funzione di Lyapunov.\\
+Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discreto e nel caso continuo e con delle osservazioni che concernono i limiti inevitabili legati a questa struttura.
 
 %FINE INTRODUZIONE
 
@@ -1142,18 +1148,21 @@
 %\phantomsection 
 \begin{thebibliography}{9} 
 	\addcontentsline{toc}{chapter}{\refname}
-	\bibitem[1]{Bicego} Prof. Bicego Manuele, \emph{Riconoscimento e recupero dell’informazione per bioinformatica, reti neurali}
-	\bibitem[2]{Gambosi} Prof. Gambosi Giorgio, \emph{Reti neurali, note dal corso di Machine Learning}, (2010), Packt Publishing 
-	\bibitem[3]{GarretaMoncecchi} Garreta Raùl, Moncecchi Guillermo, \emph{Learning scikit-learn:Machine Learning in Python}, (2013) 
-	\bibitem[4] {Labonia} Prof.ssa Labonia Laura, \emph{Storia delle reti neurali artificiali}
-	\bibitem[5]{Lazzarini} Prof.ssa Lazzarini Beatrice, \emph{Introduzione alle reti neurali}, (2015)
-	\bibitem[6] {Pioggia} Ing. Pioggia Giovanni, \emph{Modelli di sistemi fisiologici}, (2009)
+	\bibitem{Bicego} Prof. Bicego Manuele, \emph{Riconoscimento e recupero dell’informazione per bioinformatica, reti neurali}
+	\bibitem{Gambosi} Prof. Gambosi Giorgio, \emph{Reti neurali, note dal corso di Machine Learning}, (2010), Packt Publishing 
+	\bibitem{GarretaMoncecchi} Garreta Raùl, Moncecchi Guillermo, \emph{Learning scikit-learn: Machine Learning in Python}, (2013) 
+	\bibitem{Hopfield} Hopfield John Joseph, \emph{Neural Networks and Physical Systems with Emergent Collective Computational Abilities}, (1982)
+	\bibitem{Labonia} Prof.ssa Labonia Laura, \emph{Storia delle reti neurali artificiali}
+	\bibitem{Lazzarini} Prof.ssa Lazzarini Beatrice, \emph{Introduzione alle reti neurali}, (2015)
+	\bibitem{Machiavello} Machiavello Chiara, \emph{Introduzione alle reti neurali}, (1992)
+	\bibitem{Pioggia} Ing. Pioggia Giovanni, \emph{Modelli di sistemi fisiologici}, (2009)
+	
  \end{thebibliography}
 	
 \chapter*{Ringraziamenti}
 \addcontentsline{toc}{chapter}{Ringraziamenti}
 
-Desidero ringraziare mia madre, a cui è dedicato questo lavoro di tesi, che fin dal principio mi ha sostenuto ed ha combattuto con me per il raggiungimento di questo obiettivo. Grazie per la possibilità che mi hai dato, grazie per i valori che mi hai trasmesso e per gli insegnamenti che mi hai donato rendendomi ciò che sono oggi. Grazie per aver sempre creduto in me dandomi tutto l'amore che solo una madre può dare e grazie soprattutto per i sacrifici e per la pazienza che negli anni hai mostrato. Solo grazie al tuo sostegno ho sempre avuto l'energia per affrontare e la determinazione per proseguire, solo grazie alla tua calorosa vicinanza ho realizzato il mio progetto. Per me sei stata e sarai per sempre un esempio di madre, figlia, amica, lavoratrice, donna.\\
+Desidero ringraziare mia madre, a cui è dedicato questo lavoro di tesi, che fin dal principio mi ha sostenuto ed ha combattuto con me per il raggiungimento di questo obiettivo. Grazie per la possibilità che mi hai dato, per i valori che mi hai trasmesso e per gli insegnamenti che mi hai donato rendendomi ciò che sono oggi. Grazie per aver sempre creduto in me dandomi tutto l'amore che solo una madre può dare e grazie soprattutto per i sacrifici e per la pazienza che negli anni hai mostrato. Solo grazie al tuo sostegno ho sempre avuto l'energia per affrontare e la determinazione per proseguire, solo grazie alla tua calorosa vicinanza ho realizzato il mio progetto. Per me sei stata e sarai per sempre un esempio di madre, figlia, amica, lavoratrice, donna.\\
 Ringrazio Vincenzo, compagno fedele ed amico fidato, per avermi dato forza ed entusiasmo per scalare la vetta e per essermi stato sempre vicino passo dopo passo tendendomi la mano. Grazie per avermi aiutato e sostenuto, per avermi incitato quando ero a terra, per avermi spronato quando ne avevo bisogno e per avermi rimproverato se mi lasciavo prendere da una eccessiva preoccupazione. Ti sono grata per tutti i suggerimenti ed i confronti, per aver gioito e sofferto con me, per il trasporto mostratomi che mi ha trasmesso sostegno e soprattutto coraggio. Non dimenticherò mai le tue espressioni in volto nei giorni dei miei ultimi orali mentre aspettavi l'esito e le telefonate serali prima di un esame in cui piangevo senza un motivo ben preciso. Sei stato un punto fondamentale per la mia vita negli ultimi anni e ti ringrazio per il tuo amore ed il tuo affetto.\\
 Ringrazio la mia amica Maria De Riggi che ha rappresentato un pozzo di coraggio e forza nella mia quotidianità. Averti accanto in questo cammino, non solo in ambito universitario, mi ha aiutato e segnato molto e mi ha fatto scoprire una bellissima persona che non ho alcuna intenzione di perdere. Grazie per tutte le risate, le lacrime, i ricordi, le battute, i rimproveri, il calore, l'appoggio, i racconti ma soprattutto la fiducia. Grazie per aver contribuito alla mia rinascita ed aver sempre mostrato disponibilità ed accoglienza. Non dimenticherò mai questi anni passati insieme e ti sarò per sempre riconoscente per essere entrata nella storia della mia vita e per averla arricchita con la tua semplicità ed il tuo insostituibile affetto. Il ricordo di questi anni universitari passati a studiare, far sacrifici, crescere, sognare, piangere e sorridere, vincere e perdere sarà sempre legato alla tua persona. Approfitto per augurarti il meglio per il tuo prossimo ed imminente successo, sappiamo entrambe che questi nostri traguardi avrebbero avuto un altro sapore se fossero stati condivisi pienamente nello stesso giorno. Anche se il destino ha deciso di separarci, tale separazione è solo materiale, la gioia e l'orgoglio che nutriamo l'un per l'altra saranno immutati e basterà un solo nostro sguardo per cantare vittoria.\\
 Ringrazio poi Antonella Letizia, amica e collega, per tutti i suggerimenti e gli incoraggiamenti nonché per il caro affetto mostratomi nel corso degli anni. La sua prontezza nell'ascoltare tutti i miei dubbi, i miei pensieri e le mie idee è stata di grande aiuto, soprattutto nell'ultimo periodo. Grazie per esserci stata e per avermi spronato nel ricercare la forza per perseguire i miei obiettivi e grazie per aver condiviso con me esperienze ed idee.\\
