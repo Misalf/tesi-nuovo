@@ -11,7 +11,18 @@
 \usepackage{graphicx}
 \usepackage{eso-pic}
 \usepackage{setspace}
-\usepackage{fancyhdr} 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{%
+	\markboth{\thechapter.\ #1}{}}
+\lhead{\leftmark}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 \newcommand{\fncyblank}{\fancyhf{}}
 \newenvironment{abstract}% 
 {\cleardoublepage\fncyblank\null \vfill\begin{center}% 
