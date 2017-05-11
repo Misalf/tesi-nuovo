@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.11)  12 MAY 2017 00:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.11)  12 MAY 2017 00:48
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
@@ -1149,7 +1149,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5092 strings out of 493328
  70954 string characters out of 3124429
- 162788 words of memory out of 3000000
+ 162784 words of memory out of 3000000
  8491 multiletter control sequences out of 15000+200000
  11115 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1173,7 +1173,7 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users
 /Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmti12.pfb><C:/Users/Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (50 pages, 516872 bytes).
+Output written on "TESI NON CANCELLARE.pdf" (50 pages, 515113 bytes).
 PDF statistics:
  264 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
