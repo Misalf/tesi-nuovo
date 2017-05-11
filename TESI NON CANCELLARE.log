@@ -1,12 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.3)  11 MAY 2017 23:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.5.11)  11 MAY 2017 23:39
 entering extended mode
 **"./TESI NON CANCELLARE.tex"
 ("TESI NON CANCELLARE.tex"
-LaTeX2e <2017/01/01> patch level 1
+LaTeX2e <2017-04-15>
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
+
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\
+book.cls"
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
+
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\
+bk12.clo"
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,20 +26,25 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bab
+el\babel.sty"
 Package: babel 2016/04/23 3.9r The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi
+\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-italian\italian.ldf"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel
+-italian\italian.ldf"
 Language: italian 2015/03/26 v1.3n Italian support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\bab
+el\babel.def"
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
@@ -44,24 +53,28 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 \it@doublequoteactive=\count90
 \it@ISOcompliance=\count91
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etool
+box\etoolbox.sty"
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count92
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\
+inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\UTF8.def"
-File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\
+UTF8.def"
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\
+t1enc.dfu"
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -273,6 +286,8 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
    defining Unicode char U+1E02 (decimal 7682)
    defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
@@ -293,12 +308,15 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\
+ot1enc.dfu"
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -338,8 +356,9 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\
+omsenc.dfu"
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -362,24 +381,30 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsma
+th\amsmath.sty"
 Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsma
+th\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsma
+th\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen104
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsma
+th\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsma
+th\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count93
@@ -420,75 +445,119 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geome
+try\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graph
+ics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifx
+etex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
+\Gm@bindingoffset=\dimen113
+\Gm@wd@mp=\dimen114
+\Gm@odd@mp=\dimen115
+\Gm@even@mp=\dimen116
+\Gm@layoutwidth=\dimen117
+\Gm@layoutheight=\dimen118
+\Gm@layouthoffset=\dimen119
+\Gm@layoutvoffset=\dimen120
+\Gm@dimlist=\toks22
+
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geome
+try\geometry.cfg"))
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscl
+s\amsthm.sty"
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks21
-\thm@bodyfont=\toks22
-\thm@headfont=\toks23
-\thm@notefont=\toks24
-\thm@headpunct=\toks25
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
 \thm@preskip=\skip46
 \thm@postskip=\skip47
 \thm@headsep=\skip48
-\dth@everypar=\toks26
+\dth@everypar=\toks28
 )
-\c@thm=\count105
+\c@thm=\count108
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfo
+nts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfo
+nts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graph
+ics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks27
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graph
+ics\graphics.sty"
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graph
+ics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graph
+ics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graph
+ics-def\pdftex.def"
 File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count106
+\Gread@gobject=\count109
 ))
-\Gin@req@height=\dimen113
-\Gin@req@width=\dimen114
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\eso-p
+ic\eso-pic.sty"
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\atbegshi.sty"
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+)
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolo
+r\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graph
+ics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -502,10 +571,12 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setsp
+ace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancy
+hdr\fancyhdr.sty"
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \fancy@headwidth=\skip49
 \f@ncyO@elh=\skip50
@@ -517,33 +588,33 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@olf=\skip56
 \f@ncyO@orf=\skip57
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools
+\afterpage.sty"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks28
+\AP@output=\toks29
 \AP@partial=\box28
 \AP@footins=\box29
-)
-("TESI NON CANCELLARE.aux"
+) ("TESI NON CANCELLARE.aux"
 
 LaTeX Warning: Label `eqn:competitivo' multiply defined.
 
 )
 \openout1 = `"TESI NON CANCELLARE.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Info: Redefining \it@ocap on input line 49.
-LaTeX Info: Redefining \it@ccap on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Info: Redefining \it@ocap on input line 50.
+LaTeX Info: Redefining \it@ccap on input line 50.
 
 
 File italian.ldf warning: 
@@ -551,26 +622,65 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 49.
+italian.ldf    on input line 50.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-2.73714pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\context\bas
+e\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
-\scratchdimen=\dimen115
+\scratchcounter=\count110
+\scratchdimen=\dimen123
 \scratchbox=\box30
-\nofMPsegments=\count108
-\nofMParguments=\count109
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count110
-\MPscratchDim=\dimen116
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
-\everyMPtoPDFconversion=\toks30
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen124
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks31
+)
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\pdftexcmds.sty"
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -579,22 +689,28 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberd
+iek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberd
+iek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberd
+iek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\generic\obe
+rdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -611,17 +727,18 @@ G,.JBIG2,.JB2,.eps]
 \AtBeginShipoutBox=\box31
  [1
 
-]
-[2{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [3]
-("TESI NON CANCELLARE.toc"
+] [2{C:/Users/Vincenzo Caccavale/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.
+map}] [3] ("TESI NON CANCELLARE.toc"
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfo
+nts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfo
+nts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [4
 
@@ -630,16 +747,44 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `"TESI NON CANCELLARE.toc"'.
 
- [5] [6
+ [5]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(85.35826pt, 658.28194pt, 101.40665pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=658.28194pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ [6
+
 
 ]
-[7]
 Capitolo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
@@ -650,366 +795,381 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
  []
 
-[8
 
-] [9] <IMMAGINI/esempioiniziale.jpg, id=36, 327.2225pt x 207.77625pt>
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+[7
+
+
+] [8] <IMMAGINI/esempioiniziale.jpg, id=33, 327.2225pt x 207.77625pt>
 File: IMMAGINI/esempioiniziale.jpg Graphic file (type jpg)
 
 <use IMMAGINI/esempioiniziale.jpg>
-Package pdftex.def Info: IMMAGINI/esempioiniziale.jpg used on input line 134.
-(pdftex.def)             Requested size: 195.0pt x 123.81703pt.
- [10 <./IMMAGINI/esempioiniziale.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
+Package pdftex.def Info: IMMAGINI/esempioiniziale.jpg used on input line 137.
+(pdftex.def)             Requested size: 209.12683pt x 132.78928pt.
+ [9 <./IMMAGINI/esempioiniziale.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 149.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Users\Vincenzo Caccavale\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\
+omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
-
-Overfull \hbox (10.40973pt too wide) in paragraph at lines 152--153
-[]\OT1/cmr/m/n/12 sintesi e mi-glio-ra-men-to da-ti (fax, gra-fi-ca, can-cel-la
--zio-ne di ru-mo-re, ecc...); 
- []
-
-[11] <IMMAGINI/Sistemanervoso.png, id=44, 373.395pt x 137.7647pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
+ [10] <IMMAGINI/Sistemanervoso.png, id=41, 373.395pt x 137.7647pt>
 File: IMMAGINI/Sistemanervoso.png Graphic file (type png)
 
 <use IMMAGINI/Sistemanervoso.png>
-Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 173.
-(pdftex.def)             Requested size: 234.00238pt x 86.33604pt.
+Package pdftex.def Info: IMMAGINI/Sistemanervoso.png used on input line 176.
+(pdftex.def)             Requested size: 250.95476pt x 92.58984pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--189
+Underfull \hbox (badness 10000) in paragraph at lines 188--192
 
  []
 
-[12 <./IMMAGINI/Sistemanervoso.png>]
-<IMMAGINI/neuron.png, id=50, 520.94624pt x 285.31593pt>
+[11 <./IMMAGINI/Sistemanervoso.png>]
+<IMMAGINI/neuron.png, id=47, 520.94624pt x 285.31593pt>
 File: IMMAGINI/neuron.png Graphic file (type png)
 
 <use IMMAGINI/neuron.png>
-Package pdftex.def Info: IMMAGINI/neuron.png used on input line 192.
-(pdftex.def)             Requested size: 272.99881pt x 149.51883pt.
+Package pdftex.def Info: IMMAGINI/neuron.png used on input line 195.
+(pdftex.def)             Requested size: 292.77629pt x 160.3505pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-
-Overfull \hbox (13.88495pt too wide) in paragraph at lines 203--206
-\OT1/cmr/m/n/12 Consideriamo una ge-ne-ri-ca unita $\OML/cmm/m/it/12 j$ \OT1/c
-mr/m/n/12 co-sti-tui-ta da $\OML/cmm/m/it/12 n$ \OT1/cmr/m/n/12 ca-na-li di in-
-gres-so $\OML/cmm/m/it/12 x[]; x[]; :::; x[]$\OT1/cmr/m/n/12 .
- []
-
-[13 <./IMMAGINI/neuron.png>]
-<IMMAGINI/palla1.png, id=57, 384.6872pt x 222.07968pt>
+[12 <./IMMAGINI/neuron.png>]
+<IMMAGINI/palla1.png, id=55, 384.6872pt x 222.07968pt>
 File: IMMAGINI/palla1.png Graphic file (type png)
 
 <use IMMAGINI/palla1.png>
-Package pdftex.def Info: IMMAGINI/palla1.png used on input line 209.
-(pdftex.def)             Requested size: 272.99881pt x 157.61328pt.
- [14 <./IMMAGINI/palla1.png>]
-<IMMAGINI/palla2.png, id=65, 511.9125pt x 227.34938pt>
+Package pdftex.def Info: IMMAGINI/palla1.png used on input line 212.
+(pdftex.def)             Requested size: 292.77629pt x 169.02968pt.
+ [13 <./IMMAGINI/palla1.png>]
+<IMMAGINI/palla2.png, id=62, 511.9125pt x 227.34938pt>
 File: IMMAGINI/palla2.png Graphic file (type png)
 
 <use IMMAGINI/palla2.png>
-Package pdftex.def Info: IMMAGINI/palla2.png used on input line 226.
-(pdftex.def)             Requested size: 312.00119pt x 138.56496pt.
- [15
+Package pdftex.def Info: IMMAGINI/palla2.png used on input line 229.
+(pdftex.def)             Requested size: 334.60422pt x 148.60445pt.
+ [14
 
  <./IMMAGINI/palla2.png>]
-<IMMAGINI/palla3.png, id=70, 547.2947pt x 271.0125pt>
+<IMMAGINI/palla3.png, id=67, 547.2947pt x 271.0125pt>
 File: IMMAGINI/palla3.png Graphic file (type png)
 
 <use IMMAGINI/palla3.png>
-Package pdftex.def Info: IMMAGINI/palla3.png used on input line 258.
-(pdftex.def)             Requested size: 390.0pt x 193.12321pt.
- [16
+Package pdftex.def Info: IMMAGINI/palla3.png used on input line 261.
+(pdftex.def)             Requested size: 418.25368pt x 207.11711pt.
+ [15
 
- <./IMMAGINI/palla3.png>] [17]
-<IMMAGINI/asoglia.png, id=78, 392.96812pt x 129.48375pt>
+ <./IMMAGINI/palla3.png>] [16]
+<IMMAGINI/asoglia.png, id=75, 392.96812pt x 129.48375pt>
 File: IMMAGINI/asoglia.png Graphic file (type png)
 
 <use IMMAGINI/asoglia.png>
-Package pdftex.def Info: IMMAGINI/asoglia.png used on input line 324.
-(pdftex.def)             Requested size: 370.49881pt x 122.08813pt.
+Package pdftex.def Info: IMMAGINI/asoglia.png used on input line 327.
+(pdftex.def)             Requested size: 397.3397pt x 130.93361pt.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 329.
+LaTeX Warning: Command \textendash invalid in math mode on input line 332.
 
-[18
+[17
 
  <./IMMAGINI/asoglia.png>]
-<"IMMAGINI/lineare e lineare a tratti".png, id=83, 436.63126pt x 112.92188pt>
+<"IMMAGINI/lineare e lineare a tratti".png, id=80, 436.63126pt x 112.92188pt>
 File: "IMMAGINI/lineare e lineare a tratti".png Graphic file (type png)
 
 <use "IMMAGINI/lineare e lineare a tratti".png>
 Package pdftex.def Info: "IMMAGINI/lineare e lineare a tratti".png used on inpu
-t line 373.
-(pdftex.def)             Requested size: 390.0pt x 100.86197pt.
+t line 376.
+(pdftex.def)             Requested size: 418.25368pt x 108.16942pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 390--391
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
-[19
+[18
 
  <./IMMAGINI/lineare e lineare a tratti.png>]
-<IMMAGINI/sigmoide.png, id=90, 310.91156pt x 189.70876pt>
+<IMMAGINI/sigmoide.png, id=86, 310.91156pt x 189.70876pt>
 File: IMMAGINI/sigmoide.png Graphic file (type png)
 
 <use IMMAGINI/sigmoide.png>
-Package pdftex.def Info: IMMAGINI/sigmoide.png used on input line 395.
-(pdftex.def)             Requested size: 234.00238pt x 142.782pt.
+Package pdftex.def Info: IMMAGINI/sigmoide.png used on input line 398.
+(pdftex.def)             Requested size: 250.95476pt x 153.12482pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--414
+Underfull \hbox (badness 10000) in paragraph at lines 415--417
 
  []
 
-<IMMAGINI/diagrammareti.png, id=91, 487.8225pt x 176.15813pt>
+<IMMAGINI/diagrammareti.png, id=87, 487.8225pt x 176.15813pt>
 File: IMMAGINI/diagrammareti.png Graphic file (type png)
 
 <use IMMAGINI/diagrammareti.png>
-Package pdftex.def Info: IMMAGINI/diagrammareti.png used on input line 417.
-(pdftex.def)             Requested size: 292.5pt x 105.6258pt.
- [20
+Package pdftex.def Info: IMMAGINI/diagrammareti.png used on input line 420.
+(pdftex.def)             Requested size: 313.69025pt x 113.2784pt.
 
- <./IMMAGINI/sigmoide.png> <./IMMAGINI/diagrammareti.png>]
-<IMMAGINI/completamenteconnesssa.png, id=97, 280.79906pt x 203.25937pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<IMMAGINI/completamenteconnesssa.png, id=88, 280.79906pt x 203.25937pt>
 File: IMMAGINI/completamenteconnesssa.png Graphic file (type png)
 
 <use IMMAGINI/completamenteconnesssa.png>
 Package pdftex.def Info: IMMAGINI/completamenteconnesssa.png used on input line
- 427.
-(pdftex.def)             Requested size: 195.0pt x 141.15164pt.
- [21 <./IMMAGINI/completamenteconnesssa.png>] <IMMAGINI/unostrato.png, id=102, 
-634.62094pt x 253.69781pt>
+ 430.
+(pdftex.def)             Requested size: 209.12683pt x 151.37723pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[19
+
+ <./IMMAGINI/sigmoide.png>] [20 <./IMMAGINI/diagrammareti.png> <./IMMAGINI/comp
+letamenteconnesssa.png>]
+<IMMAGINI/unostrato.png, id=99, 634.62094pt x 253.69781pt>
 File: IMMAGINI/unostrato.png Graphic file (type png)
 
 <use IMMAGINI/unostrato.png>
-Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 442.
-(pdftex.def)             Requested size: 370.49881pt x 148.11647pt.
- [22 <./IMMAGINI/unostrato.png>]
+Package pdftex.def Info: IMMAGINI/unostrato.png used on input line 445.
+(pdftex.def)             Requested size: 397.3397pt x 158.8472pt.
+ [21 <./IMMAGINI/unostrato.png>]
 Capitolo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
 
  []
 
-[23
+[22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 477--478
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--493
+Underfull \hbox (badness 10000) in paragraph at lines 494--496
 
  []
 
-[24] <IMMAGINI/supervisionato.png, id=113, 546.54187pt x 248.42813pt>
+[23] <IMMAGINI/supervisionato.png, id=110, 546.54187pt x 248.42813pt>
 File: IMMAGINI/supervisionato.png Graphic file (type png)
 
 <use IMMAGINI/supervisionato.png>
-Package pdftex.def Info: IMMAGINI/supervisionato.png used on input line 496.
-(pdftex.def)             Requested size: 312.00119pt x 141.81778pt.
+Package pdftex.def Info: IMMAGINI/supervisionato.png used on input line 499.
+(pdftex.def)             Requested size: 334.60422pt x 152.09438pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 503--504
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
-<IMMAGINI/nonsupervisionato.png, id=114, 511.15968pt x 149.8097pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+<IMMAGINI/nonsupervisionato.png, id=111, 511.15968pt x 149.8097pt>
 File: IMMAGINI/nonsupervisionato.png Graphic file (type png)
 
 <use IMMAGINI/nonsupervisionato.png>
-Package pdftex.def Info: IMMAGINI/nonsupervisionato.png used on input line 507.
+Package pdftex.def Info: IMMAGINI/nonsupervisionato.png used on input line 510.
 
-(pdftex.def)             Requested size: 272.99881pt x 80.00908pt.
+(pdftex.def)             Requested size: 292.77629pt x 85.80615pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 517--518
-
- []
-
-[25 <./IMMAGINI/supervisionato.png> <./IMMAGINI/nonsupervisionato.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 538--540
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+[24 <./IMMAGINI/supervisionato.png> <./IMMAGINI/nonsupervisionato.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 541--543
 
  []
 
-<"IMMAGINI/errore".png, id=124, 501.37312pt x 159.59625pt>
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
+
+ []
+
+<"IMMAGINI/errore".png, id=121, 501.37312pt x 159.59625pt>
 File: "IMMAGINI/errore".png Graphic file (type png)
 
 <use "IMMAGINI/errore".png>
-Package pdftex.def Info: "IMMAGINI/errore".png used on input line 561.
-(pdftex.def)             Requested size: 312.00119pt x 99.32123pt.
+Package pdftex.def Info: "IMMAGINI/errore".png used on input line 564.
+(pdftex.def)             Requested size: 334.60422pt x 106.51492pt.
 
-<IMMAGINI/gradiente.png, id=125, 347.04657pt x 170.88844pt>
+<IMMAGINI/gradiente.png, id=122, 347.04657pt x 170.88844pt>
 File: IMMAGINI/gradiente.png Graphic file (type png)
 
 <use IMMAGINI/gradiente.png>
-Package pdftex.def Info: IMMAGINI/gradiente.png used on input line 576.
-(pdftex.def)             Requested size: 312.00119pt x 153.63649pt.
+Package pdftex.def Info: IMMAGINI/gradiente.png used on input line 579.
+(pdftex.def)             Requested size: 334.60422pt x 164.7681pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
 
  []
 
-[27 <./IMMAGINI/errore.png>] [28 <./IMMAGINI/gradiente.png>] [29]
-Underfull \hbox (badness 10000) in paragraph at lines 663--664
+[26 <./IMMAGINI/errore.png>] [27 <./IMMAGINI/gradiente.png>] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
 
  []
 
-[30] <IMMAGINI/competitivo.png, id=141, 201.75375pt x 180.675pt>
+[29] <IMMAGINI/competitivo.png, id=138, 201.75375pt x 180.675pt>
 File: IMMAGINI/competitivo.png Graphic file (type png)
 
 <use IMMAGINI/competitivo.png>
-Package pdftex.def Info: IMMAGINI/competitivo.png used on input line 682.
-(pdftex.def)             Requested size: 155.99762pt x 139.69911pt.
+Package pdftex.def Info: IMMAGINI/competitivo.png used on input line 685.
+(pdftex.def)             Requested size: 167.2989pt x 149.8196pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 
  []
 
-[31
+[30
 
  <./IMMAGINI/competitivo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 721--723
+Underfull \hbox (badness 10000) in paragraph at lines 724--726
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--737
+Underfull \hbox (badness 10000) in paragraph at lines 738--740
 
  []
 
-[32] <IMMAGINI/classificazione.png, id=150, 405.76593pt x 201.00093pt>
+[31] <IMMAGINI/classificazione.png, id=147, 405.76593pt x 201.00093pt>
 File: IMMAGINI/classificazione.png Graphic file (type png)
 
 <use IMMAGINI/classificazione.png>
-Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 746.
-(pdftex.def)             Requested size: 312.00119pt x 154.55649pt.
+Package pdftex.def Info: IMMAGINI/classificazione.png used on input line 749.
+(pdftex.def)             Requested size: 334.60422pt x 165.7542pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 751--752
-
- []
-
-[33 <./IMMAGINI/classificazione.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 755--756
+Underfull \hbox (badness 10000) in paragraph at lines 754--755
 
  []
 
-<IMMAGINI/perceptron.png, id=154, 498.36188pt x 250.68657pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
+
+ []
+
+[32 <./IMMAGINI/classificazione.png>]
+<IMMAGINI/perceptron.png, id=151, 498.36188pt x 250.68657pt>
 File: IMMAGINI/perceptron.png Graphic file (type png)
 
 <use IMMAGINI/perceptron.png>
-Package pdftex.def Info: IMMAGINI/perceptron.png used on input line 768.
-(pdftex.def)             Requested size: 331.50238pt x 166.75801pt.
- [34 <./IMMAGINI/perceptron.png>] [35
+Package pdftex.def Info: IMMAGINI/perceptron.png used on input line 771.
+(pdftex.def)             Requested size: 355.51817pt x 178.83788pt.
+ [33 <./IMMAGINI/perceptron.png>] [34
 
 ]
-<IMMAGINI/rettapercettrone.png, id=163, 720.44156pt x 443.40656pt>
+<IMMAGINI/rettapercettrone.png, id=160, 720.44156pt x 443.40656pt>
 File: IMMAGINI/rettapercettrone.png Graphic file (type png)
 
 <use IMMAGINI/rettapercettrone.png>
-Package pdftex.def Info: IMMAGINI/rettapercettrone.png used on input line 822.
-(pdftex.def)             Requested size: 350.99762pt x 216.0262pt.
- [36
+Package pdftex.def Info: IMMAGINI/rettapercettrone.png used on input line 825.
+(pdftex.def)             Requested size: 376.42575pt x 231.67557pt.
+ [35
 
  <./IMMAGINI/rettapercettrone.png>]
 Capitolo 3.
-<IMMAGINI/riconoscimento.png, id=168, 463.7325pt x 287.57437pt>
+<IMMAGINI/riconoscimento.png, id=165, 463.7325pt x 287.57437pt>
 File: IMMAGINI/riconoscimento.png Graphic file (type png)
 
 <use IMMAGINI/riconoscimento.png>
-Package pdftex.def Info: IMMAGINI/riconoscimento.png used on input line 861.
-(pdftex.def)             Requested size: 214.50119pt x 133.01862pt.
+Package pdftex.def Info: IMMAGINI/riconoscimento.png used on input line 864.
+(pdftex.def)             Requested size: 230.04079pt x 142.65471pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--870
+Underfull \hbox (badness 10000) in paragraph at lines 872--873
 
  []
 
-[37
+[36
 
-] <IMMAGINI/hopfield.png, id=173, 590.205pt x 322.20375pt>
+] <IMMAGINI/hopfield.png, id=169, 590.205pt x 322.20375pt>
 File: IMMAGINI/hopfield.png Graphic file (type png)
 
 <use IMMAGINI/hopfield.png>
-Package pdftex.def Info: IMMAGINI/hopfield.png used on input line 873.
-(pdftex.def)             Requested size: 350.99762pt x 191.61774pt.
- [38 <./IMMAGINI/riconoscimento.png> <./IMMAGINI/hopfield.png>] [39] [40] [41] 
-[42]
-<IMMAGINI/casodiscreto.png, id=190, 473.51906pt x 146.04562pt>
+Package pdftex.def Info: IMMAGINI/hopfield.png used on input line 876.
+(pdftex.def)             Requested size: 376.42575pt x 205.50172pt.
+ [37 <./IMMAGINI/riconoscimento.png> <./IMMAGINI/hopfield.png>] [38] [39] [40] 
+[41]
+<IMMAGINI/casodiscreto.png, id=187, 473.51906pt x 146.04562pt>
 File: IMMAGINI/casodiscreto.png Graphic file (type png)
 
 <use IMMAGINI/casodiscreto.png>
-Package pdftex.def Info: IMMAGINI/casodiscreto.png used on input line 1006.
-(pdftex.def)             Requested size: 390.0pt x 120.28854pt.
- [43 <./IMMAGINI/casodiscreto.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
+Package pdftex.def Info: IMMAGINI/casodiscreto.png used on input line 1009.
+(pdftex.def)             Requested size: 418.25368pt x 129.0041pt.
+ [42 <./IMMAGINI/casodiscreto.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1037--1038
 
  []
 
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 1061--1062
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1064--1065
 
  []
 
-[45] [46
+[44] [45
 
-] [47] [48
+] [46]
+Underfull \hbox (badness 1565) in paragraph at lines 1154--1155
+[]\OT1/cmr/m/n/12 Prof. Bi-ce-go Ma-nue-le, \OT1/cmr/m/it/12 Ri-co-no-sci-men-t
+o e re-cu-pe-ro del-l'in-for-ma-zio-ne per
+ []
 
-] [49
+[47
 
-] [50] [51] ("TESI NON CANCELLARE.aux")
+] [48
+
+] [49] [50] ("TESI NON CANCELLARE.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4611 strings out of 493333
- 59677 string characters out of 3139198
- 148877 words of memory out of 3000000
- 8018 multiletter control sequences out of 15000+200000
+ 5094 strings out of 493328
+ 70975 string characters out of 3124429
+ 162958 words of memory out of 3000000
+ 8492 multiletter control sequences out of 15000+200000
  11467 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,43p,1382b,241s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/symbols/msam10.pfb>
-Output written on "TESI NON CANCELLARE.pdf" (51 pages, 704543 bytes).
+ 39i,8n,43p,1382b,267s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/Vincenzo Caccavale/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/Vincenzo Cacc
+avale/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
+fb><C:/Users/Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><C:/Users/Vincenzo Caccavale/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Vincenzo Caccav
+ale/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+<C:/Users/Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><C:/Users/Vincenzo Caccavale/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Vincenzo Caccavale/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
+ers/Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsl12.pfb><C:/Users/Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vincenzo Caccavale/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/User
+s/Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb><C:/Users/Vincenzo Caccavale/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Vincenzo Caccavale/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on "TESI NON CANCELLARE.pdf" (50 pages, 529331 bytes).
 PDF statistics:
- 271 PDF objects out of 1000 (max. 8388607)
+ 268 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  116 words of extra memory for PDF output out of 10000 (max. 10000000)
 

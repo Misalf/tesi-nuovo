@@ -2,35 +2,35 @@
 \select@language {italian}
 \thispagestyle {empty}
 \contentsline {chapter}{Introduzione}{6}
-\contentsline {chapter}{\numberline {1} Presentazione delle reti neurali }{8}
-\contentsline {section}{\numberline {1.1}Cenni storici ed origini}{8}
-\contentsline {section}{\numberline {1.2}Analogie con il sistema nervoso ed applicazioni}{10}
-\contentsline {section}{\numberline {1.3}Il neurone biologico}{12}
-\contentsline {section}{\numberline {1.4}Modello del neurone artificiale}{13}
-\contentsline {section}{\numberline {1.5}Attivazione di un neurone e funzioni di attivazione}{16}
-\contentsline {subsection}{\numberline {1.5.1}Funzione a soglia}{17}
-\contentsline {subsection}{\numberline {1.5.2}Funzione lineare e funzioni lineare a tratti}{18}
-\contentsline {subsection}{\numberline {1.5.3}Funzione sigmoide}{19}
-\contentsline {section}{\numberline {1.6}Architettura di una rete neurale}{20}
-\contentsline {chapter}{\numberline {2}L'apprendimento delle reti neurali}{23}
-\contentsline {section}{\numberline {2.1}Addestramento e generalizzazione}{23}
-\contentsline {section}{\numberline {2.2}Paradigmi di apprendimento}{24}
-\contentsline {section}{\numberline {2.3}Processi di apprendimento}{26}
-\contentsline {subsection}{\numberline {2.3.1}Delta rule}{26}
-\contentsline {subsection}{\numberline {2.3.2}Apprendimento con correzione di errore o metodo discesa del gradiente}{27}
-\contentsline {subsection}{\numberline {2.3.3}Apprendimento di Hebbian}{30}
-\contentsline {subsection}{\numberline {2.3.4}Apprendimento competitivo}{30}
-\contentsline {section}{\numberline {2.4}Attivit\IeC {\`a} di apprendimento}{32}
-\contentsline {subsection}{\numberline {2.4.1}Associazione di pattern e memoria associativa}{32}
-\contentsline {subsection}{\numberline {2.4.2}Riconoscimento di pattern}{33}
-\contentsline {subsection}{\numberline {2.4.3}Approssimazione di funzioni}{34}
-\contentsline {section}{\numberline {2.5}Un esempio di apprendimento supervisionato: il percettrone elementare}{34}
-\contentsline {chapter}{\numberline {3}Reti di Hopfield}{37}
-\contentsline {section}{\numberline {3.1}Presentazione ed utilizzo}{37}
-\contentsline {section}{\numberline {3.2}Architettura ed aggiornamento}{38}
-\contentsline {section}{\numberline {3.3}Cenni sulla stabilit\IeC {\`a}}{40}
-\contentsline {section}{\numberline {3.4}Il caso discreto e la funzione energia}{42}
-\contentsline {subsection}{\numberline {3.4.1}Il caso continuo}{45}
-\contentsline {section}{\numberline {3.5}Limiti delle reti di Hopfield}{46}
-\contentsline {chapter}{Riferimenti bibliografici}{48}
-\contentsline {chapter}{Ringraziamenti}{49}
+\contentsline {chapter}{\numberline {1} Presentazione delle reti neurali }{7}
+\contentsline {section}{\numberline {1.1}Cenni storici ed origini}{7}
+\contentsline {section}{\numberline {1.2}Analogie con il sistema nervoso ed applicazioni}{9}
+\contentsline {section}{\numberline {1.3}Il neurone biologico}{11}
+\contentsline {section}{\numberline {1.4}Modello del neurone artificiale}{12}
+\contentsline {section}{\numberline {1.5}Attivazione di un neurone e funzioni di attivazione}{15}
+\contentsline {subsection}{\numberline {1.5.1}Funzione a soglia}{16}
+\contentsline {subsection}{\numberline {1.5.2}Funzione lineare e funzioni lineare a tratti}{17}
+\contentsline {subsection}{\numberline {1.5.3}Funzione sigmoide}{18}
+\contentsline {section}{\numberline {1.6}Architettura di una rete neurale}{19}
+\contentsline {chapter}{\numberline {2}L'apprendimento delle reti neurali}{22}
+\contentsline {section}{\numberline {2.1}Addestramento e generalizzazione}{22}
+\contentsline {section}{\numberline {2.2}Paradigmi di apprendimento}{23}
+\contentsline {section}{\numberline {2.3}Processi di apprendimento}{24}
+\contentsline {subsection}{\numberline {2.3.1}Delta rule}{25}
+\contentsline {subsection}{\numberline {2.3.2}Apprendimento con correzione di errore o metodo discesa del gradiente}{26}
+\contentsline {subsection}{\numberline {2.3.3}Apprendimento di Hebbian}{29}
+\contentsline {subsection}{\numberline {2.3.4}Apprendimento competitivo}{29}
+\contentsline {section}{\numberline {2.4}Attivit\IeC {\`a} di apprendimento}{31}
+\contentsline {subsection}{\numberline {2.4.1}Associazione di pattern e memoria associativa}{31}
+\contentsline {subsection}{\numberline {2.4.2}Riconoscimento di pattern}{32}
+\contentsline {subsection}{\numberline {2.4.3}Approssimazione di funzioni}{33}
+\contentsline {section}{\numberline {2.5}Un esempio di apprendimento supervisionato: il percettrone elementare}{33}
+\contentsline {chapter}{\numberline {3}Reti di Hopfield}{36}
+\contentsline {section}{\numberline {3.1}Presentazione ed utilizzo}{36}
+\contentsline {section}{\numberline {3.2}Architettura ed aggiornamento}{37}
+\contentsline {section}{\numberline {3.3}Cenni sulla stabilit\IeC {\`a}}{39}
+\contentsline {section}{\numberline {3.4}Il caso discreto e la funzione energia}{41}
+\contentsline {subsection}{\numberline {3.4.1}Il caso continuo}{44}
+\contentsline {section}{\numberline {3.5}Limiti delle reti di Hopfield}{45}
+\contentsline {chapter}{Riferimenti bibliografici}{47}
+\contentsline {chapter}{Ringraziamenti}{48}
