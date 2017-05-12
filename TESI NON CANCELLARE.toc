@@ -15,7 +15,7 @@
 \contentsline {chapter}{\numberline {2}L'apprendimento delle reti neurali}{22}
 \contentsline {section}{\numberline {2.1}Addestramento e generalizzazione}{22}
 \contentsline {section}{\numberline {2.2}Paradigmi di apprendimento}{23}
-\contentsline {section}{\numberline {2.3}Processi di apprendimento}{24}
+\contentsline {section}{\numberline {2.3}Processi di apprendimento}{25}
 \contentsline {subsection}{\numberline {2.3.1}Delta rule}{25}
 \contentsline {subsection}{\numberline {2.3.2}Apprendimento con correzione di errore o metodo discesa del gradiente}{26}
 \contentsline {subsection}{\numberline {2.3.3}Apprendimento di Hebbian}{29}

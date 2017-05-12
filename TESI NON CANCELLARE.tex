@@ -13,8 +13,10 @@
 \usepackage{setspace}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{%
+%	\markboth{\thechapter.\ #1}{}}
 \renewcommand{\chaptermark}[1]{%
-	\markboth{\thechapter.\ #1}{}}
+	\markboth{\MakeUppercase{\thechapter.\ #1}}{}}
 \lhead{\leftmark}
 \chead{}
 \rhead{}
@@ -70,7 +72,8 @@
 	%\newpage
 	\null\vspace{\stretch{1}}
 	\thispagestyle{empty}
-	\textit{A mia madre, la mia vera insegnante.}
+	\textit{A mia madre, la mia vera insegnante.\\
+	A mia nonna Anna, che mi è vicino da lassù.}
 	\vspace{\stretch{2}}\null
 \end{flushright} 
 %FINE DEDICA
@@ -123,13 +126,13 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 		\textit{(da Neural Network Primer: Parte uno, Maureen Caudill, 1989)}\\
 		
 		Tradotto in italiano \\
-		\textit{«... un sistema di calcolo costituito da una serie di semplici elementi di elaborazione, altamente interconnessi, che elaborano le informazioni attraverso il loro stato dinamico rispondendo agli input esterni.»}\\
+		\textit{«...un sistema di calcolo costituito da una serie di semplici elementi di elaborazione, altamente interconnessi, che elaborano le informazioni attraverso il loro stato dinamico rispondendo agli input esterni.»}\\
 		
 		Le basi per lo studio di tali reti furono poste dallo psichiatra Warren McCulloch e del matematico Walter Pitts, i quali riuscirono a riprodurre una rete neurale utilizzando semplici circuiti elettrici collegati tra loro. Questa collaborazione portò alla luce l'analogia esistente tra le reti neurali e la macchina di Turing ed in tal modo si capì che qualsiasi operazione eseguita da una rete neurale poteva essere eseguita anche da un computer. Le reti che furono prodotte risultavano essere automi a stati finiti in grado di realizzare la logica delle proposizioni e di formulare ipotesi sulla natura dei meccanismi cerebrali come un programma per computer. Il frutto di tale lavoro fu reso noto nel 1943 con la pubblicazione del libro ``\emph{A logical calculus of the ideas immanent in nervous activity}'', nel quale fu schematizzato un combinatore lineare a soglia con dati binari multipli in entrata e un singolo dato binario in uscita.\\
 	    McCulloch e Pitts riuscirono quindi a presentare il modello di neurone formale dimostrando che reti formate da tali neuroni riuscivano a computare funzioni della logica del primo ordine.\\
 	    Un punto di svolta per lo studio delle reti neurali si ebbe successivamente alla pubblicazione del lavoro dello psicologo Donald Hebb, ``\emph{The Organization of Behavior}'' nel 1949. Hebb trovò un'interconnessione tra la psicologia del comportamento umano e la fisiologia del sistema nervoso, offrendo così un grande contributo alla teoria sull'apprendimento associativo. Tale teoria  risultò essere alla base dei metodi di apprendimento delle reti neurali e si fonda sulla nota legge di Hebb: \textit{«Se un neurone A è abbastanza vicino ad un neurone B da contribuire ripetutamente e in maniera duratura alla sua eccitazione, allora ha luogo, in entrambi i neuroni, un processo di crescita o di cambiamento metabolico per cui l'efficacia di A nell'eccitare B viene accresciuta»}.\\
-	    Il decennio che va dagli anni cinquanta agli anni sessanta fu totalmente influenzato dalla legge di Hebb che vide che numerosi gruppi di ricerca condurre esperimenti e test sulle funzionalità del cervello fino a porre le basi per la nascita dell'intelligenza artificiale (AI).\\
-	    Nel 1958 Frank Rosenblatt introdusse il primo schema di rete neurale che designò con il termine ``\textbf{\emph{perceptron}}'', in italiano percettrone, allo scopo di fornire un'interpretazione dell'organizzazione generale dei sistemi biologici attraverso un modello mirato all'analisi di funzioni in forma matematica. Il percettrone fu il primo modello di apprendimento supervisionato, costituito da uno strato di ingresso ed uno di uscita in grado di discriminare gli ingressi in due insiemi linearmente separabili.\\
+	    Il decennio che va dagli anni cinquanta agli anni sessanta fu totalmente influenzato dalla legge di Hebb che vide numerosi gruppi di ricerca condurre esperimenti e test sulle funzionalità del cervello fino a porre le basi per la nascita dell'intelligenza artificiale (AI).\\
+	    Nel 1958 Frank Rosenblatt introdusse il primo schema di rete neurale che designò con il termine ``\textbf{perceptron}'', in italiano percettrone, allo scopo di fornire un'interpretazione dell'organizzazione generale dei sistemi biologici attraverso un modello mirato all'analisi di funzioni in forma matematica. Il percettrone fu il primo modello di apprendimento supervisionato, costituito da uno strato di ingresso ed uno di uscita in grado di discriminare gli ingressi in due insiemi linearmente separabili.\\
 	    Il percettrone risultò essere un modello più efficace rispetto a quello binario di McCulloch e Pitts, poichè i suoi pesi sinaptici erano variabili e quindi in grado di apprendere.\\
 		Nonostante l'iniziale successo di tale modello e l'interesse mostrato dalla comunità scientifica, tale rete neurale non risultò abbastanza potente; le reti a due strati basate sui percettroni avevano limiti operativi, non riuscivano cioè a risolvere tutte le classi di problemi, in particolare quelli non caratterizzati dalla separabilità lineare delle soluzioni come ad esempio l'operatore \emph{XOR}.\\
 		Solo negli anni ottanta, con il matematico Paul Werbos, si superarono i limiti del percettrone di Rosenblatt.  Werbos introdusse uno o più livelli intermedi all'interno delle reti neurali creando una classe chiamata  ``\textbf{\emph{Multi-Layers Perceptron}}'' ovvero percettrone multistrato, il cui metodo di addestramento principale era l'\emph{error backpropagation}, l'algoritmo di retropropagazione dell'errore che permetteva la modifica sistematica dei pesi delle connessioni in modo da rendere la risposta della rete quanto più vicina a quella desiderata.\\
@@ -385,7 +388,7 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 		\begin{figure}[h]
 			\centering
 			\includegraphics[width=1\linewidth]{"IMMAGINI/lineare e lineare a tratti"}
-			\caption{Funzione lineare(a sinistra), funzione lineare a tratti (a destra)}
+			\caption{Funzione lineare (a sinistra), funzione lineare a tratti (a destra)}
 			\label{fig:linearelineareatratti}
 		\end{figure}
 		
@@ -424,11 +427,11 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 		\end{itemize}
 	
 		Le reti neurali si suddividono principalmente in due grandi classi: le reti \emph{feedforward} e le reti \emph{feedback} o \emph{ricorrenti}. 
-		Si ha inoltre un'altra tipologia di reti che sono le \emph{reti completamente connesse}.\\
+		Si ha inoltre un'altra tipologia di reti che sono le \emph{reti completamente connesse}.
 		
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.75\linewidth]{IMMAGINI/diagrammareti}
+			\includegraphics[width=0.7\linewidth]{IMMAGINI/diagrammareti}
 			\caption{ Suddivisione delle reti neurali}
 			\label{fig:diagrammareti}
 		\end{figure}
@@ -502,7 +505,9 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 			\item \emph{apprendimento \textbf{non supervisionato}}
 		\end{itemize}
 	
+		\clearpage
 		\underline{Apprendimento supervisionato}\\
+		
 		Tale paradigma presuppone un \emph{training set} cioè un set di esempi nel quale sono presenti coppie del tipo $(x_{k},y_{dk})$ dove la prima variabile indica il $k$-esimo ingresso e la seconda la $k$-esima uscita desiderata. Con $y_{k}$ si indica l'uscita reale e la si confronta con l'uscita desiderata: l'obiettivo è modificare i pesi affinché si minimizzi la differenza tra le due uscite. Il training set iniziale viene proposto ripetutamente finché $y_{k}\approx y_{dk}$, ovvero l'uscita reale sia il più simile possibile a quella desiderata, il tutto modificando i pesi in base alla legge di apprendimento scelta.\\
 	
 		\begin{figure}[h]
@@ -518,7 +523,7 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 	
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.7\linewidth]{IMMAGINI/nonsupervisionato}
+			\includegraphics[width=0.8\linewidth]{IMMAGINI/nonsupervisionato}
 			\caption{ Apprendimento non supervisionato}
 			\label{fig:nonsupervisionato}
 		\end{figure}
@@ -705,7 +710,7 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 		 	$$\begin{center} 
 		 		$\displaystyle y_{k}=$
 		 		$\displaystyle \begin{cases}
-		 				1 \hspace{0.8cm}se\hspace{0.1cm} \nu_{k}>\nu{j} \hspace{0.6cm} \forall j,\hspace{0.2cm} j\neq k;\\
+		 				1 \hspace{0.7cm}se\hspace{0.1cm} \nu_{k}>\nu{j} \hspace{0.6cm} \forall j,\hspace{0.2cm} j\neq k;\\
 		 				0\hspace{0.8cm} altrimenti
 		 			\end{cases}$
 		 	\end{center} $$
@@ -821,9 +826,7 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 		\end{equation}
 		
 		
-		L'apprendimento utilizzato nel perceptron è di tipo supervisionato e la learning rule attraverso i quali si modificano i singoli pesi in modo appropriato 
-		\clearpage
-		è la delta rule, definita in forma generale come:
+		L'apprendimento utilizzato nel perceptron è di tipo supervisionato e la learning rule attraverso i quali si modificano i singoli pesi in modo appropriato è la delta \clearpage rule, definita in forma generale come:
 		
 		\begin{equation}  
 			$$ \begin{center} $ \displaystyle\overline{W}_{k+1}=\overline{W}_{k}+\triangle\overline{W}_{k} $ \end{center} $$
@@ -990,7 +993,8 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 	\section {Il caso discreto e la funzione energia}
 	
 	La prima rete presentata da Hopfield era una rete discreta, completamente connessa, con aggiornamento asincrono e matrice dei pesi simmetrica.\\
-	In questo modello ogni neurone può assumere due stati $v_i=0$ e $v_{i}=1$. Lo stato istantaneo del sistema è specificato elencando gli n valori di $v_{i}$ e lo stato di ciascun neurone ad un certo istante $t$ è determinato da una formula di attivazione binaria a soglia che modificherà i valori input seguendo questo schema: 
+	In questo modello ogni neurone può assumere due stati $v_i=0$ e $v_{i}=1$. Lo stato istantaneo del sistema è specificato elencando gli n valori di $v_{i}$ e lo stato di ciascun neurone ad un certo istante $t$ è determinato da una formula di attivazione binaria 
+	\clearpage a soglia che modificherà i valori input seguendo questo schema: 
 	
 	\begin{equation}
 	\label{eqn:casodiscreto} 
@@ -1162,7 +1166,7 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 %\phantomsection 
 \begin{thebibliography}{9} 
 	\addcontentsline{toc}{chapter}{\refname}
-	\bibitem{Bicego} Prof. Bicego Manuele, \emph{Riconoscimento e recupero dell’informazione per bioinformatica, reti neurali}
+	\bibitem{Bicego} Prof. Bicego Manuele, \emph{Riconoscimento e recupero dell’informazione per bioinformatica}
 	\bibitem{Gambosi} Prof. Gambosi Giorgio, \emph{Reti neurali, note dal corso di Machine Learning}, (2010), Packt Publishing 
 	\bibitem{GarretaMoncecchi} Garreta Raùl, Moncecchi Guillermo, \emph{Learning scikit-learn: Machine Learning in Python}, (2013) 
 	\bibitem{Hopfield} Hopfield John Joseph, \emph{Neural Networks and Physical Systems with Emergent Collective Computational Abilities}, (1982)
@@ -1175,23 +1179,25 @@ Il capitolo si conclude con l'esibizione di una rete di Hopfield nel caso discre
 	
 \chapter*{Ringraziamenti}
 \addcontentsline{toc}{chapter}{Ringraziamenti}
-
-Desidero ringraziare mia madre, a cui è dedicato questo lavoro di tesi, che fin dal principio mi ha sostenuto ed ha combattuto con me per il raggiungimento di questo obiettivo. Grazie per la possibilità che mi hai dato, per i valori che mi hai trasmesso e per gli insegnamenti che mi hai donato rendendomi ciò che sono oggi. Grazie per aver sempre creduto in me dandomi tutto l'amore che solo una madre può dare e grazie soprattutto per i sacrifici e per la pazienza che negli anni hai mostrato. Solo grazie al tuo sostegno ho sempre avuto l'energia per affrontare e la determinazione per proseguire, solo grazie alla tua calorosa vicinanza ho realizzato il mio progetto. Per me sei stata e sarai per sempre un esempio di madre, figlia, amica, lavoratrice, donna.\\
-Ringrazio Vincenzo, compagno fedele ed amico fidato, per avermi dato forza ed entusiasmo per scalare la vetta e per essermi stato sempre vicino passo dopo passo tendendomi la mano. Grazie per avermi aiutato e sostenuto, per avermi incitato quando ero a terra, per avermi spronato quando ne avevo bisogno e per avermi rimproverato se mi lasciavo prendere da una eccessiva preoccupazione. Ti sono grata per tutti i suggerimenti ed i confronti, per aver gioito e sofferto con me, per il trasporto mostratomi che mi ha trasmesso sostegno e soprattutto coraggio. Non dimenticherò mai le tue espressioni in volto nei giorni dei miei ultimi orali mentre aspettavi l'esito e le telefonate serali prima di un esame in cui piangevo senza un motivo ben preciso. Sei stato un punto fondamentale per la mia vita negli ultimi anni e ti ringrazio per il tuo amore ed il tuo affetto.\\
-Ringrazio la mia amica Maria De Riggi che ha rappresentato un pozzo di coraggio e forza nella mia quotidianità. Averti accanto in questo cammino, non solo in ambito universitario, mi ha aiutato e segnato molto e mi ha fatto scoprire una bellissima persona che non ho alcuna intenzione di perdere. Grazie per tutte le risate, le lacrime, i ricordi, le battute, i rimproveri, il calore, l'appoggio, i racconti ma soprattutto la fiducia. Grazie per aver contribuito alla mia rinascita ed aver sempre mostrato disponibilità ed accoglienza. Non dimenticherò mai questi anni passati insieme e ti sarò per sempre riconoscente per essere entrata nella storia della mia vita e per averla arricchita con la tua semplicità ed il tuo insostituibile affetto. Il ricordo di questi anni universitari passati a studiare, far sacrifici, crescere, sognare, piangere e sorridere, vincere e perdere sarà sempre legato alla tua persona. Approfitto per augurarti il meglio per il tuo prossimo ed imminente successo, sappiamo entrambe che questi nostri traguardi avrebbero avuto un altro sapore se fossero stati condivisi pienamente nello stesso giorno. Anche se il destino ha deciso di separarci, tale separazione è solo materiale, la gioia e l'orgoglio che nutriamo l'un per l'altra saranno immutati e basterà un solo nostro sguardo per cantare vittoria.\\
-Ringrazio poi Antonella Letizia, amica e collega, per tutti i suggerimenti e gli incoraggiamenti nonché per il caro affetto mostratomi nel corso degli anni. La sua prontezza nell'ascoltare tutti i miei dubbi, i miei pensieri e le mie idee è stata di grande aiuto, soprattutto nell'ultimo periodo. Grazie per esserci stata e per avermi spronato nel ricercare la forza per perseguire i miei obiettivi e grazie per aver condiviso con me esperienze ed idee.\\
-Anche se non tra i primi, ma non meno importante, desidero ringraziare la mia amica Stefania Ghidelli che ha significato tanto durante questo percorso. Grazie per avermi sempre ascoltata ed aiutata, per essere stata sempre presente e disponibile mostrandoti una vera amica ed una ragazza dolcissima. I ricordi che abbiamo costruito insieme in questi anni rimarranno sempre nella mia memoria e non dimenticherò mai le numerose chiacchierate colme di consigli ed incoraggiamenti ma soprattutto di risate e di affetto vero. Grazie per esserti aperta con me, per avermi scelto spesso come confidente, per le serate insieme e per aver creduto nelle mia capacità. Che sia solo l'inizio di un'amicizia duratura.\\
-Un affettuoso ringraziamento anche a Roberto D'Amore, collega ed amico, che mi ha sempre incoraggiato ed ascoltato, fornito informazioni importanti soprattutto negli ultimi mesi ed ha sempre prontamente teso la mano. Le tue parole sono state ricchezza e mi hanno aiutato molto nelle mie decisioni, la tua pacatezza mi ha spesso risollevato e dato speranza. \\
-Ringrazio con affetto anche i miei amici Antonio Chirico e Rossana Marzano, fedeli compagni di questa avventura fin dal principio, con i quali ho condiviso bei momenti sia in ambito universitario che non, e che mi hanno sempre ascoltato e dato consigli. Vi ringrazio per aver mostrato sempre sincerità ed affetto, le nostre numerose chiacchierate sono state fondamentali per la mia crescita, le idee che ne emergevano mi facevano capire sempre più cose sul mio conto e su ciò che volevo raggiungere. Grazie a Rossana per la sua allegria e la sua onestà, grazie ad Antonio per la sua bontà ed il suo confronto, grazie ad entrambi per esserci stati sempre e per non aver mai lasciato cadere questa nostra amicizia che spero davvero continui a durare. Che tutti i vostri desideri possano realizzarsi e che tutti gli ostacoli che la vita vi porgerà possano essere superati lasciandovi rafforzati.\\
-Un caloroso grazie a Vincenzo Criscuolo per la sua presenza in questa lunga scalata. Un amico con il quale ho condiviso i miei primi anni di università e che ricorderò sempre con stima e benevolenza, un amico con il quale ho condiviso numerose avvenimenti e che ho sempre avuto a cuore. Non dimenticherò mai i nostri pomeriggi studio tra algebra uno, analisi matematica uno e fisica generale uno, in cui scambiavamo pareri, pensieri, idee e dai quali uscivamo sempre arricchiti. Così come non dimenticherò mai le lunghe telefonate pomeridiane durante le quali parlavamo di tutto e di più e che ci rendevano sempre più legati. Un forte in bocca al lupo per il tuo futuro, sai che ho tanta stima di te e delle tue capacità e sai che aspetto da tempo la tua meritata vittoria.\\
-Ringrazio inoltre tutti gli altri amici e colleghi dell'università che ho incontrato nel corso degli anni e che mi hanno accompagnato per brevi o lunghi momenti in questo percorso, chi più e chi meno. Tutti coloro che mi hanno davvero aiutato, dato un consiglio sincero, regalato volentieri parte del loro tempo.\\
-In particolar modo Daniela Gragiulo per la sua disponibilità e dolcezza, con la quale ho condiviso il sacrificio e la paura per l'esame di algebra uno, esame che ci ha aiutato a conoscerci e ci ha reso più forti. Ilaria Iodice che con la sua simpatia ha sempre indotto un senso di tranquillità e di positività e con la quale ho condiviso l'esperienza del mio ultimo esame.\\
-Ringrazio infine tutti gli amici al di fuori dell'università che hanno sempre creduto in me e che mi hanno sempre supportato con affetto e comprensione. In particolar modo Linda Palumbo, una tra le mie più grandi amiche che conosco da anni, sempre presente negli avvenimenti importanti che affronto. Grazie per esserti sempre mostrata sincera ed affettuosa, sempre pronta ad aiutarmi ed ad ascoltarmi, la tua amicizia è tra le più importanti che ho e spero continui ad arricchire la storia della mia vita.\\ Ringrazio poi Mario De Lucia per essermi stato vicino durante il mio esame di fisica generale due, non solo operativamente ma anche e soprattutto psicologicamente. Sono contenta di aver avuto la possibilità di conoscerti e di poter condividere gran parte del mio tempo in tua compagnia e grazie anche per avermi suggerito di ascoltare la discografia di Lisa Hannigan.\\
+Desidero ringraziare prima di tutti il mio relatore, il Professor Stefano Marrone, per la disponibilità, per il supporto e la guida che mi ha gentilmente offerto per la realizzazione di questo lavoro di tesi. Vorrei inoltre esprimere la mia gratitudine per la sua accoglienza durante questa esperienza condivisa.  \\
+Ringrazio mia madre, a cui è dedicato questo lavoro di tesi, che fin dal principio mi ha sostenuto ed ha combattuto con me per il raggiungimento di questo obiettivo. Grazie per la possibilità che mi hai dato, per i valori che mi hai trasmesso e per gli insegnamenti che mi hai donato rendendomi ciò che sono oggi. Grazie per aver sempre creduto in me dandomi tutto l'amore che solo una madre può dare e grazie soprattutto per i sacrifici e per la pazienza che negli anni hai mostrato. Solo grazie al tuo sostegno ho sempre avuto l'energia per affrontare e la determinazione per proseguire, ancora grazie alla tua calorosa vicinanza ho realizzato il mio progetto. Per me sei stata e sarai per sempre un esempio di madre, figlia, amica, lavoratrice, donna.\\
+Ringrazio Vincenzo, compagno fedele ed amico fidato, per avermi dato forza ed entusiasmo per scalare la vetta e per essermi stato sempre vicino passo dopo passo tendendomi la mano. Grazie per avermi aiutato e sostenuto, per avermi incitato quando ero a terra, per avermi spronato quando ne avevo bisogno e per avermi rimproverato se mi lasciavo prendere da una eccessiva preoccupazione. Ti sono grata per tutti i suggerimenti ed i confronti, per aver gioito e sofferto con me, per il trasporto mostratomi che mi ha trasmesso soprattutto coraggio. Non dimenticherò mai le tue espressioni in volto nei giorni dei miei ultimi orali mentre aspettavi l'esito e le telefonate serali prima di un esame in cui piangevo senza un motivo ben preciso. Sei stato un punto fondamentale per la mia vita negli ultimi anni e ti ringrazio per il tuo amore ed il tuo affetto.\\
+Ringrazio la mia amica Maria De Riggi che ha rappresentato un pozzo di audacia e forza nella mia quotidianità. Averti accanto in questo cammino, non solo in ambito universitario, mi ha aiutato e segnato molto e mi ha fatto scoprire una bellissima persona che non ho alcuna intenzione di perdere. Grazie per tutte le risate, le lacrime, i ricordi, le battute, i rimproveri, il calore, l'appoggio, i racconti ma soprattutto la fiducia. Grazie per aver contribuito alla mia rinascita ed aver sempre mostrato disponibilità ed accoglienza. Non dimenticherò mai questi anni passati insieme e ti sarò per sempre riconoscente per essere entrata nella mia vita e per averla arricchita con la tua semplicità ed il tuo insostituibile affetto. Il ricordo di questi anni universitari passati a studiare, far sacrifici, crescere, sognare, piangere e sorridere, vincere e perdere sarà sempre legato alla tua persona. Approfitto per augurarti il meglio per il tuo prossimo ed imminente successo, sappiamo entrambe che questi nostri traguardi avrebbero avuto un altro sapore se fossero stati condivisi pienamente nello stesso giorno. Anche se il destino ha deciso di separarci, tale separazione è solo materiale, la gioia e la stima che nutriamo l'un per l'altra saranno immutati e basterà un solo nostro sguardo per cantare vittoria....e fare scacco matto!\\
+Ringrazio poi Antonella Letizia, amica e collega, per tutti i suggerimenti e gli incoraggiamenti nonché per il caro affetto mostratomi nel corso degli anni. La sua prontezza nell'ascoltare tutte le mie perplessità, i miei pensieri e le mie idee, è stata di grande aiuto, soprattutto nell'ultimo periodo. Grazie per esserci stata e per avermi spronato nel ricercare la forza per perseguire i miei obiettivi e grazie per aver condiviso con me esperienze ed idee.\\
+Anche se non tra i primi, ma non meno importante, desidero ringraziare la mia amica Stefania Ghidelli che ha rappresentato tanto per me durante questo percorso. Grazie per essere stata sempre presente e disponibile mostrandoti una vera amica ed una ragazza dolcissima. I ricordi che abbiamo costruito insieme in questi anni rimarranno sempre nella mia memoria e non dimenticherò mai le numerose chiacchierate colme di consigli ed incoraggiamenti ma soprattutto di risate e di affetto vero. Grazie per esserti aperta con me, per avermi scelto spesso come confidente, per le serate insieme e per aver creduto nelle mia capacità. Che sia solo l'inizio di un'amicizia duratura!\\
+Un affettuoso ringraziamento anche a Roberto D'Amore, collega ed amico, sempre presente e disposto a fornirmi informazioni importanti soprattutto negli ultimi mesi e che ha sempre prontamente teso la mano. Le tue parole sono state ricchezza e mi hanno aiutato molto nelle mie decisioni, la tua pacatezza mi ha spesso risollevato e dato speranza. \\
+Ringrazio con affetto anche i miei amici Antonio Chirico e Rossana Marzano, fedeli compagni di questa avventura fin dal principio, con i quali ho condiviso bei momenti sia in ambito universitario che non, e che mi sono sempre stati vicino. Vi ringrazio per aver mostrato sempre sincerità ed affetto, le nostre lunghe chiacchierate sono state fondamentali per la mia crescita, le idee che ne emergevano mi facevano capire sempre più cose su di me e su ciò che volevo raggiungere. Grazie a Rossana per la sua allegria e la sua onestà, grazie ad Antonio per la sua bontà e la sua spontaneità, grazie ad entrambi per esserci stati sempre e per non aver mai lasciato svanire questa nostra amicizia che spero davvero continui a durare. Che tutti i vostri desideri possano realizzarsi e che tutti gli ostacoli che la vita vi porgerà possano essere superati lasciandovi rafforzati.\\
+Un caloroso grazie a Vincenzo Criscuolo per la sua presenza in questa lunga scalata. Un amico con il quale ho condiviso i miei primi anni di università e che ricorderò sempre con stima e benevolenza. Non dimenticherò mai i nostri pomeriggi studio tra algebra uno, analisi matematica uno e fisica generale uno, in cui scambiavamo pareri, pensieri, idee e dai quali uscivamo sempre arricchiti. Così come non dimenticherò mai le lunghe telefonate pomeridiane durante le quali parlavamo di tutto e di più e che ci rendevano sempre più legati. Un forte in bocca al lupo per il tuo futuro, sai che ho tanta stima di te e delle tue capacità e sai che aspetto da tempo la tua meritata vittoria.\\
+Ringrazio inoltre tutti gli altri amici e colleghi dell'università che ho incontrato nel corso degli anni e che mi hanno accompagnato per brevi o lunghi momenti in questo percorso, chi più e chi meno. Tutti coloro che mi hanno davvero aiutato, dato un consiglio sincero, regalato volentieri parte del loro tempo e del loro sorriso.\\
+In particolar modo Daniela Gargiulo per la sua disponibilità e dolcezza. Insieme abbiamo affrontato con coraggio il sacrificio e l'ansia per l'esame di algebra e ciò ci ha dato la possibilità di conoscerci. Ilaria Iodice che con la sua simpatia ha sempre indotto un senso di tranquillità e di positività e con la quale ho condiviso l'esperienza del mio ultimo esame.\\
+Ringrazio infine tutti gli amici al di fuori dell'università che hanno sempre creduto in me e che mi hanno sempre supportato con affetto e comprensione.\\
+In particolar modo Linda Palumbo, una tra le mie più grandi amiche da anni, sempre presente negli avvenimenti importanti che affronto. Grazie per la tua sincerità, il tuo affetto e la tua generosità. La tua amicizia è tra le più importanti che ho e spero continui ad arricchire la storia della mia vita. Come non citare Diego D'ambrosio che ringrazio per la sua prorompente simpatia e per le infinite risate condivise, un amico che è sempre riuscito a rallegrarmi donandomi spensieratezza ed energia.
+Infine Mario De Lucia, a cui dedico un forte grazie per essermi stato vicino durante il mio esame di fisica generale due, non solo operativamente ma anche e soprattutto psicologicamente. Sono contenta di aver avuto modo di conoscerti e di poter condividere gran parte del mio tempo in tua compagnia e....grazie anche per avermi suggerito di ascoltare la discografia di Lisa Hannigan.\\
 Concludo con un ringraziamento a me stessa per aver perseguito con determinazione e desiderio questo obiettivo senza mai mollare la presa, nonostante le difficoltà ed i numerosi sacrifici e per aver vissuto con passione e convinzione questa esperienza, dalla quale ho tratto numerosi insegnamenti di vita. 
 
 %ringraziamenti per la tesi al prof
 
-% Desidero ringraziare anzitutto il mio relatore, il Professor Stefano Marrone, per la disponibilità mostratami durante la realizzazione di questo lavoro di tesi e per il supporto e la guida che mi ha gentilmente offerto, senza i quali non avrei potuto concretizzare tale lavoro.\\
+% 
 % Ringrazio con affetto la mia famiglia che fin dal principio mi ha sostenuto ed ha combattuto con me per il raggiungimento di questo obiettivo. Grazie per la possibilità che mi avete dato, per i valori che mi avete trasmesso e per gli insegnamenti che mi avete donato. Grazie per aver sempre creduto in me e grazie soprattutto per i sacrifici e per la pazienza che negli anni avete mostrato.\\ 
 % Un ringraziamento particolare va a tutti colleghi che mi hanno sempre aiutato nel momento del bisogno condividendo studio, pensieri e suggerimenti.\\
 %Vorrei infine ringraziare i miei amici ed il mio fidanzato per essere sempre stati presenti e per avermi sostenuto ed incoraggiato fino alla fine.
