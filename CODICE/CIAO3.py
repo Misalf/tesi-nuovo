@@ -36,12 +36,12 @@ for row in inputexcel:
 #INIZIALIZZO ARRAY OUTPUT
 r=0
 for row in outputexcel:
-    arrayoutput=[0 for x in range(r+1)]
-    arrayoutput[r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
+    arrayoutput=[[0 for x in range(r+1)] for y in range(1)]
+    #arrayoutput[r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
     r=r+1
 r=0
 for row in outputexcel:
-    arrayoutput[r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
+    arrayoutput[0][r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
     #print (arrayoutput[r] ,',', r)
     r=r+1
 #INSERISCE NELLA MATRICE I VALORI CODIFICATI
@@ -72,34 +72,35 @@ for row in inputexcel:
       #  break
 
 print ("INIZIO MATRICE CODIFICATA")
-ri,ci=0,0
-for row in range(0,r-1):
-    for cell in range(0,c-1):
-        print (matriceproteinacodificata[cell][row])
+#ri,ci=0,0
+#for row in range(0,r-1):
+#    for cell in range(0,c-1):
+        #print (matriceproteinacodificata[cell][row])
 
 X=np.array(matriceproteinacodificata).T
 Y=np.array(arrayoutput)
+
 
 #SI INIZIA A COPIARE
 np.random.seed(1)
 
 #INIZIALIZZO I PESI CASUALMENTE CON MEDIA 0
-syn0 = 2*np.random.random((1,8)) - 1
+syn0 = 2*np.random.random((8,1)) - 1
 
 for iter in range(10000):
     #forward propagation
     p0=X
-    p1=nonlin(np.dot(p0,syn0.T))
+    p1=nonlin(np.dot(p0,syn0))
 
     #quanto è l'errore?
-    p1_errore=Y-p1
+    p1_errore=p1-Y
 
     #moltiplica quanto abbiamo sbagliato per la derivata della sigmoide al valore in p1
     p1_delta=p1_errore*nonlin(p1,True)
 
     #aggiorna i pesi
-    syn0=syn0.T
-    syn0+=np.dot(p1_delta,p0)
+    #syn0=syn0.T
+    syn0+=np.dot(p0.T,p1_delta)
 
 print ("Output after training:")
 print (p1)
