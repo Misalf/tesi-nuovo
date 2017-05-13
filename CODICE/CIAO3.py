@@ -27,16 +27,21 @@ FirstInput = openpyxl.load_workbook('first.xlsx')
 sheet=FirstInput.active
 #sheet=FirstInput.get_sheet_names()
 #importo matrice input
-inputexcel = sheet['B2':'I30']
+#inputexcel = sheet['B2':'I30']
+col_range = sheet['B:I']        #<----RICORDA DI MODIFICARE QUESTI INTERVALLI PER ALTRE TABELLE
+rig_range = sheet['2:30']       #<----RICORDA DI MODIFICARE QUESTI INTERVALLI PER ALTRE TABELLE
+matriceproteina=[[0 for x in range(rig_range)] for y in range(col_range)]
+matriceproteinacodificata=[[0 for x in range(rig_range)] for y in range(col_range)]
 r, c=0,0
-for row in inputexcel:
-    for cell in row:
-        matriceproteina=[[0 for x in range(r+1)] for y in range(c+1)]
-        matriceproteinacodificata=[[0 for x in range(r+1)] for y in range(c+1)]
-        matriceproteina[r][c]=cell.value
+for row in rig_range:
+    for cell in col_range:
+        #matriceproteina=[[0 for x in range()] for y in range(c+1)]
+        #matriceproteinacodificata=[[0 for x in range(r+1)] for y in range(c+1)]
+        matriceproteina[row][cell]=sheet.cell(row=row, column=cell)
         print (cell.value)
         if c==0:
             matriceproteinacodificata[r][0]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
+            print (AMMINOACIDI.index(cell.value))
         if c==1:
             matriceproteinacodificata[r][1]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
         if c==2:
@@ -47,14 +52,13 @@ for row in inputexcel:
             matriceproteinacodificata[r][5]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
         if c==6:
             matriceproteinacodificata[r][6]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-        #print (matriceproteina[r][c]) #<— ricorda di toglierlo
-        c=c+1
-    r=r+1
+        print (matriceproteinacodificata[r][c]) #<— ricorda di toglierlo
+        c,r=c+1,r+1
 print ("INIZIO MATRICE CODIFICATA")
 ri,ci=0,0
 for row in range(0,r):
     for cell in range(0,c):
         print (matriceproteinacodificata[row][cell])
-        print (row ,",", cell)
+        #print (row ,",", cell)
         #ci=ci+1
     #ri=ri+1
