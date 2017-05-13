@@ -78,7 +78,7 @@ print ("INIZIO MATRICE CODIFICATA")
         #print (matriceproteinacodificata[cell][row])
 
 X=np.array(matriceproteinacodificata).T
-Y=np.array(arrayoutput)
+Y=np.array(arrayoutput).T
 
 
 #SI INIZIA A COPIARE
@@ -102,5 +102,5 @@ for iter in range(10000):
     #syn0=syn0.T
     syn0+=np.dot(p0.T,p1_delta)
 
-print ("Output after training:")
+print ("Output dopo allenamento:")
 print (p1)
