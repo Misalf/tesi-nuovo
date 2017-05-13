@@ -16,8 +16,10 @@ FirstInput = openpyxl.load_workbook('first.xlsx')
 sheet=FirstInput.active
 inputexcel = sheet['B2':'I30']
 
+#matrice output
+outputexcel=sheet['J2':'J30']
 
-#CREA LA MATRICE CON TUTTI
+#INIZIALIZZA LA MATRICE
 r=0
 for row in inputexcel:          
     c=0
@@ -28,6 +30,15 @@ for row in inputexcel:
         #print ("Stampo la matriceproteinacodificata ",matriceproteinacodificata[c][r]," di colonna ",c," e riga ",r)
         #print (c,',',r)
         c=c+1
+    r=r+1
+
+#INSERISCO I VALORI DI OUTPUT DA EXCEL IN UN ARRAY DI OUTPUT
+#INIZIALIZZO ARRAY OUTPUT
+r=0
+for row in outputexcel:
+    arrayoutput=[0 for x in range(r+1)]
+    arrayoutput[r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
+    print (arrayoutput[r] ,',', r)
     r=r+1
 
 #INSERISCE NELLA MATRICE I VALORI CODIFICATI
