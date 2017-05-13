@@ -14,7 +14,7 @@ def INIZIALIZZAMATRICE(matrice):
     r=0
     for row in matrice:          
         c=0
-        RigMAX=r
+        #RigMAX=r
         #print (RigMAX)
         for cell in row:
             matriceinizializzata=[[0 for x in range(r+1)] for y in range(c+1)]
@@ -26,7 +26,7 @@ def INIZIALIZZAMATRICE(matrice):
 
 def INIZIALIZZOARRAY(array):
     r=0
-    for row in outputexcel:
+    for row in array:
         arrayoutput=[[0 for x in range(r+1)] for y in range(1)]
         #arrayoutput[r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
         r=r+1   
@@ -61,19 +61,15 @@ def CODIFICAARRAY(array, arrayoutput):
     r=0
     for row in array:
         arrayoutput[0][r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
-        #print (arrayoutput[r] ,',', r)
         r=r+1
     return arrayoutput
 
 #matrice input
 FirstInput = openpyxl.load_workbook('first.xlsx')
 sheet=FirstInput.active
+
 inputexcel = sheet['B2':'I15']
-
-#matrice output
 outputexcel=sheet['J2':'J15']
-
-#matrice prova
 inputprova=sheet['B16':'I30']
 outputprova=sheet['J16':'J30']
 
@@ -147,10 +143,10 @@ ArrayCodificatoProva=CODIFICAARRAY(outputprova, ArrayOutputProva)
 #    for cell in range(0,c-1):
         #print (matriceproteinacodificata[cell][row])
 
-X=np.array(matriceproteinacodificata).T
-Y=np.array(arrayoutput).T
-Xprova=np.array(inputprova)
-Yprova=np.array(outputprova)
+X=np.array(MatriceCodificataTraining).T
+Y=np.array(ArrayCodificatoTraining).T
+Xprova=np.array(MatriceCodificataProva)
+Yprova=np.array(ArrayCodificatoProva)
 
 #SI INIZIA A COPIARE
 np.random.seed(1)
@@ -175,4 +171,6 @@ for iter in range(10000):
 
 print ("Output dopo allenamento:")
 print (p1)
-
+print("Prova!")
+OutputCalcolato=np.dot(Xprova.T,syn0)
+print(OutputCalcolato)
