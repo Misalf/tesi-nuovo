@@ -18,7 +18,7 @@ def CODIFICA(ARRAY,INP):
 #        else:
 #            i=i+1
 
-AMMINOACIDI=['MET', 'LYS', 'PRO', 'THR', 'VAL', 'ALA', 'ASN', 'GLU', 'PRO', 'TYR']
+AMMINOACIDI=['MET', 'LYS', 'PRO', 'THR', 'VAL', 'ALA', 'ASN', 'GLU', 'PRO', 'TYR','ARG']
 ALFABETO=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 
@@ -35,41 +35,52 @@ inputexcel = sheet['B2':'I30']
 r=0
 for row in inputexcel:          #CREA LA MATRICE CON TUTTI
     c=0
+    RigMAX=r
+    #print (RigMAX)
     for cell in row:
         matriceproteinacodificata=[[0 for x in range(r+1)] for y in range(c+1)]
+        print ("Stampo la matriceproteinacodificata ",matriceproteinacodificata[c][r]," di colonna ",c," e riga ",r)
+        print (c,',',r)
         c=c+1
-        #print (cell.value)
     r=r+1
+print("INIZIO CODIFICA")
 r=0                        #INSERISCE NELLA MATRICE I VALORI CODIFICATI
+
+#print("Stampa:",matriceproteinacodificata[7][0])
 for row in inputexcel:
     c=0
     for cell in row:
         print (c,',',r)
         if c==0:
-            matriceproteinacodificata[r][0]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
+            matriceproteinacodificata[0][r]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
             #print (AMMINOACIDI.index(cell.value))
-        if c==1:
-            matriceproteinacodificata[r][1]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-        if c==2:
-            matriceproteinacodificata[r][2]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-        if c==3:
-            matriceproteinacodificata[r][3]=cell.value
-        if c==4:
-            matriceproteinacodificata[r][4]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
-        if c==5:
-            matriceproteinacodificata[r][5]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-        if c==6:
-            matriceproteinacodificata[r][6]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-        if c==7:
-            matriceproteinacodificata[r][7]=cell.value
+        elif c==1:
+            matriceproteinacodificata[1][r]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
+        elif c==2:
+            matriceproteinacodificata[2][r]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
+        elif c==3:
+            matriceproteinacodificata[3][r]=cell.value
+        elif c==4:
+            matriceproteinacodificata[4][r]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
+        elif c==5:
+            matriceproteinacodificata[5][r]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
+        elif c==6:
+            matriceproteinacodificata[6][r]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
+        elif c==7:
+            matriceproteinacodificata[7][r]=cell.value
         #print (matriceproteinacodificata[r][c]) #<— ricorda di toglierlo
         c=c+1
+    print("CIAO")
     r=r+1
+    if r==RigMAX:
+        print("Esco dalla CODIFICA")
+        break
+
 print ("INIZIO MATRICE CODIFICATA")
 ri,ci=0,0
-for row in range(0,r):
-    for cell in range(0,c):
-        print (matriceproteinacodificata[row][cell])
+for row in range(0,r-1):
+    for cell in range(0,c-1):
+        print (matriceproteinacodificata[cell][row])
         #print (row ,",", cell)
         #ci=ci+1
     #ri=ri+1
