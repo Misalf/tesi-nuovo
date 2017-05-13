@@ -28,29 +28,48 @@ sheet=FirstInput.active
 #sheet=FirstInput.get_sheet_names()
 #importo matrice input
 inputexcel = sheet['B2':'I30']
-r, c=0,0
-for row in inputexcel:
+#col_range=sheet['B:I']
+#print (inputexcel)
+
+
+r=0
+for row in inputexcel:          #CREA LA MATRICE CON TUTTI
+    c=0
     for cell in row:
-        matriceproteina=[[0 for x in range(r+1)] for y in range(c+1)]
         matriceproteinacodificata=[[0 for x in range(r+1)] for y in range(c+1)]
-        matriceproteina[r][c]=cell.value
+        c=c+1
+        #print (cell.value)
+    r=r+1
+r=0                        #INSERISCE NELLA MATRICE I VALORI CODIFICATI
+for row in inputexcel:
+    c=0
+    for cell in row:
+        print (c,',',r)
         if c==0:
             matriceproteinacodificata[r][0]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
+            #print (AMMINOACIDI.index(cell.value))
         if c==1:
             matriceproteinacodificata[r][1]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
         if c==2:
             matriceproteinacodificata[r][2]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
+        if c==3:
+            matriceproteinacodificata[r][3]=cell.value
         if c==4:
             matriceproteinacodificata[r][4]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
         if c==5:
             matriceproteinacodificata[r][5]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
         if c==6:
             matriceproteinacodificata[r][6]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-        print (matriceproteina[r][c]) #<— ricorda di toglierlo
-        r,c=r+1,c+1
+        if c==7:
+            matriceproteinacodificata[r][7]=cell.value
+        #print (matriceproteinacodificata[r][c]) #<— ricorda di toglierlo
+        c=c+1
+    r=r+1
 print ("INIZIO MATRICE CODIFICATA")
-r,c=0,0
-for row in matriceproteinacodificata:
-    for cell in row:
-        print (matriceproteinacodificata[r][c])
-        r,c=r+1,c+1
+ri,ci=0,0
+for row in range(0,r):
+    for cell in range(0,c):
+        print (matriceproteinacodificata[row][cell])
+        #print (row ,",", cell)
+        #ci=ci+1
+    #ri=ri+1
