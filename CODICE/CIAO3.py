@@ -39,8 +39,8 @@ for row in inputexcel:          #CREA LA MATRICE CON TUTTI
     #print (RigMAX)
     for cell in row:
         matriceproteinacodificata=[[0 for x in range(r+1)] for y in range(c+1)]
-        print ("Stampo la matriceproteinacodificata ",matriceproteinacodificata[c][r]," di colonna ",c," e riga ",r)
-        print (c,',',r)
+        #print ("Stampo la matriceproteinacodificata ",matriceproteinacodificata[c][r]," di colonna ",c," e riga ",r)
+        #print (c,',',r)
         c=c+1
     r=r+1
 print("INIZIO CODIFICA")
@@ -50,7 +50,6 @@ r=0                        #INSERISCE NELLA MATRICE I VALORI CODIFICATI
 for row in inputexcel:
     c=0
     for cell in row:
-        print (c,',',r)
         if c==0:
             matriceproteinacodificata[0][r]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
             #print (AMMINOACIDI.index(cell.value))
@@ -70,10 +69,8 @@ for row in inputexcel:
             matriceproteinacodificata[7][r]=cell.value
         #print (matriceproteinacodificata[r][c]) #<— ricorda di toglierlo
         c=c+1
-    print("CIAO")
     r=r+1
     if r==RigMAX:
-        print("Esco dalla CODIFICA")
         break
 
 print ("INIZIO MATRICE CODIFICATA")
