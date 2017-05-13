@@ -14,12 +14,8 @@ def INIZIALIZZAMATRICE(matrice):
     r=0
     for row in matrice:          
         c=0
-        #RigMAX=r
-        #print (RigMAX)
         for cell in row:
             matriceinizializzata=[[0 for x in range(r+1)] for y in range(c+1)]
-            #print ("Stampo la matriceproteinacodificata ",matriceproteinacodificata[c][r]," di colonna ",c," e riga ",r)
-            #print (c,',',r)
             c=c+1
         r=r+1
     return matriceinizializzata
@@ -28,7 +24,6 @@ def INIZIALIZZOARRAY(array):
     r=0
     for row in array:
         arrayoutput=[[0 for x in range(r+1)] for y in range(1)]
-        #arrayoutput[r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
         r=r+1   
     return arrayoutput
 
@@ -84,64 +79,6 @@ MatriceCodificataTraining=CODIFICAMATRICE(inputexcel, MatriceInputTraining)
 MatriceCodificataProva=CODIFICAMATRICE(inputprova, MatriceInputProva)
 ArrayCodificatoTraining=CODIFICAARRAY(outputexcel, ArrayOutputTraining)
 ArrayCodificatoProva=CODIFICAARRAY(outputprova, ArrayOutputProva)
-
-#INIZIALIZZA LA MATRICE
-#r=0
-#for row in inputexcel:          
-#    c=0
-#    RigMAX=r
-#    #print (RigMAX)
-#    for cell in row:
-#        matriceproteinacodificata=[[0 for x in range(r+1)] for y in range(c+1)]
- #       #print ("Stampo la matriceproteinacodificata ",matriceproteinacodificata[c][r]," di colonna ",c," e riga ",r)
-#        #print (c,',',r)
-#        c=c+1
-#    r=r+1
-
-#INSERISCO I VALORI DI OUTPUT DA EXCEL IN UN ARRAY DI OUTPUT
-#INIZIALIZZO ARRAY OUTPUT
-#r=0
-#for row in outputexcel:
-#    arrayoutput=[[0 for x in range(r+1)] for y in range(1)]
-#    #arrayoutput[r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
-#    r=r+1
-#r=0
-#for row in outputexcel:
-#    arrayoutput[0][r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
-#    #print (arrayoutput[r] ,',', r)
-#    r=r+1
-#INSERISCE NELLA MATRICE I VALORI CODIFICATI
-#######print("INIZIO CODIFICA")
-#r=0                        
-#for row in inputexcel:
-#    c=0
-#    for cell in row:
-#        if c==0:
-#            matriceproteinacodificata[0][r]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
-#        elif c==1:
-#            matriceproteinacodificata[1][r]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-#        elif c==2:
-#            matriceproteinacodificata[2][r]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-#        elif c==3:
-##            matriceproteinacodificata[3][r]=cell.value
-#        elif c==4:
-#            matriceproteinacodificata[4][r]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
-#        elif c==5:
-#            matriceproteinacodificata[5][r]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-#        elif c==6:
-#            matriceproteinacodificata[6][r]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
-#        elif c==7:
-#            matriceproteinacodificata[7][r]=cell.value
-#        c=c+1
-#    r=r+1
-    #if r==RigMAX:
-      #  break
-
-#########print ("INIZIO MATRICE CODIFICATA")
-#ri,ci=0,0
-#for row in range(0,r-1):
-#    for cell in range(0,c-1):
-        #print (matriceproteinacodificata[cell][row])
 
 X=np.array(MatriceCodificataTraining).T
 Y=np.array(ArrayCodificatoTraining).T
