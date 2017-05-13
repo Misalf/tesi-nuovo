@@ -28,21 +28,23 @@ sheet=FirstInput.active
 #sheet=FirstInput.get_sheet_names()
 #importo matrice input
 inputexcel = sheet['B2':'I30']
-#col_range = sheet['B:I']        #<----RICORDA DI MODIFICARE QUESTI INTERVALLI PER ALTRE TABELLE
-#rig_range = sheet['2:30']       #<----RICORDA DI MODIFICARE QUESTI INTERVALLI PER ALTRE TABELLE
-#matriceproteina=[[0 for x in range(rig_range)] for y in range(col_range)]
-#matriceproteinacodificata=[[0 for x in range(rig_range)] for y in range(col_range)]
-r, c=0,0
-for row in inputexcel:
+#col_range=sheet['B:I']
+#print (inputexcel)
+
+
+r=0
+for row in inputexcel:          #CREA LA MATRICE CON TUTTI
+    c=0
     for cell in row:
-        #matriceproteina=[[0 for x in range(r+1)] for y in range(c+1)]
-        matriceproteinacodificata=[[0 for x in range(r)] for y in range(c)]
-        r,c=r+1,c+1
-        #matriceproteina[r][c]=cell.value
+        matriceproteinacodificata=[[0 for x in range(r+1)] for y in range(c+1)]
+        c=c+1
         #print (cell.value)
-r, c=0,0
+    r=r+1
+r=0                        #INSERISCE NELLA MATRICE I VALORI CODIFICATI
 for row in inputexcel:
+    c=0
     for cell in row:
+        print (c,',',r)
         if c==0:
             matriceproteinacodificata[r][0]=AMMINOACIDI.index(cell.value) #CODIFICA(AMMINOACIDI,cell.value)
             #print (AMMINOACIDI.index(cell.value))
@@ -60,7 +62,7 @@ for row in inputexcel:
             matriceproteinacodificata[r][6]=ALFABETO.index(cell.value) #CODIFICA(ALFABETO,cell.value)
         if c==7:
             matriceproteinacodificata[r][7]=cell.value
-        print (matriceproteinacodificata[r][c]) #<— ricorda di toglierlo
+        #print (matriceproteinacodificata[r][c]) #<— ricorda di toglierlo
         c=c+1
     r=r+1
 print ("INIZIO MATRICE CODIFICATA")
