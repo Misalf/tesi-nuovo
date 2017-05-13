@@ -42,7 +42,7 @@ for row in outputexcel:
 r=0
 for row in outputexcel:
     arrayoutput[r]=row[0].value             #AGGIUNGO I VALORI DA EXCEL NELLA MATRICE
-    print (arrayoutput[r] ,',', r)
+    #print (arrayoutput[r] ,',', r)
     r=r+1
 #INSERISCE NELLA MATRICE I VALORI CODIFICATI
 print("INIZIO CODIFICA")
@@ -84,12 +84,12 @@ Y=np.array(arrayoutput)
 np.random.seed(1)
 
 #INIZIALIZZO I PESI CASUALMENTE CON MEDIA 0
-syn0 = 2*np.random.random((8,1)) - 1
+syn0 = 2*np.random.random((1,8)) - 1
 
 for iter in range(10000):
     #forward propagation
     p0=X
-    p1=nonlin(np.dot(p0,syn0))
+    p1=nonlin(np.dot(p0,syn0.T))
 
     #quanto è l'errore?
     p1_errore=Y-p1
@@ -98,7 +98,8 @@ for iter in range(10000):
     p1_delta=p1_errore*nonlin(p1,True)
 
     #aggiorna i pesi
-    syn0+=np.dot(p0.T,p1_delta)
+    syn0=syn0.T
+    syn0+=np.dot(p1_delta,p0)
 
 print ("Output after training:")
 print (p1)
